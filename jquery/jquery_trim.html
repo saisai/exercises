@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery.trim demo</title>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<pre id="original"></pre>
+<pre id="trimmed"></pre>
+ 
+<script>
+var str = "         lots of spaces before and after         ";
+$( "#original" ).html( "Original String: '" + str + "'" );
+$( "#trimmed" ).html( "$.trim()'ed: '" + $.trim(str) + "'" );
+</script>
+ 
+</body>
+</html>

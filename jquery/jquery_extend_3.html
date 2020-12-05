@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery.extend demo</title>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<div id="log"></div>
+ 
+<script>
+var defaults = { validate: false, limit: 5, name: "foo" };
+var options = { validate: true, name: "bar" };
+ 
+// Merge defaults and options, without modifying defaults
+var settings = $.extend( {}, defaults, options );
+ 
+// Assuming JSON.stringify - not available in IE<8
+$( "#log" ).append( "<div><b>defaults -- </b>" + JSON.stringify( defaults ) + "</div>" );
+$( "#log" ).append( "<div><b>options -- </b>" + JSON.stringify( options ) + "</div>" );
+$( "#log" ).append( "<div><b>settings -- </b>" + JSON.stringify( settings ) + "</div>" );
+</script>
+ 
+</body>
+</html>

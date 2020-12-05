@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery.data demo</title>
+  <style>
+  div {
+    margin: 5px;
+    background: yellow;
+  }
+  button {
+    margin: 5px;
+    font-size: 14px;
+  }
+  p {
+    margin: 5px;
+    color: blue;
+  }
+  span {
+    color: red;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<div>A div</div>
+<button>Get "blah" from the div</button>
+<button>Set "blah" to "hello"</button>
+<button>Set "blah" to 86</button>
+<button>Remove "blah" from the div</button>
+<p>The "blah" value of this div is <span>?</span></p>
+ 
+<script>
+$( "button" ).click( function() {
+  var value,
+    div = $( "div" )[ 0 ];
+  switch ( $( "button" ).index( this ) ) {
+  case 0 :
+    value = jQuery.data( div, "blah" );
+    break;
+  case 1 :
+    jQuery.data( div, "blah", "hello" );
+    value = "Stored!";
+    break;
+  case 2 :
+    jQuery.data( div, "blah", 86 );
+    value = "Stored!";
+    break;
+  case 3 :
+    jQuery.removeData( div, "blah" );
+    value = "Removed!";
+    break;
+  }
+  $( "span" ).text( "" + value );
+});
+</script>
+ 
+</body>
+</html>

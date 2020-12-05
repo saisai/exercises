@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery.fx.off demo</title>
+  <style>
+  div {
+    width: 50px;
+    height: 30px;
+    margin: 5px;
+    float: left;
+    background: green;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<input type="button" value="Run">
+<button>Toggle fx</button>
+<div></div>
+ 
+<script>
+var toggleFx = function() {
+  $.fx.off = !$.fx.off;
+};
+toggleFx();
+$( "button" ).click( toggleFx );
+$( "input" ).click(function() {
+  $( "div" ).toggle( "slow" );
+});
+</script>
+ 
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery.proxy demo</title>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+  <p><button id="test">Test</button></p>
+  <p id="log"></p>
+ 
+<script>
+var obj = {
+  name: "John",
+  test: function() {
+    $( "#log" ).append( this.name );
+    $( "#test" ).off( "click", obj.test );
+  }
+};
+$( "#test" ).on( "click", jQuery.proxy( obj, "test" ) );
+</script>
+ 
+</body>
+</html>

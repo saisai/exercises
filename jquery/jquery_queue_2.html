@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery.queue demo</title>
+  <style>
+  div {
+    margin: 3px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0px;
+    top: 30px;
+    background: green;
+    display: none;
+  }
+  div.newcolor {
+    background: blue;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+Click here...
+<div></div>
+ 
+<script>
+$( document.body ).click(function() {
+  var divs = $( "div" )
+    .show( "slow" )
+    .animate({ left: "+=200" }, 2000 );
+  jQuery.queue( divs[ 0 ], "fx", function() {
+    $( this ).addClass( "newcolor" );
+    jQuery.dequeue( this );
+  });
+  divs.animate({ left: "-=200" }, 500 );
+  jQuery.queue( divs[ 0 ], "fx", function() {
+    $( this ).removeClass( "newcolor" );
+    jQuery.dequeue( this );
+  });
+  divs.slideUp();
+});
+</script>
+ 
+</body>
+</html>
