@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>map demo</title>
+  <style>
+  p {
+    color: red;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<p><b>Values: </b></p>
+<form>
+  <input type="text" name="name" value="John">
+  <input type="text" name="password" value="password">
+  <input type="text" name="url" value="https://johnresig.com/">
+</form>
+ 
+<script>
+$( "p" )
+  .append( $( "input" ).map(function() {
+    return $( this ).val();
+  })
+  .get()
+  .join( ", " ) );
+</script>
+ 
+</body>
+</html>
