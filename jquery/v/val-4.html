@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>val demo</title>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<p>Type something and then click or tab out of the input.</p>
+<input type="text" value="type something">
+ 
+<script>
+$( "input" ).on( "blur", function() {
+  $( this ).val(function( i, val ) {
+    return val.toUpperCase();
+  });
+});
+</script>
+ 
+</body>
+</html>
