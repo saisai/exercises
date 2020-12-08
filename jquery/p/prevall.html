@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>prevAll demo</title>
+  <style>
+  div {
+    width: 70px;
+    height: 70px;
+    background: #abc;
+    border: 2px solid black;
+    margin: 10px;
+    float: left;
+  }
+  div.before {
+    border-color: red;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+ 
+<script>
+$( "div" ).last().prevAll().addClass( "before" );
+</script>
+ 
+</body>
+</html>

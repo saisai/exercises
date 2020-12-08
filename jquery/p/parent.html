@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>parent demo</title>
+  <style>
+  div, p {
+    margin: 10px;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<div>div,
+  <span>span, </span>
+  <b>b </b>
+</div>
+ 
+<p>p,
+  <span>span,
+    <em>em </em>
+  </span>
+</p>
+ 
+<div>div,
+  <strong>strong,
+    <span>span, </span>
+    <em>em,
+      <b>b, </b>
+    </em>
+  </strong>
+  <b>b </b>
+</div>
+ 
+<script>
+$( "*", document.body ).each(function() {
+  var parentTag = $( this ).parent().get( 0 ).tagName;
+  $( this ).prepend( document.createTextNode( parentTag + " > " ) );
+});
+</script>
+ 
+</body>
+</html>

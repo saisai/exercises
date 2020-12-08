@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>prepend demo</title>
+  <style>
+  p {
+    background: yellow;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<p>is what I'd say</p>
+<p>is what I said</p>
+ 
+<script>
+alert(document.createTextNode( "Hello " ));
+var aa = document.createTextNode( "Hello " ) ;
+alert(aa);
+$.each(document, function(key, val) {
+	console.log(key + " : " + val + " : " + typeof val);
+});
+
+console.log("window");
+console.log("window");
+console.log("window");
+$.each(window, function(key, val) {
+	console.log(key + " : " + val + " : " + typeof val);
+});
+$( "p" ).prepend( document.createTextNode( "Hello " ) );
+</script>
+ 
+</body>
+</html>
