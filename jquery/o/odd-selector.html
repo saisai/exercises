@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>odd demo</title>
+  <style>
+  table {
+    background: #f3f7f5;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<table border="1">
+  <tr><td>Row with Index #0</td></tr>
+  <tr><td>Row with Index #1</td></tr>
+  <tr><td>Row with Index #2</td></tr>
+  <tr><td>Row with Index #3</td></tr>
+</table>
+ 
+<script>
+$( "tr:odd" ).css( "background-color", "#bbbbff" );
+</script>
+ 
+</body>
+</html>
