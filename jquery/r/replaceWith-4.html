@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>replaceWith demo</title>
+  <style>
+  .container {
+    background-color: #991;
+  }
+  .inner {
+    color: #911;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<p>
+  <button>Replace!</button>
+</p>
+<div class="container">
+  <div class="inner">Scooby</div>
+  <div class="inner">Dooby</div>
+  <div class="inner">Doo</div>
+</div>
+ 
+<script>
+$( "button" ).on( "click", function() {
+  var $container = $( "div.container" ).replaceWith(function() {
+    return $( this ).contents();
+  });
+ 
+  $( "p" ).append( $container.attr( "class" ) );
+});
+</script>
+ 
+</body>
+</html>
