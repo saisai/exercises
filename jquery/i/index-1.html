@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>index demo</title>
+  <style>
+  div {
+    font-weight: bold;
+    color: #090;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<ul>
+  <li id="foo">foo</li>
+  <li id="bar">bar</li>
+  <li id="baz">baz</li>
+</ul>
+<div></div>
+ 
+<script>
+var listItem = $( "#bar" );
+alert(listItem);
+$.each(listItem, function(key, val){ alert(key + " : " + val + " : " + val.innerHTML); });
+$( "div" ).html( "Index: " + $( "li" ).index( listItem ) );
+</script>
+ 
+</body>
+</html>

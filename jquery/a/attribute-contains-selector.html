@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>attributeContains demo</title>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<input name="man-news">
+<input name="milkman">
+<input name="letterman2">
+<input name="newmilk">
+ 
+<script>
+$( "input[name*='man']" ).val( "has man in it!" );
+</script>
+ 
+</body>
+</html>

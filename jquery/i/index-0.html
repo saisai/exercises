@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>index demo</title>
+  <style>
+  div {
+    background: yellow;
+    margin: 5px;
+  }
+  span {
+    color: red;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<span>Click a div!</span>
+<div>First div</div>
+<div>Second div</div>
+<div>Third div</div>
+ 
+<script>
+$( "div" ).click(function() {
+  // `this` is the DOM element that was clicked
+  var index = $( "div" ).index( this );
+  $( "span" ).text( "That was div index #" + index );
+});
+</script>
+ 
+</body>
+</html>
