@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>css demo</title>
+  <style>
+  p {
+    color: green;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<p>Move the mouse over a paragraph.</p>
+<p>Like this one or the one above.</p>
+ 
+<script>
+$( "p" )
+  .on( "mouseenter", function() {
+    $( this ).css({
+      "background-color": "yellow",
+      "font-weight": "bolder"
+    });
+  })
+  .on( "mouseleave", function() {
+    var styles = {
+      backgroundColor : "#ddd",
+      fontWeight: ""
+    };
+    $( this ).css( styles );
+  });
+</script>
+ 
+</body>
+</html>

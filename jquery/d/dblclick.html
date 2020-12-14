@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>dblclick demo</title>
+  <style>
+  div {
+    background: blue;
+    color: white;
+    height: 100px;
+    width: 150px;
+ }
+  div.dbl {
+    background: yellow;
+    color: black;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<div></div>
+<span>Double click the block</span>
+ 
+<script>
+var divdbl = $( "div" ).first();
+divdbl.dblclick(function() {
+  divdbl.toggleClass( "dbl" );
+});
+</script>
+ 
+</body>
+</html>
