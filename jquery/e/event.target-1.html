@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>event.target demo</title>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<ul>
+  <li>item 1
+    <ul>
+      <li>sub item 1-a</li>
+      <li>sub item 1-b</li>
+    </ul>
+  </li>
+  <li>item 2
+    <ul>
+      <li>sub item 2-a</li>
+      <li>sub item 2-b</li>
+    </ul>
+  </li>
+</ul>
+ 
+<script>
+function handler( event ) {
+  var target = $( event.target );
+  if ( target.is( "li" ) ) {
+    target.children().toggle();
+  }
+}
+$( "ul" ).click( handler ).find( "ul" ).hide();
+</script>
+ 
+</body>
+</html>

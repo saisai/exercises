@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>event.isImmediatePropagationStopped demo</title>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<button>click me</button>
+<div id="stop-log"></div>
+ 
+<script>
+function immediatePropStopped( event ) {
+  var msg = "";
+  if ( event.isImmediatePropagationStopped() ) {
+    msg = "called";
+  } else {
+    msg = "not called";
+  }
+  $( "#stop-log" ).append( "<div>" + msg + "</div>" );
+}
+ 
+$( "button" ).click(function( event ) {
+  immediatePropStopped( event );
+  event.stopImmediatePropagation();
+  immediatePropStopped( event );
+});
+</script>
+ 
+</body>
+</html>

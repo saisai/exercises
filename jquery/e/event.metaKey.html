@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>event.metaKey demo</title>
+  <style>
+  body {
+    background-color: #eef;
+  }
+  div {
+    padding: 20px;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<button value="Test" name="Test" id="checkMetaKey">Click me!</button>
+<div id="display"></div>
+ 
+<script>
+$( "#checkMetaKey" ).click(function( event ) {
+  $( "#display" ).text( event.metaKey );
+});
+</script>
+ 
+</body>
+</html>

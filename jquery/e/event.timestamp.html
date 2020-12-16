@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>event.timeStamp demo</title>
+  <style>
+  div {
+    height: 100px;
+    width: 300px;
+    margin: 10px;
+    background-color: #ffd;
+    overflow: auto;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<div>Click.</div>
+ 
+<script>
+var last, diff;
+$( "div" ).click(function( event ) {
+  if ( last ) {
+    diff = event.timeStamp - last;
+    $( "div" ).append( "time since last event: " + diff + "<br>" );
+  } else {
+    $( "div" ).append( "Click again.<br>" );
+  }
+  last = event.timeStamp;
+});
+</script>
+ 
+</body>
+</html>
