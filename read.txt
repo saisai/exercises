@@ -3,3 +3,5 @@ https://stackoverflow.com/questions/4616694/what-is-event-bubbling-and-capturing
 https://www.sitepoint.com/event-bubbling-javascript/
 
 https://en.wikipedia.org/wiki/Event_bubbling
+
+https://www.w3.org/TR/2003/NOTE-DOM-Level-3-Events-20031107/events.html#Events-Event-isImmediatePropagationStopped
