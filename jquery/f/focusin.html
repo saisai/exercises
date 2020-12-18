@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>focusin demo</title>
+  <style>
+  span {
+    display: none;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<p><input type="text"> <span>focusin fire</span></p>
+<p><input type="password"> <span>focusin fire</span></p>
+ 
+<script>
+$( "p" ).focusin(function() {
+  $( this ).find( "span" ).css( "display", "inline" ).fadeOut( 1000 );
+});
+</script>
+ 
+</body>
+</html>
