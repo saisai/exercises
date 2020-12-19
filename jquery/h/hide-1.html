@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>hide demo</title>
+  <style>
+  p {
+    background: #dad;
+    font-weight: bold;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<button>Hide 'em</button>
+<p>Hiya</p>
+<p>Such interesting text, eh?</p>
+ 
+<script>
+$( "button" ).click(function() {
+  $( "p" ).hide( "slow" );
+});
+</script>
+ 
+</body>
+</html>
