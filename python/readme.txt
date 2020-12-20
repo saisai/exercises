@@ -5,3 +5,4 @@ https://www.accordbox.com/blog/how-to-setup-celery-django/
 https://testdriven.io/blog/django-and-celery/
 https://github.com/AccordBox/awesome-scrapy
 
+https://www.devart.com/odbc/mysql/docs/python.htm
