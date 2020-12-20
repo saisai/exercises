@@ -1,0 +1,2 @@
+sqlcmd -S (LocalDB)\projectlocaldb
+https://eclipse-online.com/news/using-django-with-sql-server-localdb/?fbclid=IwAR1TujCxcvY4FHbic0XMX_2RlB_SboldMmofpVo5JbTPsS0YmkcUpaBMz1c

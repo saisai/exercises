@@ -1,0 +1,4 @@
+sc delete Celery Distributed Task Queue Service
+
+sc create <servicename> binpath= "<pathtobinaryexecutable>" [option1] [option2] [optionN]
+sc create CeleryDistributedTaskQueueService binpath="C:\Python37\python.exe --D:\tmp_delete\django_celery_windows_service\services.py"

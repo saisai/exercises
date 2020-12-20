@@ -1,0 +1,49 @@
+Error: ('08001', '[08001] [Microsoft][ODBC SQL Server Driver][DBNETLIB]Specified SQL server not found. (6) (SQLDriverConnect); [01000] [Microsoft][ODBC SQL Server D
+river][DBNETLIB]ConnectionOpen (Connect()). (11001); [01S00] [Microsoft][ODBC SQL Server Driver]Invalid connection string attribute (0)')
+
+
+
+ssms.exe			
+sqlcmd.exe			
+sqlserver.exe		
+
+https://www.microsoft.com/en-us/download/confirmation.aspx?id=56128
+
+https://stackoverflow.com/questions/57884772/create-file-encountered-operating-system-error-5access-is-denied-while-attemp
+
+
+Msg 5123, Level 16, State 1, Server DESKTOP-FL1BE9O\LOCALDB#7DC8E79D, Line 1
+CREATE FILE encountered operating system error 5(Access is denied.) while attempting to open or create the physical file 'C:\Users\usermy_db.mdf'.
+Msg 1802, Level 16, State 4, Server DESKTOP-FL1BE9O\LOCALDB#7DC8E79D, Line 1
+CREATE DATABASE failed. Some file names listed could not be created. Check related errors.
+
+
+
+sqlcmd -S (LocalDB)\projectlocaldb
+https://eclipse-online.com/news/using-django-with-sql-server-localdb/?fbclid=IwAR1TujCxcvY4FHbic0XMX_2RlB_SboldMmofpVo5JbTPsS0YmkcUpaBMz1c
+
+
+
+
+https://www.tutorialgateway.org/connect-python-and-sql-server/
+https://www.mssqltips.com/sqlservertip/2478/connecting-to-sql-server-using-sqlcmd-utility/
+
+https://stackoverflow.com/questions/57265913/error-tcp-provider-error-code-0x2746-during-the-sql-setup-in-linux-through-te/57453901#57453901
+
+https://github.com/mkleehammer/pyodbc/issues/610
+
+https://community.esri.com/t5/python-questions/errors-how-to-pyodbc-to-create-sql-express-backup/td-p/404158
+
+https://eclipse-online.com/news/using-django-with-sql-server-localdb/?fbclid=IwAR1TujCxcvY4FHbic0XMX_2RlB_SboldMmofpVo5JbTPsS0YmkcUpaBMz1c
+
+https://docs.microsoft.com/en-us/sql/tools/sqllocaldb-utility?view=sql-server-ver15
+
+https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/sql-server-express-localdb?view=sql-server-ver15
+
+https://www.sqlshack.com/install-microsoft-sql-server-express-localdb/
+
+https://stackoverflow.com/questions/57884772/create-file-encountered-operating-system-error-5access-is-denied-while-attemp
+
+https://www.microsoft.com/en-us/download/confirmation.aspx?id=56128	
+
+https://stackoverflow.com/questions/33740455/python-using-pyodbc-to-connect-to-remote-server-using-info-from-excel-data-con/33761447

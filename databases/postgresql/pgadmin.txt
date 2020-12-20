@@ -1,0 +1,33 @@
+CREATE ROLE admin WITH
+	LOGIN
+	SUPERUSER
+	CREATEDB
+	CREATEROLE
+	INHERIT
+	REPLICATION
+	CONNECTION LIMIT -1
+	PASSWORD 'xxxxxx';
+	
+CREATE ROLE admin WITH
+	LOGIN
+	SUPERUSER
+	CREATEDB
+	CREATEROLE
+	INHERIT
+	REPLICATION
+	CONNECTION LIMIT -1
+	PASSWORD 'xxxxxx';
+
+GRANT pg_monitor TO admin;
+
+CREATE ROLE admin WITH
+	LOGIN
+	SUPERUSER
+	CREATEDB
+	CREATEROLE
+	INHERIT
+	REPLICATION
+	CONNECTION LIMIT -1
+	PASSWORD 'xxxxxx';
+
+GRANT pg_monitor, pg_read_all_settings, pg_read_all_stats, pg_signal_backend, pg_stat_scan_tables, "Administrator" TO admin;
