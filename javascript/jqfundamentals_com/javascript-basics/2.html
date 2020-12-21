@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+
+<script>
+var stop = 0;
+decrementCountdown = function() {
+    console.log(new Date().getTime());
+    stop++;
+    if (stop<10) t = setTimeout("decrementCountdown()", 100);
+}
+
+decrementCountdown();
+</script>
+</body>
+</html>

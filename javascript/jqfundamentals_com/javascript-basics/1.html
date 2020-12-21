@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+
+<script>
+var person = {
+  firstName : 'Boaz',
+  lastName : 'Sender',
+  greet : function() {
+    console.log( 'Hi, ' + this.firstName );
+  }
+};
+
+var sayIt = person.greet;
+
+sayIt.call( person );
+
+
+var person2 = {
+  firstName : 'Boaz',
+  lastName : 'Sender',
+  greet : function(greeting, punctuation) {
+    console.log( greeting + ', ' + this.firstName + punctuation );
+  }
+};
+
+var sayIt = person2.greet;
+
+sayIt.call( person2, 'Hello', '!!1!!1' );
+
+
+var person3 = {
+  firstName : 'Boaz',
+  lastName : 'Sender',
+  greet : function(greeting, punctuation) {
+    console.log( greeting + ', ' + this.firstName + punctuation );
+  }
+};
+
+var sayIt = person3.greet;
+
+sayIt.apply( person3, [ 'Hello', '!!1!!1' ] );
+</script>
+</body>
+</html>

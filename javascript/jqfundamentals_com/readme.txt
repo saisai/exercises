@@ -1,0 +1,1 @@
+http://jqfundamentals.com/chapter/javascript-basics
