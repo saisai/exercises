@@ -3,3 +3,9 @@ http://benalman.com/news/2010/11/immediately-invoked-function-expression/
 http://www.jedi.be/blog/2008/10/10/is-your-jquery-or-javascript-getting-slow-or-bad-performance/
 
 http://jqfundamentals.com/chapter/jquery-basics
+
+
+https://www.bennadel.com/blog/1856-using-jquerys-animate-step-callback-function-to-create-custom-animations.htm
+
+
+https://animate.style/
