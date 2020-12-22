@@ -1,0 +1,12 @@
+https://github.com/z3APA3A/3proxy/tree/master/doc
+
+https://developers.redhat.com/blog/2017/11/16/speed-python-using-rust/
+
+https://alistapart.com/article/conflictingabsolutepositions/
+
+https://javascript.info/size-and-scroll
+
+
+https://github.com/tiangolo/fastapi/blob/master/.github/actions/people/app/main.py
+
+https://fastapi.tiangolo.com/fastapi-people/
