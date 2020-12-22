@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+
+ 
+<script>
+
+if(!String.prototype.repeat) {
+	String.prototype.repeat = function(n) {
+	
+		return new Array(n + 1).join(this);
+	};
+}
+
+console.log("La".repeat(3));
+
+</script>
+ 
+</body>
+</html>

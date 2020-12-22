@@ -1,0 +1,8 @@
+
+have a look
+
+https://gitlab.com/mailman/hyperkitty/-/tree/master/hyperkitty
+
+https://lists.fedorahosted.org/archives/
+
+https://docs.mailman3.org/projects/hyperkitty/en/latest/news.html

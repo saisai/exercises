@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("p").on("click.handler", function(){
+        alert("Foo");
+    });
+    $("p").on("click.another_handler", function(){
+        alert("Bar");
+    });
+    $("p").off("click.another_handler");
+});
+</script>
+</head>
+<body>
+
+  <p>Click me!</p>
+  
+  <a target="_blank" href="https://medium.com/@giraldezjorge/jquery-event-namespaces-25df89bd89dd">
+  https://medium.com/@giraldezjorge/jquery-event-namespaces-25df89bd89dd
+  </a>
+
+</body>
+</html>
