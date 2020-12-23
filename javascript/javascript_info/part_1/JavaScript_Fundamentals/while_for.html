@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+
+ 
+<script>
+
+let i = 0;
+while (i < 3) { // shows 0, then 1, then 2
+  console.log( i );
+  i++;
+}
+
+
+i = 3;
+while (i) { // when i becomes 0, the condition becomes falsy, and the loop stops
+  console.log( i );
+  i--;
+}
+
+
+i = 0;
+do {
+  console.log( i );
+  i++;
+} while (i <= 3);
+
+
+for (i = 0; i < 3; i++) { // shows 0, then 1, then 2
+  console.log(i);
+}
+
+
+outer: for (i = 0; i < 3; i++) {
+
+  for (let j = 0; j < 3; j++) {
+
+    let input = prompt(`Value at coords (${i},${j})`, '');
+
+    // if an empty string or canceled, then break out of both loops
+    if (!input) break outer; // (*)
+
+    // do something with the value...
+  }
+}
+alert('Done!');
+</script>
+ 
+</body>
+</html>

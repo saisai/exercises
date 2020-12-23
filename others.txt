@@ -10,3 +10,5 @@ https://javascript.info/size-and-scroll
 https://github.com/tiangolo/fastapi/blob/master/.github/actions/people/app/main.py
 
 https://fastapi.tiangolo.com/fastapi-people/
+
+https://pythoncircle.com/post/731/implementing-2fa-in-python-django-using-time-based-one-time-password-totp/

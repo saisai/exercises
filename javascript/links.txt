@@ -14,3 +14,6 @@ https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js
 
 
 https://stackoverflow.com/questions/2758651/how-to-change-height-div-on-window-resize
+
+
+https://lodash.com/
