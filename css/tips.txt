@@ -1,0 +1,10 @@
+disable label click
+
+https://stackoverflow.com/questions/35459918/disable-label-click-event
+
+label {
+    pointer-events:none;
+}
+
+http://dan.bodar.com/2017/03/08/how-to-disable-click-on-a-label-with-just-css/
+
