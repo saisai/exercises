@@ -1,0 +1,10 @@
+errors
+
+error: Your local changes to the following files would be overwritten by merge:
+
+https://stackoverflow.com/questions/23517464/error-cannot-pull-with-rebase-you-have-unstaged-changes/23517634
+
+
+https://stackoverflow.com/questions/14318234/how-do-i-ignore-an-error-on-git-pull-about-my-local-changes-would-be-overwritt
+
+https://stackoverflow.com/questions/21358872/git-cannot-rebase-because-of-uncommitted-changes
