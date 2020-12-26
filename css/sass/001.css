@@ -1,0 +1,13 @@
+.container {
+  width: 100%;
+}
+.container article[role=main] {
+  float: left;
+  width: 62.5%;
+}
+.container aside[role=complementary] {
+  float: right;
+  width: 31.25%;
+}
+
+/*# sourceMappingURL=001.css.map */

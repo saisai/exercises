@@ -1,0 +1,18 @@
+
+
+sass --watch 002.sass 001.css
+
+
+
+https://sass-lang.com/documentation/style-rules/declarations
+
+
+how to install
+
+https://github.com/coreybutler/nvm-windows
+
+install
+
+nvm install 14 64
+
+nvm install version arch[32|64]
