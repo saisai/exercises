@@ -1,0 +1,6 @@
+https://dom.spec.whatwg.org/#concept-node
+
+https://developer.mozilla.org/en-US/docs/Web/API/DOMParser
+
+https://gist.github.com/eligrey/1129031
+
