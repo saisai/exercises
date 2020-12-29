@@ -12,3 +12,6 @@ https://github.com/tiangolo/fastapi/blob/master/.github/actions/people/app/main.
 https://fastapi.tiangolo.com/fastapi-people/
 
 https://pythoncircle.com/post/731/implementing-2fa-in-python-django-using-time-based-one-time-password-totp/
+
+
+https://djangowaves.com/tips-tricks/how-to-reset-the-django-admin-password/
