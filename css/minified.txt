@@ -1,0 +1,23 @@
+
+npm install uglifycss -g
+
+https://www.npmjs.com/package/uglifycss
+
+https://github.com/fmarcia/uglifycss
+
+uglifycss file.css > file.min.css
+
+
+
+https://github.com/mishoo/UglifyJS/issues/1905
+
+https://www.npmjs.com/package/uglify-js
+
+uglifyjs file.js -cmo file.min.js --source-map url=file.min.js.map
+
+
+
+https://symfony.com/doc/3.3/frontend/assetic/uglifyjs.html
+
+
+https://blog.kevinchisholm.com/javascript/node-js/getting-started-with-the-uglify-js-node-js-module/
