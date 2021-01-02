@@ -1,0 +1,23 @@
+
+pip install celery
+pip install redis
+pip install sqlalchemy
+
+pacman -S redis
+
+sudo systemctl start redis
+
+https://dev.to/l_b_vasoya/celery-a-must-learn-technology-for-python-developers-48im
+
+https://riptutorial.com/celery/example/23628/celery-plus-redis
+
+
+https://stackoom.com/tag/python
+https://stackoom.com/question/34j0g/%E6%9D%A5%E8%87%AAUI%E7%9A%84%E6%B0%94%E6%B5%81%E8%BF%90%E8%A1%8C%E4%BB%BB%E5%8A%A1-KeyError-%E6%B2%A1%E6%9C%89%E8%BF%99%E6%A0%B7%E7%9A%84%E4%BC%A0%E8%BE%93
+
+https://www.coder.work/article/6195981
+
+https://riptutorial.com/celery/example/23628/celery-plus-redis
+https://codeburst.io/the-celery-python-guide-basics-examples-and-useful-tips-d8da1fcfaea3
+
+https://stackoverflow.com/questions/33063774/communication-from-an-injected-script-to-the-content-script-with-a-response
