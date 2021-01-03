@@ -1,0 +1,3 @@
+https://dave.cheney.net/2017/04/29/there-is-no-pass-by-reference-in-go
+
+https://stackoverflow.com/questions/2809543/pointer-to-a-map
