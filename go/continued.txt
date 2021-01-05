@@ -1,1 +1,1 @@
-https://tour.golang.org/methods/1
+https://tour.golang.org/methods/11
