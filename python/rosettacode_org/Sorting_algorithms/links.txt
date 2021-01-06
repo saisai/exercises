@@ -1,0 +1,1 @@
+http://rosettacode.org/wiki/Sorting_algorithms/Insertion_sort#Insertion_sort_with_binary_search
