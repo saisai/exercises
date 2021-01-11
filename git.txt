@@ -8,3 +8,19 @@ https://stackoverflow.com/questions/23517464/error-cannot-pull-with-rebase-you-h
 https://stackoverflow.com/questions/14318234/how-do-i-ignore-an-error-on-git-pull-about-my-local-changes-would-be-overwritt
 
 https://stackoverflow.com/questions/21358872/git-cannot-rebase-because-of-uncommitted-changes
+
+
+
+Chceck what is modifed and updated.
+git log --follow -p -- tests/signing/tests.py
+
+https://stackoverflow.com/questions/8048584/see-changes-to-a-specific-file-using-git
+
+
+git blame filename
+
+https://stackoverflow.com/questions/278192/view-the-change-history-of-a-file-using-git-versioning/5493663#5493663
+
+https://github.com/jianli/git-playback/tree/master/playback
+
+

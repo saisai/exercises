@@ -22,3 +22,12 @@ https://styria-digital.github.io/django-rest-framework-jwt/
 
 https://github.com/jpadilla/pyjwt
 https://jpadilla.github.io/django-rest-framework-jwt/
+
+
+curl -H "Authorization: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwiZXhwIjoxNjEwNjc1NjY4LCJlbWFpbCI6Im1vemFmZmFyQGFscGluZXRlY2guYml6Iiwib3JpZ19pYXQiOjE2MTAwNzA4Njh9.m9igEfvYFAJyIVQJT22bi1nYOCpOG4xQApjI1oO7fXQ" \ 
+	-H "Content-Type: application/json" \
+	110.80.38.74:8097/personnel/api/employees/
+
+
+
+    
