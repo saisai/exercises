@@ -1,0 +1,53 @@
+https://stackoverflow.com/questions/20794035/postgresql-warning-console-code-page-437-differs-from-windows-code-page-125
+
+http://blog.dscpl.com.au/2012/10/obligations-for-calling-close-on.html
+
+https://github.com/django/django/blob/8c3e0eb1c16abbcded3503b4ea3473b353520f61/django/http/response.py#L252
+
+
+
+
+def my_callback(sender, **kwargs):
+    print("Request finished!", sender, dir(sender))
+    #print("Request finished!", sender, dir(sender.request_class.GET))
+    print("Request finished!", sender, sender.get_response())
+
+
+from django.core.signals import request_finished
+
+request_finished.connect(my_callback)
+
+
+
+https://django-advanced-training.readthedocs.io/en/latest/features/signals/
+
+
+
+
+def log_request(sender, environ, **kwargs):
+    method = environ['REQUEST_METHOD']
+    host = environ['HTTP_HOST']
+    path = environ['PATH_INFO']
+    query = environ['QUERY_STRING']
+    query = '?' + query if query else ''
+    print('New Request -> {method} {host}{path}{query}'.format(
+        method=method,
+        host=host,
+        path=path,
+        query=query,
+    ))
+
+
+from django.core.signals import request_started
+
+request_started.connect(log_request)
+
+
+https://realpython.com/customize-django-admin-python/
+
+
+https://www.polidea.com/blog/whats-new-in-python-39-a-summary-of-new-features/
+
+https://deepsource.io/blog/new-python-web-frameworks/
+
+https://github.com/covid-19-au/covid-19-au.github.io/tree/prod/src
