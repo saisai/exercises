@@ -1,0 +1,4 @@
+beautifulsoup4==4.9.3
+PySocks==1.7.1
+requests==2.25.1
+ordered-set

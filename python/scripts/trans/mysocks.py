@@ -4,7 +4,7 @@ import re
 from bs4 import BeautifulSoup
 
 
-class Socks:
+class MySocks:
 
     RE_INT = re.compile(r'^[0-9]')
     
@@ -29,7 +29,7 @@ class Socks:
                 if td.find('font', attrs={'class': 'spy14'}) != None:
                     td_text = td.find('font', attrs={'class': 'spy14'}).get_text()
                     
-                    if Socks.RE_INT.match(td_text) != None:
+                    if MySocks.RE_INT.match(td_text) != None:
                         if '100%' in td_text or '-' in td_text:
                             continue
                         self.results.add(td_text)        
