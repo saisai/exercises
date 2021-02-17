@@ -1,0 +1,12 @@
+
+
+lines = words = characters = 0
+f = open('Downward_for.py', 'r')
+for eachline in f:
+    lines += 1
+    for eachword in eachline.split():
+        words += 1
+        for eachchar in eachword:
+            characters += 1
+
+print(lines, words, characters)
