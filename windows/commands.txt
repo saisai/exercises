@@ -2,3 +2,22 @@ sc delete Celery Distributed Task Queue Service
 
 sc create <servicename> binpath= "<pathtobinaryexecutable>" [option1] [option2] [optionN]
 sc create CeleryDistributedTaskQueueService binpath="C:\Python37\python.exe --D:\tmp_delete\django_celery_windows_service\services.py"
+
+
+How do I permanently set the PATH from a cmd shell?
+
+You need to use setx instead of set.
+
+Example:
+
+SetX PATH "c:\my dir;%PATH%"
+
+
+https://superuser.com/questions/1070872/permanently-setting-path-from-cmd-windows-8
+
+https://stackoverflow.com/questions/21289762/remove-unwanted-path-name-from-path-variable-via-batch
+http://johnatten.com/2014/12/07/adding-and-editing-path-environment-variables-in-windows/
+https://stackoverflow.com/questions/24219627/how-to-update-system-path-variable-permanently-from-cmd
+https://www.windows-commandline.com/set-path-command-line/
+http://www.dowdandassociates.com/blog/content/howto-set-an-environment-variable-in-windows-command-line-and-registry/
+https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/
