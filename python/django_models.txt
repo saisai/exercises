@@ -4,7 +4,7 @@ https://en.wikipedia.org/wiki/Class_diagram
 https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-class-diagram-tutorial/
 https://en.wikipedia.org/wiki/Class_diagram
 https://stackoverflow.com/questions/8103875/django-define-a-name-for-reverse-foreignkey
-
+https://sodocumentation.net/django/topic/2379/many-to-many-relationships
 
 
 

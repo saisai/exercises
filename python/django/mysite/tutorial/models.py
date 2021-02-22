@@ -120,5 +120,30 @@ class PersonShirt(models.Model):
         ('L', 'Large'),
     )
     name = models.CharField(max_length=60)
-    shirt_size = models.CharField(max_length=2, choices=SHIRT_SIZES)    
+    shirt_size = models.CharField(max_length=2, choices=SHIRT_SIZES)
+    
+    
+class PersonTest(models.Model):
+    name = models.CharField(max_length=50)
+    description = models.TextField()
+
+class Club(models.Model):
+    name = models.CharField(max_length=50)
+    members = models.ManyToManyField(PersonTest)    
+    
+    
+"""
+tom = PersonTest.objects.create(name="Tom", description="A nice guy")
+bill = PersonTest.objects.create(name="Bill", description="Good dancer")
+
+nightclub = Club.objects.create(name="The Saturday Night Club")
+nightclub.members.add(tom, bill)
+
+for person in nightclub.members.all():
+    print(person.name)
+    
+p = PersonTest.objects.get(pk=1)
+p.club_set.all()
+    
+"""    
         
