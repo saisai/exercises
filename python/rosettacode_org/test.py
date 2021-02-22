@@ -102,8 +102,61 @@ c(xShow)(yShow)[1]()
 
 
 
+# compose (<<<) :: (b -> c) -> (a -> b) -> a -> c
+def compose(g):
+    print(g)
+    '''Right to left function composition.'''
+    return lambda f: g(f)
+    #return lambda f: lambda x: g(f(x))
+    
+    
+#t = compose(len)(list)('abc')
+t = compose(len)('abc')
+print(t)
+
+def compose2(g):
+
+    def test(val):
+        return g(val)
+    return test 
+    
+tt = compose2(len)('abc')
+print(tt)
+
+tt3 = compose2(len)
+print(tt3('abc'))
 
 
+def compose3(g):
+    print(g)
+    '''Right to left function composition.'''
+    
+    #return lambda f: lambda x: g(f(x))
+    return lambda f: lambda x: g(f(x))
+    
+#               g   f      x    
+ttt = compose3(len)(list)(['a', 'b'])
+print(ttt)
+
+print('aa')
+
+def compose33(g):
+    print(g)
+    
+    def ff(ll):
+        print(ll)
+        def gg(x):
+            print(x)
+            #return ll(x)
+            return g(ll(x))
+        
+        return gg
+        
+    return ff
+
+ttt1 = compose33(len)(list)('abc')
+
+print(ttt1)
 """
 def xxShow(ss):
     return ss.upper()
