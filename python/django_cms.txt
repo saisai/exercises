@@ -1,0 +1,3 @@
+https://www.django-cms.org/en/get-started-django-cms/
+https://github.com/wagtail/wagtail
+https://github.com/stephenmcd/mezzanine/blob/master/mezzanine/urls.py
