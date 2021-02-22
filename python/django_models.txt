@@ -1,0 +1,7 @@
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Models
+https://docs.djangoproject.com/en/2.2/topics/db/models/
+
+https://creately.com/blog/diagrams/class-diagram-relationships/
+https://en.wikipedia.org/wiki/Class_diagram
+https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-class-diagram-tutorial/
+https://en.wikipedia.org/wiki/Class_diagram
