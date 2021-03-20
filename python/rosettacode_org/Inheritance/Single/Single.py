@@ -1,0 +1,16 @@
+# Unrevised style classes:
+
+class Animal:
+  pass #functions go here...
+ 
+class Dog(Animal):
+  pass #functions go here...
+ 
+class Cat(Animal):
+  pass #functions go here...
+ 
+class Lab(Dog):
+  pass #functions go here...
+ 
+class Collie(Dog):
+  pass #functions go here...
