@@ -1,0 +1,29 @@
+Create database 
+psql -h 127.0.0.1 -U postgres -p 7496 -c "create database quickstart2;"
+
+list users
+psql -h 127.0.0.1 -U postgres -p 7496 -c "\du+"
+psql -h 127.0.0.1 -U postgres -p 7496 -c "\du"
+
+list databases;
+psql -h 127.0.0.1 -U postgres -p 7496 -c "\l"
+
+
+Give database all privileges to admin  user
+psql -h 127.0.0.1 -U postgres -p 7496 -c "grant all privileges on database quickstart2 to admin;"
+
+
+list databases;
+psql -h 127.0.0.1 -U postgres -p 7496 -c "DROP DATABASE quickstart;"
+
+
+
+https://stackoverflow.com/questions/23639085/django-change-default-runserver-port
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Admin_site
+https://stackoverflow.com/questions/32532900/not-able-to-create-super-user-with-django-manage-py
+https://stackpython.medium.com/how-to-start-django-project-with-a-database-postgresql-aaa1d74659d8
+https://kb.objectrocket.com/postgresql/how-to-list-users-in-postgresql-782	
+https://www.postgresqltutorial.com/postgresql-list-users/
+https://stackoverflow.com/questions/22483555/postgresql-give-all-permissions-to-a-user-on-a-postgresql-database
+https://tableplus.com/blog/2018/04/postgresql-how-to-grant-access-to-users.html
+https://serverfault.com/questions/117834/determining-postgresqls-port

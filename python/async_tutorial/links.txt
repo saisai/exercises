@@ -1,0 +1,5 @@
+https://stackoverflow.com/questions/37278647/fire-and-forget-python-async-await/37345564#37345564
+https://stackoverflow.com/questions/50757497/simplest-async-await-example-possible-in-python
+https://stackabuse.com/python-async-await-tutorial/
+
+https://github.com/curlpipe
