@@ -6,3 +6,10 @@ https://gitlab.com/mailman/hyperkitty/-/tree/master/hyperkitty
 https://lists.fedorahosted.org/archives/
 
 https://docs.mailman3.org/projects/hyperkitty/en/latest/news.html
+
+
+psql -U postgres -h 127.0.0.1 -p 7496 -c "CREATE DATABASE tutorial;"
+
+
+winpty python manage.py createsuperuser
+winpty python manage.py startapp polls
