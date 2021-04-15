@@ -8,8 +8,23 @@ https://lists.fedorahosted.org/archives/
 https://docs.mailman3.org/projects/hyperkitty/en/latest/news.html
 
 
-psql -U postgres -h 127.0.0.1 -p 7496 -c "CREATE DATABASE tutorial;"
+
+
 
 
 winpty python manage.py createsuperuser
 winpty python manage.py startapp polls
+
+
+
+winpty python manage.py makemigrations polls
+python manage.py sqlmigrate polls 0001
+python manage.py migrate
+winpty python manage.py shell
+
+
+to run test 
+
+python manage.py test polls
+
+python -c "import django; print(django.__path__)"

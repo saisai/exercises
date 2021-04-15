@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block content %}
+
+  <table id="demo" lay-filter="test"></table>
+{% if latest_question_list %}
+    <ul>
+    {% for question in latest_question_list %}
+        <li><a href="/polls/{{ question.id }}/">{{ question.question_text }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+{% endblock %}
+
+{% block javascript %}
+layui.use('table', function(){
+  var table = layui.table;
+
+  //The first instance
+  table.render({
+    elem:'#demo'
+    ,height: 312
+    ,url:'/demo/table/user/' //Data interface
+    ,page: true //Open paging
+    ,cols: [[ //Header
+      {field:'id', title:'ID', width:80, sort: true, fixed:'left'}
+      ,{field:'username', title:'username', width:80}
+      ,{field:'sex', title:'sex', width:80, sort: true}
+      ,{field:'city', title:'city', width:80}
+      ,{field:'sign', title:'Signature', width: 177}
+      ,{field:'experience', title:'Integral', width: 80, sort: true}
+      ,{field:'score', title:'score', width: 80, sort: true}
+      ,{field:'classify', title:'Occupation', width: 80}
+      ,{field:'wealth', title:'wealth', width: 135, sort: true}
+    ]]
+  });
+
+});
+{% endblock %}
