@@ -14,14 +14,12 @@
     <!-- 头部区域（可配合layui已有的水平导航） -->
     <ul class="layui-nav layui-layout-left">
       <li class="layui-nav-item"><a href="{% url 'polls:index' %}">polls</a></li>
-      <li class="layui-nav-item"><a href="">hello</a></li>
-      <li class="layui-nav-item"><a href="">test</a></li>
       <li class="layui-nav-item">
-        <a href="javascript:;">test</a>
+        <a href="javascript:;">Weblog</a>
         <dl class="layui-nav-child">
-          <dd><a href="">test</a></dd>
-          <dd><a href="">test</a></dd>
-          <dd><a href="">test</a></dd>
+          <dd><a href="{% url 'weblog:index' %}">Blog</a></dd>
+          <dd><a href="">Author</a></dd>
+          <dd><a href="">Entry</a></dd>
         </dl>
       </li>
     </ul>
@@ -84,7 +82,15 @@
 </div>
 <script src="{% static 'layui/layui.js' %}"></script>
 
+
 <script>
+//Note: Navigation depends on the element module, otherwise functional operations cannot be performed
+layui.use('element', function(){
+  var element = layui.element;
+
+  //...
+});
+
   {% block javascript %}
   {% endblock %}
 

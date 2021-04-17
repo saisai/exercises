@@ -1,0 +1,3 @@
+https://github.com/miketheman/awesome-taglines#python
+
+https://docs.djangoproject.com/en/3.2/topics/db/queries/

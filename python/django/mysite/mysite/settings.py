@@ -37,9 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'tutorial',
+    'tutorial.apps.TutorialConfig',
     'polls.apps.PollsConfig',
-    
+    'weblog.apps.WeblogConfig',
+    'taggit',
+    'tests',
+    'rest_framework'
+
 ]
 
 MIDDLEWARE = [
