@@ -3,27 +3,97 @@
 
 <table id="demo" lay-filter="test"></table>
 
+ <script type="text/html" id="toolbarDemo">
+  <div class="layui-btn-container">
+    <button class="layui-btn layui-btn-sm" lay-event="add">Add</button>
+    <button class="layui-btn layui-btn-sm" lay-event="delete">Delete</button>
+    <button class="layui-btn layui-btn-sm" lay-event="update">Edit</button>
+  </div>
+</script>
+
+<script type="text/html" id="barDemo">
+<a class="layui-btn layui-btn-xs" lay-event="detail">View</a>
+<a class="layui-btn layui-btn-xs" lay-event="edit">Edit</a>
+<a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">Delete</a>
+</script>
+
 {% endblock %}
 
 {% block javascript %}
-layui.use('table', function(){
-  var table = layui.table;
+layui.use(['table', 'layer'], function(){
+  var table = layui.table,
+      layer = layui.layer;
 
   //The first instance
   table.render({
     elem:'#demo'
+   ,toolbar:'#toolbarDemo'
     ,height: 500
     ,url:'/weblog/weblog_test/' //Data interface
     ,page: true //Open paging
     ,limit: 10
     ,totalRow: true //开启合计行
     ,cols: [[ //Header
+      {type: 'checkbox', fixed: 'left'},
       {field:'id', title:'ID', width:80, sort: true, fixed:'left'}
       ,{field:'name', title:'name', width:200}
-      ,{field:'tagline', title:'tagline', width:1000, sort: true}
-
+      ,{field:'tagline', title:'tagline', width:950, sort: true}
+      ,{fixed:'right', width:200, align:'center', toolbar:'#barDemo'}
     ]]
+    ,defaultToolbar: ['filter','print','exports', {
+    title:'tip' //title
+    ,layEvent:'LAYTABLE_TIPS' //Event name, used in toolbar events
+    ,icon:'layui-icon-tips' //icon class name
+  }]
+
   });
+
+
+  table.on('tool(test)', function(obj) {
+
+  var data = obj.data;
+  var layEvent = obj.event;
+  var tr = obj.tr;
+
+  //alert(JSON.stringify(data));
+  //alert(data.id);
+  alert(layEvent);
+  alert(tr);
+  alert(JSON.stringify(tr));
+
+  });
+
+  table.on('toolbar(test)', function(obj){
+
+  //var layEvent = obj.event;
+  //alert(layEvent);
+
+  var checkStatus = table.checkStatus(obj.config.id);
+  switch(obj.event){
+    case'add':
+      layer.msg('Add');
+    break;
+    case'delete':
+      layer.msg('Delete');
+      var data = checkStatus.data;
+      layer.alert(JSON.stringify(data));
+    break;
+    case'update':
+      layer.msg('Edit');
+    break;
+    case'LAYTABLE_TIPS':
+      layer.msg('LAYTABLE_TIPS');
+    break;
+  };
+
+
+
+});
+
+
+
+
+
 
 });
 {% endblock %}

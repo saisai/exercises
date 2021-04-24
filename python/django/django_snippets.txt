@@ -1,0 +1,5 @@
+#Get all fields of Model
+
+map(lambda field:field.name, ModelName._meta.get_fields())
+
+https://stackoverflow.com/questions/3106295/django-get-list-of-model-fields

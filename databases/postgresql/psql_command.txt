@@ -1,0 +1,41 @@
+# Backup database 
+pg_dump -h 127.0.0.1 -c -p 7496 -U postgres dbname > testbackup.sql
+
+# To restore database 
+psql -h localhost -p 7496 -U postgres -d dbname -f testbackup.sql
+
+# list database
+psql -U postgres -h localhost -p 7496 -c "\l"
+
+
+# list talbe of database 
+psql -U postgres -d dbname -h localhost -p 7496 -c "\dt"
+
+# Drop database 
+psql -h  127.0.0.1 -U postgres -p 7496 -c 'DROP DATABASE IF EXISTS dbname;'
+
+# list users 
+psql -U postgres -h localhost -p 7496 -c "\du"
+psql -U postgres -h localhost -p 7496 -c "\du+"
+
+# create new user 
+psql -U postgres -h localhost -p 7496 -c "CREATE USER username WITH PASSWORD 'password';"
+psql -U postgres -h localhost -p 7496 -c "CREATE USER username WITH ENCRYPTED PASSWORD 'password';"
+
+
+# Give database all privileges to user
+psql -h localhost -p 7496 -U postgres -d dbname -c "GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO username;"
+
+# create database
+psql -U postgres -h localhost -p 7496 -c "CREATE DATABASE dbname;"
+
+#To reset the password
+psql -U postgres -h localhost -p 7496 -c "ALTER USER user_name WITH PASSWORD 'new_password';"
+
+
+
+# https://stackoverflow.com/questions/12720967/postgresql-how-to-change-postgresql-user-password
+# https://www.postgresqltutorial.com/postgresql-list-users/
+# https://stackoverflow.com/questions/3327312/how-can-i-drop-all-the-tables-in-a-postgresql-database
+# https://kb.objectrocket.com/postgresql/how-to-list-users-in-postgresql-829
+
