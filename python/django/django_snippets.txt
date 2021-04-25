@@ -3,3 +3,20 @@
 map(lambda field:field.name, ModelName._meta.get_fields())
 
 https://stackoverflow.com/questions/3106295/django-get-list-of-model-fields
+
+
+# Delete Model 
+
+obj = User.objects.all()
+
+while obj.count() > 9:
+	obj.first().delete()
+
+while obj.count() > 9:
+	obj.last().delete()
+	
+while obj.count() > 9:
+	mid = obj.count() // 2
+	obj[mid].delete()
+	
+	

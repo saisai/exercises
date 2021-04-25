@@ -41,4 +41,28 @@ https://linuxize.com/post/how-to-exclude-files-and-directories-with-rsync/
 https://phoenixnap.com/kb/rsync-exclude-files-and-directories
 https://waymoot.org/home/python_string/
 
+https://stackoverflow.com/questions/5004233/jquery-ajax-post-example-with-php
+https://stackoverflow.com/questions/950673/jquery-post-array
+https://www.valentinog.com/blog/drf-request/
+https://stackoverflow.com/questions/12101658/how-to-get-an-array-in-django-posted-via-ajax
+
+
+How to get an array in Django posted via Ajax
+
+You're looking for the QueryDict's getlist
+
+request.GET.getlist('data')
+request.GET.getlist('data[]')
+request.GET.getlist('etc')
+
+request.POST.getlist('data[]')
+
+https://stackoverflow.com/questions/12101658/how-to-get-an-array-in-django-posted-via-ajax
+
+https://blog.csdn.net/weixin_44134144/article/details/107292985
+https://developer.aliyun.com/article/340045
+https://www.programmersought.com/article/15862883288/
+https://www.django-rest-framework.org/topics/html-and-forms/
+https://django-rest-swagger.readthedocs.io/en/latest/schema/
+
 

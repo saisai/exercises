@@ -6,7 +6,9 @@ from django.core import serializers
 
 
 from rest_framework.response import Response
-from rest_framework.decorators import api_view
+from rest_framework.decorators import api_view, renderer_classes
+from rest_framework.renderers import TemplateHTMLRenderer
+
 from rest_framework import status
 
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
@@ -80,3 +82,9 @@ def author_delete(request):
         Author.objects.filter(pk=id).delete()
 
     return Response({'success': True})
+
+@api_view(['GET', 'POST'])
+@renderer_classes([TemplateHTMLRenderer])
+def author_add(request):
+    print('add')
+    return Response(template_name='weblog/add_author.html')

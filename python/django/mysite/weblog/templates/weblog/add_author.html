@@ -1,0 +1,20 @@
+<form class="layui-form layui-form-pane1" action="" lay-filter="first">
+  <div class="layui-form-item">
+    <label class="layui-form-label">Name</label>
+    <div class="layui-input-block">
+      <input type="text" name="title" lay-verify="required|title" lay-reqText="name required" required placeholder="Name" autocomplete="off" class="layui-input" >
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label">Email</label>
+    <div class="layui-input-block">
+      <input type="email" name="email" lay-verify="email"  lay-verType="alert" autocomplete="off" class="layui-input">
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <div class="layui-input-block">
+      <button class="layui-btn" lay-submit lay-filter="*">Add</button>
+      <button type="reset" class="layui-btn layui-btn-primary">Cancel</button>
+    </div>
+  </div>
+</form>

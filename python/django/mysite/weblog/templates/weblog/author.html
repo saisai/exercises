@@ -93,7 +93,22 @@ layui.use(['layer','table'], function(){
 
   switch(obj.event){
     case'add':
-      layer.msg('Add');
+
+
+    $.get('/weblog/author_add/',function(data){
+
+          layer.open({
+              title:'Audit',
+              type: 1,
+              skin: 'layui-layer-rim', // add borders
+              //area: ['800px','600px'], //Width Height
+               area: ['auto','auto'], //Width Height
+              content: data,
+          });
+      })
+
+
+
     break;
     case'delete':
       //layer.msg('Delete');
