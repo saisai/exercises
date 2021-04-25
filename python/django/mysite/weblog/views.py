@@ -12,7 +12,7 @@ from rest_framework import status
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 
-from .models import Blog
+from .models import Blog, Author
 from .serializers import *
 
 def index(request):
@@ -21,11 +21,6 @@ def index(request):
 
 @api_view(['GET', 'POST'])
 def weblog_test(request):
-    obj = Blog.objects.all().values()
-
-    data = []
-    nextPage = 1
-    previousPage = 1
 
     items = Blog.objects.all().order_by('id')
     page = request.GET.get('page', 1)
@@ -40,14 +35,6 @@ def weblog_test(request):
 
     serializer = BlogSerializer(data, context={'request': request}, many=True)
 
-    """
-    context = {'data': serializer.data , 
-                'count': paginator.count,
-                'count': data.number,
-               'numpages' : paginator.num_pages, 
-
-               }
-    """
     context = {'data': serializer.data,
                'count': paginator.count,
                'msg': '',
@@ -57,32 +44,39 @@ def weblog_test(request):
 
     return Response(context)
 
-    """
-    qs_json = serializers.serialize('json', obj)
 
-    print(type(qs_json))
+def author(request):
+    context = {}
+    return render(request, 'weblog/author.html', context=context)
 
-    to_json = json.loads(qs_json)
+@api_view(['GET', 'POST'])
+def author_test(request):
+    items = Author.objects.all().order_by('id')
+    page = request.GET.get('page', 1)
+    limit = request.GET.get('limit', 10)
+    paginator = Paginator(items, limit)
+    try:
+        data = paginator.page(page)
+    except PageNotAnInteger:
+        data = paginator.page(1)
+    except EmptyPage:
+        data = paginator.page(paginator.num_pages)
 
-    print(type(to_json))
-    print(to_json[0].get('fields'))
-    print(type(to_json[0].get('fields')))
-    print(qs_json)
-    
-    #print(obj)
-    
-    json_obj = []
-    for result in obj:
-        #print(result)
-        json_obj.append(result)
-    context = {
-        'code': 0,
-        'msg': "",
-        'count': obj.count(),
-        'data': json_obj
-    }
+    serializer = AuthorSerializer(data, context={'request': request}, many=True)
 
+    context = {'data': serializer.data,
+               'count': paginator.count,
+               'msg': '',
+               'code': 0,
+               }
+    return Response(context)
 
+@api_view(['GET', 'POST'])
+def author_delete(request):
+    #print(request.data)
+    ids = list(map(int, request.POST.getlist('id[]') ))
 
-    return JsonResponse(context, content_type='application/json')
-    """
+    for id in ids:
+        Author.objects.filter(pk=id).delete()
+
+    return Response({'success': True})

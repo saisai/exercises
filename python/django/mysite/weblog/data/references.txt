@@ -1,3 +1,7 @@
 https://github.com/miketheman/awesome-taglines#python
 
 https://docs.djangoproject.com/en/3.2/topics/db/queries/
+
+https://stackoverflow.com/questions/18227209/how-can-i-get-the-first-and-third-td-from-a-table-with-beautifulsoup
+https://en.wikipedia.org/wiki/List_of_best-selling_fiction_authors
+https://en.wikipedia.org/wiki/List_of_historical_novelists

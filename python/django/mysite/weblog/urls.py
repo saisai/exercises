@@ -7,4 +7,7 @@ app_name = 'weblog'
 urlpatterns = [
     path('', views.index, name='index'),
     path('weblog_test/', views.weblog_test, name='weblog_test'),
+    path('author/', views.author, name='author'),
+    path('author_test/', views.author_test, name='author_test'),
+    path('author_delete/', views.author_delete, name='author_delete'),
 ]
