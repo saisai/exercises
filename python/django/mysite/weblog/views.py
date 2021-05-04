@@ -2,7 +2,10 @@ import json
 
 from django.shortcuts import render
 from django.http import JsonResponse
-from django.core import serializers
+from django.views.decorators.csrf import csrf_exempt
+from django.http import HttpResponse, JsonResponse
+from rest_framework.parsers import JSONParser
+
 
 
 from rest_framework.response import Response
@@ -86,5 +89,37 @@ def author_delete(request):
 @api_view(['GET', 'POST'])
 @renderer_classes([TemplateHTMLRenderer])
 def author_add(request):
-    print('add')
-    return Response(template_name='weblog/add_author.html')
+    if request.method == 'GET':
+        print('add')
+        return Response(template_name='weblog/add_author.html')
+    elif request.method == 'POST':
+        data = JSONParser().parse(request)
+        serializer = serializers.AuthorSerializer(data=data)
+        if serializer.is_valid():
+            serializer.save()
+            return JsonResponse(serializer.data, status=200)
+        return JsonResponse(serializer.data, status=400)
+
+@csrf_exempt
+@api_view(['GET', 'POST'])
+def add_author(request):
+    if request.method == 'GET':
+        print('get')
+    elif request.method == 'POST':
+        print('post', request)
+        print(request.POST)
+        print(request.data)
+        print(request.POST)
+        #data = JSONParser().parse(request)
+        #print(data)
+        serializer = AuthorSerializer(data=request.POST)
+        print(serializer)
+        if serializer.is_valid():
+            print('valid')
+            serializer.save()
+            data_response = {'status': "success", 'msg':'Success'}
+            return JsonResponse(data_response, status=200)
+            #return JsonResponse(serializer.data, status=200)
+        #return JsonResponse(serializer.data, status=400)
+        data_response = {'status': "error", 'msg': 'Error'}
+        return JsonResponse(serializer.data, status=400)

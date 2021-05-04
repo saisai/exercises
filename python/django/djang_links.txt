@@ -65,4 +65,16 @@ https://www.programmersought.com/article/15862883288/
 https://www.django-rest-framework.org/topics/html-and-forms/
 https://django-rest-swagger.readthedocs.io/en/latest/schema/
 
+https://blog.csdn.net/qq_16024861/article/details/81449703
+https://blog.csdn.net/qq7758521fang/article/details/80348646
+
+https://bezkoder.com/django-rest-api/
+
+https://stackoverflow.com/questions/41448841/how-to-make-a-post-request-using-django-rest-framework-with-ajax
+https://blog.csdn.net/cai4561/article/details/105552069
+https://www.programmersought.com/article/15862883288/
+https://www.layuicdn.com/jie/2020-05-13/66577.html
+https://www.obeythetestinggoat.com/book/appendix_rest_api.html
+https://stackoverflow.com/questions/38758962/how-to-append-extra-data-to-the-existing-serializer-in-django
+
 

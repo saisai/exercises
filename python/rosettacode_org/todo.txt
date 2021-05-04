@@ -1,0 +1,12 @@
+http://rosettacode.org/wiki/Ternary_logic#Python
+http://rosettacode.org/wiki/Boolean_values
+http://rosettacode.org/wiki/Logical_operations
+http://rosettacode.org/wiki/Truth_table#Python
+http://rosettacode.org/wiki/Tonelli-Shanks_algorithm#Python
+http://rosettacode.org/wiki/Trigonometric_functions#Python
+http://rosettacode.org/wiki/Tree_from_nesting_levels#Python
+http://rosettacode.org/wiki/2048#Python:_Original.2C_with_output
+http://rosettacode.org/wiki/100_prisoners#Procedural
+http://rosettacode.org/wiki/Imaginary_base_numbers#Python
+http://rosettacode.org/wiki/Averages/Arithmetic_mean#Python
+http://rosettacode.org/wiki/Weird_numbers#Functional_2

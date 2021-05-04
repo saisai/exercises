@@ -1,0 +1,5 @@
+from django.core.management import *
+
+call_command('shell')
+call_command('migrate')
+get_commands() # get all commands from django like migrate, shell related apps

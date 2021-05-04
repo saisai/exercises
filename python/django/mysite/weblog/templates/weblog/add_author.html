@@ -1,8 +1,10 @@
-<form class="layui-form layui-form-pane1" action="" lay-filter="first">
+<div style="width:500px; height: 300px;">
+  <form class="layui-form layui-form-pane1" action="" lay-filter="first">
+  {% csrf_token %}
   <div class="layui-form-item">
     <label class="layui-form-label">Name</label>
     <div class="layui-input-block">
-      <input type="text" name="title" lay-verify="required|title" lay-reqText="name required" required placeholder="Name" autocomplete="off" class="layui-input" >
+      <input type="text" name="name" lay-verify="required|title" lay-reqText="name required" required placeholder="Name" autocomplete="off" class="layui-input" >
     </div>
   </div>
   <div class="layui-form-item">
@@ -13,8 +15,54 @@
   </div>
   <div class="layui-form-item">
     <div class="layui-input-block">
-      <button class="layui-btn" lay-submit lay-filter="*">Add</button>
+      <button class="layui-btn" lay-submit lay-filter="addAuthor">Add</button>
       <button type="reset" class="layui-btn layui-btn-primary">Cancel</button>
     </div>
   </div>
 </form>
+</div>
+<script>
+//Demo
+layui.use('form', function(){
+  var $ = layui.jquery;
+  var form = layui.form;
+  form.render();
+
+  form.on('submit(addAuthor)', function(data){
+    var userInfo = data.field;
+    //alert(typeof userInfo);
+    var url = "/weblog/add_author/";
+    $.ajax({
+        url:url,
+        type:'post',
+        data:userInfo,
+        //dataType:"html",
+        dataType:"json",
+        //contentType: "application/json",
+        beforeSend:function (xhr, settings) {
+           xhr.setRequestHeader("X-CSRFToken", '{{ csrf_token }}');
+            this.layerIndex = layer.load(0, { shade: [0.5, '#393D49'] });
+        },
+        success:function(data){
+            if(data.status == 'error'){
+                layer.msg(data.msg,{icon: 5});//失败的表情
+                return;
+            }else if(data.status == 'success'){
+                layer.msg(data.msg, {
+                    icon: 6,//成功的表情
+                    time: 1000 //1秒关闭（如果不配置，默认是3秒）
+                }, function(){
+                    location.reload();
+                });
+            }
+        },
+        complete: function () {
+            layer.close(this.layerIndex);
+        },
+    });
+    return false;//阻止表单跳转
+});
+
+
+});
+</script>
