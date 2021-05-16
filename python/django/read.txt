@@ -28,3 +28,24 @@ to run test
 python manage.py test polls
 
 python -c "import django; print(django.__path__)"
+
+
+
+
+https://stackoverflow.com/questions/4111244/get-a-list-of-all-installed-applications-in-django-and-their-attributes/4112290	
+
+https://stackoverflow.com/questions/4111244/get-a-list-of-all-installed-applications-in-django-and-their-attributes
+
+https://stackoverflow.com/questions/13309203/how-can-i-get-all-sequences-bound-with-a-table-in-postgresql
+https://stackoverflow.com/questions/11905868/check-if-sequence-exists-in-postgres-plpgsql
+https://www.postgresqltutorial.com/postgresql-sequences/
+https://askubuntu.com/questions/1108015/anydesk-stuck-on-the-client-computer-ubuntu-18-04#:~:text=When%20your%20anydesk%20stuck%20on,to%20anydesk%20again%20as%20usual.
+https://stackoverflow.com/questions/37057643/postgresql-starting-a-sequence-at-maxthe-column1
+https://stackoverflow.com/questions/9091781/why-are-sequences-not-updated-when-copy-is-performed-in-postgresql
+https://www.postgresql.org/docs/10/sql-altersequence.html
+https://stackoverflow.com/questions/109325/postgresql-describe-table
+https://github.com/getsentry/sentry/issues/5232
+https://stackoverflow.com/questions/11089850/integrityerror-duplicate-key-value-violates-unique-constraint-django-postgres
+https://rome.tools/
+https://dba.stackexchange.com/questions/193568/how-to-fix-all-duplicate-key-value-violates-unique-constraint
+https://dba.stackexchange.com/questions/232085/why-am-i-getting-error-duplicate-key-value-violates-unique-constraint-movies-p

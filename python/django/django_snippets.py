@@ -4,6 +4,17 @@ import django
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mysite.settings")
 django.setup()
 
+
+# django get all apps name 
+def get_all_apps_name():
+    from django.conf import settings
+    for i in [app.split('.')[-1] for app in settings.INSTALLED_APPS]:
+        print('aaa {}'.format(i))
+        
+    #python manage.py sqlsequencereset appname   
+
+
+
 # get all models with app name
 def get_all_models():
     from django.apps import apps
