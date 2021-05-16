@@ -10,3 +10,6 @@ http://rosettacode.org/wiki/100_prisoners#Procedural
 http://rosettacode.org/wiki/Imaginary_base_numbers#Python
 http://rosettacode.org/wiki/Averages/Arithmetic_mean#Python
 http://rosettacode.org/wiki/Weird_numbers#Functional_2
+http://rosettacode.org/wiki/I_before_E_except_after_C#Python:_Stretch_Goal
+http://rosettacode.org/wiki/Merge_and_aggregate_datasets#Python:_Using_pandas_library
+http://rosettacode.org/wiki/Determine_if_a_string_is_numeric#Python:_Simple_int.2Ffloat
