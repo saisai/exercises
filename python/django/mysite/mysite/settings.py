@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'tutorial.apps.TutorialConfig',
     'polls.apps.PollsConfig',
     'weblog.apps.WeblogConfig',
+    'customfield.apps.CustomfieldConfig',
     'taggit',
     'tests',
     'rest_framework'
@@ -84,8 +85,8 @@ DATABASES = {
    'default' : {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'tutorial',
-        'USER': 'admin',
-        'PASSWORD': 'admin',
+        'USER': 'postgres',
+        'PASSWORD': '',
         'HOST': '127.0.0.1',
         'PORT': '7496',
         },
