@@ -13,5 +13,8 @@ http://rosettacode.org/wiki/Weird_numbers#Functional_2
 http://rosettacode.org/wiki/I_before_E_except_after_C#Python:_Stretch_Goal
 http://rosettacode.org/wiki/Merge_and_aggregate_datasets#Python:_Using_pandas_library
 http://rosettacode.org/wiki/Determine_if_a_string_is_numeric#Python:_Simple_int.2Ffloat
+http://rosettacode.org/wiki/Number_reversal_game#Python
 
 http://rosettacode.org/wiki/Partition_an_integer_x_into_n_primes#Python
+
+http://rosettacode.org/wiki/Substring/Top_and_tail#Python
