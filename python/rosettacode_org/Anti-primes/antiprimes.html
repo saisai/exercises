@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+              <meta charset="UTF-8" />
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+                          <script src="antiprimes.js"></script>
+                              <title>Anti-Primes</title>
+                                  <style>
+      body {padding: 50px;width: 50%;box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25);margin: 15px auto;font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;letter-spacing: 1px;}
+            a {color: #00aadd;text-decoration: none;}
+                  input {width: 50px;text-align: center;}
+                        ul {list-style: none;padding: 0;margin: 0;width: 25%;margin: auto;border: 1px solid #aaa;}
+                              li {text-align: center;background-color: #eaeaea;}
+                                    li:nth-child(even) {background: #fff;}
+                                        </style>
+                                          </head>
+                                            <body onload="go()">
+                                                    <h1>Anti-Primes</h1>
+                                                        <div class="info">
+                                                                  The <a href="https://youtu.be/2JM2oImb9Qg">anti-primes</a> (or
+                                                                        <a href="https://en.wikipedia.org/wiki/Highly_composite_number">highly composite numbers</a>, sequence
+                                                                              <a href="https://oeis.org/A002182">A002182</a> in the <a href="https://oeis.org/">OEIS</a>) are the natural numbers with more factors than any
+                                                                                    smaller than itself.
+                                                                                        </div>
+                                                                                            <p>Generate first <input id="n" type="text" placeholder="Enter the number" value="20" /> anti-primes. <button onclick="go()">Go</button></p>
+                                                                                                <ul id="result-list"></ul>
+                                                                                                  </body>
+</html>
