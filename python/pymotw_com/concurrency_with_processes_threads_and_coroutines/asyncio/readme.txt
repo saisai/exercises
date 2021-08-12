@@ -1,1 +1,1 @@
-https://pymotw.com/3/asyncio/control.html
+https://pymotw.com/3/asyncio/synchronization.html
