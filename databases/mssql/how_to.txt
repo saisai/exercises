@@ -1,0 +1,12 @@
+SQL Server Configuration Manager
+Ctrl + R and enter
+SQLServerManager14.msc
+
+
+https://www.papercut.com/support/resources/manuals/ng-mf/common/topics/ext-db-specific-ms-sql-express.html
+
+https://docs.oracle.com/cd/E24628_01/install.121/e35211/authentication.htm#SQLPG137
+https://stackoverflow.com/questions/34543581/i-want-to-create-password-or-login-for-sql-server-2008-r2-databases
+https://www.thoughtco.com/creating-sql-server-2008-database-account-1019857
+https://techcommunity.microsoft.com/t5/sql-server/introducing-utf-8-support-for-sql-server/ba-p/734928
+https://www.mssqltips.com/sqlservertip/6168/impact-of-utf8-support-in-sql-server-2019/
