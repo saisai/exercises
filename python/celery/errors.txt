@@ -1,0 +1,6 @@
+Celery randomly stops running tasks without any errors
+
+Inspect celery
+	python -m celery -A mysite inspect active
+	
+# https://github.com/celery/celery/issues/2088
