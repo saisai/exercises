@@ -1,0 +1,2 @@
+https://stackoverflow.com/questions/2161991/how-to-remove-current-row-from-table-in-jquery
+https://getbootstrap.com/docs/5.0/components/buttons/
