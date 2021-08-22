@@ -1,0 +1,5 @@
+Remove first 1 minute
+
+ffmpeg -i input.flv -ss 01:00 -vcodec copy -acodec copy output.flv
+
+pacman -S mingw-w64-x86_64-ffmpeg

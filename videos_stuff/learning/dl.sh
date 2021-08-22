@@ -1,0 +1,1 @@
+youtube-dl -v -o "%(playlist_index)s-%(title)s.%(ext)s" https://m.youtube.com/playlist?list=PLTjRvDozrdlxEIuOBZkMAK5uiqp8rHUax
