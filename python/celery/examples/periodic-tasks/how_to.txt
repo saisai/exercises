@@ -1,4 +1,9 @@
 python -m celery -A myapp worker -l INFO --concurrency=2 -n worker1@%h
 python -m celery -A myapp worker -l INFO
 
+or
+
+python -m celery -A myapp worker -P gevent -c 1 -l info
+python -m celery -A myapp worker -P eventlet -c 1 -l info
+
 python -m celery -A myapp beat -l INFO
