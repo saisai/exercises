@@ -7,7 +7,7 @@ https://stackoverflow.com/questions/3106295/django-get-list-of-model-fields
 
 # Delete Model 
 
-obj = User.objects.all()
+obj = ModelName.objects.all()
 
 while obj.count() > 9:
 	obj.first().delete()
@@ -19,4 +19,11 @@ while obj.count() > 9:
 	mid = obj.count() // 2
 	obj[mid].delete()
 	
+# django get all related of models	
+[
+	f for f in ModelName._meta.get_fields()
+	if (f.one_to_many or f.one_to_one)
+	   and f.auto_created and not f.concrete
+]
 	
+# https://stackoverflow.com/questions/2233883/get-all-related-django-model-objects

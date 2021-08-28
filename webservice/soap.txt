@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <add xmlns="http://localhost:8080/Calculator/soap/">
+      <a>500</a>
+      <b>500</b>
+    </add>
+  </soap:Body>
+</soap:Envelope>
+
+
+http://localhost:8080/AlbumService/soap/
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <m:listAlbums xmlns:m="http://localhost:8080/AlbumService/soap/">
+      <m:search_frase></m:search_frase>
+    </m:listAlbums>
+  </soap:Body>
+</soap:Envelope>
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <m:listBands xmlns:m="http://localhost:8080/AlbumService/soap/">
+      <m:search_frase></m:search_frase>
+    </m:listBands>
+  </soap:Body>
+</soap:Envelope>
+
+http://localhost:8080/ShopService/soap/
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <m:addToBasket xmlns:m="http://localhost:8080/ShopService/soap/">
+      <m:glist></m:glist>
+    </m:addToBasket>
+  </soap:Body>
+</soap:Envelope>
+
+http://localhost:8080/TaskService/soap/
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <m:thrTaskExample xmlns:m="http://localhost:8080/TaskService/soap/">
+      <m:counter>10</m:counter>     
+    </m:thrTaskExample>
+  </soap:Body>
+</soap:Envelope>
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <m:lengthyCall xmlns:m="http://localhost:8080/TaskService/soap/">
+         
+    </m:lengthyCall>
+  </soap:Body>
+</soap:Envelope>
+
+https://learning.postman.com/docs/sending-requests/supported-api-frameworks/making-soap-requests/
+https://swimlane.com/blog/understanding-apis-soap/
+https://www.youtube.com/watch?v=bv423HnF4go&list=PLFD1020FE0CB288FC&index=2
+https://ladon.readthedocs.io/en/latest/#ex-1
+https://ladon.readthedocs.io/en/latest/tasks.html
+https://bitbucket.org/jakobsg/ladon/src/master/
+https://bitbucket.org/jakobsg/pshook/src/master/pshook/wrapper.py
+https://ladon.readthedocs.io/en/latest/index.html
+
+https://gist.github.com/diyan/051db91618854db3f7bf
+https://doughellmann.com/posts/evaluating-tools-for-developing-with-soap-in-python/
+https://www.w3.org/TR/2000/NOTE-SOAP-20000508/#_Toc478383494
+https://gist.github.com/subfuzion/08c5d85437d5d4f00e58
+
+
+python runserver.py
+
+https://stoplight.io/api-types/soap-api/
+https://docs.python-zeep.org/en/master/headers.html
+https://webkul.com/blog/python-soap-clients-with-zeep/
+https://snyk.io/vuln/pip:ladon
+
+https://github.com/k8gege/Ladon
