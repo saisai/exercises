@@ -1,1 +1,1 @@
-https://pymotw.com/3/asyncio/synchronization.html
+https://pymotw.com/3/asyncio/io_protocol.html

@@ -1,0 +1,2 @@
+https://arrow.readthedocs.io/en/latest/
+https://github.com/arrow-py/arrow
