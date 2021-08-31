@@ -1,0 +1,3 @@
+https://docs.scipy.org/doc/
+https://www.w3schools.com/python/scipy/scipy_constants.php
+
