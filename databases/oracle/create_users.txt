@@ -1,0 +1,49 @@
+sqlplus -l system/XXXX@localhost/xepdb1
+
+CREATE USER demopython IDENTIFIED BY demopython;
+
+alter user demopython
+    default tablespace users
+    temporary tablespace temp
+    quota unlimited on users;
+	
+grant create session,
+    create view,
+    create sequence,
+    create procedure,
+    create table,
+    create trigger,
+    create type,
+    create materialized view
+    to demopython;	
+	
+	
+https://www.oracle.com/database/technologies/appdev/python/quickstartpythononprem.html#copy
+# https://www.oracle.com/database/technologies/appdev/python/quickstartpythononprem.html#copy
+
+
+https://stackoverflow.com/questions/205736/get-list-of-all-tables-in-oracle
+
+SELECT owner, table_name
+  FROM dba_tables
+  
+SELECT owner, table_name
+  FROM all_tables
+
+SELECT table_name
+FROM user_tables
+
+
+to import database 
+@C:\oracle\databasel.sql
+
+https://chartio.com/resources/tutorials/how-to-list-all-tables-in-oracle/
+
+
+https://www.oracle.com/database/technologies/instant-client/winx64-64-downloads.html
+
+https://cx-oracle.readthedocs.io/en/latest/user_guide/initialization.html#using-cx-oracle-init-oracle-client-to-set-the-oracle-client-directory
+https://cx-oracle.readthedocs.io/en/latest/user_guide/installation.html
+
+https://chartio.com/resources/tutorials/how-to-create-a-user-and-grant-permissions-in-oracle/
+http://www.dba-oracle.com/t_ora_02291_integrity_constraint_string_string_violated_parent_key_not_found.htm

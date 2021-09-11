@@ -1,0 +1,7 @@
+https://newbedev.com/deleting-all-pending-tasks-in-celery-rabbitmq
+
+python -m celery -Q queue_name purge
+
+https://stackoverflow.com/questions/7149074/deleting-all-pending-tasks-in-celery-rabbitmq
+
+https://www.allareacodes.com/area-code-list.htm

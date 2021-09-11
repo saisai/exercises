@@ -1,0 +1,42 @@
+Connecting to Oracle Database XE
+Connecting Locally using OS Authentication
+	cd <oracle_home>\bin
+	sqlplus / as sysdba
+
+The Net Services Listener and Default Services
+	cd <oracle_home>\bin
+	lsnrctl status
+
+Deinstalling Oracle Database XE
+
+	msiexec /x {C220B7FD-3095-47FC-A0C0-AE49DE6E320A}
+Deinstalling Using Silent Mode
+	c:\xe_temp> setup.exe /s /x /v"/qn /Lv c:\test1.log"
+	
+If you do not have the downloaded software (setup.exe) you can deinstall using:
+msiexec /qn /x {C220B7FD-3095-47FC-A0C0-AE49DE6E320A}
+
+https://docs.oracle.com/en/database/oracle/oracle-database/18/xeinw/deinstalling-oracle-database-xe.html#GUID-5983B892-FB59-4444-A644-2D06AE9F21B0
+
+
+
+SYS, SYSTEM, PDBADMIN
+root
+
+ALTER USER SYS IDENTIFIED BY sys; 
+ALTER USER SYSTEM IDENTIFIED BY system;
+
+oracle 11g
+
+global database name: orcl
+administrative password: root
+
+
+sqlplus django/django@localhost:1521/XEPDB1
+sqlplus system/root@localhost:1521/XEPDB1
+
+
+test
+TEST1234
+
+ORA-28040: No matching authentication protocol

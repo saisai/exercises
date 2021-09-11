@@ -1,0 +1,7 @@
+from rest_framework.utils.model_meta import *
+from .models import MoelName
+
+for f in get_field_info(MoelName):
+	print(f)
+	print('asdf')
+	
