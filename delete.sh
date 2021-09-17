@@ -11,7 +11,7 @@ find . -type f -name *.o -exec rm -rfv {} \;
 
 function delete_exe {
     
-    for i in $(find . -type f -not -path "./.git/*" ! -name "*.js" ! -name "*.py")
+    for i in $(find . -type f -not -path "./.git/*" ! -name "*.js" ! -name "*.py" ! -name "*.pas")
     do
         if [[ -x $i ]]
         then
