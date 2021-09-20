@@ -17,6 +17,26 @@ grant create session,
     create materialized view
     to demopython;	
 	
+CREATE USER demopython2 IDENTIFIED BY demopython2;
+
+alter user demopython2
+    default tablespace users
+    temporary tablespace temp
+    quota unlimited on users;
+	
+grant create session,
+    create view,
+    create sequence,
+    create procedure,
+    create table,
+    create trigger,
+    create type,
+    create materialized view
+    to demopython2;	
+	
+	
+grant ALL PRIVILEGES  to demopython2;		
+	
 	
 https://www.oracle.com/database/technologies/appdev/python/quickstartpythononprem.html#copy
 # https://www.oracle.com/database/technologies/appdev/python/quickstartpythononprem.html#copy
