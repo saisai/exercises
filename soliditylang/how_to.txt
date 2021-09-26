@@ -1,0 +1,1 @@
+solc -o outputDirectory --bin --ast-compact-json --asm helloworld.sol
