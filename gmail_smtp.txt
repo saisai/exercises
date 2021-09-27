@@ -1,0 +1,17 @@
+smtp-relay.gmail.com
+https://support.google.com/a/answer/176600?hl=en
+
+
+
+
+smtp.gmail.com
+587
+
+https://myaccount.google.com/lesssecureapps
+
+
+https://support.google.com/a/answer/176600?hl=en#zippy=%2Cuse-the-gmail-smtp-server%2Cuse-the-restricted-gmail-smtp-server
+
+https://developers.google.com/gmail/imap/imap-smtp
+https://client.hostsevenplus.com/knowledgebase.php?action=displayarticle&id=137
+https://support.google.com/a/answer/176600?hl=en#zippy=%2Cuse-the-gmail-smtp-server%2Cuse-the-restricted-gmail-smtp-server
