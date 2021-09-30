@@ -1,37 +1,47 @@
 # Backup database 
-pg_dump -h 127.0.0.1 -c -p 7496 -U postgres dbname > testbackup.sql
+pg_dump -h 127.0.0.1 -c -p 5432 -U postgres dbname > testbackup.sql
 
 # To restore database 
-psql -h localhost -p 7496 -U postgres -d dbname -f testbackup.sql
+psql -h localhost -p 5432 -U postgres -d dbname -f testbackup.sql
 
 # list database
-psql -U postgres -h localhost -p 7496 -c "\l"
+psql -U postgres -h localhost -p 5432 -c "\l"
 
 
 # list talbe of database 
-psql -U postgres -d dbname -h localhost -p 7496 -c "\dt"
+psql -U postgres -d dbname -h localhost -p 5432 -c "\dt"
 
 # Drop database 
-psql -h  127.0.0.1 -U postgres -p 7496 -c 'DROP DATABASE IF EXISTS dbname;'
+psql -h  127.0.0.1 -U postgres -p 5432 -c 'DROP DATABASE IF EXISTS dbname;'
 
 # list users 
-psql -U postgres -h localhost -p 7496 -c "\du"
-psql -U postgres -h localhost -p 7496 -c "\du+"
+psql -U postgres -h localhost -p 5432 -c "\du"
+psql -U postgres -h localhost -p 5432 -c "\du+"
 
 # create new user 
-psql -U postgres -h localhost -p 7496 -c "CREATE USER username WITH PASSWORD 'password';"
-psql -U postgres -h localhost -p 7496 -c "CREATE USER username WITH ENCRYPTED PASSWORD 'password';"
+psql -U postgres -h localhost -p 5432 -c "CREATE USER username WITH PASSWORD 'password';"
+psql -U postgres -h localhost -p 5432 -c "CREATE USER username WITH ENCRYPTED PASSWORD 'password';"
 
 
 # Give database all privileges to user
-psql -h localhost -p 7496 -U postgres -d dbname -c "GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO username;"
+psql -h localhost -p 5432 -U postgres -d dbname -c "GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO username;"
 
 # create database
-psql -U postgres -h localhost -p 7496 -c "CREATE DATABASE dbname;"
+psql -U postgres -h localhost -p 5432 -c "CREATE DATABASE dbname;"
 
 #To reset the password
-psql -U postgres -h localhost -p 7496 -c "ALTER USER user_name WITH PASSWORD 'new_password';"
+psql -U postgres -h localhost -p 5432 -c "ALTER USER user_name WITH PASSWORD 'new_password';"
 
+# To drop user 
+drop user username;
+
+# Create user role with password
+CREATE ROLE username WITH LOGIN SUPERUSER CREATEDB CREATEROLE INHERIT REPLICATION CONNECTION LIMIT -1 PASSWORD 'xxxxxx';
+CREATE ROLE test WITH LOGIN SUPERUSER CREATEDB CREATEROLE INHERIT REPLICATION CONNECTION LIMIT -1 PASSWORD 'test';
+
+# Grant user to postgres
+grant postgres to snp;
+GRANT postgres, "Administrator" TO test;
 
 
 # https://stackoverflow.com/questions/12720967/postgresql-how-to-change-postgresql-user-password

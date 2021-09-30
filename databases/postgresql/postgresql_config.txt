@@ -1,0 +1,28 @@
+# To start, enable, stop postgresql
+sudo systemctl start postgresql
+sudo systemctl stop postgresql
+sudo systemctl enable postgresql
+sudo systemctl restart postgresql
+
+# To check error last
+journalctl -u postgresql.service -f
+
+# /var/lib/postgres/data/postgresql.conf
+listen_addresses = '*'
+listen_addresses = 'localhost,192.168.0.102'
+
+# /var/lib/postgres/data/pg_hba.conf
+
+host	postgres username	192.168.1.0/24	md5
+host	postgres username	192.168.1.0/24	trust
+host	all 	all			192.168.1.0/24	trust
+
+
+host	all 	all			192.168.1.102/32	trust
+host	postgres 	username			192.168.1.102/32	trust
+
+
+
+# https://www.postgresql.org/docs/9.3/auth-pg-hba-conf.html
+# https://www.highgo.ca/2020/03/26/postgresql-gssapi-authentication-with-kerberos-part-2-postgresql-configuration/
+# https://github.com/vrana/adminer
