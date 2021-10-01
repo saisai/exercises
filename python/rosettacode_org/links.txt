@@ -1,3 +1,5 @@
 https://rosettacode.org/wiki/Spiral_matrix#Recursive_Solution
 
 https://oeis.org/A000081
+https://stackoverflow.com/questions/13906623/using-pickle-dump-typeerror-must-be-str-not-bytes
+
