@@ -27,6 +27,10 @@ import './001/css/004';
 import './001/css/005';
 import './001/sass/001';
 import './javatpoint_com/001';
+import './javatpoint_com/002';
+import './javatpoint_com/003';
+import './javatpoint_com/004';
+import './javatpoint_com/005';
 import reportWebVitals from './reportWebVitals';
 
 /*
