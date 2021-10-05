@@ -1,0 +1,5 @@
+windows 7
+
+api-ms-win-crt-runtime-l1-1-0.dll is missing from your computer
+https://www.microsoft.com/en-in/download/details.aspx?id=48145
+https://www.drivereasy.com/knowledge/api-ms-win-crt-runtime-l1-1-0-dll-missing-error-solved/
