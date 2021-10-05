@@ -31,6 +31,19 @@ import './javatpoint_com/002';
 import './javatpoint_com/003';
 import './javatpoint_com/004';
 import './javatpoint_com/005';
+import './javatpoint_com/006';
+import './javatpoint_com/007';
+import './javatpoint_com/008';
+import './javatpoint_com/009';
+import './javatpoint_com/010';
+import './javatpoint_com/011';
+import './javatpoint_com/012';
+import './javatpoint_com/013';
+import './javatpoint_com/014';
+import './javatpoint_com/015';
+import './javatpoint_com/016';
+import './javatpoint_com/017';
+import './javatpoint_com/018';
 import reportWebVitals from './reportWebVitals';
 
 /*
