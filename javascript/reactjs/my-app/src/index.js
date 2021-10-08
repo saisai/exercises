@@ -44,6 +44,7 @@ import './javatpoint_com/015';
 import './javatpoint_com/016';
 import './javatpoint_com/017';
 import './javatpoint_com/018';
+import './javatpoint_com/route';
 import reportWebVitals from './reportWebVitals';
 
 /*
