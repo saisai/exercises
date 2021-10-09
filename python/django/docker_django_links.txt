@@ -1,0 +1,12 @@
+https://testdriven.io/blog/django-and-celery/#tests
+https://github.com/testdrivenio/django-celery
+
+
+https://testdriven.io/blog/django-celery-periodic-tasks/
+https://testdriven.io/blog/django-low-level-cache/
+
+https://docs.celeryproject.org/en/stable/userguide/periodic-tasks.html
+
+https://testdriven.io/blog/celery-database-transactions/?fbclid=IwAR1jsiY5fV2IG2xDj1XlU09R7_JiifmcR3hRucalDqzXA2RKxoRWCqNl2Uo
+
+https://gist.github.com/evanscottgray/8571828

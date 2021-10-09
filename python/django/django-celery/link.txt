@@ -1,0 +1,1 @@
+https://github.com/testdrivenio/django-celery.git
