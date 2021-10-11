@@ -1,3 +1,21 @@
+sqlplus -l system/root@localhost/orcl3
+create user demo identified by demo;
+alter user demo
+    default tablespace users
+    temporary tablespace temp
+    quota unlimited on users;
+	
+grant create session,
+    create view,
+    create sequence,
+    create procedure,
+    create table,
+    create trigger,
+    create type,
+    create materialized view
+    to demo;	
+
+
 sqlplus -l system/XXXX@localhost/xepdb1
 
 CREATE USER demopython IDENTIFIED BY demopython;
