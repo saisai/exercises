@@ -24,7 +24,6 @@ def check_duplicate():
     seen = set()
     emp = ['a', 'b', 'c', 'd', 'a']
     for a in emp:
-        print(a)
         if a not in seen:
             seen.add(a)
             

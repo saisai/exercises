@@ -1,0 +1,3 @@
+https://github.com/more-itertools/more-itertools
+https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.chunked
+

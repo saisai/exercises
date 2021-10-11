@@ -1,0 +1,2 @@
+https://zetcode.com/gui/pyqt5/dialogs/
+

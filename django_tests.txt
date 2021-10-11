@@ -1,0 +1,39 @@
+django test 
+
+https://mkdev.me/en/posts/how-to-cover-django-application-with-unit-tests
+https://github.com/philipkiely/django_taskmaster_tested/tree/master/taskmanager/todo
+https://realpython.com/testing-in-django-part-1-best-practices-and-examples/
+https://learndjango.com/tutorials/django-testing-tutorial
+https://www.section.io/engineering-education/django-unit-testing/
+https://replit.com/@qawuor/djangotests#
+https://mkdev.me/en/posts/how-to-cover-django-application-with-unit-tests
+
+https://www.digitalocean.com/community/tutorials/how-to-add-unit-testing-to-your-django-project
+https://django-testing-docs.readthedocs.io/en/latest/serialization.html
+https://github.com/ericholscher/django-testing-docs
+https://books.agiliq.com/projects/django-orm-cookbook/en/latest/keepdb.html
+https://github.com/lewisemm/converter
+https://medium.com/the-andela-way/test-driven-development-with-django-ccb179171dcd
+
+
+
+
+pip install psycopg2-binary 
+
+https://www.postgresql.org/docs/9.0/errcodes-appendix.html
+https://confluence.atlassian.com/jirakb/error-connecting-to-database-fatal-no-pg_hba-conf-entry-for-host-x-x-x-x-user-jiradbuser-database-jiradb-ssl-off-950801726.html
+https://stackoverflow.com/questions/10693978/psycopg2-reporting-pg-hba-conf-error
+
+https://serverfault.com/questions/704810/postgresql-error-with-pg-hba-conf
+2
+
+You obviously do not have connection profile for user "user1" against database "ttio" on the machine. The only remote access that your pg_hba.conf currently specifies is for any user to the database with the same name as the user from address 127.0.0.200.
+
+You need an entry like:
+
+host ttio user1 <ip_address> <netmask>
+The <ip_address> <netmask> combination is specific to your network configuration and refers to the IP address of the client.
+
+
+https://dba.stackexchange.com/questions/83984/connect-to-postgresql-server-fatal-no-pg-hba-conf-entry-for-host
+https://www.netiq.com/documentation/identity-manager-47/setup_windows/data/connecting-to-a-remote-postgresql-database.html

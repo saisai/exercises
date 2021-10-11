@@ -44,6 +44,10 @@ grant postgres to snp;
 GRANT postgres, "Administrator" TO test;
 
 
+# Show config
+psql -U postgres  -t -P format=unaligned -c 'show hba_file';
+
+
 # https://stackoverflow.com/questions/12720967/postgresql-how-to-change-postgresql-user-password
 # https://www.postgresqltutorial.com/postgresql-list-users/
 # https://stackoverflow.com/questions/3327312/how-can-i-drop-all-the-tables-in-a-postgresql-database
