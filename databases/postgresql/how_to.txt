@@ -1,0 +1,18 @@
+with datarange as ( select * from generate_series ( '2021-01-01'::timestamptz, '2021-01-02'::timestamptz, interval '1 hour') with ordinality as t(hh, n) ) select * from datarange;
+select random();
+select random() * 100 as e;
+select ceil(random() * 100);
+SELECT 10 + ceil(random() * 90);
+
+SELECT
+    round(random() * 3) AS n,
+    count(*)
+FROM
+    generate_series(0, 1000)
+GROUP BY
+    1;
+	
+ select ceil(random() * 3) as n, count(*) from generate_series(0, 1000) group by 1;
+select (array['red', 'green', 'blue'])[ceil(random() * 3)] as color from generate_series(1, 5);
+SELECT (array['red', 'green', 'blue'])[1];
+with sample as ( select * from users order by random() limit 10000 ) select count(*) from sample; 

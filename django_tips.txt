@@ -1,0 +1,4 @@
+
+ if settings.DATABASE_ENGINE == 'oracle':
+ 
+ if connection.vendor == "oracle":

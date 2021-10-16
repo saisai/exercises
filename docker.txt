@@ -1,0 +1,40 @@
+oracle
+
+https://www.youtube.com/watch?v=ciYsDbBx80s&ab_channel=ShowMeYourCode%21
+testmonkey1983
+
+docker login
+docker pull store/oracle/database-enterprise:12.2.0.1
+docker run -d -p 1521:1521 --name oracle store/oracle/database-enterprise:12.2.0.1
+docker exec -it oracle bash -c "source /home/oracle/.bashrc; sqlplus /nolog"
+docker exec -it ce6aaf19d159 bash -c "source /home/oracle/.bashrc; sqlplus /nolog"
+docker exec -it 59b42e88633a bash -c "source /home/oracle/.bashrc; sqlplus /nolog"
+
+
+bash: sqlplus: command not found
+docker exec -it oracle bash
+PATH=$ORACLE_HOME/bin:$PATH
+export PATH
+
+
+check container id
+docker ps -a
+
+docker logs -f 80da82ba6643 [container id]
+
+
+stop container
+docker container stop 80da82ba6643
+
+remove container 
+docker container rm 80da82ba6643
+
+
+docker run -d -p 192.168.0.128:1521:1521 --name oracle store/oracle/database-enterprise:12.2.0.1
+
+
+https://hub.docker.com/u/devilcomcom/content/sub-85001b1c-b9de-4571-a370-3a2f28d8242b
+
+https://linuxize.com/post/how-to-remove-docker-images-containers-volumes-and-networks/
+
+https://stackoverflow.com/questions/54400134/command-not-found-bash-sqlplus

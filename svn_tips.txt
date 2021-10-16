@@ -1,0 +1,20 @@
+ cat reactjs.txt
+npx create-react-app my-app
+cd my-app
+npm start
+
+https://www.w3schools.com/REACT/react_lifecycle.asp
+
+
+
+
+https://svnbook.red-bean.com/en/1.8/svn.ref.svn.c.checkout.html
+
+svn add filename.txt
+svn commit filename.txt -m 'Adding a file'
+svn commit
+
+https://stackoverflow.com/questions/13859659/svn-commit-command
+https://edoras.sdsu.edu/doc/svn-book-html-chunk/svn.ref.svn.c.status.html
+https://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.diff.html
+
