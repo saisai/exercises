@@ -1,0 +1,19 @@
+docker pull mcr.microsoft.com/mssql/server
+
+docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Strong123!" -p 192.168.0.128:1433:1433 -d mcr.microsoft.com/mssql/server
+sqlcmd -S 192.168.0.128,1433 -U SA -P Strong123!$
+
+
+
+# get docker ip address
+docker inspect -f "{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}" b0fb13cdebca
+docker exec -t b0fb13cdebca cat /var/opt/mssql/log/errorlog | grep connection
+sqlcmd -S <ip_address>,1433 -U SA -P "<YourNewStrong@Passw0rd>"
+
+
+docker logs a8302dde21a1 -f
+
+https://stackoverflow.com/questions/26153795/display-python-datetime-without-time
+https://stackoverflow.com/questions/151199/how-to-calculate-number-of-days-between-two-given-dates
+https://stackoverflow.com/questions/29556879/is-it-possible-change-date-in-docker-container
+https://hub.docker.com/_/microsoft-mssql-server
