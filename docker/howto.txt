@@ -1,0 +1,5 @@
+docker run --name repo alpine/git clone https://github.com/docker/getting-started.git
+build
+share
+docker tag docker1010tutorial {username}/docker101tutorial
+docker push {username}/docker1010tutorial
