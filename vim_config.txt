@@ -1,0 +1,3 @@
+https://github.com/ain/.vim
+https://github.com/neoclide/coc.nvim/wiki/Language-servers#python
+https://github.com/fannheyward/coc-pyright
