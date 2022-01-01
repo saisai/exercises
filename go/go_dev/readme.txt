@@ -1,2 +1,1 @@
-https://go.dev/tour/flowcontrol/1
-
+https://go.dev/tour/methods/1

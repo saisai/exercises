@@ -17,3 +17,5 @@ https://stackoverflow.com/questions/2758651/how-to-change-height-div-on-window-r
 
 
 https://lodash.com/
+
+http://xahlee.info/js/js_creating_object.html

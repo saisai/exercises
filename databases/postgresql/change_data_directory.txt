@@ -1,0 +1,14 @@
+SHOW data_directory;
+
+
+
+postgresql.conf
+data_directory = 'C:/Example/pgsql/data'		# use data in another directory
+
+
+sc config postgresql-x64-10 binPath= "\"C:\Program Files\PostgreSQL\10\bin\pg_ctl.exe\" runservice -N \"postgresql-x64-10\" -D \"C:\Example\pgsql\data\" -w"
+
+https://radumas.info/blog/tutorial/2016/08/08/Migrating-PostgreSQL-Data-Directory-Windows.html
+
+https://www.digitalocean.com/community/tutorials/how-to-move-a-postgresql-data-directory-to-a-new-location-on-ubuntu-16-04
+https://www.joe0.com/2020/06/16/postgres-12-how-to-change-data-directory/

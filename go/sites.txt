@@ -1,0 +1,4 @@
+https://github.com/mmcgrana/gobyexample
+https://www.javatpoint.com/go-tutorial
+https://golangbot.com/write-files/
+

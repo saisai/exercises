@@ -1,0 +1,2 @@
+https://docs.djangoproject.com/en/3.2/topics/db/examples/many_to_many/
+https://docs.djangoproject.com/en/3.2/topics/db/examples/many_to_one/

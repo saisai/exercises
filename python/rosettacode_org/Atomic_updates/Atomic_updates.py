@@ -1,4 +1,3 @@
-from __future__ import with_statement
 import threading
 import random
 import time
@@ -6,6 +5,7 @@ import time
 terminate = threading.Event()
 
 class Buckets:
+
     def __init__(self, nbuckets):
         self.nbuckets = nbuckets
         self.values = [random.randrange(10) for i in range(nbuckets)]
@@ -15,7 +15,7 @@ class Buckets:
         return self.values[i]
 
     def transfer(self, src, dst, amount):
-        while self.lock:
+        with self.lock:
             amount = min(amount, self.values[src])
             self.values[src] -= amount
             self.values[dst] += amount
@@ -44,11 +44,12 @@ def equalize(buckets):
             if amount >= 0: buckets.transfer(src, dst, amount)
             else: buckets.transfer(dst, src, -amount)
 
+
 def print_state(buckets):
     snapshot = buckets.snapshot()
     for value in snapshot:
-        print("%2d" % value)
-    print("= ", sum(snapshot))
+        print("%2d" % value, end=' ')
+    print("=", sum(snapshot))
 
 # create 15 buckets
 buckets = Buckets(15)
@@ -57,19 +58,21 @@ buckets = Buckets(15)
 t1 = threading.Thread(target=randomize, args=[buckets])
 t1.start()
 
+
 # the equalize thread
 t2 = threading.Thread(target=equalize, args=[buckets])
 t2.start()
 
 # main thread, display
+n = 1
 try:
     while True:
         print_state(buckets)
         time.sleep(1)
-except KeyboardInterrupt: # ^C to finish
+except KeyboardInterrupt: #^C to finish
     terminate.set()
 
-# Wait until all worker threads finish
+# wait until all worker threads finish
 t1.join()
 t2.join()
 

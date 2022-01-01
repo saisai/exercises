@@ -16,8 +16,7 @@ class Printer:
     def __init__(self, name: str, backup: Optional[Printer]):
         self.name = name
         self.backup = backup
-
-        self.ink_level: int =5
+        self.ink_level: int = 5
         self.output_stream: TextIO = sys.stdout
 
     async def print(self, msg):
@@ -30,10 +29,9 @@ class Printer:
             self.ink_level -= 1
             self.output_stream.write(f"({self.name}): {msg}\n")
 
-
 async def main():
-    reverse = Printer("reserve", None)
-    main = Printer("main", reverse)
+    reserve = Printer("reserve", None)
+    main = Printer("main", reserve)
 
     humpty_lines = [
         "Humpty Dumpty sat on a wall.",
@@ -68,7 +66,7 @@ async def main():
                 task = asyncio.Task(main.print(line))
                 await task
             except OutOfInkError:
-                print('\t Mother Goose out of ink!')
+                print("\t Mother Goose out of ink!")
                 break
 
     await asyncio.gather(print_goose(), print_humpty())
