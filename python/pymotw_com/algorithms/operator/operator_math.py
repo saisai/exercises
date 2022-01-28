@@ -35,3 +35,4 @@ print('lshift(c, d):', lshift(c, d))
 print('or_(c, d)   :', or_(c, d))
 print('rshift(d, c):', rshift(d, c))
 print('xor(c, d)   :', xor(c, d))
+

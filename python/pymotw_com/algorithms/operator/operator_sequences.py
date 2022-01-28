@@ -21,7 +21,6 @@ print('  getitem(b, 1)                  :',
       getitem(b, 1))
 print('  getitem(b, slice(1, 3))        :',
       getitem(b, slice(1, 3)))
-
 print('  setitem(b, 1, "d")             :', end=' ')
 setitem(b, 1, "d")
 print(b)
@@ -36,3 +35,4 @@ print(b)
 print('  delitem(a, slice(1, 3)):', end=' ')
 delitem(a, slice(1, 3))
 print(a)
+

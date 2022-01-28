@@ -8,3 +8,4 @@ print('Sequence:', c)
 
 c.update({'a': 1, 'd': 5})
 print('Dict    :', c)
+

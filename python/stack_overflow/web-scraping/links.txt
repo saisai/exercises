@@ -1,0 +1,6 @@
+https://stackoverflow.com/questions/70715374/scraping-real-estate-website-using-python
+https://stackoverflow.com/questions/70701511/scrape-whole-table-with-selenium-and-beautifulsoup
+https://stackoverflow.com/questions/70655467/dynamically-scrape-paginated-table-with-beautifulsoup-and-store-results-in-csv/
+
+
+https://stackoverflow.com/questions/tagged/web-scraping?tab=newest&page=6&pagesize=15

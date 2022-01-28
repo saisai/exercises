@@ -12,4 +12,5 @@ class Context:
 
 
 with Context():
-    print('Doing work in the context')
+    print("Doing work in the context")
+

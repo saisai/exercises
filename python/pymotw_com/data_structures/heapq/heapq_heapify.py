@@ -1,10 +1,9 @@
-
 import heapq
 from heapq_showtree import show_tree
 from heapq_heapdata import data
 
-
-print('randon ', data)
+print('random :', data)
 heapq.heapify(data)
-print('heapified:')
+print('heapified :')
 show_tree(data)
+

@@ -7,6 +7,7 @@ data_directory = 'C:/Example/pgsql/data'		# use data in another directory
 
 
 sc config postgresql-x64-10 binPath= "\"C:\Program Files\PostgreSQL\10\bin\pg_ctl.exe\" runservice -N \"postgresql-x64-10\" -D \"C:\Example\pgsql\data\" -w"
+sc config postgresql-x64-10 binPath= "\"C:\Program Files\PostgreSQL\10\bin\pg_ctl.exe\" runservice -N \"postgresql-x64-10\" -D \"D:\psql\data\" -w"
 
 https://radumas.info/blog/tutorial/2016/08/08/Migrating-PostgreSQL-Data-Directory-Windows.html
 

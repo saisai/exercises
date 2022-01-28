@@ -1,0 +1,4 @@
+make main.o
+D=$( dirname $( which python ) )
+gcc $( $D/python-config --cflags) -c Query.c
+gcc -o main main.o Query.o $( $D/python-config --ldflags)

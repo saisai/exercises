@@ -7,3 +7,4 @@ print('\nField by index:', jane[0])
 print('\nFields by index:')
 for p in [bob, jane]:
     print('{} is a {} year old {}'.format(*p))
+

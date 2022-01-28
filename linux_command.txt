@@ -1,0 +1,5 @@
+find and move files to other
+
+find . -type f -name *.mp3 -exec mv -t tofoder {} +
+
+https://unix.stackexchange.com/questions/154818/how-to-integrate-mv-command-after-find-command/154819

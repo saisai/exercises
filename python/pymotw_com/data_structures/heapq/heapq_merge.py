@@ -1,7 +1,5 @@
-
 import heapq
 import random
-
 
 random.seed(2016)
 
@@ -18,3 +16,4 @@ print('\nMerged:')
 for i in heapq.merge(*data):
     print(i, end=' ')
 print()
+
