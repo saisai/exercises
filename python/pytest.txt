@@ -1,0 +1,4 @@
+https://github.com/AndyLPK247/python-testing-101/tree/master/example-py-unittest/com/automationpanda
+
+https://github.com/AndyLPK247/djangocon-2019-web-ui-testing
+https://www.softwaretestinghelp.com/python-testing-frameworks/
