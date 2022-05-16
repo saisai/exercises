@@ -6,7 +6,6 @@ import (
 )
 
 func main() {
-
 	argsWithProg := os.Args
 	argsWithoutProg := os.Args[1:]
 

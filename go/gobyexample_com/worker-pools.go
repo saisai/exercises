@@ -5,11 +5,11 @@ import (
 	"time"
 )
 
-func worker(id int, jobs <-chan int, results chan <- int) {
+func worker(id int, jobs <- chan int, results chan<- int) {
 	for j := range jobs {
 		fmt.Println("worker", id, "started job", j)
 		time.Sleep(time.Second)
-		fmt.Println("worker", id, "finished jobs", j)
+		fmt.Println("worker", id, "finished job", j)
 		results <- j * 2
 	}
 }
@@ -28,6 +28,7 @@ func main() {
 		jobs <- j
 	}
 	close(jobs)
+
 
 	for a := 1; a <= numJobs; a++ {
 		<-results

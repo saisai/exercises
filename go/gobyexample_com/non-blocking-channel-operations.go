@@ -26,9 +26,9 @@ func main() {
 	case msg := <-messages:
 		fmt.Println("received message", msg)
 	case sig := <-signals:
-		fmt.Println("received signal",sig)
+		fmt.Println("received signal", sig)
 	default:
-		fmt.Println("no acitivity")
+		fmt.Println("no activity")
 	}
 }
 

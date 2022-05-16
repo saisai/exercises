@@ -13,17 +13,17 @@ func main() {
 	go func() {
 		for {
 			select {
-			case <-done:
+			case <- done:
 				return
 			case t := <-ticker.C:
-				fmt.Println("Tick at ", t)
+				fmt.Println("Tict at" ,t)
 			}
 		}
 	}()
-
 
 	time.Sleep(1600 * time.Millisecond)
 	ticker.Stop()
 	done <- true
 	fmt.Println("Ticker stopped")
 }
+

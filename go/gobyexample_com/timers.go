@@ -7,7 +7,7 @@ import (
 
 func main() {
 
-	timer1 := time.NewTimer(2 *time.Second)
+	timer1 := time.NewTimer(2 * time.Second)
 
 	<-timer1.C
 	fmt.Println("Timer 1 fired")
@@ -19,9 +19,8 @@ func main() {
 	}()
 	stop2 := timer2.Stop()
 	if stop2 {
-		fmt.Println("Timer 2 stopeed")
+		fmt.Println("Timer 2 stopped")
 	}
-
 	time.Sleep(2 * time.Second)
 }
 

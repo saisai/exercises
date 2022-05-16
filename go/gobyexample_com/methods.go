@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 type rect struct {
+
 	width, height int
 }
 
@@ -15,13 +16,14 @@ func (r rect) perim() int {
 }
 
 func main() {
-	r := rect{width: 10, height: 5}
+	r := rect{width : 10, height: 5}
 
-	fmt.Println("area :", r.area())
+	fmt.Println("area :",r.area())
 	fmt.Println("perim :", r.perim())
 
 	rp := &r
-	fmt.Println("area:", rp.area())
-	fmt.Println("perim:", rp.perim())
+	fmt.Println("area :", rp.area())
+	fmt.Println("perim :", rp.perim())
+
 }
 

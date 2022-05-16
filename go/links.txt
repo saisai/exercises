@@ -1,3 +1,17 @@
 https://dave.cheney.net/2017/04/29/there-is-no-pass-by-reference-in-go
 
 https://stackoverflow.com/questions/2809543/pointer-to-a-map
+
+https://opensource.com/article/20/6/debug-go-delve
+https://stackoverflow.com/questions/25216765/gobin-not-set-cannot-run-go-install
+https://go.dev/doc/gopath_code
+https://doronbehar.com/articles/cleanning-GOPATH/
+https://zchee.github.io/golang-wiki/GOPATH/
+
+https://stac47.github.io/go/delve/debug/2019/11/06/debug-stdin-go-with-delve.html
+https://github.com/calebdoxsey/tutorials/tree/master/integration/mq
+https://github.com/ndesai15/coding-java
+
+https://github.com/codebasics/data-structures-algorithms-python
+
+https://eli.thegreenplace.net/

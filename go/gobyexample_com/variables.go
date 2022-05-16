@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
+
 	var a = "initial"
 	fmt.Println(a)
 
@@ -17,5 +18,6 @@ func main() {
 
 	f := "apple"
 	fmt.Println(f)
+
 }
 

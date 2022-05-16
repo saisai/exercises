@@ -18,8 +18,9 @@ func main() {
 	env := os.Environ()
 
 	execErr := syscall.Exec(binary, args, env)
-	if execErr != nil {
+	if execErr != nil{
 		panic(execErr)
 	}
+
 }
 

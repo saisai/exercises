@@ -1,6 +1,6 @@
 package main
 
-import(
+import (
 	"fmt"
 	"os"
 	"os/signal"
@@ -20,10 +20,10 @@ func main() {
 		sig := <-sigs
 		fmt.Println()
 		fmt.Println(sig)
-		done <- true
+		done <-true
 	}()
 
-	fmt.Println("awaiting signal")
+	fmt.Println("awaiting singal")
 	<-done
 	fmt.Println("exiting")
 }

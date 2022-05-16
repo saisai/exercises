@@ -1,11 +1,10 @@
 package main
 
-import(
+import (
 	"bufio"
 	"fmt"
 	"os"
 )
-
 func check(e error) {
 	if e != nil {
 		panic(e)
@@ -23,7 +22,7 @@ func main() {
 
 	defer f.Close()
 
-	d2 := []byte{115, 111, 109, 10}
+	d2 := []byte{115, 111, 109, 101, 10}
 	n2, err := f.Write(d2)
 	check(err)
 	fmt.Printf("wrote %d bytes\n", n2)
@@ -31,7 +30,7 @@ func main() {
 	n3, err := f.WriteString("writes\n")
 	check(err)
 	fmt.Printf("wrote %d bytes\n", n3)
-
+	
 	f.Sync()
 
 	w := bufio.NewWriter(f)

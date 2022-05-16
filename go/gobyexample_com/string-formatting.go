@@ -58,4 +58,3 @@ func main() {
 
     fmt.Fprintf(os.Stderr, "io: an %s\n", "error")
 }
-

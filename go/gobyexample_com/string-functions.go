@@ -3,14 +3,14 @@ package main
 import (
 	"fmt"
 	s "strings"
-}
+)
 
 var p = fmt.Println
 
 func main() {
 
-	p("Contains:  ", s.Contains("test", "es"))
-    p("Count:     ", s.Count("test", "t"))
+	p("Contains :", s.Contains("test", "es"))
+	p("Count:     ", s.Count("test", "t"))
     p("HasPrefix: ", s.HasPrefix("test", "te"))
     p("HasSuffix: ", s.HasSuffix("test", "st"))
     p("Index:     ", s.Index("test", "e"))
@@ -21,9 +21,6 @@ func main() {
     p("Split:     ", s.Split("a-b-c-d-e", "-"))
     p("ToLower:   ", s.ToLower("TEST"))
     p("ToUpper:   ", s.ToUpper("test"))
-    p()
 
-    p("Len: ", len("hello"))
-    p("Char :", "hello"[1])
-    }
-    
+}
+

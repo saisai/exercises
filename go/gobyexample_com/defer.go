@@ -1,8 +1,8 @@
 package main
 
 import (
-	"os"
 	"fmt"
+	"os"
 )
 
 func main() {
@@ -19,20 +19,20 @@ func createFile(p string) *os.File {
 		panic(err)
 	}
 	return f
-
 }
+
 func writeFile(f *os.File) {
 	fmt.Println("writing")
 	fmt.Fprintln(f, "data")
 }
 
 func closeFile(f *os.File) {
-	fmt.Println("closing")
+	fmt.Println("clsoing")
 	err := f.Close()
 
 	if err != nil {
-		fmt.Fprintf(os.Stderr, "error: %v\n", err)
+		fmt.Fprintf(os.Stderr, "error : %v\n", err)
 		os.Exit(1)
-		}
 	}
+}
 

@@ -3,10 +3,10 @@ package main
 import "fmt"
 
 type base struct {
-	num int 
+	num int
 }
 
-func (b base) describe() string {
+func (b  base) describe() string {
 	return fmt.Sprintf("base with num=%v", b.num)
 }
 
@@ -16,7 +16,6 @@ type container struct {
 }
 
 func main() {
-
 	co := container {
 		base: base{
 			num: 1,
@@ -26,15 +25,16 @@ func main() {
 
 	fmt.Printf("co={num: %v, str: %v}\n", co.num, co.str)
 
-	fmt.Println("also num:", co.base.num)
+	fmt.Println("also num: ", co.base.num)
 
-	fmt.Println("describe:", co.describe())
+	fmt.Println("Describe:", co.describe())
 
 	type describer interface {
 		describe() string
 	}
 
 	var d describer = co
-	fmt.Println("describer:", d.describe())
+	fmt.Println("Describer:", d.describe())
 }
+
 

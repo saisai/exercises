@@ -23,7 +23,7 @@ func (r rect) area() float64 {
 }
 
 func (r rect) perim() float64 {
-	return 2 * r.width + 2 * r.height
+	return 2*r.width + 2*r.height
 }
 
 func (c circle) area() float64 {
@@ -41,10 +41,13 @@ func measure(g geometry) {
 }
 
 func main() {
+
 	r := rect{width: 3, height: 4}
 	c := circle{radius: 5}
 
 	measure(r)
 	measure(c)
 }
+
+
 

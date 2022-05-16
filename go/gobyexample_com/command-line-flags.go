@@ -1,15 +1,15 @@
 package main
 
 import (
-	"fmt"
 	"flag"
+	"fmt"
 )
 
 func main() {
 
 	wordPtr := flag.String("word", "foo", "a string")
 
-	numbPtr := flag.Int("numb", 42, "an int")
+	numPtr := flag.Int("numb", 42, "an int")
 	forkPtr := flag.Bool("fork", false, "a bool")
 
 	var svar string
@@ -18,9 +18,9 @@ func main() {
 	flag.Parse()
 
 	fmt.Println("word:", *wordPtr)
-    fmt.Println("numb:", *numbPtr)
-    fmt.Println("fork:", *forkPtr)
-    fmt.Println("svar:", svar)
-    fmt.Println("tail:", flag.Args())
- }
+	fmt.Println("numb:", *numPtr)
+	fmt.Println("fork", *forkPtr)
+	fmt.Println("svar:", svar)
+	fmt.Println("tail", flag.Args())
+}
 

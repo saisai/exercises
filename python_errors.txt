@@ -36,4 +36,4 @@ https://pypi.org/project/pycrypto/
 
 
 
-icacls D:\biotime\biotime_env\biotime_8.0.2_env\Python27\Lib\site-packages\Crypto\Cipher\_AES.pyd
+icacls D:\Python27\Lib\site-packages\Crypto\Cipher\_AES.pyd

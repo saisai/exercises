@@ -9,6 +9,7 @@ func main() {
 	for _, num := range nums {
 		sum += num
 	}
+
 	fmt.Println("sum:", sum)
 
 	for i, num := range nums {
@@ -19,7 +20,7 @@ func main() {
 
 	kvs := map[string]string{"a": "apple", "b": "banana"}
 	for k, v := range kvs {
-		fmt.Println("%s -> %s\n", k, v)
+		fmt.Printf("%s -> %s\n", k, v)
 	}
 
 	for k := range kvs {

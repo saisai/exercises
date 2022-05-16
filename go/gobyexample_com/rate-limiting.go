@@ -8,7 +8,7 @@ import (
 func main() {
 
 	requests := make(chan int, 5)
-	for i := 1; i <= 5; i++ {
+	for i := 1; i<= 5; i++ {
 		requests <- i
 	}
 	close(requests)
@@ -17,11 +17,10 @@ func main() {
 
 	for req := range requests {
 		<-limiter
-		fmt.Println("request",req, time.Now())
+		fmt.Println("request", req, time.Now())
 	}
 
 	burstyLimiter := make(chan time.Time, 3)
-
 
 	for i := 0; i < 3; i++ {
 		burstyLimiter <- time.Now()
@@ -38,9 +37,10 @@ func main() {
 		burstyRequests <- i
 	}
 	close(burstyRequests)
-	for req :=range burstyRequests {
+	for req := range burstyRequests {
 		<-burstyLimiter
-		fmt.Println("request",req, time.Now())
+		fmt.Println("request", req, time.Now())
 	}
 }
+
 
