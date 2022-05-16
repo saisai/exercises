@@ -2,7 +2,7 @@ lsnrctl status
 
 
 deinstall
-D:\app3\wan\product\11.2.0\dbhome_1\deinstall
+D:\app3\username\product\11.2.0\dbhome_1\deinstall
 
 
 

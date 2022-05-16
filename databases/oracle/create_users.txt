@@ -14,46 +14,23 @@ grant create session,
     create type,
     create materialized view
     to demo;	
+	
+grant ALL PRIVILEGES  to demopython2;	
 
 
-sqlplus -l system/XXXX@localhost/xepdb1
+# To import and export
+Export and import db 
+CREATE OR REPLACE DIRECTORY test_dir AS 'D:\oraclebackup\'; 
 
-CREATE USER demopython IDENTIFIED BY demopython;
+--------------------------expdp schemas----------------------
+expdp scott/tiger@orcl schemas=scott directory=dir dumpfile=scott_exp.dmp logfile=scott_expdp.log
+impdp nic/nic@orcl remap_schema=scott:nic directory=dir dumpfile=scott_exp.dmp logfile=scott_nic_impdp.log
 
-alter user demopython
-    default tablespace users
-    temporary tablespace temp
-    quota unlimited on users;
-	
-grant create session,
-    create view,
-    create sequence,
-    create procedure,
-    create table,
-    create trigger,
-    create type,
-    create materialized view
-    to demopython;	
-	
-CREATE USER demopython2 IDENTIFIED BY demopython2;
 
-alter user demopython2
-    default tablespace users
-    temporary tablespace temp
-    quota unlimited on users;
+https://sites.google.com/site/flashplustutorial/oracle-database-tutorial/export-import-oracle-database
+
+
 	
-grant create session,
-    create view,
-    create sequence,
-    create procedure,
-    create table,
-    create trigger,
-    create type,
-    create materialized view
-    to demopython2;	
-	
-	
-grant ALL PRIVILEGES  to demopython2;		
 	
 	
 https://www.oracle.com/database/technologies/appdev/python/quickstartpythononprem.html#copy
