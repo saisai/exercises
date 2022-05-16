@@ -1,0 +1,2 @@
+https://github.com/grantjenks/django-modelqueue
+https://github.com/grantjenks/django-dblog/tree/main/dblog

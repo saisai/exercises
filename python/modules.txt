@@ -1,0 +1,3 @@
+https://github.com/uqfoundation/pathos
+https://pathos.readthedocs.io/en/latest/pathos.html
+https://github.com/furas/python-examples

@@ -1,0 +1,7 @@
+a_to_b_from_c 20
+a_to_b_from_w 30
+a_to_b_from_k 20
+a_to_b_from_l 10
+c_to_f_from_e 30
+c_to_f_from_k 20
+c_to_f_from_l 10
