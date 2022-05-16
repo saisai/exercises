@@ -1,0 +1,8 @@
+ORA-28001: the password has expired
+
+sqlplus sys/root as sysdba
+
+alter user system identified by root account  unlock;
+
+https://stackoverflow.com/questions/40581131/ora-28001-the-password-has-expired
+https://answers.uillinois.edu/systemoffices/page.php?id=85144

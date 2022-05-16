@@ -1,0 +1,7 @@
+
+# To restore database
+mysql -u root -proot dbname < dbname.sql
+
+# To create database 
+mysql -u root -proot -e "create database testing;"
+
