@@ -1,0 +1,20 @@
+IMAP server name outlook.office365.com
+
+IMAP port 993
+
+IMAP encryption method TLS
+
+POP server name outlook.office365.com
+
+POP port 995
+
+POP encryption method TLS
+
+SMTP server name smtp-mail.outlook.com
+
+SMTP port 587
+
+SMTP encryption method STARTTLS
+
+
+https://github.com/yangshun/tech-interview-handbook

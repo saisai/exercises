@@ -4,9 +4,6 @@ lsnrctl status
 deinstall
 D:\app3\username\product\11.2.0\dbhome_1\deinstall
 
-
-
-
 sqlplus
 
 CONNECT sys/&&password_sys AS SYSDBA;
@@ -17,8 +14,11 @@ COMMIT;
 
 
 How to grant roles
-To grant someone the SYSOPER or SYSDBA roles, you must be logged on as either SYSDBA or as INTERNAL. It is not enough just to have the SYSDBA role yourself; you must connect in that role. You will learn how to connect as SYSDBA later in this module. For now, continue to connect as the INTERNAL user.
+To grant someone the SYSOPER or SYSDBA roles, you must be logged on as either SYSDBA or as INTERNAL. 
+It is not enough just to have the SYSDBA role yourself; you must connect in that role. 
+You will learn how to connect as SYSDBA later in this module. For now, continue to connect as the INTERNAL user.
 Here is an example that shows how to grant the SYSDBA role to a SYSTEM user:
+
 SVRMGR> connect internal/herman
 Connected.
 SVRMGR> grant sysdba to system;
@@ -29,7 +29,8 @@ When you grant the
 SYSDBA
 or
 SYSOPER
-roles to a user, that user is immediately given an entry in the password file. The entry for that user will remain as long as the user continues to hold either of those roles.
+roles to a user, that user is immediately given an entry in the password file. 
+The entry for that user will remain as long as the user continues to hold either of those roles.
 https://www.relationaldbdesign.com/managing-users/module3/database-administrator-privileges.php
 
 https://docs.oracle.com/en/database/oracle/oracle-database/19/admqs/installing-oracle-database-creating-database.html#GUID-1426CDE5-D4E2-428D-8409-0333799EE8C2
