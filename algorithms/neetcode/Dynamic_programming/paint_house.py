@@ -1,0 +1,20 @@
+
+
+class S:
+
+    def __call__(self, costs):
+
+        dp = [0, 0, 0]
+
+        for i in range(len(costs)):
+                dp0 = costs[i][0] + min(dp[1], dp[2])
+                dp1 = costs[i][1] + min(dp[0], dp[2])
+                dp2 = costs[i][2] + min(dp[0], dp[1])
+
+                dp = [dp0, dp1, dp2]
+
+        return min(dp)
+
+costs = [[14,2,11],[11,14,5],[14,3,10]]
+print(S()(costs))
+

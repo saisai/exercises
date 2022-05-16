@@ -1,0 +1,5 @@
+https://leetcode.com/problems/course-schedule/discuss/1895990/Python-DFS-recursive-Sol.-oror-84-Faster-oror-Simple-and-Easy
+https://leetcode.com/problems/course-schedule/discuss/1905291/Python-BFSDFS-simple
+https://leetcode.com/problems/course-schedule/discuss/1965542/Clean-python-BFS-solution(Kahn's-Algorithm)
+https://leetcode.com/problems/course-schedule/discuss/1966921/Python-Topological-Sort-Readable-and-Easy-to-Understand
+
