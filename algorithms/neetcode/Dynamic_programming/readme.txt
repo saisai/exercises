@@ -1,4 +1,3 @@
-https://www.youtube.com/watch?v=g0npyaQtAQM&list=PLot-Xpze53lcvx_tjrr_m2lgD2NsRHlNO&ab_channel=NeetCode
 https://www.youtube.com/watch?v=Y0lT9Fck7qI&list=PLot-Xpze53lcvx_tjrr_m2lgD2NsRHlNO&index=2&ab_channel=NeetCode
 https://www.youtube.com/watch?v=4pY1bsBpIY4&list=PLot-Xpze53lcvx_tjrr_m2lgD2NsRHlNO&index=3&ab_channel=NeetCode
 https://www.youtube.com/watch?v=Mjy4hd2xgrs&list=PLot-Xpze53lcvx_tjrr_m2lgD2NsRHlNO&index=4&ab_channel=NeetCode
@@ -11,9 +10,6 @@ https://www.youtube.com/watch?v=cjWnW0hdF1Y&list=PLot-Xpze53lcvx_tjrr_m2lgD2NsRH
 https://www.youtube.com/watch?v=Ua0GhsJSlWM&list=PLot-Xpze53lcvx_tjrr_m2lgD2NsRHlNO&index=14&ab_channel=NeetCode
 https://www.youtube.com/watch?v=lXVy6YWFcRM&list=PLot-Xpze53lcvx_tjrr_m2lgD2NsRHlNO&index=15&ab_channel=NeetCode
 https://www.youtube.com/watch?v=H9bfqozjoqs&list=PLot-Xpze53lcvx_tjrr_m2lgD2NsRHlNO&index=16&ab_channel=NeetCode
-
-
-
 https://www.youtube.com/watch?v=dw2nMCxG0ik&list=PLot-Xpze53lcvx_tjrr_m2lgD2NsRHlNO&index=27&ab_channel=NeetCode
 https://www.youtube.com/watch?v=IsvocB5BJhw&list=PLot-Xpze53lcvx_tjrr_m2lgD2NsRHlNO&index=32&ab_channel=NeetCode
 https://www.youtube.com/watch?v=I7j0F7AHpb8&list=PLot-Xpze53lcvx_tjrr_m2lgD2NsRHlNO&index=41&ab_channel=NeetCode
