@@ -1,0 +1,16 @@
+
+How To Configure Nginx as a Web Server and Reverse Proxy for Apache on One Ubuntu 18.04 Server
+
+
+https://www.digitalocean.com/community/tutorials/how-to-configure-nginx-as-a-web-server-and-reverse-proxy-for-apache-on-one-ubuntu-18-04-server
+
+
+https://www.atlantic.net/vps-hosting/how-to-setup-nginx-as-a-reverse-proxy-for-apache-on-ubuntu-18-04-vps/
+
+https://www.atlantic.net/vps-hosting/how-to-setup-nginx-as-a-reverse-proxy-for-apache-on-ubuntu-18-04-vps/
+
+https://www.atatus.com/blog/how-to-set-up-a-reverse-proxy-in-nginx-and-apache/
+
+https://kinsta.com/blog/reverse-proxy/
+
+https://websiteforstudents.com/how-to-setup-apache-reverse-proxy/
