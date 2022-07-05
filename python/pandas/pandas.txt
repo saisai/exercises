@@ -1,0 +1,51 @@
+
+https://github.com/eugeneh101/Advanced-Python
+https://github.com/krother/advanced_python
+https://github.com/PacktPublishing/Advanced-Python-Programming-Second-Edition
+https://github.com/roycechua/advanced-python-programming
+https://github.com/uc-python/advanced-python-datasci
+
+https://github.com/brunocampos01/understanding-the-python-ecosystem
+https://github.com/rusalinastaneva/Python-Advanced
+https://github.com/Mikma03/Advanced_Python
+
+https://github.com/Mikma03/Windows_PowerShell/tree/main/PowerShell_Scripting_Oreilly
+
+https://github.com/Mahiuha/alx-backend-python
+https://github.com/yourhonor1996/Advanced-Python-And-OOP-Thinking
+https://github.com/OliverIgnetik/python_tricks
+https://github.com/prashantakkishore/python
+https://github.com/Soykaa/advanced-python-2022-hse
+https://github.com/jaimininjp/Python
+
+
+
+
+https://leetcode.com/blackspinner/
+https://leetcode.com/ddoudle/ 	
+https://leetcode.com/grawlixes/
+https://github.com/grawlixes/codejam
+
+
+
+movies = pd.read_csv('./../test.csv')
+movies.get(["cast", "countries"]).dropna(how='any', axis=0).loc[movies['countries'] == 'India']
+movies.get(["cast", "countries"]).dropna(how='any', axis=0).query("countries == 'India'")
+
+df = movies.get(["cast", "countries"]).dropna(how='any', axis=0).query("countries == 'India'")
+df =df.reset_index()
+for index, row in df.iterrows():
+    print(index,row['cast'])
+	
+for row in df.itertuples(index=True, name='Pandas'):
+     print(row.cast)	
+
+https://github.com/getsentry/demo-app-django-react/blob/main/data/netflix_titles.csv
+https://github.com/getsentry/demo-app-django-react/tree/main/data
+https://github.com/getsentry/demo-app-django-react/blob/main/movie_search/project/urls.py
+
+
+https://stackoverflow.com/questions/17071871/how-do-i-select-rows-from-a-dataframe-based-on-column-values
+https://stackoverflow.com/questions/16476924/how-to-iterate-over-rows-in-a-dataframe-in-pandas
+
+https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.keys.html
