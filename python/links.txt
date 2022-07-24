@@ -1,0 +1,7 @@
+https://pythonworld.ru/samouchitel-python
+https://www.tutorialsteacher.com/python/sys-module
+https://python-course.eu/applications-python/sys-module.php
+https://python101.pythonlibrary.org/chapter20_sys.html
+https://www.educba.com/python-sys-module/
+https://python101.pythonlibrary.org/chapter21_thread.html
+

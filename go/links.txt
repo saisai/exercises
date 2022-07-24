@@ -15,3 +15,8 @@ https://github.com/ndesai15/coding-java
 https://github.com/codebasics/data-structures-algorithms-python
 
 https://eli.thegreenplace.net/
+
+https://github.com/SimonWaldherr/golang-examples
+https://github.com/inancgumus/learngo
+https://golangbot.com/learn-golang-series/
+
