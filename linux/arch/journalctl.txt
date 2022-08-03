@@ -1,0 +1,3 @@
+Check errors of services.
+
+journalctl -fu celery-react.service

@@ -1,0 +1,3 @@
+https://stackoverflow.com/questions/14331032/mysql-error-1040-too-many-connection
+https://www.percona.com/blog/2020/07/01/preventing-mysql-error-1040-too-many-connections/
+

@@ -1,0 +1,14 @@
+# celery.service
+[Unit]
+Description=Celery Service
+After=network.target
+
+[Service]
+User=username
+Group=http
+WorkingDirectory=/home/username/python/django_react_bootstrap
+ExecStart=/home/username/python/django_react_bootstrap/myvenv/bin/celery \
+        -A mysites worker -l info -n worker2@%h
+
+[Install]
+WantedBy=multi-user.target

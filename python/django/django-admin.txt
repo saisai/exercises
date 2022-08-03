@@ -1,0 +1,20 @@
+
+5. How to import CSV using Django admin?
+
+https://books.agiliq.com/projects/django-admin-cookbook/en/latest/import.html
+
+
+https://stackoverflow.com/questions/3974620/import-csv-data-into-database-in-django-admin
+https://stackoverflow.com/questions/7583177/extending-django-admin-for-data-import
+
+https://github.com/pmamone1/belnuweb_produccion/tree/main/orders
+https://django-import-export.readthedocs.io/en/latest/api_widgets.html
+https://github.com/django-import-export/django-import-export
+
+
+https://github.com/randerson57261/argo-db-backend/tree/main/templates/admin
+
+
+https://github.com/tweneboah?tab=repositories
+
+https://django-import-export.readthedocs.io/en/latest/api_widgets.html

@@ -1,0 +1,19 @@
+cat /etc/systemd/system/react-django-app.service
+[Unit]
+Description=A react django app
+After=network.target
+
+[Service]
+User=root
+Group=http
+WorkingDirectory=/home/username/python/django_react_bootstrap
+ExecStart=/home/username/python/django_react_bootstrap/myvenv/bin/gunicorn --access-logfile - --workers 2 \
+ --timeout=300 \
+ --log-level=debug \
+ --error-logfile /home/username/python/django_react_bootstrap/logs/gunicorn.errors \
+ --log-file /home/username/python/django_react_bootstrap/logs/gunicorn.errors \
+ --bind 127.0.0.1:8000 mysites.wsgi:application
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
