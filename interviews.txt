@@ -1,0 +1,7 @@
+https://www.frontendinterviewhandbook.com/trivia/
+https://github.com/yangshun/front-end-interview-handbook
+
+https://yangshuntay.com/blog/importance-of-communicating-effectively-as-engineers/
+https://github.com/yangshun/yangshuntay.com/tree/master/src
+https://www.techinterviewhandbook.org/algorithms/array/
+
