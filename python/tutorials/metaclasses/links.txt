@@ -1,0 +1,5 @@
+https://www.pythontutorial.net/python-oop/python-metaclass/
+https://github.com/django/django/blob/main/django/db/models/base.py#L382
+https://realpython.com/python-metaclasses/
+https://www.datacamp.com/tutorial/python-metaclasses
+

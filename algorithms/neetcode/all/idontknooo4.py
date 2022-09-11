@@ -17,6 +17,7 @@ def listdirs(rootdir):
             
 dir_results = listdirs('.')
 
+results = []
 for d in data:
     #print(d)
     #print(type(d))
@@ -28,4 +29,11 @@ for d in data:
     #print(key)
     if "lock" not in key:
         if key not in dir_results:
-            print("no ", key, r.get(key)[0])
+            #print("no ", key, r.get(key)[0])
+            results.append([key, r.get(key)[0]])
+idx = 0
+for j in results:
+    if idx > 3: break
+    print(j)
+
+    idx += 1
