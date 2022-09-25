@@ -32,8 +32,10 @@ for d in data:
             #print("no ", key, r.get(key)[0])
             results.append([key, r.get(key)[0]])
 idx = 0
-for j in results:
+for data in results:
     if idx > 3: break
-    print(j)
-
+    #print(j)
+    #print(results[j][0], results[j][1])
+    print(data[0], '=>',  data[1])
+    print()
     idx += 1

@@ -11,7 +11,6 @@
 # situations, so it is recommended to run the test suite against as many
 # database backends as possible.  You may want to create a separate settings
 # file for each of the backends you test against.
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -20,12 +19,6 @@ DATABASES = {
         'PASSWORD': 'postgres',
         'HOST': '127.0.0.1', 
         'PORT': '5432',
-    },
-    "sqlite3": {
-        "ENGINE": "django.db.backends.sqlite3",
-    },
-    "other": {
-        "ENGINE": "django.db.backends.sqlite3",
     },
 }
 

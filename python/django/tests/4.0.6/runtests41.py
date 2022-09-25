@@ -3,7 +3,6 @@ import argparse
 import atexit
 import copy
 import gc
-import multiprocessing
 import os
 import shutil
 import socket
@@ -22,15 +21,14 @@ except ImportError as e:
 else:
     from django.apps import apps
     from django.conf import settings
-    from django.core.exceptions import ImproperlyConfigured
     from django.db import connection, connections
     from django.test import TestCase, TransactionTestCase
     from django.test.runner import get_max_test_processes, parallel_type
     from django.test.selenium import SeleniumTestCaseBase
     from django.test.utils import NullTimeKeeper, TimeKeeper, get_runner
     from django.utils.deprecation import (
+        RemovedInDjango41Warning,
         RemovedInDjango50Warning,
-        RemovedInDjango51Warning,
     )
     from django.utils.log import DEFAULT_LOGGING
 
@@ -44,7 +42,7 @@ else:
 
 # Make deprecation warnings errors to ensure no usage of deprecated features.
 warnings.simplefilter("error", RemovedInDjango50Warning)
-warnings.simplefilter("error", RemovedInDjango51Warning)
+warnings.simplefilter("error", RemovedInDjango41Warning)
 # Make resource and runtime warning errors to ensure no usage of error prone
 # patterns.
 warnings.simplefilter("error", ResourceWarning)
@@ -52,6 +50,12 @@ warnings.simplefilter("error", RuntimeWarning)
 # Ignore known warnings in test dependencies.
 warnings.filterwarnings(
     "ignore", "'U' mode is deprecated", DeprecationWarning, module="docutils.io"
+)
+# RemovedInDjango41Warning: Ignore MemcachedCache deprecation warning.
+warnings.filterwarnings(
+    "ignore",
+    "MemcachedCache is deprecated",
+    category=RemovedInDjango41Warning,
 )
 
 # Reduce garbage collection frequency to improve performance. Since CPython
@@ -244,17 +248,7 @@ def setup_collect_tests(start_at, start_after, test_labels=None):
     settings.LOGGING = log_config
     settings.SILENCED_SYSTEM_CHECKS = [
         "fields.W342",  # ForeignKey(unique=True) -> OneToOneField
-        # django.contrib.postgres.fields.CICharField deprecated.
-        "fields.W905",
-        "postgres.W004",
-        # django.contrib.postgres.fields.CIEmailField deprecated.
-        "fields.W906",
-        # django.contrib.postgres.fields.CITextField deprecated.
-        "fields.W907",
     ]
-
-    # RemovedInDjango50Warning
-    settings.FORM_RENDERER = "django.forms.renderers.DjangoDivFormRenderer"
 
     # Load all the ALWAYS_INSTALLED_APPS.
     django.setup()
@@ -350,10 +344,6 @@ class ActionSelenium(argparse.Action):
     """
 
     def __call__(self, parser, namespace, values, option_string=None):
-        try:
-            import selenium  # NOQA
-        except ImportError as e:
-            raise ImproperlyConfigured(f"Error loading selenium module: {e}")
         browsers = values.split(",")
         for browser in browsers:
             try:
@@ -397,8 +387,7 @@ def django_tests(
             msg += " with up to %d processes" % max_parallel
         print(msg)
 
-    process_setup_args = (verbosity, start_at, start_after, test_labels)
-    test_labels, state = setup_run_tests(*process_setup_args)
+    test_labels, state = setup_run_tests(verbosity, start_at, start_after, test_labels)
     # Run the test suite, including the extra validation tests.
     if not hasattr(settings, "TEST_RUNNER"):
         settings.TEST_RUNNER = "django.test.runner.DiscoverRunner"
@@ -411,8 +400,6 @@ def django_tests(
             parallel = 1
 
     TestRunner = get_runner(settings)
-    TestRunner.parallel_test_suite.process_setup = setup_run_tests
-    TestRunner.parallel_test_suite.process_setup_args = process_setup_args
     test_runner = TestRunner(
         verbosity=verbosity,
         interactive=interactive,
@@ -736,11 +723,6 @@ if __name__ == "__main__":
         options.settings = os.environ["DJANGO_SETTINGS_MODULE"]
 
     if options.selenium:
-        if multiprocessing.get_start_method() == "spawn" and options.parallel != 1:
-            parser.error(
-                "You cannot use --selenium with parallel tests on this system. "
-                "Pass --parallel=1 to use --selenium."
-            )
         if not options.tags:
             options.tags = ["selenium"]
         elif "selenium" not in options.tags:

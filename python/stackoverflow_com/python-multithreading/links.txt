@@ -1,0 +1,6 @@
+https://stackoverflow.com/questions/tagged/python-multithreading
+
+
+https://stackoverflow.com/questions/73812963/how-to-write-individual-txt-files-utilising-multithreading
+https://stackoverflow.com/questions/73733109/why-python-thread-and-process-not-working
+

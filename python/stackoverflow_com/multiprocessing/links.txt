@@ -1,0 +1,5 @@
+https://stackoverflow.com/questions/tagged/multiprocessing
+
+
+https://stackoverflow.com/questions/73815067/execute-iterative-queries-over-a-pandas-dataframe
+
