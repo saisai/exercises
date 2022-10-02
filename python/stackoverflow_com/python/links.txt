@@ -1,0 +1,4 @@
+https://stackoverflow.com/questions/tagged/python?tab=newest&page=3&pagesize=15
+
+
+https://stackoverflow.com/questions/73910058/all-the-information-is-getting-inside-only-in-one-block-of-excel-python

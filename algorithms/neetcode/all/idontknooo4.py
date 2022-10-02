@@ -33,7 +33,7 @@ for d in data:
             results.append([key, r.get(key)[0]])
 idx = 0
 for data in results:
-    if idx > 3: break
+    if idx > 10: break
     #print(j)
     #print(results[j][0], results[j][1])
     print(data[0], '=>',  data[1])

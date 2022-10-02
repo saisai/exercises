@@ -1,0 +1,6 @@
+https://stackoverflow.com/questions/tagged/python-sockets?tab=newest&page=2&pagesize=15
+
+
+
+https://stackoverflow.com/questions/72904653/python-socket-tkinter-starting-tkinter-class-not-working-in-a-python-socket-p
+

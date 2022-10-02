@@ -1,6 +1,8 @@
-https://stackoverflow.com/questions/tagged/python-multithreading
+https://stackoverflow.com/questions/tagged/python-multithreading?tab=newest&page=6&pagesize=15
 
 
 https://stackoverflow.com/questions/73812963/how-to-write-individual-txt-files-utilising-multithreading
 https://stackoverflow.com/questions/73733109/why-python-thread-and-process-not-working
+https://stackoverflow.com/questions/73396086/how-can-i-prevent-other-threads-from-running-when-a-certain-condition-is-met
+https://stackoverflow.com/questions/73311958/key-listener-that-runs-concurrently-with-a-terminal-timer-using-threads
 
