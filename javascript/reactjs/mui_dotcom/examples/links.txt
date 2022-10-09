@@ -1,2 +1,22 @@
 https://github.com/mui/material-ui/tree/v5.10.7/docs/data/material/getting-started/templates
 
+https://mui.com/material-ui/react-autocomplete/
+https://mui.com/material-ui/react-button/
+
+https://mui.com/material-ui/react-checkbox/
+
+https://mui.com/material-ui/react-radio-button/
+
+https://mui.com/material-ui/react-alert/
+
+
+
+learning
+https://react-hook-form.com/get-started
+https://github.com/dohomi/react-hook-form-mui
+https://github.com/stackworx/formik-mui
+https://github.com/erikras/redux-form-material-ui/blob/master/example/src/Form.js
+https://www.educative.io/answers/what-is-typeerror-converting-circular-structure-to-json
+
+https://beta.reactjs.org/learn/responding-to-events
+https://beta.reactjs.org/learn/passing-props-to-a-component

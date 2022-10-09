@@ -31,11 +31,25 @@ for d in data:
         if key not in dir_results:
             #print("no ", key, r.get(key)[0])
             results.append([key, r.get(key)[0]])
+            
 idx = 0
+data_lst = []
 for data in results:
-    if idx > 10: break
+    #if idx > 10: break
     #print(j)
     #print(results[j][0], results[j][1])
-    print(data[0], '=>',  data[1])
-    print()
+    #print(data[0], '=>\n',  data[1])
+    #print(data[1].split('discuss')[0])
+    #print()
+    data_lst.append(data)
     idx += 1
+
+for id, data in enumerate(data_lst):
+    if id > 10: break
+    #print(results[j][0], results[j][1])
+    print(data[0], '=>\n',  data[1])
+    print(data[1].split('discuss')[0])
+    print()
+ 
+print('total', idx)
+

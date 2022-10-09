@@ -7,15 +7,20 @@ import SignUp from './components/sign-up/SignUp';
 import reportWebVitals from './reportWebVitals';
 import SignInSide from './components/sign-in-side/SignInSide';
 import StickyFooter from './components/sticky-footer/StickyFooter';
+import Album from './components/album/Album';
+import Main from './components/material-components/main';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 {/* <SignIn /> 
   <SignUp />
   <SignInSide />
+  <StickyFooter />
+    <Album />
 */}
 root.render(
-  <StickyFooter />
+  
+  <Main />
   
   
 );
