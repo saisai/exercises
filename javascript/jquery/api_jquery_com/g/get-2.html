@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>get demo</title>
+  <style>
+  span {
+    color: red;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+Reversed - <span></span>
+ 
+<div>One</div>
+<div>Two</div>
+<div>Three</div>
+ 
+<script>
+function display( divs ) {
+  var a = [];
+  for ( var i = 0; i < divs.length; i++ ) {
+    a.push( divs[ i ].innerHTML );
+  }
+  $( "span" ).text( a.join(" ") );
+}
+display( $( "div" ).get().reverse() );
+</script>
+ 
+</body>
+</html>

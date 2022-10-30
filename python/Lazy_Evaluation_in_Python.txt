@@ -1,0 +1,200 @@
+What is Lazy Evaluation in Python?
+
+Ifyou’ve never heard of Lazy Evaluation before, Lazy Evaluation is an evaluation strategy which delays the evaluation of an expression 
+until its value is needed and which also avoids repeated evaluations (From Wikipedia). 
+It’s usually being considered as a strategy to optimize your code.
+
+Let’s turn this theory into an example. For example, you have a simple expression sum = 1 + 2, Python would try to understand the real meaning of this expression and get the conclusion that sum = 3. This process is called Evaluation and it needs some sort of computation power. In this case, the evaluation is done immediately, therefore it has another name: Strict Evaluation.
+
+On the other hand, we have a non-strict evaluation which is called Lazy Evaluation. The difference is that Lazy Evaluation will not immediately evaluate the expression but only does it when the outcome is needed. It’s a bit like a lazy student who only does the homework when it needs to be submitted to the teacher.
+
+But being lazy here is not necessarily a bad thing, it can improve the efficiency of your code and save plenty of resources. Luckily, Python has silently applied Lazy Evaluation to many built-in functions in order to optimize your code. And I’m sure that you must be familiar with those functions even without being aware of Lazy Evaluation.
+
+In this article, I will explain how Lazy Evaluation works in Python, which functions benefit from it, and the reason behind it. In the end, I will show you how you can write your own Lazy functions/classes. Let’s get started!
+
+Range()
+Most of the time, Python still evaluates expression immediately. Let’s look at this example. How long do you think it’s gonna take?
+print([time.sleep(0), time.sleep(1), time.sleep(2)][0])
+
+The answer is 3 seconds. This is because when you create a list, Python will immediately evaluate every item inside the list, even though you only need the first element.
+
+Since Python3, there has been a big improvement in making such list traversal more memory-efficient and time-efficient, which is range() function. I bet every Python developer has used this function at lease once in their life. In Python2, range(5) would return a list of 5 elements. As the size of the list increases, more memory is used.
+
+
+However in Python 3, range(5) returns a range type. This object can be iterated over to yield a sequence of numbers. No matter how big the range is, the object always has the same size. This is due to the fact that range(5) only stores the start, stop, step values, and calculates each item when it’s needed.
+
+
+Python 3.7.7
+>>> range(5)
+range(0, 5)
+>>> import sys
+>>> sys.getsizeof(range(5))
+48
+>>> sys.getsizeof(range(500))
+48
+
+If you are not familiar with generator, iterator and their benefits, please continue reading this section. Otherwise, feel free to skip this section.
+
+iterator > generator
+
+To make it simple, iterator is a bigger concept than generator. Iterator is an object whose class has a __next__ and __iter__ method. Every time you do next() call to the iterator object, you would get the next item in the sequence until the iterator object is exhausted and raise StopIteration. However, generator is a function that returns an iterator. It looks like a normal function except that it uses yield instead of return.
+
+When the yield statement is executed, the program would suspend the current function execution and returns the yielded value to the caller. This is the key idea of Lazy Evaluation where the value is calculated and returned when the caller is needed and the next value will still be quiet and doing nothing in the program.
+
+To create a generator, there can be 2 ways:
+
+
+# expression 1
+generator1 = (time.sleep(x) for x in range(3))
+
+def sleep():
+    for x in range(3):
+        yield time.sleep(x)
+
+# expression 2
+generator2 = sleep()
+
+Then, let’s improve the first example using range(). Before we get to the final result, there is another “trap”. The following example has 2 functions: use_generator() and use_list(). They look almost the same except use_generator() uses () in islice() function, while use_list() uses []. Such small difference can, however, make a huge impact on the running time.
+
+The answer to this behaviour is already present in the function name. (time.sleep(x) for x in range(3)) is a generator while [time.sleep(x) for x in range(3)] is a list even though it uses range(). Because of that, the function that uses list takes way more time than the other one.
+
+import time
+from itertools import islice
+
+def timing(f):
+    def wrap(*args, **kwargs):
+        time1 = time.time()
+        ret = f(*args, **kwargs)
+        time2 = time.time()
+        print(
+            "{:s} function took {:.3f} ms".format(f.__name__, (time2 - time1) * 1000.0)
+        )
+        return ret
+    return wrap
+
+@timing
+def use_generator():
+    return list(islice((time.sleep(x) for x in range(3)), 1))
+
+@timing
+def use_list():
+    return list(islice([time.sleep(x) for x in range(3)], 1))
+
+print(use_generator())
+# use_generator function took 0.048 ms
+# [None]
+print(use_list())
+# use_list function took 3003.090 ms
+# [None]
+
+print(type((time.sleep(x) for x in range(3))))
+# <class 'generator'>
+print(type([time.sleep(x) for x in range(3)]))
+# <class 'list'>
+
+
+If you understand this part, then congratulations, you’ve already known 50% about Lazy Evaluation.
+
+Zip()
+A very similar use case is zip() which merges 2 iterables to produce a sequence of tuples. In Python2, zip(*iterables) would return a list of tuples.
+
+While since Python3, it has been improved to return a zip object which is similar to range object that can be iterated over.
+
+Python 3.7.7 
+>>> type(zip([1,2],[3,4]))
+<class 'zip'>
+>>> import sys
+>>> sys.getsizeof(zip([1,2],[3,4]))
+72
+>>> sys.getsizeof(zip([i for i in range(500)],[i for i in range(500)]))
+72
+
+
+I will not repeat the reason again because it has the same idea of range(). But if you want to know other aspects of zip, feel free to read my another article.
+
+Open()
+This is another built-in function that we probably use everyday and take it for granted. When we open a file, we normally do:
+with open("file.csv", "r") as f:
+    for line in f:
+      print(line)
+with open(...) doesn’t read the entire file and store it in memory, instead it returns a file object that can be iterated over. Because of that, it’s able to efficiently read huge files and not hurt the memory.
+
+Lambda expression
+A couple of weeks ago, I received a question from a reader about Lambda expression which actually triggered me to write this article. His question is:
+Why does a lambda map object like x = map(lambda x: x*2, [1,2,3,4,5]) doesn’t take any space? But if you do list(x), it will print all the values and take space in the memory?
+
+I hope by far, you should have a clue on what’s going on here. The map object is also a lazy object that can be iterated over. The computation x*2 will be done for only 1 item in each loop. When you do list(x), you basically compute all the values at one time. If you just want to iterate over the map object, you don’t have to do list(x).
+
+map_obj = map(lambda x: x*2, [1,2,3,4,5])
+for i in map_obj:
+    print(i)
+# 2,4,6,8,10
+
+import sys
+print(sys.getsizeof(x))
+# 48
+
+print(list(x))
+# [2, 4, 6, 8, 10]
+print(sys.getsizeof(list(x)))
+# 56
+
+How to write a Lazy Evaluation function/class?
+
+In the last part of the article, I want to bring us to the next level where we write our own Lazy Evaluation function/class. This helps us to extend the capability beyond the built-in functions.
+
+As we have understood that a key part of Lazy Evaluation is nothing more than a generator. Therefore, we can simply write our function as a generator.
+
+Lazy function — generator
+
+def lazy_loading(items):
+    for i in items:
+        # you can have complex logic here
+        yield i ** 2
+
+items = [i for i in range(100)]
+for i in lazy_loading(items):
+    print(i)
+	
+	
+Lazy property — decorator
+
+Another common use case of customized Lazy Evaluation is the initialization of class properties. When we initialize a class, certain properties might take long time to calculate. In the following example, the property cities takes longer time because it needs to invoke an API to get a list of city names. Therefore, it would be a waste of time if we don’t actually need this value for some country objects.
+
+A nice solution present in this blog is to create a decorator for such lazy properties, so that the expensive operation will be done only if this property is needed. As you can see from the console output, cities property is called is printed out after we print out china.cities.
+
+def lazy_property(fn):
+    attr_name = '_lazy_' + fn.__name__
+
+    @property
+    def _lazy_property(self):
+        if not hasattr(self, attr_name):
+            setattr(self, attr_name, fn(self))
+        return getattr(self, attr_name)
+    return _lazy_property
+
+class Country:
+    def __init__(self, name, capital):
+        self.name = name
+        self.capital = capital
+
+    @lazy_property
+    def cities(self):
+        # expensive operation to get all the city names (API call)
+        print("cities property is called")
+        return ["city1", "city2"]
+
+china = Country("china", "beijing")
+print(china.capital)
+# beijing
+print(china.cities)
+# cities property is called
+# ['city1', 'city2']
+
+I hope this article can inspire you to have a new view on code optimization.
+
+
+references:
+https://towardsdatascience.com/what-is-lazy-evaluation-in-python-9efb1d3bfed0
+https://gist.github.com/highsmallxu/4bea7487bca93b1aacf8f0f261923797#file-lazy_evaluation_class_properties-py
+https://stevenloria.com/lazy-properties/

@@ -1,0 +1,177 @@
+
+echo 123.4567 | awk '{printf "%.3f\n", $1}'
+123.457
+
+echo 123.4567 | awk '{printf "%.1f\n", $1}'
+123.5
+
+echo 123.4567 | awk '{printf "%2.1f\n", $1}'
+123.5
+
+echo 123.4567 | awk '{printf "%5.1f\n", $1}'
+123.5
+
+echo 123.4567 | awk '{printf "%8.1f\n", $1}'
+   123.5
+
+echo 123.4567 | awk '{printf "%8.6f\n", $1}'
+123.456700
+
+echo 123.4567 | awk '{printf "%.2e\n", $1}'
+1.23e+02
+
+echo 123.4567 | awk '{printf "%.4e\n", $1}'
+1.2346e+02
+
+
+echo 123.4567 55.2 | awk '{printf "%.3f", $1; print $2}'
+123.45755.2
+
+echo 123.4567 55.2 | awk '{printf "%.3f ", $1; print $2}'
+123.457 55.2
+
+
+echo 123.4567 55.2 | awk '{printf "%-20.7f  %d\n" , $1 , $2}'
+123.4567000           55
+
+echo 123.4567 55.2 | awk '{printf "%20.7f  %d\n" , $1 , $2}
+         123.4567000  55
+
+
+Here is a list of the format-control letters:
+
+`c'    This prints a number as an ASCII character. Thus, `printf "%c", 65' outputs the letter `A'. 
+          The output for a string value is the first character of the string. 
+
+`d'    This prints a decimal integer. 
+
+`i'    This also prints a decimal integer. 
+
+`e'    This prints a number in scientific (exponential) notation. 
+           For example, printf "%4.3e", 1950  prints `1.950e+03', 
+           with a total of four significant figures of which three follow the decimal point. 
+           The `4.3' are modifiers, discussed below. 
+
+`f'    This prints a number in floating point notation. 
+
+`g'    This prints a number in either scientific notation or floating point notation, whichever uses fewer characters. 
+
+`o'    This prints an unsigned octal integer. 
+
+`s'    This prints a string. 
+
+`x'    This prints an unsigned hexadecimal integer. 
+
+`X'    This prints an unsigned hexadecimal integer. 
+          However, for the values 10 through 15, it uses the letters `A' through `F' instead of `a' through `f'. 
+
+`%'    This isn't really a format-control letter, but it does have a meaning when used after a `%': the sequence `%%' outputs one `%'. 
+         It does not consume an argument. 
+
+##########################################
+
+Modifiers for printf Formats
+
+A format specification can also include modifiers that can control how much of the item's value is printed and how much space it gets. 
+The modifiers come between the `%' and the format-control letter. Here are the possible modifiers, in the order in which they may appear:
+
+`-'
+    The minus sign, used before the width modifier, says to left-justify the argument within its specified width.
+    Normally the argument is printed right-justified in the specified width. Thus,
+
+printf "%-4s", "foo"
+
+    prints `foo '. 
+
+`width'
+    This is a number representing the desired width of a field. 
+    Inserting any number between the `%' sign and the format control character forces the field to be expanded to this width. The default way to do this is to pad with spaces on the left. For example,
+
+printf "%4s", "foo"
+    prints ` foo'. The value of width is a minimum width, not a maximum. If the item value requires more than width characters, it can be as wide as necessary. Thus,
+
+printf "%4s", "foobar"
+
+    prints `foobar'. Preceding the width with a minus sign causes the output to be padded with spaces on the right, instead of on the left. 
+`.prec'
+    This is a number that specifies the precision to use when printing. This specifies the number of digits you want printed to the right of the decimal point. For a string, it specifies the maximum number of characters from the string that should be printed. 
+
+
+Examples of Using printf
+
+Here is how to use printf to make an aligned table:
+
+awk '{ printf "%-10s %s\n", $1, $2 }' BBS-list
+
+prints the names of bulletin boards ($1) of the file `BBS-list' as a string of 10 characters, left justified. 
+It also prints the phone numbers ($2) afterward on the line. 
+This produces an aligned two-column table of names and phone numbers:
+
+aardvark   555-5553
+alpo-net   555-3412
+barfly     555-7685
+bites      555-1675
+camelot    555-0542
+core       555-2912
+fooey      555-1234
+foot       555-6699
+macfoo     555-6480
+sdace      555-3430
+sabafoo    555-2127
+
+Did you notice that we did not specify that the phone numbers be printed as numbers? 
+They had to be printed as strings because the numbers are separated by a dash. 
+This dash would be interpreted as a minus sign if we had tried to print the phone numbers as numbers. 
+This would have led to some pretty confusing results.
+
+We did not specify a width for the phone numbers because they are the last things on their lines. 
+We don't need to put spaces after them.
+
+We could make our table look even nicer by adding headings to the tops of the columns. 
+To do this, use the BEGIN pattern (see section BEGIN and END Special Patterns) 
+to force the header to be printed only once, at the beginning of the awk program:
+
+awk 'BEGIN { print "Name      Number"
+             print "----      ------" }
+     { printf "%-10s %s\n", $1, $2 }' BBS-list
+
+Did you notice that we mixed print and printf statements in the above example? 
+We could have used just printf statements to get the same results:
+
+awk 'BEGIN { printf "%-10s %s\n", "Name", "Number"
+             printf "%-10s %s\n", "----", "------" }
+     { printf "%-10s %s\n", $1, $2 }' BBS-list
+
+By outputting each column heading with the same format specification used for the elements of the column, 
+we have made sure that the headings are aligned just like the columns.
+
+The fact that the same format specification is used three times can be emphasized by storing it in a variable, like this:
+
+awk 'BEGIN { format = "%-10s %s\n"
+             printf format, "Name", "Number"
+             printf format, "----", "------" }
+     { printf format, $1, $2 }' BBS-list
+
+Use the printf statement to line up the headings and table data f
+awk 'BEGIN { print "Name      Number"
+             print "----      ------" }
+     { printf "%-10s %s\n", $1, $2 }' BBS-list
+
+We mixed print and printf statements in the above example? 
+We could have used just printf statements to get the same results:
+
+awk 'BEGIN { printf "%-10s %s\n", "Name", "Number"
+             printf "%-10s %s\n", "----", "------" }
+     { printf "%-10s %s\n", $1, $2 }' BBS-list
+
+By outputting each column heading with the same format specification used for the elements of the column, 
+we have made sure that the headings are aligned just like the columns.
+
+The fact that the same format specification is used three times can be emphasized by storing it in a variable, like this:
+
+awk 'BEGIN { format = "%-10s %s\n"
+             printf format, "Name", "Number"
+             printf format, "----", "------" }
+     { printf format, $1, $2 }' BBS-list
+
+

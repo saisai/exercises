@@ -1,0 +1,1 @@
+https://www.pluralsight.com/guides/javascript-closures

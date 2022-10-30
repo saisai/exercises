@@ -1,0 +1,18 @@
+check appendonly.aof
+	
+	redis-check-aof --fix appendonly.aof
+	
+# https://stackoverflow.com/questions/50504692/what-is-the-default-location-for-redis-aof-file-for-ubuntu/54239400
+
+
+connect redis-cli from client
+
+redis-cli -h host -p port -a password
+
+CONFIG GET dir
+
+# https://stackoverflow.com/questions/40678865/how-to-connect-to-remote-redis-server	
+
+redis gui 
+https://github.com/ekvedaras/redis-gui
+https://github.com/ekvedaras/redis-gui/releases/tag/v1.2.4

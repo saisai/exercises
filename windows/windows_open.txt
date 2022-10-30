@@ -1,0 +1,2 @@
+# To open windows defender Firewall
+wf.msc

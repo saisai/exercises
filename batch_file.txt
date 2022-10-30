@@ -1,9 +1,0 @@
-Batch files don't have any other kind of variables except environment variables. They can be accessed by enclosing the variable name in percent signs:
-
-echo %Foo%
-For interactive use one can use set to view all environment variables or all variables starting with a certain string:
-
-set
-set Foo
-
-http://rosettacode.org/wiki/Environment_variables#Batch_File

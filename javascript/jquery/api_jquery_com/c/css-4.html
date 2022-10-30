@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>css demo</title>
+  <style>
+  p {
+    color: blue;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<p>
+  Once upon a time there was a man
+  who lived in a pizza parlor. This
+  man just loved pizza and ate it all
+  the time.  He went on to be the
+  happiest man in the world.  The end.
+</p>
+ 
+<script>
+var words = $( "p" ).first().text().split( /\s+/ );
+var text = words.join( "</span> <span>" );
+$( "p" ).first().html( "<span>" + text + "</span>" );
+$( "span" ).on( "click", function() {
+  $( this ).css( "background-color", "yellow" );
+});
+</script>
+ 
+</body>
+</html>

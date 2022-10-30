@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>wrapAll demo</title>
+  <style>
+  div {
+    border: 2px solid blue;
+    margin: 2px;
+    padding: 2px;
+  }
+  .doublediv {
+    border-color: red;
+  }
+  p {
+    background: yellow;
+    margin: 4px;
+    font-size: 14px;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<p>Hello</p>
+<p>cruel</p>
+<p>World</p>
+<div class="doublediv"><div></div></div>
+ 
+<script>
+$( "p" ).wrapAll( $( ".doublediv" ) );
+</script>
+ 
+</body>
+</html>

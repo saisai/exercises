@@ -1,0 +1,42 @@
+	
+$("p").each(function( index ) {
+  console.log( index + ": " + $( this ).text() );
+});
+
+$("h2").each(function( index ) {
+  console.log( index + ": " + $( this ).text() );
+});
+
+$("code").each(function( index ) {
+  //console.log( index + ": " + $( this ).text() + " : nextSibling => " + $( this ).next() );
+  console.log( index + ": " + $( this ).text() + " : nextSibling => " + $( this ).first().contents().eq(1).text() );
+});
+
+//
+ 
+$("a").each(function( index ) {
+  console.log( index + ": " + $( this ).text() + " : " + $( this ).attr('href') );
+});
+
+
+outerHTML: "<a href="https://jquery.com/" title="jQuery">jQuery</a>"
+
+
+
+https://stackoverflow.com/questions/6925088/get-the-text-after-span-element-using-jquery
+
+
+https://stackoverflow.com/questions/6925088/get-the-text-after-span-element-using-jquery
+
+https://medium.com/@yootar/asynchronous-downloads-in-django-with-celery-5ff4433c62dc
+https://github.com/sivcan/ResponseToFile-Postman/blob/master/script.js
+https://stackoverflow.com/questions/31414468/print-statement-in-celery-scheduled-task-doesnt-appear-in-terminal
+https://realpython.com/asynchronous-tasks-with-django-and-celery/
+https://medium.com/@yootar/asynchronous-downloads-in-django-with-celery-5ff4433c62dc
+
+
+https://stackoverflow.com/questions/6365255/jquery-onclick-event-for-li-tags
+
+https://stackoverflow.com/questions/4258615/what-is-the-difference-between-jquerys-mouseout-and-mouseleave
+
+https://stackoverflow.com/questions/14839440/jquery-mousedown-vs-click

@@ -1,0 +1,3 @@
+delete celery queue name
+
+python -m celery -Q queue_name purge

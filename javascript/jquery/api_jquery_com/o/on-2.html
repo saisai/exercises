@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>on demo</title>
+  <style>
+  .test {
+    color: #000;
+    padding: .5em;
+    border: 1px solid #444;
+  }
+  .active {
+    color: #900;
+  }
+  .inside {
+    background-color: aqua;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<div class="test">test div</div>
+ 
+<script>
+$( "div.test" ).on({
+  click: function() {
+    $( this ).toggleClass( "active" );
+  }, mouseenter: function() {
+    $( this ).addClass( "inside" );
+  }, mouseleave: function() {
+    $( this ).removeClass( "inside" );
+  }
+});
+</script>
+ 
+</body>
+</html>

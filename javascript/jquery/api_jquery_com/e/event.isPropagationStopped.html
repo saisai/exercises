@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>event.isPropagationStopped demo</title>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<button>click me</button>
+<div id="stop-log"></div>
+ 
+<script>
+function propStopped( event ) {
+  var msg = "";
+  if ( event.isPropagationStopped() ) {
+    msg = "called";
+  } else {
+    msg = "not called";
+  }
+  $( "#stop-log" ).append( "<div>" + msg + "</div>" );
+}
+ 
+$( "button" ).click(function(event) {
+  propStopped( event );
+  event.stopPropagation();
+  propStopped( event );
+});
+</script>
+ 
+</body>
+</html>

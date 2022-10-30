@@ -1,7 +1,0 @@
-for i in $(ls); do echo $i; if [[ -x "$i" ]];then echo 'yes'; fi done
-
-for i in $(ls); do echo $i; if [[ -x "$i" ]];then echo 'yes ' $i; else echo 'no' $i; fi done
-
-https://stackoverflow.com/questions/10319652/check-if-a-file-is-executable
-
-for i in $(ls); do echo $i; if [[ -x "$i" ]];then echo 'yes ' $i; else echo 'no' $i; fi done

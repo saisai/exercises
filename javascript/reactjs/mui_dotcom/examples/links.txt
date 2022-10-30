@@ -1,13 +1,14 @@
 https://github.com/mui/material-ui/tree/v5.10.7/docs/data/material/getting-started/templates
 
-https://mui.com/material-ui/react-autocomplete/
-https://mui.com/material-ui/react-button/
+https://mui.com/material-ui/customization/how-to-customize/
 
-https://mui.com/material-ui/react-checkbox/
+https://mui.com/system/properties/
+https://mui.com/system/borders/
 
-https://mui.com/material-ui/react-radio-button/
+https://mui.com/material-ui/react-image-list/
 
-https://mui.com/material-ui/react-alert/
+
+
 
 
 

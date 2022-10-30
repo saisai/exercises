@@ -1,0 +1,93 @@
+finding-pairs-with-a-certain-sum =>
+ https://leetcode.com/problems/finding-pairs-with-a-certain-sum/discuss/1327517/python-3-hash-table-explanation
+https://leetcode.com/problems/finding-pairs-with-a-certain-sum/
+
+rle-iterator =>
+ https://leetcode.com/problems/rle-iterator/discuss/1311888/python-3-java-deque-explanation
+https://leetcode.com/problems/rle-iterator/
+
+bricks-falling-when-hit =>
+ https://leetcode.com/problems/bricks-falling-when-hit/discuss/950348/python-3-dfs-explanation
+https://leetcode.com/problems/bricks-falling-when-hit/
+
+rotate-function =>
+ https://leetcode.com/problems/rotate-function/discuss/857056/python-3-py38-math-on-explanation
+https://leetcode.com/problems/rotate-function/
+
+knight-dialer =>
+ https://leetcode.com/problems/knight-dialer/discuss/833421/python-3-dfs-memoization-symmetry-explanation
+https://leetcode.com/problems/knight-dialer/
+
+longest-string-chain =>
+ https://leetcode.com/problems/longest-string-chain/discuss/829089/python-3-dp-onnk-explanation
+https://leetcode.com/problems/longest-string-chain/
+
+valid-square =>
+ https://leetcode.com/problems/valid-square/discuss/827796/python-3-pythagoras-theorem-explanation
+https://leetcode.com/problems/valid-square/
+
+arithmetic-slices =>
+ https://leetcode.com/problems/arithmetic-slices/discuss/824441/python-3-dp-math-explanation
+https://leetcode.com/problems/arithmetic-slices/
+
+longest-arithmetic-subsequence-of-given-difference =>
+ https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/discuss/822287/python-3-one-pass-dp-dictionary
+https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/
+
+find-right-interval =>
+ https://leetcode.com/problems/find-right-interval/discuss/815413/python-3-binary-search-explanation
+https://leetcode.com/problems/find-right-interval/
+
+lexicographical-numbers =>
+ https://leetcode.com/problems/lexicographical-numbers/discuss/810448/python-3-one-liner-cheat-sort-string
+https://leetcode.com/problems/lexicographical-numbers/
+
+detect-cycles-in-2d-grid =>
+ https://leetcode.com/problems/detect-cycles-in-2d-grid/discuss/806241/python-3-union-find-explanation-clean
+https://leetcode.com/problems/detect-cycles-in-2d-grid/
+
+shortest-bridge =>
+ https://leetcode.com/problems/shortest-bridge/discuss/788854/python-3-manhattan-distance-9596-passed-time-limit-exceeded
+https://leetcode.com/problems/shortest-bridge/
+
+loud-and-rich =>
+ https://leetcode.com/problems/loud-and-rich/discuss/782931/python-3-dfs-memoization-lru_cache
+https://leetcode.com/problems/loud-and-rich/
+
+maximum-number-of-non-overlapping-subarrays-with-sum-equals-target =>
+ https://leetcode.com/problems/maximum-number-of-non-overlapping-subarrays-with-sum-equals-target/discuss/781243/python-3-prefix-sum-and-non-overlapping-intervals
+https://leetcode.com/problems/maximum-number-of-non-overlapping-subarrays-with-sum-equals-target/
+
+make-the-string-great =>
+ https://leetcode.com/problems/make-the-string-great/discuss/781226/python-3-stack-on
+https://leetcode.com/problems/make-the-string-great/
+
+implement-magic-dictionary =>
+ https://leetcode.com/problems/implement-magic-dictionary/discuss/762222/python-3-standard-trie-dfs-with-explanation
+https://leetcode.com/problems/implement-magic-dictionary/
+
+minimum-time-to-collect-all-apples-in-a-tree =>
+ https://leetcode.com/problems/minimum-time-to-collect-all-apples-in-a-tree/discuss/624036/python-3-union-find-with-explanation
+https://leetcode.com/problems/minimum-time-to-collect-all-apples-in-a-tree/
+
+k-concatenation-maximum-sum =>
+ https://leetcode.com/problems/k-concatenation-maximum-sum/discuss/382897/clean-python-code-with-explaination
+https://leetcode.com/problems/k-concatenation-maximum-sum/
+
+add-to-array-form-of-integer =>
+ https://leetcode.com/problems/add-to-array-form-of-integer/discuss/234574/python3-164ms-68m-on
+https://leetcode.com/problems/add-to-array-form-of-integer/
+
+car-fleet =>
+ https://leetcode.com/problems/car-fleet/discuss/139887/c-55ms-solution-use-map-with-explanation
+https://leetcode.com/problems/car-fleet/
+
+minimum-depth-of-binary-tree =>
+ https://leetcode.com/problems/minimum-depth-of-binary-tree/discuss/36062/c-3-lines-9-ms
+https://leetcode.com/problems/minimum-depth-of-binary-tree/
+
+remove-duplicates-from-sorted-array =>
+ https://leetcode.com/problems/remove-duplicates-from-sorted-array/discuss/11792/3-line-c-stdunique
+https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+
+total 23

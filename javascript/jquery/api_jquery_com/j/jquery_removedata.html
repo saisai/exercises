@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery.removeData demo</title>
+  <style>
+  div {
+    margin: 2px;
+    color: blue;
+  }
+  span {
+    color: red;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<div>value1 before creation: <span></span></div>
+<div>value1 after creation: <span></span></div>
+<div>value1 after removal: <span></span></div>
+<div>value2 after removal: <span></span></div>
+ 
+<script>
+var div = $( "div" )[ 0 ];
+alert(div);
+alert($( "div" ));
+alert($( "div" )[0].innerHTML);
+alert($( "div" )[1].innerHTML);
+alert($( "div" )[2].innerHTML);
+alert($( "div" )[3].innerHTML);
+$( "span" ).eq( 0 ).text( "" + $( "div" ).data( "test1" ) );
+jQuery.data( div, "test1", "VALUE-1" );
+jQuery.data( div, "test2", "VALUE-2" );
+$( "span" ).eq( 1 ).text( "" + jQuery.data( div, "test1" ) );
+jQuery.removeData( div, "test1" );
+$( "span" ).eq( 2 ).text( "" + jQuery.data( div, "test1" ) );
+$( "span" ).eq( 3 ).text( "" + jQuery.data( div, "test2" ) );
+</script>
+ 
+</body>
+</html>

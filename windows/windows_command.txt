@@ -1,0 +1,60 @@
+#window information
+
+	systeminfo
+	
+
+# https://www.ionos.com/digitalguide/server/know-how/what-version-of-windows-do-i-have/
+
+systeminfo | findstr /B /C:"OS Name" /C:"OS Version"
+systeminfo | findstr /C:"OS"
+systeminfo | findstr /C:"System"
+systeminfo | findstr /B /C:"OS Name" /C:"OS Version"
+wmic os get Caption,CSDVersion /value
+wmic os get Caption,CSDVersion /value
+
+https://www.windows-commandline.com/find-windows-os-version-from-command/
+
+winver
+
+
+get OSArchitecture
+wmic os get osarchitecture
+
+
+wmic cpu get caption
+wmic cpu get processorid
+
+wmic cpu get socketdesignation
+
+
+How to check if Windows 32 or 64 bit?
+wmic os get OSArchitecture
+
+https://www.windows-commandline.com/check-windows-32-bit-64-bit-command-line/
+
+
+check system variables
+echo %path%
+
+Get current logged in user name command line (CMD)
+echo %username%
+whoami 
+
+current user information with local group memberships
+net user username
+
+net /help
+
+
+net config workstation
+
+net helpmsg 2182
+
+net /help
+net /?
+
+
+https://docs.microsoft.com/en-us/sysinternals/
+https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer
+
+<a href="https://live.sysinternals.com/procexp.exe" data-linktype="external">Sysinternals Live</a>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>eq demo</title>
+  <style>
+  .foo {
+    color: blue;
+    background-color: yellow;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<ul class="nav">
+  <li>List 1, item 1</li>
+  <li>List 1, item 2</li>
+  <li>List 1, item 3</li>
+</ul>
+<ul class="nav">
+  <li>List 2, item 1</li>
+  <li>List 2, item 2</li>
+  <li>List 2, item 3</li>
+</ul>
+ 
+<script>
+$( "li:eq(-2)" ).addClass( "foo" )
+</script>
+ 
+</body>
+</html>

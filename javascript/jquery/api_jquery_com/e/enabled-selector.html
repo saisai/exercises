@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>enabled demo</title>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<form>
+  <input name="email" disabled="disabled">
+  <input name="id">
+</form>
+ 
+<script>
+$( "input:enabled" ).val( "this is it" );
+</script>
+ 
+</body>
+</html>

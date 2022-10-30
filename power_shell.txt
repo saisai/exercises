@@ -1,5 +1,0 @@
-Display only services that are currently running:
-
-get-service | where-object {$_.Status -eq 'Running'}
-
-# https://ss64.com/ps/get-service.html

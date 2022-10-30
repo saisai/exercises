@@ -26,6 +26,11 @@ import BasicAlerts from '../alert/BasicAlerts';
 import AlertDialog from '../dialog/AlertDialog';
 import Variants from '../skeleton/Variants';
 import SimpleSnackbar from '../snackbar/SimpleSnackbar';
+import SimpleAccordion from '../surfaces/accordion/SimpleAccordion';
+import CustomizedAccordions from '../surfaces/accordion/CustomizedAccordions';
+import ButtonAppBar from '../surfaces/app-bar/ButtonAppBar';
+import SimplePaper from '../surfaces/paper/SimplePaper';
+import FixedBottomNavigation from '../bottom-navigation/FixedBottomNavigation';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -63,6 +68,11 @@ const Item = styled(Paper)(({ theme }) => ({
             <AlertDialog />
             <Variants />
             <SimpleSnackbar />
+            <SimpleAccordion />
+            <CustomizedAccordions />
+            <ButtonAppBar />
+            <SimplePaper />
+            <FixedBottomNavigation />
           </Grid>
           <Grid xs={4}>
             <Item>xs=4</Item>

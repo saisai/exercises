@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>attr demo</title>
+  <style>
+  em {
+    color: blue;
+    font-weight: bold;
+  }
+  div {
+    color: red;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<p>Once there was a <em title="huge, gigantic">large</em> dinosaur...</p>
+ 
+The title of the emphasis is:<div></div>
+ 
+<script>
+var title = $( "em" ).attr( "title" );
+$( "div" ).text( title );
+</script>
+ 
+</body>
+</html>

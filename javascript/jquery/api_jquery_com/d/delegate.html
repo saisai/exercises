@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>delegate demo</title>
+  <style>
+  p {
+    background: yellow;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+  }
+  p.over {
+    background: #ccc;
+  }
+  span {
+    color: red;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<p>Click me!</p>
+ 
+<span></span>
+ 
+<script>
+$( "body" ).delegate( "p", "click", function() {
+  $( this ).after( "<p>Another paragraph!</p>" );
+});
+</script>
+ 
+</body>
+</html>

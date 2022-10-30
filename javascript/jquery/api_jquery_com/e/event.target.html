@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>event.target demo</title>
+  <style>
+  span, strong, p {
+    padding: 8px;
+    display: block;
+    border: 1px solid #999;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<div id="log"></div>
+<div>
+  <p>
+    <strong><span>click</span></strong>
+  </p>
+</div>
+ 
+<script>
+$( "body" ).click(function( event ) {
+  $( "#log" ).html( "clicked: " + event.target.nodeName );
+});
+</script>
+ 
+</body>
+</html>

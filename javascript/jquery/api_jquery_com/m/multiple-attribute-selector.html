@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>attributeMultiple demo</title>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<input id="man-news" name="man-news">
+<input name="milkman">
+<input id="letterman" name="new-letterman">
+<input name="newmilk">
+ 
+<script>
+$( "input[id][name$='man']" ).val( "only this one" );
+</script>
+ 
+</body>
+</html>

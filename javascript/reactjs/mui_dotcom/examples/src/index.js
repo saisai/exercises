@@ -9,6 +9,7 @@ import SignInSide from './components/sign-in-side/SignInSide';
 import StickyFooter from './components/sticky-footer/StickyFooter';
 import Album from './components/album/Album';
 import Main from './components/material-components/main';
+import LayoutMain from './components/layoutmain';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -17,10 +18,11 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
   <SignInSide />
   <StickyFooter />
     <Album />
+     <Main />
 */}
 root.render(
   
-  <Main />
+  <LayoutMain />
   
   
 );

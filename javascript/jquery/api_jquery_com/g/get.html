@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>get demo</title>
+  <style>
+  span {
+    color: red;
+  }
+  div {
+    background: yellow;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<span>&nbsp;</span>
+<p>In this paragraph is an <span>important</span> section</p>
+<div><input type="text"></div>
+ 
+<script>
+$( "*", document.body ).click(function( event ) {
+  event.stopPropagation();
+  var domElement = $( this ).get( 0 );
+  $( "span" ).first().text( "Clicked on - " + domElement.nodeName );
+});
+</script>
+ 
+</body>
+</html>
