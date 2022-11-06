@@ -1,0 +1,6 @@
+
+# To get all current added files
+git ls-files --others --exclude-standard
+for f in $(git ls-files --others --exclude-standard); do echo $f; git add $f; done
+
+https://stackoverflow.com/questions/2298047/git-ls-files-howto-identify-new-files-added-not-committed
