@@ -26,7 +26,8 @@
     "rules": {
         "arrow-body-style": ["off"],
         "class-methods-use-this": ["off"],
-        "comma-dangle": ["warn"],
+        //"comma-dangle": ["warn"],
+        "comma-dangle": ["off"],
         "dot-notation": ["off"],
         "eqeqeq": ["error", "always"],
         "import/extensions": ["off"],
@@ -44,7 +45,7 @@
         "no-restricted-syntax": ["off"],
         "no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }],
         "no-useless-constructor": ["off"],
-        "object-curly-spacing": ["warn"],
+        "object-curly-spacing": ["off"],
         "object-shorthand": ["off"],
         "operator-linebreak": ["warn"],
         "prefer-destructuring": ["off"],
@@ -53,7 +54,14 @@
         //"quotes": ["warn"],
         "radix": ["off"],
         "react/no-unescaped-entities": [ "error", { "forbid": [">", "}"] }],
-        "semi": ["error", "always"]
+        "semi": ["error", "always"],
+        "no-restricted-imports": [
+            "error",
+            {
+              "patterns": ["@material-ui/*/*/*"]
+            }
+          ]
+        //"@typescript-eslint/object-curly-spacing": "warn"
         
         // suppress errors for missing 'import React' in files
         //"react/react-in-jsx-scope": "off",

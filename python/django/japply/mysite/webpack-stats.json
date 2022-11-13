@@ -1,8 +1,148 @@
 {
-  "status": "error",
-  "assets": {},
-  "chunks": {},
+  "status": "done",
+  "assets": {
+    "index.bundle.js": {
+      "name": "index.bundle.js",
+      "path": "D:\\exercises\\python\\django\\japply\\mysite\\assets\\bundles\\index.bundle.js",
+      "publicPath": "http://localhost:3000/build/index.bundle.js"
+    },
+    "index.0aef9babe1f24ce1efc8.hot-update.js": {
+      "name": "index.0aef9babe1f24ce1efc8.hot-update.js",
+      "path": "D:\\exercises\\python\\django\\japply\\mysite\\assets\\bundles\\index.0aef9babe1f24ce1efc8.hot-update.js",
+      "publicPath": "http://localhost:3000/build/index.0aef9babe1f24ce1efc8.hot-update.js"
+    },
+    "index.0aef9babe1f24ce1efc8.hot-update.json": {
+      "name": "index.0aef9babe1f24ce1efc8.hot-update.json",
+      "path": "D:\\exercises\\python\\django\\japply\\mysite\\assets\\bundles\\index.0aef9babe1f24ce1efc8.hot-update.json",
+      "publicPath": "http://localhost:3000/build/index.0aef9babe1f24ce1efc8.hot-update.json"
+    },
+    "index.e92dfb85d3f3576d4514.hot-update.js": {
+      "name": "index.e92dfb85d3f3576d4514.hot-update.js",
+      "path": "D:\\exercises\\python\\django\\japply\\mysite\\assets\\bundles\\index.e92dfb85d3f3576d4514.hot-update.js",
+      "publicPath": "http://localhost:3000/build/index.e92dfb85d3f3576d4514.hot-update.js"
+    },
+    "index.e92dfb85d3f3576d4514.hot-update.json": {
+      "name": "index.e92dfb85d3f3576d4514.hot-update.json",
+      "path": "D:\\exercises\\python\\django\\japply\\mysite\\assets\\bundles\\index.e92dfb85d3f3576d4514.hot-update.json",
+      "publicPath": "http://localhost:3000/build/index.e92dfb85d3f3576d4514.hot-update.json"
+    },
+    "index.627d0a447f942ea07530.hot-update.js": {
+      "name": "index.627d0a447f942ea07530.hot-update.js",
+      "path": "D:\\exercises\\python\\django\\japply\\mysite\\assets\\bundles\\index.627d0a447f942ea07530.hot-update.js",
+      "publicPath": "http://localhost:3000/build/index.627d0a447f942ea07530.hot-update.js"
+    },
+    "index.627d0a447f942ea07530.hot-update.json": {
+      "name": "index.627d0a447f942ea07530.hot-update.json",
+      "path": "D:\\exercises\\python\\django\\japply\\mysite\\assets\\bundles\\index.627d0a447f942ea07530.hot-update.json",
+      "publicPath": "http://localhost:3000/build/index.627d0a447f942ea07530.hot-update.json"
+    },
+    "index.a8cdce5eb73e891f7d5a.hot-update.js": {
+      "name": "index.a8cdce5eb73e891f7d5a.hot-update.js",
+      "path": "D:\\exercises\\python\\django\\japply\\mysite\\assets\\bundles\\index.a8cdce5eb73e891f7d5a.hot-update.js",
+      "publicPath": "http://localhost:3000/build/index.a8cdce5eb73e891f7d5a.hot-update.js"
+    },
+    "index.a8cdce5eb73e891f7d5a.hot-update.json": {
+      "name": "index.a8cdce5eb73e891f7d5a.hot-update.json",
+      "path": "D:\\exercises\\python\\django\\japply\\mysite\\assets\\bundles\\index.a8cdce5eb73e891f7d5a.hot-update.json",
+      "publicPath": "http://localhost:3000/build/index.a8cdce5eb73e891f7d5a.hot-update.json"
+    },
+    "index.ad1e6b4e2ec2b87a0e24.hot-update.js": {
+      "name": "index.ad1e6b4e2ec2b87a0e24.hot-update.js",
+      "path": "D:\\exercises\\python\\django\\japply\\mysite\\assets\\bundles\\index.ad1e6b4e2ec2b87a0e24.hot-update.js",
+      "publicPath": "http://localhost:3000/build/index.ad1e6b4e2ec2b87a0e24.hot-update.js"
+    },
+    "index.ad1e6b4e2ec2b87a0e24.hot-update.json": {
+      "name": "index.ad1e6b4e2ec2b87a0e24.hot-update.json",
+      "path": "D:\\exercises\\python\\django\\japply\\mysite\\assets\\bundles\\index.ad1e6b4e2ec2b87a0e24.hot-update.json",
+      "publicPath": "http://localhost:3000/build/index.ad1e6b4e2ec2b87a0e24.hot-update.json"
+    },
+    "index.1b0114dcfd743d690687.hot-update.js": {
+      "name": "index.1b0114dcfd743d690687.hot-update.js",
+      "path": "D:\\exercises\\python\\django\\japply\\mysite\\assets\\bundles\\index.1b0114dcfd743d690687.hot-update.js",
+      "publicPath": "http://localhost:3000/build/index.1b0114dcfd743d690687.hot-update.js"
+    },
+    "index.1b0114dcfd743d690687.hot-update.json": {
+      "name": "index.1b0114dcfd743d690687.hot-update.json",
+      "path": "D:\\exercises\\python\\django\\japply\\mysite\\assets\\bundles\\index.1b0114dcfd743d690687.hot-update.json",
+      "publicPath": "http://localhost:3000/build/index.1b0114dcfd743d690687.hot-update.json"
+    },
+    "index.81ac77314f396f3f37b1.hot-update.js": {
+      "name": "index.81ac77314f396f3f37b1.hot-update.js",
+      "path": "D:\\exercises\\python\\django\\japply\\mysite\\assets\\bundles\\index.81ac77314f396f3f37b1.hot-update.js",
+      "publicPath": "http://localhost:3000/build/index.81ac77314f396f3f37b1.hot-update.js"
+    },
+    "index.81ac77314f396f3f37b1.hot-update.json": {
+      "name": "index.81ac77314f396f3f37b1.hot-update.json",
+      "path": "D:\\exercises\\python\\django\\japply\\mysite\\assets\\bundles\\index.81ac77314f396f3f37b1.hot-update.json",
+      "publicPath": "http://localhost:3000/build/index.81ac77314f396f3f37b1.hot-update.json"
+    },
+    "index.84723043ef53db229dd4.hot-update.js": {
+      "name": "index.84723043ef53db229dd4.hot-update.js",
+      "path": "D:\\exercises\\python\\django\\japply\\mysite\\assets\\bundles\\index.84723043ef53db229dd4.hot-update.js",
+      "publicPath": "http://localhost:3000/build/index.84723043ef53db229dd4.hot-update.js"
+    },
+    "index.84723043ef53db229dd4.hot-update.json": {
+      "name": "index.84723043ef53db229dd4.hot-update.json",
+      "path": "D:\\exercises\\python\\django\\japply\\mysite\\assets\\bundles\\index.84723043ef53db229dd4.hot-update.json",
+      "publicPath": "http://localhost:3000/build/index.84723043ef53db229dd4.hot-update.json"
+    },
+    "index.0eb8976e9c80015019c8.hot-update.js": {
+      "name": "index.0eb8976e9c80015019c8.hot-update.js",
+      "path": "D:\\exercises\\python\\django\\japply\\mysite\\assets\\bundles\\index.0eb8976e9c80015019c8.hot-update.js",
+      "publicPath": "http://localhost:3000/build/index.0eb8976e9c80015019c8.hot-update.js"
+    },
+    "index.0eb8976e9c80015019c8.hot-update.json": {
+      "name": "index.0eb8976e9c80015019c8.hot-update.json",
+      "path": "D:\\exercises\\python\\django\\japply\\mysite\\assets\\bundles\\index.0eb8976e9c80015019c8.hot-update.json",
+      "publicPath": "http://localhost:3000/build/index.0eb8976e9c80015019c8.hot-update.json"
+    },
+    "index.78f1053e5b47f50b7045.hot-update.js": {
+      "name": "index.78f1053e5b47f50b7045.hot-update.js",
+      "path": "D:\\exercises\\python\\django\\japply\\mysite\\assets\\bundles\\index.78f1053e5b47f50b7045.hot-update.js",
+      "publicPath": "http://localhost:3000/build/index.78f1053e5b47f50b7045.hot-update.js"
+    },
+    "index.78f1053e5b47f50b7045.hot-update.json": {
+      "name": "index.78f1053e5b47f50b7045.hot-update.json",
+      "path": "D:\\exercises\\python\\django\\japply\\mysite\\assets\\bundles\\index.78f1053e5b47f50b7045.hot-update.json",
+      "publicPath": "http://localhost:3000/build/index.78f1053e5b47f50b7045.hot-update.json"
+    },
+    "index.369bf890cf18fdb87145.hot-update.js": {
+      "name": "index.369bf890cf18fdb87145.hot-update.js",
+      "path": "D:\\exercises\\python\\django\\japply\\mysite\\assets\\bundles\\index.369bf890cf18fdb87145.hot-update.js",
+      "publicPath": "http://localhost:3000/build/index.369bf890cf18fdb87145.hot-update.js"
+    },
+    "index.369bf890cf18fdb87145.hot-update.json": {
+      "name": "index.369bf890cf18fdb87145.hot-update.json",
+      "path": "D:\\exercises\\python\\django\\japply\\mysite\\assets\\bundles\\index.369bf890cf18fdb87145.hot-update.json",
+      "publicPath": "http://localhost:3000/build/index.369bf890cf18fdb87145.hot-update.json"
+    },
+    "index.5eae09bc1646ce74bc2f.hot-update.js": {
+      "name": "index.5eae09bc1646ce74bc2f.hot-update.js",
+      "path": "D:\\exercises\\python\\django\\japply\\mysite\\assets\\bundles\\index.5eae09bc1646ce74bc2f.hot-update.js",
+      "publicPath": "http://localhost:3000/build/index.5eae09bc1646ce74bc2f.hot-update.js"
+    },
+    "index.5eae09bc1646ce74bc2f.hot-update.json": {
+      "name": "index.5eae09bc1646ce74bc2f.hot-update.json",
+      "path": "D:\\exercises\\python\\django\\japply\\mysite\\assets\\bundles\\index.5eae09bc1646ce74bc2f.hot-update.json",
+      "publicPath": "http://localhost:3000/build/index.5eae09bc1646ce74bc2f.hot-update.json"
+    },
+    "index.8942a52012c7a5fbdae3.hot-update.js": {
+      "name": "index.8942a52012c7a5fbdae3.hot-update.js",
+      "path": "D:\\exercises\\python\\django\\japply\\mysite\\assets\\bundles\\index.8942a52012c7a5fbdae3.hot-update.js",
+      "publicPath": "http://localhost:3000/build/index.8942a52012c7a5fbdae3.hot-update.js"
+    },
+    "index.8942a52012c7a5fbdae3.hot-update.json": {
+      "name": "index.8942a52012c7a5fbdae3.hot-update.json",
+      "path": "D:\\exercises\\python\\django\\japply\\mysite\\assets\\bundles\\index.8942a52012c7a5fbdae3.hot-update.json",
+      "publicPath": "http://localhost:3000/build/index.8942a52012c7a5fbdae3.hot-update.json"
+    }
+  },
+  "chunks": {
+    "index": [
+      "index.bundle.js"
+    ]
+  },
   "publicPath": "http://localhost:3000/build/",
-  "error": "ESLintError",
-  "message": "[eslint] .eslintrc.json:\n\tConfiguration for rule \"arraysInObjects\" is invalid:\n\tSeverity should be one of the following: 0 = off, 1 = warn, 2 = error (you passed 'false').\n"
+  "error": "ModuleBuildError",
+  "message": "Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: D:\\exercises\\python\\django\\japply\\mysite\\frontend\\components\\Post.jsx: Only one default export allowed per module. (378:0)\n\n  376 | }\n  377 |\n> 378 | export default Post\n      | ^\n    at instantiate (D:\\exercises\\python\\django\\japply\\mysite\\node_modules\\@babel\\parser\\lib\\index.js:67:32)\n    at constructor (D:\\exercises\\python\\django\\japply\\mysite\\node_modules\\@babel\\parser\\lib\\index.js:364:12)\n    at JSXParserMixin.raise (D:\\exercises\\python\\django\\japply\\mysite\\node_modules\\@babel\\parser\\lib\\index.js:3364:19)\n    at JSXParserMixin.checkDuplicateExports (D:\\exercises\\python\\django\\japply\\mysite\\node_modules\\@babel\\parser\\lib\\index.js:14319:14)\n    at JSXParserMixin.checkExport (D:\\exercises\\python\\django\\japply\\mysite\\node_modules\\@babel\\parser\\lib\\index.js:14248:14)\n    at JSXParserMixin.parseExport (D:\\exercises\\python\\django\\japply\\mysite\\node_modules\\@babel\\parser\\lib\\index.js:14084:12)\n    at JSXParserMixin.parseStatementContent (D:\\exercises\\python\\django\\japply\\mysite\\node_modules\\@babel\\parser\\lib\\index.js:13020:27)\n    at JSXParserMixin.parseStatement (D:\\exercises\\python\\django\\japply\\mysite\\node_modules\\@babel\\parser\\lib\\index.js:12917:17)\n    at JSXParserMixin.parseBlockOrModuleBlockBody (D:\\exercises\\python\\django\\japply\\mysite\\node_modules\\@babel\\parser\\lib\\index.js:13497:25)\n    at JSXParserMixin.parseBlockBody (D:\\exercises\\python\\django\\japply\\mysite\\node_modules\\@babel\\parser\\lib\\index.js:13489:10)\n    at JSXParserMixin.parseProgram (D:\\exercises\\python\\django\\japply\\mysite\\node_modules\\@babel\\parser\\lib\\index.js:12832:10)\n    at JSXParserMixin.parseTopLevel (D:\\exercises\\python\\django\\japply\\mysite\\node_modules\\@babel\\parser\\lib\\index.js:12822:25)\n    at JSXParserMixin.parse (D:\\exercises\\python\\django\\japply\\mysite\\node_modules\\@babel\\parser\\lib\\index.js:14674:10)\n    at parse (D:\\exercises\\python\\django\\japply\\mysite\\node_modules\\@babel\\parser\\lib\\index.js:14716:38)\n    at parser (D:\\exercises\\python\\django\\japply\\mysite\\node_modules\\@babel\\core\\lib\\parser\\index.js:41:34)\n    at parser.next (<anonymous>)\n    at normalizeFile (D:\\exercises\\python\\django\\japply\\mysite\\node_modules\\@babel\\core\\lib\\transformation\\normalize-file.js:66:38)\n    at normalizeFile.next (<anonymous>)\n    at run (D:\\exercises\\python\\django\\japply\\mysite\\node_modules\\@babel\\core\\lib\\transformation\\index.js:21:50)\n    at run.next (<anonymous>)\n    at transform (D:\\exercises\\python\\django\\japply\\mysite\\node_modules\\@babel\\core\\lib\\transform.js:22:41)\n    at transform.next (<anonymous>)\n    at step (D:\\exercises\\python\\django\\japply\\mysite\\node_modules\\gensync\\index.js:261:32)\n    at D:\\exercises\\python\\django\\japply\\mysite\\node_modules\\gensync\\index.js:273:13\n    at async.call.result.err.err (D:\\exercises\\python\\django\\japply\\mysite\\node_modules\\gensync\\index.js:223:11)"
 }
