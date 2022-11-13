@@ -1,6 +1,8 @@
 import { Box, Stack, Skeleton } from "@mui/material";
 import React, { useState } from "react";
 import Post from "./Post";
+import Post2 from "./Post2";
+import PostXGrid from "./PostXGrid";
 
 const Feed = () => {
   const [loading, setLoading] = useState(true);
@@ -20,7 +22,9 @@ const Feed = () => {
         </Stack>
       ) : (
         <>
-          <Post />
+        
+          <PostXGrid />
+          
         </>
       )}
     </Box>

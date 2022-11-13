@@ -1,0 +1,64 @@
+https://stackoverflow.com/questions/64812727/how-to-create-a-link-in-a-row-with-material-ui-data-grid
+
+https://mui.com/x/react-data-grid/column-definition/#render-cell
+
+https://mui.com/material-ui/react-link/
+
+https://mui.com/x/react-data-grid/column-dimensions/
+
+https://stackoverflow.com/questions/67970440/how-to-make-material-data-grid-width-to-fill-the-parent-component-in-react-js
+
+
+https://stackoverflow.com/questions/42541559/eslint-with-react-gives-no-unused-vars-errors
+
+https://typescript-eslint.io/rules/object-curly-spacing/
+https://eslint.org/docs/latest/rules/quotes
+
+
+  "message": "Module not found: Error: Can't resolve '@mui/styled-engine' in 'D:\\exercises\\python\\django\\japply\\mysite\\node_modules\\@mui\\system\\esm\\ThemeProvider'"
+  
+  https://emotion.sh/docs/@emotion/babel-plugin
+  https://babeljs.io/docs/en/config-files
+  
+  
+  
+  
+  https://dev.to/darkmavis1980/fetching-data-with-react-hooks-and-axios-114h
+  https://blog.openreplay.com/integrating-axios-with-react-hooks/
+  
+  https://enable-cors.org/server_cgi.html
+  
+  https://github.com/django-webpack/django-webpack-loader/blob/master/examples/hot-reload/app/settings.py
+  
+  https://www.freecodecamp.org/news/how-to-use-reactjs-with-webpack-4-babel-7-and-material-design-ff754586f618/
+  https://github.com/webpack/webpack/tree/main/examples
+  https://dev.to/nagatodev/consuming-rest-api-in-react-with-axios-7j3
+  https://github.com/Faruqt/React-Django/blob/master/project1/frontend/package.json
+  https://www.guguweb.com/2021/06/12/integrate-axios-with-django-rest-framework/
+  https://www.bezkoder.com/django-react-axios-rest-framework/
+
+
+https://github.com/django-webpack/django-webpack-loader
+
+https://github.com/arturpericles/boilerplate-copi/blob/main/backend/templates/index.html
+https://github.com/arturpericles/boilerplate-copi/blob/main/backend/config/settings/base.py
+https://github.com/arturpericles/boilerplate-copi/tree/main/frontend
+
+https://weaintplastic.github.io/web-development-field-guide/Development/Frontend_Development/Setting_up_your_project/Setup_Dependency_Managers/Node_Package_Manager/Initialize_NPM_on_a_new_project.html
+https://webpack.js.org/guides/hot-module-replacement/
+
+https://devconnected.com/how-to-switch-branch-on-git/
+https://www.freecodecamp.org/news/git-switch-branch/
+
+
+https://stackoverflow.com/questions/73300555/react-js-webpack-throws-error-module-not-found-error-cant-resolve-src-conten
+
+https://bobbyhadz.com/blog/react-module-not-found-cant-resolve
+
+
+
+# git check branch 
+git branch -a
+
+# git swich branch main to 4.1.x
+git branch --set-upstream-to=origin/main remotes/origin/stable/4.1.x
