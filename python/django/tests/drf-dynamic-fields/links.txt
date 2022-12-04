@@ -1,0 +1,3 @@
+https://github.com/dbrgn/drf-dynamic-fields
+
+https://github.com/dbrgn/drf-dynamic-fields/blob/master/tests/test_mixins.py

@@ -14,6 +14,7 @@ class C(B):
     def __init__(self):
         super().__init__()
         self.__private = 1      # Does not override B.__private
+        #super().__init__()
     # Does not override B.__private_method()
     def __private_method(self):
         print('C.__private_method')

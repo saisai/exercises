@@ -1,0 +1,45 @@
+Testing against Django installed in 'D:/tmp/github/django-4.1/django-4.1.3/django' with up to 8 processes
+Found 6 test(s).
+System check identified no issues (0 silenced).
+/admin/admin_custom_urls/action/add/change/
+/admin/admin_custom_urls/action/path_2Fto_2Fhtml_2Fdocument.html/change/
+0
+1
+/admin/admin_custom_urls/person/1/history/
+allowed_schemes => ['http', 'https', 'ftp']
+charset => utf-8
+client => <django.test.client.Client object at 0x000001e9410ebaf0>
+close => <bound method HttpResponseBase.close of <HttpResponseRedirect status_code=302, "text/html; charset=utf-8", url="/admin/admin_custom_urls/person/2/delete/">>
+closed => True
+content => b''
+context => None
+cookies => Set-Cookie: messages=.eJwljkEKgzAQRa8yzKqF0KmB7qxn6MKdSkiT0VQ0KY6h9PaVZvM37_H4XYfGzJKiWVnEToyqUvqmsA0Mb94OAn3W18rVFsLG471Hsn59xbLGZdnTavK2CBWfNLlg48TUY_MoifSc2e1w0ueabPMPevhYgWJ6kOzccWDMy_K9oEIchh8WMzSe:1p1kTO:ec_YhQiKbSKsRYUgClDG3jWoexgTSzByyXutHjMiJ8Y; HttpOnly; Path=/; SameSite=Lax
+delete_cookie => <bound method HttpResponseBase.delete_cookie of <HttpResponseRedirect status_code=302, "text/html; charset=utf-8", url="/admin/admin_custom_urls/person/2/delete/">>
+exc_info => None
+flush => <bound method HttpResponseBase.flush of <HttpResponseRedirect status_code=302, "text/html; charset=utf-8", url="/admin/admin_custom_urls/person/2/delete/">>
+get => <bound method HttpResponseBase.get of <HttpResponseRedirect status_code=302, "text/html; charset=utf-8", url="/admin/admin_custom_urls/person/2/delete/">>
+getvalue => <bound method HttpResponse.getvalue of <HttpResponseRedirect status_code=302, "text/html; charset=utf-8", url="/admin/admin_custom_urls/person/2/delete/">>
+has_header => <bound method HttpResponseBase.has_header of <HttpResponseRedirect status_code=302, "text/html; charset=utf-8", url="/admin/admin_custom_urls/person/2/delete/">>
+headers => {'Content-Type': 'text/html; charset=utf-8', 'Location': '/admin/admin_custom_urls/person/2/delete/', 'Expires': 'Sun, 04 Dec 2022 08:35:42 GMT', 'Cache-Control': 'max-age=0, no-cache, no-store, must-revalidate, private', 'Content-Length': '0', 'Vary': 'Cookie'}
+items => <bound method HttpResponseBase.items of <HttpResponseRedirect status_code=302, "text/html; charset=utf-8", url="/admin/admin_custom_urls/person/2/delete/">>
+json => functools.partial(<bound method ClientMixin._parse_json of <django.test.client.Client object at 0x000001e9410ebaf0>>, <HttpResponseRedirect status_code=302, "text/html; charset=utf-8", url="/admin/admin_custom_urls/person/2/delete/">)
+make_bytes => <bound method HttpResponseBase.make_bytes of <HttpResponseRedirect status_code=302, "text/html; charset=utf-8", url="/admin/admin_custom_urls/person/2/delete/">>
+readable => <bound method HttpResponseBase.readable of <HttpResponseRedirect status_code=302, "text/html; charset=utf-8", url="/admin/admin_custom_urls/person/2/delete/">>
+reason_phrase => Found
+request => {'PATH_INFO': '/admin/admin_custom_urls/person/2/change/', 'REQUEST_METHOD': 'POST', 'SERVER_PORT': '80', 'wsgi.url_scheme': 'http', 'CONTENT_LENGTH': '95', 'CONTENT_TYPE': 'multipart/form-data; boundary=BoUnDaRyStRiNg', 'wsgi.input': <django.test.client.FakePayload object at 0x000001e941137a30>, 'QUERY_STRING': ''}
+resolver_match => ResolverMatch(func=django.contrib.admin.options.change_view, args=(), kwargs={'object_id': '2'}, url_name='admin_custom_urls_person_change', app_names=['admin'], namespaces=['admin_custom_urls'], route='admin/admin_custom_urls/person/<path:object_id>/change/', captured_kwargs={'object_id': '2'})
+seekable => <bound method HttpResponseBase.seekable of <HttpResponseRedirect status_code=302, "text/html; charset=utf-8", url="/admin/admin_custom_urls/person/2/delete/">>
+serialize => <bound method HttpResponse.serialize of <HttpResponseRedirect status_code=302, "text/html; charset=utf-8", url="/admin/admin_custom_urls/person/2/delete/">>
+serialize_headers => <bound method HttpResponseBase.serialize_headers of <HttpResponseRedirect status_code=302, "text/html; charset=utf-8", url="/admin/admin_custom_urls/person/2/delete/">>
+set_cookie => <bound method HttpResponseBase.set_cookie of <HttpResponseRedirect status_code=302, "text/html; charset=utf-8", url="/admin/admin_custom_urls/person/2/delete/">>
+set_signed_cookie => <bound method HttpResponseBase.set_signed_cookie of <HttpResponseRedirect status_code=302, "text/html; charset=utf-8", url="/admin/admin_custom_urls/person/2/delete/">>
+setdefault => <bound method HttpResponseBase.setdefault of <HttpResponseRedirect status_code=302, "text/html; charset=utf-8", url="/admin/admin_custom_urls/person/2/delete/">>
+status_code => 302
+streaming => False
+tell => <bound method HttpResponse.tell of <HttpResponseRedirect status_code=302, "text/html; charset=utf-8", url="/admin/admin_custom_urls/person/2/delete/">>
+templates => []
+url => /admin/admin_custom_urls/person/2/delete/
+writable => <bound method HttpResponse.writable of <HttpResponseRedirect status_code=302, "text/html; charset=utf-8", url="/admin/admin_custom_urls/person/2/delete/">>
+write => <bound method HttpResponse.write of <HttpResponseRedirect status_code=302, "text/html; charset=utf-8", url="/admin/admin_custom_urls/person/2/delete/">>
+writelines => <bound method HttpResponse.writelines of <HttpResponseRedirect status_code=302, "text/html; charset=utf-8", url="/admin/admin_custom_urls/person/2/delete/">>
+wsgi_request => <WSGIRequest: POST '/admin/admin_custom_urls/person/2/change/'>
