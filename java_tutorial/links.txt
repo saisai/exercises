@@ -1,0 +1,2 @@
+https://howtodoinjava.com/java/java-security/java-aes-encryption-example/
+https://github.com/lokeshgupta1981/Core-Java/blob/master/src/main/java/com/howtodoinjava/core/security/AES.java
