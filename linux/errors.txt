@@ -1,0 +1,7 @@
+ [SOLVED] Invalid or Corrupted package (PGP signature)
+ 
+ pacman -Sy archlinux-keyring
+ 
+ pacman-key --refresh-keys
+ 
+ https://bbs.archlinux.org/viewtopic.php?id=233480

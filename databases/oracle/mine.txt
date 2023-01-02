@@ -1,0 +1,24 @@
+sqlplus -l system/root@localhost/orcl3
+
+to change password, just type password command
+
+
+start the two followings from services console.
+
+OracleServiceORCL3
+OracleOraDb11g_home3TNSListener
+
+https://logic.edchen.org/how-to-resolve-ora-28002-the-password-will-expire-within-days/
+
+
+Drop user schema
+DROP USER DEMOPYTHON CASCADE;
+
+
+ORA-28000: the account is locked
+ALTER USER username ACCOUNT UNLOCK;
+alter user username identified by yourpassword account unlock;
+
+
+
+
