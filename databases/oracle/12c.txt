@@ -1,0 +1,40 @@
+sqlplus / as sysdba
+
+create user C##username identified by password;
+GRANT CONNECT, RESOURCE, DBA TO C##username;
+
+https://www.filerepairtool.net/blog/fix-ora-65096-error
+
+
+select USERNAME,ACCOUNT_STATUS,PASSWORD_VERSIONS from dba_users;
+
+select * from dba_users;
+select con_id, name, open_mode from v$pdbs;
+SELECT * FROM v$services ORDER BY name;
+
+
+https://docs.djangoproject.com/en/3.0/ref/databases/#oracle-notes
+
+https://yusufanilakduygu.wordpress.com/2017/07/20/oracle-12c-new-security-features-02-dba_users-new-columns/
+https://blog.toadworld.com/2018/07/12/oracle-multi-tenant-application-containers-part-xiii-identify-common-application-users-for-an-application
+https://www.oraexcel.com/database-data-dictionary-19cr1-dba_users-view
+https://docs.oracle.com/en/database/oracle/oracle-database/19/refrn/DBA_USERS.html#GUID-309FCCB2-2E8D-4371-9FC5-7F3B10E2A8C0
+https://docs.oracle.com/en/database/oracle/oracle-database/18/refrn/DBA_USERS.html#GUID-309FCCB2-2E8D-4371-9FC5-7F3B10E2A8C0
+https://docs.oracle.com/database/121/DBSEG/users.htm#DBSEG002
+
+https://blogs.oracle.com/sql/post/how-to-create-users-grant-them-privileges-and-remove-them-in-oracle-database
+
+https://www.oracle.com/webfolder/technetwork/tutorials/obe/db/12c/r1/12c_sqldev/pdb/12cPDB01.html
+https://www.databasestar.com/ora-01017/
+https://github.com/oracle/docker-images/issues/1934
+
+https://stackoverflow.com/questions/14476875/ora-01017-invalid-username-password-when-connecting-to-11g-database-from-9i-clie
+
+https://www.oracle.com/news/connect/build-web-applications-python-django.html
+http://www.srikanthtechnologies.com/blog/python/django_oracle_orm.aspx
+https://www.youtube.com/watch?v=s0Qmc9WwoEk&ab_channel=CodeNCursor
+https://drive.google.com/file/d/1NIoXrXMHZf4ynk03a9wNfkeTbGsv1Ezl/view
+
+https://stackoverflow.com/questions/14476875/ora-01017-invalid-username-password-when-connecting-to-11g-database-from-9i-clie
+
+ALTER SYSTEM SET SEC_CASE_SENSITIVE_LOGON = FALSE; 

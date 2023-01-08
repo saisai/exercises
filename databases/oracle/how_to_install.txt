@@ -1,0 +1,15 @@
+https://www.oracletutorial.com/getting-started/install-oracle/
+https://www.oracletutorial.com/getting-started/create-oracle-sample-database-for-practice/
+
+
+https://www.thegeekdiary.com/connecting-pdb-in-oracle-12c-and-19c/
+
+https://docs.oracle.com/database/121/SQLRF/statements_8003.htm#SQLRF01503
+https://logic.edchen.org/how-to-resolve-ora-65096-invalid-common-user-or-role-name/
+
+
+https://docs.oracle.com/cd/B13789_01/server.101/b10759/sql_elements006.htm
+https://pythonpoint.net/how-to-connect-oracle-database-in-python/
+https://www.appsloveworld.com/oracle/100/94/oracle-12-1-0-2-0-user-creation-successful-but-connection-with-new-user-fails
+
+https://docs.oracle.com/en/database/oracle/oracle-database/18/ntqrf/database-connection-issues.html#GUID-71FADFEE-5D9B-4C02-B836-C1375E82810E

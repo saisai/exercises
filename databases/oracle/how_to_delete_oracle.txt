@@ -1,0 +1,11 @@
+
+ Delete Oracle* registry keys
+Press Windows key, type regedit, delete the following Windows registry keys if it exists. :
+
+2.1 HKEY_LOCAL_MACHINE/SOFTWARE/Oracle*
+HKEY_LOCAL_MACHINE/SOFTWARE/Oracle*
+HKEY_LOCAL_MACHINE/SOFTWARE/Wow6432Node/Oracle* (64-bits Windows)
+HKEY_LOCAL_MACHINE/SYSTEM/CurrentControlSet/Services/Oracle*
+
+
+https://mkyong.com/oracle/how-to-uninstall-oracle-database-19c-on-windows/
