@@ -83,18 +83,17 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
-   'default' : {
+   'default_psql' : {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'tutorial',
         'USER': 'postgres',
         'PASSWORD': '',
         'HOST': '127.0.0.1',
-        'PORT': '7496',
+        'PORT': '5432',
         },
-    'sqlite': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'scrapy.db'),
-        #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',        
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 

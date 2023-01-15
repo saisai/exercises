@@ -1,0 +1,7 @@
+https://stackoverflow.com/questions/tagged/pandas?tab=newest&page=2&pagesize=15
+
+
+
+
+
+https://stackoverflow.com/questions/75096031/convert-scraped-html-table-to-pandas-dataframe

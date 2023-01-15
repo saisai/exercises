@@ -1,0 +1,11 @@
+https://stackoverflow.com/questions/tagged/python-asyncio
+
+
+https://stackoverflow.com/questions/73804498/why-the-while-loop-on-asyncio-tasks-done-method-break-even-though-the-conditi
+
+https://stackoverflow.com/questions/73879605/how-do-i-make-a-stream-reader-not-block-in-python-asyncio-or-concurrent-futures
+https://stackoverflow.com/questions/73855591/python-async-function-proper-syntax
+https://stackoverflow.com/questions/73724271/async-function-in-python-basic-example
+https://stackoverflow.com/questions/75042186/python-pyscript-asyncio-order-of-events-not-as-expected
+https://stackoverflow.com/questions/75026030/python-asyncio-class-to-create-functions-dynamically-and-execute-with-own-interv
+https://stackoverflow.com/questions/75015506/python-run-2-async-infinite-loops-after-the-first-one-already-started

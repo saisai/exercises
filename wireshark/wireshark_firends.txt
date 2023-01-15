@@ -1,0 +1,15 @@
+tshark
+zeek
+brim
+rita
+ettercap
+bettercap
+security onion
+network miner
+snort
+fiddler
+bruteshark
+netmonitor
+wireedit
+cloudshark
+packettotal
