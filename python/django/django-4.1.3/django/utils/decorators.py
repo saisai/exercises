@@ -111,6 +111,7 @@ def decorator_from_middleware(middleware_class):
     lets you use middleware functionality on a per-view basis. The middleware
     is created with no params passed.
     """
+    print('aa', middleware_class.__name__)
     return make_middleware_decorator(middleware_class)()
 
 
@@ -129,7 +130,7 @@ def make_middleware_decorator(middleware_class):
                     result = middleware.process_view(request, view_func, args, kwargs)
                     if result is not None:
                         return result
-                try:
+                try:               
                     response = view_func(request, *args, **kwargs)
                 except Exception as e:
                     if hasattr(middleware, "process_exception"):
@@ -153,6 +154,7 @@ def make_middleware_decorator(middleware_class):
                 else:
                     if hasattr(middleware, "process_response"):
                         return middleware.process_response(request, response)
+                
                 return response
 
             return _wrapped_view

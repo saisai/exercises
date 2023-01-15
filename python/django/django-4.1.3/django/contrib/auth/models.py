@@ -303,6 +303,7 @@ class PermissionsMixin(models.Model):
         assumed to have permission in general. If an object is provided, check
         permissions for that object.
         """
+        
         # Active superusers have all permissions.
         if self.is_active and self.is_superuser:
             return True

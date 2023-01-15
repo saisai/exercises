@@ -1,0 +1,6 @@
+https://stackoverflow.com/questions/3801321/git-list-only-untracked-files-also-custom-commands
+
+# To get the new added files and folder
+git ls-files --others --exclude-standard
+
+for data in $(git ls-files --others --exclude-standard); do git add $data; done

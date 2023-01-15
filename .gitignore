@@ -4,4 +4,4 @@ node_modules/
 .pyc
 .class
 .exe
-
+*.sqlite3

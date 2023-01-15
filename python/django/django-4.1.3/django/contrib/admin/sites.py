@@ -541,7 +541,7 @@ class AdminSite:
         # Sort the models alphabetically within each app.
         for app in app_list:
             app["models"].sort(key=lambda x: x["name"])
-
+        
         return app_list
 
     def index(self, request, extra_context=None):
@@ -558,9 +558,8 @@ class AdminSite:
             "app_list": app_list,
             **(extra_context or {}),
         }
-
-        request.current_app = self.name
-
+        
+        request.current_app = self.name        
         return TemplateResponse(
             request, self.index_template or "admin/index.html", context
         )
@@ -580,7 +579,8 @@ class AdminSite:
             **(extra_context or {}),
         }
 
-        request.current_app = self.name
+        request.current_app = self.name     
+        
 
         return TemplateResponse(
             request,
