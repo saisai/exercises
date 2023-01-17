@@ -23,3 +23,7 @@ https://gist.github.com/moor84
 https://github.com/moor84/go-algorithms
 https://developers.redhat.com/blog/2017/11/16/speed-python-using-rust#edit_src_lib_rs
 
+
+https://tech.serhatteker.com/post/
+https://devconnected.com/how-to-add-and-update-git-submodules/
+

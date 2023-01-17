@@ -1,0 +1,6 @@
+https://zetcode.com/python/socket/
+https://github.com/vaibhavhaswani/old-school-web
+https://github.com/ayan2809/Single-Client-Socket-using-UDP
+
+https://github.com/IamLucif3r/Chat-On
+https://developer.ibm.com/tutorials/l-pysocks/
