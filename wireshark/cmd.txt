@@ -5,3 +5,5 @@ https://www.comparitech.com/net-admin/wireshark-ip-address-unknown-host/
 ip.addr == X.X.X.X or ip.adr == 192.168.1.199
 
 https://linuxhint.com/filter_by_ip_wireshark/
+https://www.wireshark.org/docs/dfref/#section_i
+https://adamtheautomator.com/tshark/

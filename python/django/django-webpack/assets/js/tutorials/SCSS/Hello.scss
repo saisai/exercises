@@ -1,0 +1,29 @@
+
+
+.Hello {
+    background-color: rgb(186, 220, 232);
+    padding: 10px;
+    display: flex;
+
+    nav {
+        ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+        }
+      
+        li {
+             display: inline-block;
+             flex-direction: column;
+        }
+      
+        a {
+          display: block;
+          padding: 6px 12px;
+          text-decoration: none;
+        }
+
+
+      }
+}
+

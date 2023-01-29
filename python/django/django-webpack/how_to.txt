@@ -1,0 +1,11 @@
+npm install babel-loader
+npm install react react-dom react-router-dom sass sass-loader style-loader webpack webpack-bundle-tracker webpack-cli webpack-dev-server css-loader mini-css-extract-plugin
+npm install @mui/material @emotion/react @emotion/styled
+npm install @fontsource/roboto
+npm install @mui/icons-material
+npm install @babel/preset-env @babel/preset-react
+
+https://github.com/mui/material-ui/blob/v5.11.6/docs/data/material/getting-started/templates/sign-up/SignUp.js
+https://github.com/mui/material-ui/tree/v5.11.6/docs/data/material/getting-started/templates
+
+https://github.com/django-webpack/django-webpack-loader

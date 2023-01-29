@@ -1,0 +1,1 @@
+dumpcap -i 5 -w D:\tmp\wireshark\sampleone.pcapng -b filesize:500000 -b files:20

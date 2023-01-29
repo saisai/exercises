@@ -1,0 +1,75 @@
+Internet Protocol Version 4, Src: 192.168.0.103, Dst: 209.197.3.8
+
+tshark -Y http2 -T fields -E separator=, -E quote=d -e frame.number -e frame.time_relative -e ip.src -e ip.dst -e _ws.col.Protocol -e frame.len -e http2.headers.authority -e _ws.col.Info
+
+
+tshark -r 20230121_00001_20230121113748.pcapng -Y "ip" -T fields -e ip.src
+
+
+tshark -r 20230121_00001_20230121113748.pcapng -Y "ip" -T fields -e ip.dst -e ip.src -e tcp.dstport -e frame.time_relative -e tls.handshake.extensions_server_name -e ip.ttl 
+tshark -r 20230121_00001_20230121113748.pcapng -Y "ip" -T fields -e ip.dst -e ip.src -e ip.proto
+tshark -r 20230121_00001_20230121113748.pcapng -Y "ip" -T fields -e ip.dst -e ip.src -e eth.dst -e eth.src
+tshark -r 20230121_00001_20230121113748.pcapng -Y "ip" -T fields -e ip.dst -e ip.src -e eth.dst -e eth.src -e udp.payload
+
+
+Frame
+frame.time_relative = Time
+
+Ethernet
+eth.dst = Eternet Destination [ b0:68:e6:0c:0f:ab] physical address may be
+eth.src = Eternet Soruce [ b0:68:e6:0c:0f:ab] physical address may be
+
+Internet Protocol 
+ip.src = Source Ip
+ip.dst = Destination Ip
+ip.ttl =  Time To Live
+ip.proto = Protocol
+
+ip.proto == 6 is TCP
+ip.proto == 16 is DNS
+ip.checksum.status = Header Checksum status
+
+User Datagram Protocol
+udp
+udp.srcport = Source Port
+udp.payload = UDP payload
+
+
+Data
+data
+data.data
+
+Transmission Control Protocol 
+
+tcp.dstport  = Destination Port
+tcp.srcport   = Source Port
+tcp.payload
+tcp.ack = Acknowledge Number
+tcp.seq = Sequence Number
+tcp.len = TCP segment Len
+tcp.completeness = Conersation completeness
+tcp.window_size_value  = Window
+tcp.window_size  = Calculated window size
+
+Hypertext Transfer Protocol
+http.host
+http.connection 
+http.user_agent 
+http.accept 
+http.referer 
+http.accept_encoding 
+http.accept_language
+http.cookie 
+http.request.full_uri
+http.request.method 
+http.request.uri 
+http.request.version
+
+tls.handshake.extensions_server_name = Server Name
+
+
+# https://tshark.dev/analyze/packet_hunting/packet_hunting/
+https://hackertarget.com/tshark-tutorial-and-filter-examples/
+https://stackoverflow.com/questions/74443697/how-do-i-check-if-an-ip-address-appears-in-a-pcap-file
+
+

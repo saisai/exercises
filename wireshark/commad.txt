@@ -1,0 +1,5 @@
+tshark -D
+tshark -i 5
+tshark -i 5 -Y tcp && !http && !ssl and tcp && !(http or ssl)
+
+https://www.wireshark.org/docs/dfref/#section_t

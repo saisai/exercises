@@ -27,3 +27,5 @@ https://developers.redhat.com/blog/2017/11/16/speed-python-using-rust#edit_src_l
 https://tech.serhatteker.com/post/
 https://devconnected.com/how-to-add-and-update-git-submodules/
 
+https://statisticsglobe.com/add-days-months-years-datetime-object-python
+
