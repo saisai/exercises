@@ -1,0 +1,5 @@
+kotlinc Wordwrap.kt -include-runtime -d Wordwrap.jar
+
+curl -s "https://get.sdkman.io" | bash
+sdkman install java
+sdkman install kotlin

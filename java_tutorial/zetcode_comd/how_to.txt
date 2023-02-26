@@ -1,0 +1,41 @@
+https://zetcode.com/java/data-type/ will start from there.
+https://zetcode.com/java/string/	2023-Feb-26 Sun
+
+https://zetcode.com/all/#java
+
+ date +"%Y-%b-%d %a"
+
+
+https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
+
+mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+
+
+https://jenkov.com/tutorials/java-collections/list.html
+https://www.youtube.com/@JakobJenkov/playlists
+
+https://www.vogella.com/tutorials/JavaCollections/article.html
+
+https://devqa.io/how-to-parse-json-in-java/
+
+https://stackoverflow.com/questions/59425453/replacement-for-java-11-method-string-isblank-in-java-8
+
+https://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/StringUtils.html#isBlank-java.lang.CharSequence-
+
+https://www.claudiodesio.com/en/going-beyond-java-8-text-block/
+
+https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html
+
+https://mvnrepository.com/artifact/org.json/json/20220924
+
+https://mkyong.com/java/how-to-read-and-parse-csv-file-in-java/
+
+https://docs.oracle.com/javase/tutorial/i18n/intro/after.html
+https://docs.oracle.com/javase/tutorial/essential/environment/
+https://sourceforge.net/projects/javaconcurrenta/files/javaConcurrentAnimated.jar/download
+https://www.jconcurrent.com/
+
+https://github.com/vgrazi/java-concurrent-animated/tree/master/src/main/java/vgrazi/ui/fancymenu
+https://github.com/vgrazi/JavaConcurrentAnimatedReboot/tree/master/src/main/java/com/vgrazi/jca/config
+
+https://docs.oracle.com/javase/tutorial/

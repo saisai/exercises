@@ -15,13 +15,13 @@ const root = ReactDOM.createRoot(document.getElementById("react-app"));
 root.render(<Hello />);
 */
 
-/*
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './app';
 const root = ReactDOM.createRoot(document.getElementById("react-app"));
 root.render(<App />);
-*/
+
 
 // main app  test
 // import React from "react";
@@ -66,7 +66,7 @@ root.render(<App />);
 //   </React.StrictMode>
 // );
 
-
+/*
 import React from "react";
 import ReactDOM from "react-dom/client";
 import SingInApp from "./SingInApp"
@@ -77,3 +77,4 @@ ReactDOM.createRoot(document.getElementById("react-app")).render(
     <SingInApp />
   </React.StrictMode>
 );
+*/
