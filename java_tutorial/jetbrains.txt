@@ -1,0 +1,28 @@
+1. Paste from the clipboard history
+   Press   Ctrl   Shift   V   to select the text fragment that you have previously copied to the clipboard.
+   
+The Rename refactoring
+You can easily rename your classes, methods, and variables with automatic correction of all places where they are used.
+Position the caret at the symbol you want to rename, and press   Shift   F6   (Refactor | Rename). Type the new name and press   ↩ Enter  .
+
+Expand code selection
+Press   Ctrl   W   to expand code selection. Each time you press   Ctrl   W  , the selection expands to other areas of code.
+For example, the selection expands from a method name to the expression calling this method, then to the whole statement, then to the containing block, and so on.
+
+Preview search results
+You can use the Preview area of the Find in Files dialog (  Ctrl   Shift   F  ) for quicker search without leaving the dialog. The Preview dialog displays the first 100 results. 
+
+
+Search Everywhere
+Press   Shift   twice to search for files, actions, symbols, UI elements, Git branches and comments across your project. Pressing double   Shift   again, will extend the search to non-project items.
+Use tabs or direct shortcuts   Ctrl   N   for classes,   Ctrl   Shift   N   for files,   Ctrl   Alt   Shift   N   for symbols, and   Ctrl   Shift   A   for actions to narrow your search results.
+
+Find and replace
+Press   Ctrl   F   to display the search bar. Press   Ctrl   R   to add another field where you can type the replace string.
+In the Find in Files dialog, you can switch to replace by pressing   Ctrl   Shift   R  . Similarly, press   Ctrl   Shift   F   to hide the Replace with field and switch to regular search.
+
+Speed search in tree views
+Speed search is available in all tree views, for example, in the Project tool window. Start typing, and you'll quickly locate the necessary item.
+
+Improve code with context actions
+Press   Alt   ↩ Enter   in the editor to fix a highlighted error or warning, improve, or optimize a code construct. For some intention actions, you can open a preview or an action description by pressing   Ctrl   Q   (View | Quick Documentation).

@@ -1,0 +1,42 @@
+POST
+http://localhost:8080/api/tutorials/
+
+{
+    "title": "Hello",
+    "published": true,
+    "description": "first test"
+}
+
+/api/tutorials/:id/details
+POST
+http://localhost:8080/api/tutorials/1/details
+
+{
+	"createdBy" : "Hello Hello"
+}
+
+
+POST
+http://localhost:8080/api/tutorials2/tutorials/
+
+{
+    "title": "Tutorial2 2",
+    "published": true,
+    "description": "first test"
+}
+
+
+http://localhost:8080/api/tutorials2/tutorials/1/comments
+
+{
+    "title": "Tutorial2 2",
+    "published": true,
+    "description": "first test"
+}
+
+
+
+https://www.bezkoder.com/jpa-one-to-one/
+https://www.bezkoder.com/jpa-one-to-many/
+https://github.com/bezkoder/jpa-one-to-one-unidirectional/blob/master/pom.xml
+https://www.codejava.net/frameworks/spring-boot/spring-boot-auto-restart-and-live-reload-in-intellij-idea

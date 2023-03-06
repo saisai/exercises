@@ -1,0 +1,26 @@
+https://github.com/awwsmm/Maven-With-Resources
+
+mvn -B archetype:generate \
+  -DarchetypeGroupId=org.apache.maven.archetypes \
+  -DgroupId=com.companyname.packagename \
+  -DartifactId=my-new-package
+  
+ mvn package
+ 
+ java -jar target/my-new-package-1.0-SNAPSHOT.jar
+ java -cp target/my-new-package-1.0-SNAPSHOT.jar com.companyname.packagename.W.Hello
+ 
+ 
+ https://www.java2novice.com/java-file-io-operations/stream-to-reader/
+ https://www.digitalocean.com/community/tutorials/java-read-file-to-string
+ http://www.javabyexamples.com/add-multiple-resource-directories-using-maven
+ 
+ https://www.tutorialworks.com/intellij-maven-create-jar/
+ https://jenkov.com/tutorials/java-nio/path.html
+ https://howtodoinjava.com/java/io/read-file-from-resources-folder/
+ 
+ https://github.com/LXGaming/ClassLoaderUtils/blob/master/src/main/java/io/github/lxgaming/classloader/ClassLoaderUtils.java
+ 
+ https://intellipaat.com/community/29970/how-do-i-load-a-file-from-resource-folder
+ 
+ https://stackoverflow.com/questions/6780678/run-class-in-jar-file
