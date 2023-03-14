@@ -1,0 +1,6 @@
+spring:
+  data:
+    neo4j:
+      uri: http://192.168.99.100:7474
+      username: neo4j
+      password: pingu123

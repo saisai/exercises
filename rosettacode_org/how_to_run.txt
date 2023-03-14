@@ -1,0 +1,1 @@
+java -cp tutorials-java.jar com.tutorial.I.InvertedIndex "huntsman,merit,dog,the,gutenberg,lovecraft,olympian" ../../../../../36-0.txt

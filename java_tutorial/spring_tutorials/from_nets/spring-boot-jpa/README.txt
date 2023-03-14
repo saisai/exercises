@@ -1,0 +1,1 @@
+from https://bitbucket.org/zengcode/spring-boot-jpa/src/master/

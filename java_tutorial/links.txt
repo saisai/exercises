@@ -6,3 +6,6 @@ https://sourceforge.net/projects/threeten/
 
 java package 
 https://github.com/ThreeTen/threeten-extra
+
+
+https://www.geeksforgeeks.org/arrays-stream-method-in-java/

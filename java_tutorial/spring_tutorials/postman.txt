@@ -29,9 +29,7 @@ http://localhost:8080/api/tutorials2/tutorials/
 http://localhost:8080/api/tutorials2/tutorials/1/comments
 
 {
-    "title": "Tutorial2 2",
-    "published": true,
-    "description": "first test"
+    "content": "Hello this is content"
 }
 
 

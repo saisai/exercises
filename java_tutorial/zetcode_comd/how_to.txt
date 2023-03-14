@@ -39,3 +39,37 @@ https://github.com/vgrazi/java-concurrent-animated/tree/master/src/main/java/vgr
 https://github.com/vgrazi/JavaConcurrentAnimatedReboot/tree/master/src/main/java/com/vgrazi/jca/config
 
 https://docs.oracle.com/javase/tutorial/
+
+mvn archetype:generate -DgroupId=com.mycompany -DartifactId=tutorials -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+mvn archetype:generate -DgroupId=com.tutorial -DartifactId=tutorials-java -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+
+https://docs.oracle.com/javase/tutorial/java/javaOO/anonymousclasses.html
+
+https://github.com/google/gson/blob/master/proto/src/main/java/com/google/gson/protobuf/ProtoTypeAdapter.java
+
+https://github.com/google/gson/blob/master/proto/src/main/java/com/google/gson/protobuf/ProtoTypeAdapter.java
+
+https://github.com/trekhleb/javascript-algorithms
+https://github.com/orgs/ActiveState/repositories
+https://github.com/internetarchive/openlibrary
+https://github.com/orgs/internetarchive/repositories
+
+https://docs.gradle.org/current/samples/sample_building_java_applications.html
+https://spring.io/guides/gs/gradle/
+https://www.javatpoint.com/gradle
+
+https://github.com/spring-projects/spring-boot
+
+https://spring.io/projects/spring-boot
+https://github.com/spring-projects/spring-framework
+
+
+javac -classpath . -d target -sourcepath . rosettacode/WordWrap.java
+
+https://www.codejava.net/java-core/tools/how-to-compile-package-and-run-a-java-program-using-command-line-tools-javac-jar-and-java
+https://www.baeldung.com/java-compile-multiple-files
+https://www.webucator.com/article/how-to-compile-packages-in-java/
+https://www.javamadesoeasy.com/2015/12/error-class-names-are-only-accepted-if.html
+https://stackoverflow.com/questions/5063266/javac-error-class-names-are-only-accepted-if-annotation-processing-is-explicitl
+
+https://docs.gradle.org/current/samples/index.html
