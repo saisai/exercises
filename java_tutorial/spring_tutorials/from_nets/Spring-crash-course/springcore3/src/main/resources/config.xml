@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/util
+    http://www.springframework.org/schema/util/spring-util.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <context:annotation-config/>
+    <context:component-scan base-package="com.fuppino.spring.stereotype.annotation"></context:component-scan>
+    <!-- autowire by Type -->
+    <bean name="address" class="com.fuppino.spring.autowire.bytype.Address" p:cityName="Fremont"/>
+    
+    <bean name="employee" class="com.fuppino.spring.autowire.bytype.Employee"
+    	p:name="Ram" autowire="byType">
+    </bean>
+    
+    <!-- autowire by Name -->
+    <bean name="course" class="com.fuppino.spring.autowire.byname.Course" p:subject="CSE"/>
+    
+    <bean name="student" class="com.fuppino.spring.autowire.byname.Student"
+    	p:name="Ravana" autowire="byName"/>
+    	
+    <!-- autowire by Constructor -->
+    <bean name="profile" class="com.fuppino.spring.autowire.byconstructor.Profile" p:skil="Java"/>
+    
+    <bean name="job" class="com.fuppino.spring.autowire.byconstructor.Job"
+    	p:name="Software Engineer" autowire="constructor"/>
+
+	<!-- autowire with annotation -->
+	<bean name="item" class="com.fuppino.spring.autowire.annotation.Item" p:name="IPhone"/>
+    
+    <bean name="shoppingCart" class="com.fuppino.spring.autowire.annotation.ShoppingCart"
+    	p:name="onsale"/>
+    	
+    <!-- autowire and qualifier with annotation -->
+	<bean name="model1" class="com.fuppino.spring.autowire.qualifier.Model" p:name="CR-V"/>
+	
+    <bean name="model2" class="com.fuppino.spring.autowire.qualifier.Model" p:name="HR-V"/>
+    
+    <bean name="car" class="com.fuppino.spring.autowire.qualifier.Car"/>
+    
+    <!-- standalone collection -->
+    <util:list list-class="java.util.LinkedList" id="productNames">
+    	<value>IPhone</value>
+    	<value>IPad</value>
+    	<value>AirPod</value>
+    </util:list>
+    
+    <bean name="productList" class="com.fuppino.spring.standalone.collections.ProductList">
+    	<property name="productNames" ref="productNames"/>
+    </bean>
+    
+    <!-- standalone collection -->
+    <util:list list-class="java.util.LinkedList" id="topicsList">
+    	<value>Java</value>
+    	<value>C++</value>
+    	<value>J2EE</value>
+    </util:list>
+    
+</beans>

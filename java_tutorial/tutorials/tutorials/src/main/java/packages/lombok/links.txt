@@ -1,0 +1,6 @@
+https://javabydeveloper.com/lombok-getter-setter-and-lazy-getters-examples/
+https://github.com/javabydeveloper/project-lombok-tutorial/tree/master/lombok-tutorial-master-jbd/src/main/java/com/javabydeveloper
+https://github.com/javabydeveloper/spring-boot
+
+https://auth0.com/blog/a-complete-guide-to-lombok/
+https://javabydeveloper.com/project-lombok-tutorial/

@@ -1,23 +1,12 @@
 package com.mycompany.jenkovcom.arrays;
 
+import dto.Employee;
+
 import java.util.Arrays;
 import java.util.Comparator;
 
 import static java.lang.System.out;
 
-class Employee {
-    public String name;
-    public int employeeId;
-
-    public Employee(String name, int employeeId) {
-        this.name = name;
-        this.employeeId = employeeId;
-    }
-
-    public String toString() {
-        return this.name;
-    }
-}
 public class ArraysEx {
 
     // Converting Arrays to Strings With Arrays.toString()

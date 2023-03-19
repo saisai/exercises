@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <context:annotation-config/>
+    
+	<bean name="patient" class="com.fuppino.spring.Patient" p:id="23"/>
+	
+	<bean name="employee" class="com.fuppino.spring.innerbean.Employee" p:name="Ram">
+		<property name="address">
+			<bean class="com.fuppino.spring.innerbean.Address" p:cityName="Fremont"/>
+		</property>
+	</bean>
+	
+	<bean name="item" class="com.fuppino.spring.prototype.Item" p:id="23" p:name="data" scope="prototype"/>
+	
+	<bean name="data" class="com.fuppino.spring.constructor.Data">
+		<constructor-arg name="id" value="23"/>
+		<constructor-arg name="name" value="Sample"/>
+	</bean>
+	
+	<bean name="cons" class="com.fuppino.spring.constructor.cschema.Cons" c:id="23" c:name="Sample"/>
+	
+	<context:property-placeholder location="classpath:database.properties"/>
+	<bean name="extern" class="com.fuppino.spring.externalization.Extern">
+		<constructor-arg>
+			<value>${dbServer}</value>
+		</constructor-arg>
+		<constructor-arg name="userId">
+			<value>${userId}</value>
+		</constructor-arg>
+		<constructor-arg name="password">
+			<value>${password}</value>
+		</constructor-arg>
+	</bean>
+</beans>
