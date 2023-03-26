@@ -16,7 +16,7 @@ public class SynchronousConcurrency {
         final BlockingQueue<String> queue = new LinkedBlockingQueue<String>();
         final String EOF = new String();
 
-        String fileName = new Utils().getFilename();
+        String fileName = new Utils().getFilename("foobar.txt");
         final Thread writerThread = new Thread(new Runnable() {
             @Override
             public void run() {

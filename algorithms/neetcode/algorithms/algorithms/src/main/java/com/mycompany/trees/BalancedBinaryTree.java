@@ -2,27 +2,6 @@ package com.mycompany.trees;
 
 import javafx.util.Pair;
 
-class TreeNode {
-     int value;
-     TreeNode left;
-     TreeNode right;
-     TreeNode() {}
-     TreeNode(int value) { this.value = value; }
-     TreeNode(int value, TreeNode left, TreeNode right) {
-         this.value = value;
-         this.left = left;
-         this.right = right;
-     }
-
-    public int getValue() {
-        return value;
-    }
-
-    public void setValue(int value) {
-        this.value = value;
-    }
-}
-
 public class BalancedBinaryTree {
 
     public static void main(String... args) {
@@ -34,8 +13,8 @@ public class BalancedBinaryTree {
             return new Pair<Boolean, Integer>(true, 0);
         }
 
-        int left = dfs(root.left);
-        int right = dfs(root.right);
+        Pair<Boolean, Integer> left = dfs(root.left);
+        Pair<Boolean, Integer> right = dfs(root.right);
 
         boolean balanced = left.getKey() &&
                 right.getKey() &&

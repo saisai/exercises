@@ -1,0 +1,2 @@
+https://stackoverflow.com/questions/17351043/how-to-get-absolute-path-to-file-in-resources-folder-of-your-project
+https://www.baeldung.com/java-unit-test-private-methods

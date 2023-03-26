@@ -1,1 +1,6 @@
 https://beginnersbook.com/java-tutorial-for-beginners-with-examples/
+
+https://www.geeksforgeeks.org/iterate-map-java/
+https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html#:~:text=byte%3A%20The%20byte%20data%20type,value%20of%20127%20(inclusive).
+https://www.javatpoint.com/java-integer-bytevalue-method
+https://www.softwaretestinghelp.com/java-list-how-to-create-initialize-use-list-in-java/#2_Using_Listadd

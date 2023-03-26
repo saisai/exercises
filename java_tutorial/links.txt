@@ -9,3 +9,5 @@ https://github.com/ThreeTen/threeten-extra
 
 
 https://www.geeksforgeeks.org/arrays-stream-method-in-java/
+
+https://www.benchresources.net/java-8-how-to-iterate-over-char-arrays/

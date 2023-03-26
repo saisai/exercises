@@ -35,3 +35,20 @@ https://github.com/dvinay/Spring-crash-course
 https://github.com/amigoscode/spring-data-jpa-course
 
 https://github.com/phengtola/spring-framework-learning.git
+
+
+https://github.com/wuyouzhuguli/SpringAll
+https://github.com/ityouknow/spring-boot-examples/tree/master/2.x
+https://github.com/ityouknow/spring-boot-book
+
+https://github.com/topics/spring-boot
+
+https://github.com/forezp/SpringCloudLearning
+
+https://github.com/codecentric/spring-boot-admin
+
+https://boottechnologies-ci.medium.com/spring-boot-rest-api-with-mybatis-and-postgresql-4f0b35497482
+
+https://mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/
+
+https://github.com/osopromadze/Spring-Boot-Blog-REST-API
