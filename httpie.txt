@@ -1,0 +1,10 @@
+
+http -v http://localhost:8080/api/v1/instructors/1
+
+
+http -v POST http://localhost:8080/api/v1/instructors firstName="Test" lastName="Test" email="email@g.com"
+
+
+http -v http://localhost:8080/api/v1/instructors
+
+

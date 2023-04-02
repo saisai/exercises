@@ -12,3 +12,9 @@ https://bitbucket.org/spandeygit/learn_lua/src/master/awesome.lua
 
 https://blog.didierstevens.com/2014/04/28/tcp-flags-for-wireshark/
 https://blog.didierstevens.com/2015/05/18/howto-install-wireshark-dissectors/
+
+https://www.postgresql.org/docs/9.5/functions-aggregate.html
+https://wiki.wireshark.org/SampleCaptures
+
+
+https://dbaclass.com/article/how-to-drop-a-database-in-oracle/

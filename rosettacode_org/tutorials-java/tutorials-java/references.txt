@@ -1,2 +1,7 @@
 https://stackoverflow.com/questions/17351043/how-to-get-absolute-path-to-file-in-resources-folder-of-your-project
 https://www.baeldung.com/java-unit-test-private-methods
+
+logging
+https://logging.apache.org/log4j/2.x/manual/api.html
+https://stackoverflow.com/questions/28572783/no-log4j2-configuration-file-found-using-default-configuration-logging-only-er
+https://www.baeldung.com/java-logging-intro
