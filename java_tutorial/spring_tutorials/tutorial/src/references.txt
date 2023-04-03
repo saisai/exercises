@@ -1,0 +1,6 @@
+
+https://hibernate.atlassian.net/browse/HHH-11014
+https://stackoverflow.com/questions/41791802/autoincrement-id-postgresql-and-spring-boot-data-jpa
+https://zetcode.com/springboot/commandlinerunner/
+https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.0-Release-Notes
+https://zetcode.com/springboot/postgresql/
