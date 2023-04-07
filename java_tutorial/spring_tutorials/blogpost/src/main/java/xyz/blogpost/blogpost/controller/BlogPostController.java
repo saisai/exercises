@@ -12,10 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 import xyz.blogpost.blogpost.model.BlogPost;
 import xyz.blogpost.blogpost.service.BlogPostService;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 
 @Controller
 public class BlogPostController {
@@ -30,7 +27,6 @@ public class BlogPostController {
     @Autowired
     BlogPostService blogPostService;
 
-
     @GetMapping(value="/")
     public String index(Model model) {
         return "index";
@@ -39,12 +35,9 @@ public class BlogPostController {
     @GetMapping(value="/blogpost")
     public ModelAndView showBlogPosts() {
         List<BlogPost> blogPosts = blogPostService.findAll();
-
         Map<String, Object> params = new HashMap<String, Object>();
         params.put("blogPosts", blogPosts);
-
         return new ModelAndView("blogpost", params);
-
     }
 
     @RequestMapping(value = "/blogpost/{id}", method = RequestMethod.GET)
@@ -52,18 +45,34 @@ public class BlogPostController {
         LOG.info("Delete {} ", id);
         blogPostService.delete(id);
         return "redirect:/blogpost";
-
     }
 
     @RequestMapping(value = "/blogpost/update/{id}", method=RequestMethod.GET)
-    public String updatePost(@PathVariable Long id, Model model) {
+    public ModelAndView updatePost(@PathVariable Long id, Model mode) {
         LOG.info("Update {}", id);
         Optional<BlogPost> blogPost = blogPostService.findById(id);
         LOG.info("Exitsts {}", blogPost.get());
-        model.addAttribute("blogpost", blogPost);
-        return "update";
-        //return "redirect:/blogpost/update";
+        ModelAndView mav = new ModelAndView();
+        mav.addObject("blogpost", blogPost.get());
+        mav.setViewName("update");
+        return mav;
     }
+
+    @PostMapping(value="/blogpost/editedUpdate")
+    public String editedUpdate(@ModelAttribute BlogPost blogPost) {
+        LOG.info("edited Update {}", blogPost.getLink());
+
+        Long id = Long.parseLong(String.valueOf(blogPost.getId()));
+
+        Optional<BlogPost> blogPostResult = blogPostService.findById(id);
+        Calendar calendar = Calendar.getInstance();
+        Date date =  calendar.getTime();
+        blogPost.setCreatedAt(blogPostResult.get().getCreatedAt());
+        blogPost.setUpdatedAt(date);
+        blogPostService.save(blogPost);
+        return "redirect:/blogpost";
+    }
+
 
 //    @DeleteMapping(value = "/blogpost/{id}")
 //    public ResponseEntity<Long> deletePost(@PathVariable Long id) {

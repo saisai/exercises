@@ -8,7 +8,7 @@
     <meta name="generator" content="Hugo 0.111.3">
     <title>Product example · Bootstrap v5.3</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/product/">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
 
     <!-- Favicons -->
 <link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -94,7 +94,7 @@
       }
     </style>
     <!-- Custom styles for this template -->
-    <link href="css/product.css" rel="stylesheet">
+    <link href="/css/product.css" rel="stylesheet">
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -155,7 +155,7 @@
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
     </a>
     <a class="py-2 d-none d-md-inline-block" href="#">Tour</a>
-    <a class="py-2 d-none d-md-inline-block" href="blogpost">Post</a>
+    <a class="py-2 d-none d-md-inline-block" href="/blogpost">Post</a>
     <a class="py-2 d-none d-md-inline-block" href="#">Features</a>
     <a class="py-2 d-none d-md-inline-block" href="#">Enterprise</a>
     <a class="py-2 d-none d-md-inline-block" href="#">Support</a>
@@ -167,47 +167,35 @@
 <main>
   <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
 
-    <table  class="table table-hover">
-        <tr><td>Title</td><td><input type value="${blogpost.title}" name="title"></td></tr>
-        <tr><td>Title</td><td><input type value="${$blogpost.link}" name="link"></td></tr>
-        <tr><td>Title</td><td><input type value="${$blogpost.description}" name="description"></td></tr>
-    </table>
-  </div>
+  <form action="/blogpost/editedUpdate" method="post">
+    <input type="hidden" name="id" value="${blogpost.id}" />
 
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
+    <div class="row mb-3">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Title</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputEmail3" name="title" value="${blogpost.title}" >
       </div>
-      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
     </div>
-    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-  </div>
 
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
+    <div class="row mb-3">
+      <label for="inputPassword3" class="col-sm-2 col-form-label">Link</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputPassword3" name="link" value="${blogpost.link}">
       </div>
-      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
     </div>
-    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+
+    <div class="row mb-3">
+          <label for="inputPassword3" class="col-sm-2 col-form-label">Description</label>
+          <div class="col-sm-10">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="description">${blogpost.description}</textarea>
+          </div>
     </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+  </form>
+
+
   </div>
-</main>
+ </main>
 
 <footer class="container py-5">
   <div class="row">
@@ -257,7 +245,7 @@
 </footer>
 
 
-<script src="js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<script src="/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
       
   </body>

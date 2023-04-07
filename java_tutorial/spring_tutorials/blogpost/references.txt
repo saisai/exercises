@@ -37,6 +37,12 @@ https://www.kindsonthegenius.com/spring-boot/13-spring-boot-write-delete-methods
 https://stackoverflow.com/questions/508019/how-to-store-date-time-and-timestamps-in-utc-time-zone-with-jpa-and-hibernate
 https://vladmihalcea.com/time-zones-java-web-application/
 
+https://github.com/volewu/Film/blob/master/src/main/java/com/vole/film/controller/admin/WebSiteInfoAdminController.java
+https://springhow.com/thymeleaf-form-handling/
+
+https://getbootstrap.com/docs/5.0/forms/form-control/
+https://www.appsdeveloperblog.com/spring-web-mvc-the-modelandview-object/
+
 date time
 https://mkyong.com/java/java-date-and-calendar-examples/
 

@@ -28,4 +28,11 @@ public class BlogPostServiceImpl implements BlogPostService{
     public Optional<BlogPost> findById(Long id) {
         return blogPostRepository.findById(id);
     }
+
+    @Override
+    public void save(BlogPost blogPost) {
+        blogPostRepository.save(blogPost);
+    }
+
+
 }

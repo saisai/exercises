@@ -12,4 +12,6 @@ public interface BlogPostService {
     void delete(Long id);
 
     public Optional<BlogPost> findById(Long id);
+
+    void save(BlogPost blogPost);
 }
