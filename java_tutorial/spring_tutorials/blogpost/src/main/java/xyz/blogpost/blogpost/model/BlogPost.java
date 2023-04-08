@@ -3,6 +3,7 @@ package xyz.blogpost.blogpost.model;
 import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
 import java.util.Date;
 import java.util.Objects;
 
@@ -10,10 +11,14 @@ import java.util.Objects;
 @Table(name="blogposts")
 public class BlogPost {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    //@GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+
+    @NotEmpty(message ="Title is mandatory")
     String title;
+    @NotEmpty(message ="Link is mandatory")
     String link;
 
     String description;

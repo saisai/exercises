@@ -53,3 +53,40 @@ https://mkyong.com/java/java-date-and-calendar-examples/
 
 
 https://medium.com/@ddwen/understanding-hot-deployment-and-hot-reloading-in-spring-boot-172c3a66d81a
+
+
+2023/04/08
+https://freemarker.apache.org/docs/dgui_quickstart_template.html
+https://hellokoding.com/form-data-binding-and-validation-example-with-java-spring-boot-and-freemarker/
+https://www.javacodegeeks.com/2012/02/spring-mvc-and-jquery-for-ajax-form.html
+https://github.com/workfall/springboot-freemarker-form-validation/blob/main/src/main/resources/templates/form.ftlh
+https://github.com/workfall/springboot-freemarker-form-validation/blob/main/src/main/java/com/workfall/controller/FormCtrl.java
+https://www.workfall.com/learning/blog/how-to-build-spring-boot-freemarker-form-validation/
+https://freemarker.apache.org/docs/ref_directive_include.html
+https://medium.com/@toimrank/spring-boot-form-validation-692489c66751
+https://www.baeldung.com/spring-boot-bean-validation
+https://reflectoring.io/bean-validation-with-spring-boot/
+
+jsp
+https://beginnersbook.com/2013/11/jsp-implicit-object-request-with-examples/
+
+
+files uploaded
+https://www.bezkoder.com/spring-boot-file-upload/
+https://blog.swdev.ed.ac.uk/2015/06/24/adding-embedded-tomcat-ajp-support-to-a-spring-boot-application/
+https://mkyong.com/spring/spring-file-upload-and-connection-reset-issue/
+https://mkyong.com/spring-boot/spring-boot-file-upload-example/
+
+many to many
+https://www.bezkoder.com/jpa-many-to-many/
+https://github.com/bezkoder/spring-boot-many-to-many/blob/master/src/main/java/com/bezkoder/spring/hibernate/manytomany/model/Tutorial.java
+
+
+https://www.baeldung.com/jpa-one-to-one
+https://thorben-janssen.com/hibernate-tips-use-auto-incremented-column-primary-key/
+https://docs.djangoproject.com/en/4.2/topics/db/examples/one_to_one/
+
+logging
+https://www.baeldung.com/spring-http-logging
+https://www.w3docs.com/snippets/java/spring-boot-how-to-log-all-requests-and-responses-with-exceptions-in-single-place.html
+

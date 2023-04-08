@@ -7,22 +7,18 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import xyz.blogpost.blogpost.model.BlogPost;
 import xyz.blogpost.blogpost.service.BlogPostService;
 
+import javax.validation.Valid;
 import java.util.*;
 
 @Controller
 public class BlogPostController {
-
     private final Logger LOG = LoggerFactory.getLogger(BlogPostController.class);
-
-//    private final BlogPostService blogPostService;
-//    public BlogPostController(BlogPostService blogPostService) {
-//        this.blogPostService = blogPostService;
-//    }
 
     @Autowired
     BlogPostService blogPostService;
@@ -61,14 +57,33 @@ public class BlogPostController {
     @PostMapping(value="/blogpost/editedUpdate")
     public String editedUpdate(@ModelAttribute BlogPost blogPost) {
         LOG.info("edited Update {}", blogPost.getLink());
-
         Long id = Long.parseLong(String.valueOf(blogPost.getId()));
-
         Optional<BlogPost> blogPostResult = blogPostService.findById(id);
         Calendar calendar = Calendar.getInstance();
         Date date =  calendar.getTime();
         blogPost.setCreatedAt(blogPostResult.get().getCreatedAt());
         blogPost.setUpdatedAt(date);
+        blogPostService.save(blogPost);
+        return "redirect:/blogpost";
+    }
+
+    @GetMapping(value="/blogpost/addForm")
+    public String addForm(){
+        return "addBlogPostForm";
+    }
+
+    @PostMapping(value="/blogpost/add")
+    //public String addBlogPost(@ModelAttribute @Valid BlogPost blogPost, BindingResult result,  Model model) {
+    public String addBlogPost(@Valid BlogPost blogPost, BindingResult result,  Model model) {
+        LOG.info("BlogPost {}", blogPost.toString());
+        if(result.hasErrors()) {
+            model.addAttribute("blogPost", blogPost);
+            return "addBlogPostForm";
+        }
+        LOG.info("Add {}", blogPost.getLink());
+        Calendar calendar = Calendar.getInstance();
+        Date date =  calendar.getTime();
+        blogPost.setCreatedAt(date);
         blogPostService.save(blogPost);
         return "redirect:/blogpost";
     }

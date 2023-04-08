@@ -1,0 +1,3 @@
+https://www.callicoder.com/hibernate-spring-boot-jpa-one-to-one-mapping-example/
+
+https://codejava.net/frameworks/spring-boot/spring-data-jpa-one-to-one-mapping-examples
