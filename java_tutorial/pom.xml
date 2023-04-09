@@ -10,20 +10,18 @@
 	</parent>
 	<groupId>xyz.blogpost</groupId>
 	<artifactId>blogpost</artifactId>
-	<packaging>jar</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>blogpost</name>
+	<packaging>jar</packaging>
 	<description>Blogpost project for Spring Boot</description>
-<!--	<properties>-->
-<!--		<java.version>1.8</java.version>-->
-<!--	</properties>-->
 	<properties>
-		<!-- https://maven.apache.org/general.html#encoding-warning -->
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
+		<java.version>1.8</java.version>
 	</properties>
+<!--	<properties>-->
+<!--		<maven.compiler.source>1.8</maven.compiler.source>-->
+<!--		<maven.compiler.target>1.8</maven.compiler.target>-->
+<!--		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
+<!--	</properties>-->
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -123,9 +121,31 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-					<classifier>exec</classifier>
-				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+						<configuration>
+							<mainClass>xyz.blogpost.blogpost.BlogpostApplication</mainClass>
+						</configuration>
+					</execution>
+				</executions>
+<!--				<executions>-->
+<!--					<execution>-->
+<!--						<configuration>-->
+<!--							<mainClass>xyz.blogpost.blogpost.BlogpostApplication</mainClass>-->
+<!--						</configuration>-->
+<!--					</execution>-->
+<!--				</executions>-->
+<!--				<configuration>-->
+<!--					<excludes>-->
+<!--						<exclude>-->
+<!--							<groupId>org.projectlombok</groupId>-->
+<!--							<artifactId>lombok</artifactId>-->
+<!--						</exclude>-->
+<!--					</excludes>-->
+<!--				</configuration>-->
 			</plugin>
 		</plugins>
 	</build>
@@ -164,21 +184,6 @@
 				<enabled>false</enabled>
 			</releases>
 		</pluginRepository>
-
-<!--			<pluginRepository>-->
-<!--				<id>central</id>-->
-<!--				<name>Central Repository</name>-->
-<!--				<url>https://repo.maven.apache.org/maven2</url>-->
-<!--				<layout>default</layout>-->
-<!--				<snapshots>-->
-<!--					<enabled>false</enabled>-->
-<!--				</snapshots>-->
-<!--				<releases>-->
-<!--					<updatePolicy>never</updatePolicy>-->
-<!--				</releases>-->
-<!--			</pluginRepository>-->
-
 	</pluginRepositories>
-
 
 </project>

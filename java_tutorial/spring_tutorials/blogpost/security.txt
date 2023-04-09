@@ -1,0 +1,6 @@
+https://github.com/Baeldung/spring-security-registration
+https://www.codejava.net/frameworks/spring-boot/user-registration-and-login-tutorial
+https://github.com/codejava-official/spring-boot-registration-login/blob/main/src/main/resources/templates/index.html
+https://reflectoring.io/spring-security/
+https://github.com/thombergs/code-examples/tree/master/spring-security/getting-started/SecureApplication/src/main/java/com/reflectoring/security
+https://javarevisited.blogspot.com/2019/04/spring-boot-error-error-creating-bean.html#axzz7yOOUpmVY

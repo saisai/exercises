@@ -1,0 +1,28 @@
+https://www.linode.com/docs/guides/how-to-deploy-spring-boot-applications-nginx-ubuntu-22-04/
+
+
+https://github.com/tericcabrel/bmi/tree/main/src/main/resources
+https://blog.tericcabrel.com/deploy-spring-boot-jar-nginx-reverse-proxy/
+https://wiki.archlinux.org/title/PostgreSQL
+https://sdkman.io/
+https://www.enterprisedb.com/postgres-tutorials/how-create-postgresql-database-and-users-using-psql-and-pgadmin
+https://tableplus.com/blog/2018/07/postgresql-how-to-create-new-user.html
+https://stackoverflow.com/questions/66893106/maven-build-failure-compiler-plugin
+https://github.com/eugenp/tutorials/blob/master/spring-boot-modules/spring-boot-artifacts/pom.xml
+https://springbootlearning.medium.com/5-way-to-go-to-production-with-spring-boot-9912ef07d965
+https://github.com/allwaysoft/spring-boot-jpa-freemarker-bootstrap-pagination/blob/main/pom.xml
+https://www.marcobehler.com/guides/mvn-clean-install-a-short-guide-to-maven
+
+https://mkyong.com/maven/how-to-create-a-jar-file-with-maven/
+https://roufid.com/no-compiler-is-provided-in-this-environment/
+
+create database springbootdb;
+
+CREATE USER springboot WITH PASSWORD 'springboot';
+
+GRANT ALL PRIVILEGES ON DATABASE springbootdb to springboot;
+
+
+java -jar blogpost-0.0.1-SNAPSHOT-exec.jar
+
+sudo ln -s /etc/nginx/sites-available/springboot.conf /etc/nginx/sites-enabled/springboot.conf
