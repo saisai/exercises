@@ -1,10 +1,17 @@
 package xyz.blogpost.blogpost.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import xyz.blogpost.blogpost.model.BlogPost;
+import xyz.blogpost.blogpost.model.paging.Paged;
+import xyz.blogpost.blogpost.model.paging.Paging;
 import xyz.blogpost.blogpost.repository.BlogPostRepository;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -12,6 +19,16 @@ import java.util.Optional;
 public class BlogPostServiceImpl implements BlogPostService{
     @Autowired
     BlogPostRepository blogPostRepository;
+
+    @Override
+    public List<BlogPost> findAll(int pageNumber, int rowPerPage) {
+        List<BlogPost> blogPosts = new ArrayList<>();
+        Pageable sortedByLastUpdateDesc = PageRequest.of(pageNumber - 1, rowPerPage,
+                Sort.by("updatedAt").descending());
+        blogPostRepository.findAll(sortedByLastUpdateDesc).forEach(blogPosts::add);
+        return blogPosts;
+
+    }
 
     @Override
     public List<BlogPost> findAll() {
@@ -32,6 +49,20 @@ public class BlogPostServiceImpl implements BlogPostService{
     @Override
     public void save(BlogPost blogPost) {
         blogPostRepository.save(blogPost);
+    }
+
+    @Override
+    public Long count() {
+        return blogPostRepository.count();
+    }
+
+    @Override
+    public Paged<BlogPost> getPage(int pageNumber, int size) {
+        Sort sort = Sort.by("id");
+        sort = sort.ascending();
+        PageRequest request = PageRequest.of(pageNumber - 1, size, sort);
+        Page<BlogPost> postPage = blogPostRepository.findAll(request);
+        return new Paged<>(postPage, Paging.of(postPage.getTotalPages(), pageNumber, size));
     }
 
 

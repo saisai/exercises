@@ -6,12 +6,12 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.CommonsRequestLoggingFilter;
 import xyz.blogpost.blogpost.model.BlogPost;
+import xyz.blogpost.blogpost.model.manytomany.MPost;
+import xyz.blogpost.blogpost.model.manytomany.MTag;
 import xyz.blogpost.blogpost.model.onetoone.Place;
 import xyz.blogpost.blogpost.model.onetoone.Restaurant;
 import xyz.blogpost.blogpost.repository.BlogPostRepository;
-import xyz.blogpost.blogpost.service.BlogPostService;
-import xyz.blogpost.blogpost.service.PlaceService;
-import xyz.blogpost.blogpost.service.RestaurantService;
+import xyz.blogpost.blogpost.service.*;
 
 import javax.annotation.PostConstruct;
 import java.text.SimpleDateFormat;
@@ -29,6 +29,11 @@ public class MyRunner implements CommandLineRunner {
 
     @Autowired
     RestaurantService restaurantService;
+
+    @Autowired
+    MPostService mPostService;
+    @Autowired
+    MTagService mTagService;
 
     @Override
     public void run(String... args){
@@ -85,5 +90,32 @@ public class MyRunner implements CommandLineRunner {
         filter.setIncludeHeaders(false);
         filter.setAfterMessagePrefix("REQUEST DATA: ");
         return filter;
+    }
+
+    @Bean
+    void saveManyToMany() {
+        mPostService.deleteAllInBatch();
+        mTagService.deleteAllInBatch();
+
+        // Create a Post
+        MPost post = new MPost("Hibernate Many to Many Example with Spring Boot",
+                "Learn how to map a many to many relationship using hibernate",
+                "Entire Post content with Sample code");
+
+        // Create two tags
+        MTag tag1 = new MTag("Spring Boot");
+        MTag tag2 = new MTag("Hibernate");
+
+        // Add tag references in the post
+        post.getMTags().add(tag1);
+        post.getMTags().add(tag2);
+
+        // Add post reference in the tags
+        tag1.getMPosts().add(post);
+        tag2.getMPosts().add(post);
+
+        mPostService.save(post);
+
+
     }
 }

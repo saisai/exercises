@@ -1,0 +1,5 @@
+https://github.com/allwaysoft/spring-boot-jpa-freemarker-bootstrap-pagination/blob/main/src/main/java/com/frontbackend/thymeleaf/bootstrap/posts/boundary/PostController.java
+
+https://blog.csdn.net/allway2/article/details/127366392
+https://github.com/allwaysoft?tab=repositories
+https://blog.csdn.net/allway2?type=blog

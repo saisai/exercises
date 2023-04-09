@@ -1,0 +1,2 @@
+https://github.com/dariawantech/core-spring-tutorials/tree/master/SpringApplicationContext/src/main/java/com/dariawan
+https://www.knowledgefactory.net/2022/07/spring-boot-spring-data-jpa-thymeleaf-pagination-crud-application-example.html

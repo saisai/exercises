@@ -20,6 +20,8 @@ import java.util.*;
 public class BlogPostController {
     private final Logger LOG = LoggerFactory.getLogger(BlogPostController.class);
 
+    private final int ROW_PER_PAGE = 3;
+
     @Autowired
     BlogPostService blogPostService;
 
@@ -28,12 +30,37 @@ public class BlogPostController {
         return "index";
     }
 
-    @GetMapping(value="/blogpost")
-    public ModelAndView showBlogPosts() {
-        List<BlogPost> blogPosts = blogPostService.findAll();
-        Map<String, Object> params = new HashMap<String, Object>();
-        params.put("blogPosts", blogPosts);
-        return new ModelAndView("blogpost", params);
+//    @GetMapping(value="/blogpost")
+//    public ModelAndView showBlogPosts() {
+//        List<BlogPost> blogPosts = blogPostService.findAll();
+//        Map<String, Object> params = new HashMap<String, Object>();
+//        params.put("blogPosts", blogPosts);
+//        return new ModelAndView("blogpost", params);
+//    }
+
+//    @GetMapping(value = "/blogpost")
+//    public String getBlogPosts(Model model,
+//                           @RequestParam(value = "page", defaultValue = "1") int pageNumber) {
+//        List<BlogPost> blogPosts = blogPostService.findAll(pageNumber, ROW_PER_PAGE);
+//
+//        long count = blogPostService.count();
+//        boolean hasPrev = pageNumber > 1;
+//        boolean hasNext = (pageNumber * ROW_PER_PAGE) < count;
+//        model.addAttribute("blogPosts", blogPosts);
+//        model.addAttribute("hasPrev", hasPrev);
+//        model.addAttribute("prev", pageNumber - 1);
+//        model.addAttribute("hasNext", hasNext);
+//        model.addAttribute("next", pageNumber + 1);
+//        return "blogpost";
+//        //return "note-list";
+//    }
+
+
+    @GetMapping(value = "/blogpost")
+    public String posts(@RequestParam(value = "pageNumber", required = false, defaultValue = "1") int pageNumber,
+                        @RequestParam(value = "size", required = false, defaultValue = "5") int size, Model model) {
+        model.addAttribute("blogPosts", blogPostService.getPage(pageNumber, size));
+        return "blogpost";
     }
 
     @RequestMapping(value = "/blogpost/{id}", method = RequestMethod.GET)
