@@ -10,7 +10,7 @@
         <li><a class="link-secondary" href="/users">List of Users</a></li>
         <li><a class="link-secondary" href="/register">Register</a></li>
         <li><a class="link-secondary" href="/login">Login</a></li>
-        <li><a class="link-secondary" href="#">Stuff for developers</a></li>
+        <li><a class="link-secondary" href="/logout">Log Out</a></li>
         <li><a class="link-secondary" href="#">Another one</a></li>
         <li><a class="link-secondary" href="#">Last time</a></li>
       </ul>

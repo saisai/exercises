@@ -1,0 +1,2 @@
+https://www.youtube.com/watch?v=QuvS_VLbGko&ab_channel=MarcoCodes
+https://github.com/codejava-official/spring-boot-registration-login/tree/main/src/main/resources/templates

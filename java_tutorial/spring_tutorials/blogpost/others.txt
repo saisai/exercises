@@ -1,0 +1,3 @@
+http://www.javabyexamples.com/run-a-jar-file-from-the-command-line
+https://springhow.com/session-tracking-modes-in-spring-security/
+https://developer.okta.com/blog/2020/12/14/spring-session-redis
