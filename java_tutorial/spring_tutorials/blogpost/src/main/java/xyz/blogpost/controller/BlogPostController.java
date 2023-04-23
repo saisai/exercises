@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import xyz.blogpost.model.BlogPost;
 import xyz.blogpost.service.BlogPostService;
+import xyz.blogpost.service.EmailAsyncService;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
@@ -26,6 +27,9 @@ public class BlogPostController {
 
     @Autowired
     private HttpServletRequest request;
+
+    @Autowired
+    EmailAsyncService emailAsyncService;
 
     @GetMapping(value="/")
     public String index(Model model) {
@@ -171,6 +175,7 @@ public class BlogPostController {
         BlogPost blogPost = new BlogPost(title, link, description, date);
         //blogPost.setCreatedAt(date);
         blogPostService.save(blogPost);
+        emailAsyncService.sendEmail();
         return "Success";
 
     }

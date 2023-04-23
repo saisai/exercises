@@ -1,0 +1,5 @@
+https://stackoverflow.com/questions/18087573/spring-mvc-send-mail-as-non-blocking
+https://www.danvega.dev/blog/2016/01/13/sending-async-emails-in-spring/
+https://github.com/danvega/spring-boot-intro/tree/master/guides/sending-email-async
+https://www.danvega.dev/blog
+https://mailtrap.io/blog/spring-send-email/
