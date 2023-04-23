@@ -4,3 +4,8 @@ https://github.com/sherxon/AlgoDS/tree/master/src/ds/graph
 https://github.com/williamfiset/Algorithms/
 
 mvn archetype:generate -DgroupId=com.algods -DartifactId=algods -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+
+
+https://stackoverflow.com/questions/4965335/how-to-print-binary-tree-diagram-in-java
+https://www.ondrovo.com/
+

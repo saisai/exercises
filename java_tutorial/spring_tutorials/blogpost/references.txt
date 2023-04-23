@@ -90,3 +90,6 @@ logging
 https://www.baeldung.com/spring-http-logging
 https://www.w3docs.com/snippets/java/spring-boot-how-to-log-all-requests-and-responses-with-exceptions-in-single-place.html
 
+
+https://mkyong.com/java/how-to-get-http-request-header-in-java/
+

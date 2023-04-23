@@ -59,7 +59,8 @@ public class BlogPostServiceImpl implements BlogPostService{
     @Override
     public Paged<BlogPost> getPage(int pageNumber, int size) {
         Sort sort = Sort.by("id");
-        sort = sort.ascending();
+        //sort = sort.ascending();
+        sort = sort.descending();
         PageRequest request = PageRequest.of(pageNumber - 1, size, sort);
         Page<BlogPost> postPage = blogPostRepository.findAll(request);
         return new Paged<>(postPage, Paging.of(postPage.getTotalPages(), pageNumber, size));

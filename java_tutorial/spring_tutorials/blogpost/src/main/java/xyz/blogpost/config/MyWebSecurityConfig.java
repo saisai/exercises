@@ -11,6 +11,7 @@ import org.springframework.security.authentication.dao.DaoAuthenticationProvider
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
@@ -24,7 +25,7 @@ import javax.sql.DataSource;
 
 @Configuration
 @EnableWebSecurity
-//@EnableGlobalMethodSecurity(prePostEnabled = true)
+@EnableGlobalMethodSecurity(prePostEnabled = true)
 public class MyWebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     private static final Logger logger = LoggerFactory.getLogger(MyWebSecurityConfig.class);
@@ -56,11 +57,13 @@ public class MyWebSecurityConfig extends WebSecurityConfigurerAdapter {
         return authProvider;
     }
 
+    // good
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/", "/static/**", "/resources/**", "/css/**", "/js/**", "/register", "/process_register")
+                //.antMatchers("/", "/static/**", "/resources/**", "/css/**", "/js/**", "/register", "/process_register")
+                .antMatchers("/",  "/register", "/process_register")
                 .permitAll()
                 .anyRequest().authenticated() // (4)
                 .and()
@@ -70,17 +73,42 @@ public class MyWebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .logout() // (6)
                 .permitAll();
-                //.and()
-                //.httpBasic(); // (7)
-
-//                .authorizeRequests((request) -> request
-//                        .requestMatchers("/", "/index.html", "/static/**")).permitAll()
-//                .anyRequest().authenticated()
-//                .and()
-//                .formLogin()
-//                .loginPage("/login") // (1)
-//                .permitAll();
     }
+
+//    @Override
+//    protected void configure(HttpSecurity http) throws Exception {
+//        http.csrf().disable()
+//                .authorizeRequests()
+//                //.antMatchers("/", "/static/**", "/resources/**", "/css/**", "/js/**", "/register", "/process_register")
+//                .antMatchers("/",  "/register", "/process_register")
+//                .permitAll()
+//                .anyRequest().authenticated() // (4)
+//                .and()
+//                .formLogin() // (5)
+//                //.loginPage("/login") // (5)
+//                .permitAll()
+//                .and()
+//                .logout() // (6)
+//                .permitAll();
+//                //.and()
+//                //.httpBasic(); // (7)
+//
+////                .authorizeRequests((request) -> request
+////                        .requestMatchers("/", "/index.html", "/static/**")).permitAll()
+////                .anyRequest().authenticated()
+////                .and()
+////                .formLogin()
+////                .loginPage("/login") // (1)
+////                .permitAll();
+//    }
+
+    // https://github.com/sherxon/coffeeShop/blob/master/src/main/java/edu/mum/coffee/config/WebSecurityConfig.java
+//    @Override
+//    public void configure(WebSecurity web) throws Exception {
+//        web
+//                .ignoring()
+//                .antMatchers("/resources/**", "/static/**", "/css/**", "/js/**", "/images/**");
+//    }
 
 //    @Override
 //    protected void configure(HttpSecurity http) throws Exception {  // (2)

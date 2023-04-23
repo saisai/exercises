@@ -1,3 +1,14 @@
 http://www.javabyexamples.com/run-a-jar-file-from-the-command-line
 https://springhow.com/session-tracking-modes-in-spring-security/
 https://developer.okta.com/blog/2020/12/14/spring-session-redis
+
+css
+https://getbootstrap.com/docs/5.0/components/modal/
+https://jquery.com/download/
+
+https://dirask.com/posts/jQuery-Ajax-POST-request-with-Java-Spring-MVC-controller-v10Y0D
+https://stackoverflow.com/questions/5404839/how-do-i-refresh-a-page-using-javascript
+https://stackoverflow.com/questions/5811122/how-to-trigger-a-click-on-a-link-using-jquery
+
+
+https://stackoverflow.com/questions/37002902/jquery-get-value-of-textarea-using-name

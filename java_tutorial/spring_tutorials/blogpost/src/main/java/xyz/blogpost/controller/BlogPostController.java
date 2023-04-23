@@ -11,6 +11,7 @@ import org.springframework.web.servlet.ModelAndView;
 import xyz.blogpost.model.BlogPost;
 import xyz.blogpost.service.BlogPostService;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import java.util.*;
 
@@ -22,6 +23,9 @@ public class BlogPostController {
 
     @Autowired
     BlogPostService blogPostService;
+
+    @Autowired
+    private HttpServletRequest request;
 
     @GetMapping(value="/")
     public String index(Model model) {
@@ -53,10 +57,50 @@ public class BlogPostController {
 //        //return "note-list";
 //    }
 
+    public void showRequestHeaders(HttpServletRequest request) {
+        HttpServletRequest httpServletRequest = request;
+        Enumeration<String> headerNames = request.getHeaderNames();
+
+        LOG.info("Http Headers");
+
+        if(headerNames != null) {
+            while(headerNames.hasMoreElements()) {
+                LOG.info("Header: {}", httpServletRequest.getHeader(headerNames.nextElement()));
+            }
+        }
+
+    }
+
+    //get user agent
+    private String getUserAgent() {
+        return request.getHeader("user-agent");
+    }
+
+    //get request headers
+    private Map<String, String> getHeadersInfo() {
+
+        Map<String, String> map = new HashMap<String, String>();
+
+        Enumeration headerNames = request.getHeaderNames();
+        while (headerNames.hasMoreElements()) {
+            String key = (String) headerNames.nextElement();
+            String value = request.getHeader(key);
+            map.put(key, value);
+        }
+
+        return map;
+    }
+
 
     @GetMapping(value = "/blogpost")
     public String posts(@RequestParam(value = "pageNumber", required = false, defaultValue = "1") int pageNumber,
-                        @RequestParam(value = "size", required = false, defaultValue = "5") int size, Model model) {
+                        @RequestParam(value = "size", required = false, defaultValue = "5") int size, Model model,
+                        HttpServletRequest request) {
+        LOG.info("Session Id {}", request.getSession().getId());
+
+        showRequestHeaders(request);
+        LOG.info("Headers {}", getHeadersInfo());
+
         model.addAttribute("blogPosts", blogPostService.getPage(pageNumber, size));
         return "blogpost";
     }
@@ -111,6 +155,24 @@ public class BlogPostController {
         blogPost.setCreatedAt(date);
         blogPostService.save(blogPost);
         return "redirect:/blogpost";
+    }
+
+    // ajax post
+    @RequestMapping(value = "/blogpost/ajax", method = RequestMethod.POST)
+    @ResponseBody
+    public String sendPostMessage(@RequestParam("title") String title,
+                                  @RequestParam("link") String link,
+                                  @RequestParam("description") String description
+                                  ) {
+
+        LOG.info("description {}", description);
+        Calendar calendar = Calendar.getInstance();
+        Date date =  calendar.getTime();
+        BlogPost blogPost = new BlogPost(title, link, description, date);
+        //blogPost.setCreatedAt(date);
+        blogPostService.save(blogPost);
+        return "Success";
+
     }
 
 
