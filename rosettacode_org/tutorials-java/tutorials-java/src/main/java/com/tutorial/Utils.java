@@ -28,4 +28,11 @@ public class Utils {
         return filePath;
     }
 
+    public static String getFilenameAndPath(String filePathAndFileName) {
+        File file = new File(filePathAndFileName);
+        System.out.println("exists " + file.exists());
+        String filePath = file.getAbsolutePath();
+        return filePath;
+    }
+
 }

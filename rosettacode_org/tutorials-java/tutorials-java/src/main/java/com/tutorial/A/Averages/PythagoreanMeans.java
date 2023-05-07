@@ -1,10 +1,7 @@
 package com.tutorial.A.Averages;
 
-import com.sun.java.browser.plugin2.DOM;
-
 import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
 import java.util.stream.DoubleStream;
 
 public class PythagoreanMeans {

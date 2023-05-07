@@ -103,12 +103,13 @@ public class MyWebSecurityConfig extends WebSecurityConfigurerAdapter {
 //    }
 
     // https://github.com/sherxon/coffeeShop/blob/master/src/main/java/edu/mum/coffee/config/WebSecurityConfig.java
-//    @Override
-//    public void configure(WebSecurity web) throws Exception {
-//        web
-//                .ignoring()
-//                .antMatchers("/resources/**", "/static/**", "/css/**", "/js/**", "/images/**");
-//    }
+    // https://github.com/datageartech/datagear/blob/master/datagear-web/src/main/java/org/datagear/web/config/SecurityConfig.java
+    @Override
+    public void configure(WebSecurity web) throws Exception {
+        web
+                .ignoring()
+                .antMatchers("/resources/**", "/static/**", "/css/**", "/js/**", "/images/**");
+    }
 
 //    @Override
 //    protected void configure(HttpSecurity http) throws Exception {  // (2)

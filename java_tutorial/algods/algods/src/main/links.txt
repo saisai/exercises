@@ -9,3 +9,10 @@ mvn archetype:generate -DgroupId=com.algods -DartifactId=algods -DarchetypeArtif
 https://stackoverflow.com/questions/4965335/how-to-print-binary-tree-diagram-in-java
 https://www.ondrovo.com/
 
+
+http://staff.ustc.edu.cn/~csli/graduate/algorithms/book6/chap23.htm
+https://github.com/mogwailabs/jarjarbigs
+https://github.com/shishan100/Java-Interview-Advanced
+https://github.com/CL0610/Java-concurrency/tree/master/05.%E5%BD%BB%E5%BA%95%E7%90%86%E8%A7%A3volatile
+https://github.com/thesohelshaikh?tab=repositories
+https://github.com/kallaway/100-days-of-code

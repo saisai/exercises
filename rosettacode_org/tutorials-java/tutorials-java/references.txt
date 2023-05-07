@@ -5,3 +5,6 @@ logging
 https://logging.apache.org/log4j/2.x/manual/api.html
 https://stackoverflow.com/questions/28572783/no-log4j2-configuration-file-found-using-default-configuration-logging-only-er
 https://www.baeldung.com/java-logging-intro
+
+
+java -cp target/tutorials-java-1.0-SNAPSHOT.jar com.tutorial.A.AlignColumns D:\exercises\rosettacode_org\tutorials-java\tutorials-java\src\main\resources\string.txt left
