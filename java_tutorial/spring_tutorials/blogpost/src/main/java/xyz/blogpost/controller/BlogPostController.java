@@ -33,7 +33,8 @@ public class BlogPostController {
 
     @GetMapping(value="/")
     public String index(Model model) {
-        return "index";
+        //return "index";
+        return "redirect:/blogpost";
     }
 
 //    @GetMapping(value="/blogpost")
@@ -96,7 +97,8 @@ public class BlogPostController {
     }
 
 
-    @GetMapping(value = "/blogpost")
+    //@GetMapping(value = {"/blogpost", "/"})
+    @GetMapping(value = {"/blogpost"})
     public String posts(@RequestParam(value = "pageNumber", required = false, defaultValue = "1") int pageNumber,
                         @RequestParam(value = "size", required = false, defaultValue = "5") int size, Model model,
                         HttpServletRequest request) {

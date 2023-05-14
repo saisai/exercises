@@ -12,3 +12,7 @@ https://stackoverflow.com/questions/5811122/how-to-trigger-a-click-on-a-link-usi
 
 
 https://stackoverflow.com/questions/37002902/jquery-get-value-of-textarea-using-name
+
+https://www.logicbig.com/tutorials/spring-framework/spring-web-mvc/redirect-view.html
+https://medium.com/@AADota/spring-passing-list-and-array-of-values-as-url-parameters-1ed9bbdf0cb2
+https://www.baeldung.com/spring-requestmapping

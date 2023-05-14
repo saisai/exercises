@@ -158,7 +158,7 @@
     <a class="py-2 d-none d-md-inline-block" href="/blogpost">Post</a>
     <a class="py-2 d-none d-md-inline-block" href="/blogpost/addForm">Add</a>
     <a class="py-2 d-none d-md-inline-block" href="/uploadForm">Upload</a>
-    <a class="py-2 d-none d-md-inline-block" href="#">Support</a>
+    <a class="py-2 d-none d-md-inline-block" href="/line">Line</a>
     <a class="py-2 d-none d-md-inline-block" href="#">Pricing</a>
     <a class="py-2 d-none d-md-inline-block" href="#">Cart</a>
   </nav>
