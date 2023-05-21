@@ -1,0 +1,4 @@
+https://rosettacode.org/wiki/Apply_a_digital_filter_(direct_form_II_transposed)
+https://rosettacode.org/wiki/Convert_seconds_to_compound_duration
+https://rosettacode.org/wiki/Compare_a_list_of_strings
+https://rosettacode.org/wiki/Colorful_numbers

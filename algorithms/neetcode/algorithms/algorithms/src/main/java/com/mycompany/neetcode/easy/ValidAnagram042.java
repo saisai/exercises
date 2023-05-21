@@ -1,4 +1,4 @@
-package com.mycompany.easy;
+package com.mycompany.neetcode.easy;
 
 public class ValidAnagram042 {
 
