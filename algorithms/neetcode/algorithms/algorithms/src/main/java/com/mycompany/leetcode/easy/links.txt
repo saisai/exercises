@@ -1,1 +1,2 @@
 https://leetcode.com/problems/first-letter-to-appear-twice/solutions/2329038/c-java-python-typescript-go-w-comments/
+https://leetcode.com/problems/find-the-width-of-columns-of-a-grid/description/

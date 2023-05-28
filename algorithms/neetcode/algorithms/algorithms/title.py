@@ -1,10 +1,16 @@
 # s = "longest-substring-without-repeating-characters"
 # print(s.title().replace('-', ''))
 
+import sys
+
 def getTitle(title):
     return title.title().replace('-', '')
 
-print(getTitle("Minimum-Window-Substring"))
-print(getTitle("longest-repeating-character-replacement"))
-print(getTitle("find-all-anagrams-in-a-string"))
-print(getTitle("sliding-window-maximum"))
+
+
+if __name__ == '__main__':
+
+    if len(sys.argv) < 3:
+        print("Enter correct argument")
+
+    print(getTitle(sys.argv[1]))

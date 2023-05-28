@@ -1,3 +1,7 @@
 https://leetcode.com/problems/binary-tree-level-order-traversal/solutions/2274531/go-python-c-java-javascript-bfs-w-comments/
 https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/solutions/3183460/java-o-n-dfs-solution/
 https://leetcode.com/problems/count-the-number-of-complete-components/solutions/3545180/java-dfs-solution/
+https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/solutions/3521907/dp/
+https://leetcode.com/problems/sliding-subarray-beauty/solutions/3446401/count-frequency/
+https://leetcode.com/problems/sum-in-a-matrix/solutions/3552781/java-from-108ms-to-17ms/
+https://leetcode.com/problems/largest-palindromic-number/solutions/3549726/java-using-priorityqueues/
