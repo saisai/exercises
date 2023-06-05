@@ -34,6 +34,11 @@ https://leetcode.com/SonicBoomer/
 
 https://leetcode.com/RobertG47/
 
+https://leetcode.com/votrubac/
+https://leetcode.com/Spaulding_/
+
+https://leetcode.com/rnotappl/
+
 
 github
 https://github.com/oyekanmiayo/data-structures-all-langs

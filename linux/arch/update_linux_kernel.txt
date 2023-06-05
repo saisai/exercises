@@ -1,0 +1,30 @@
+fdisk -l /dev/sda
+ 
+mount -v /dev/sda2 /mnt
+mount -v /dev/sda1 /mnt/boot
+
+arch-chroot /mnt
+
+
+cd /boot
+
+# No mkinitcpio preset present error might be no linux kenel.
+# install linux by typing
+pacman -S linux 
+
+mkinitcpio -p linux	
+
+grub-install --target=i386-pc --recheck /dev/sda
+grub-mkconfig -o /boot/grub/grub.cfg
+
+
+exit
+
+reboot
+
+
+
+mkinitcpio -c /etc/mkinitcpio.conf -g /boot/initramfs-linux.img -k 6.1.3-arch1-1
+https://unix.stackexchange.com/questions/571124/no-mkinitcpio-preset-present
+
+ls /usr/lib/modules

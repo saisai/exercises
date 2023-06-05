@@ -1,0 +1,10 @@
+https://stackabuse.com/reading-and-writing-sql-files-in-pandas/
+https://gist.github.com/ayoskovich/d97d887bda374ec71fe83475d43d6f62
+https://stackoverflow.com/questions/16476924/how-to-iterate-over-rows-in-a-dataframe-in-pandas
+https://github.com/buchs-kevin/Pandas-Excel-Example/blob/master/Pandas-Example.xlsx
+
+https://pandas.pydata.org/docs/getting_started/comparison/comparison_with_spreadsheets.html#compare-with-spreadsheets
+https://scikit-learn.org/stable/install.html
+https://github.com/DuanBoomer/the-ancient-secrets-of-computer-vision-homeowork
+
+https://pandas.pydata.org/docs/user_guide/dsintro.html
