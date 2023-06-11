@@ -1,0 +1,3 @@
+https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/solutions/3608426/solution/
+https://leetcode.com/problems/remove-invalid-parentheses/solutions/1551768/java-backtracking-w-comments/
+https://leetcode.com/problems/find-a-good-subset-of-the-matrix/solutions/3622298/javapython-3-hashmap-time-om-2-n/

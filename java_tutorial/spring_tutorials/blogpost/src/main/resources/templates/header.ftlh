@@ -95,6 +95,14 @@
     </style>
     <!-- Custom styles for this template -->
     <link href="/css/product.css" rel="stylesheet">
+
+    <link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/main.css" rel="stylesheet">
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <script src="/js/websocket.js"></script>
+
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -159,7 +167,6 @@
     <a class="py-2 d-none d-md-inline-block" href="/blogpost/addForm">Add</a>
     <a class="py-2 d-none d-md-inline-block" href="/uploadForm">Upload</a>
     <a class="py-2 d-none d-md-inline-block" href="/line">Line</a>
-    <a class="py-2 d-none d-md-inline-block" href="#">Pricing</a>
-    <a class="py-2 d-none d-md-inline-block" href="#">Cart</a>
+    <a class="py-2 d-none d-md-inline-block" href="/websocket">Web Socket</a>
   </nav>
 </header>

@@ -5,3 +5,7 @@ https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/solutions/352190
 https://leetcode.com/problems/sliding-subarray-beauty/solutions/3446401/count-frequency/
 https://leetcode.com/problems/sum-in-a-matrix/solutions/3552781/java-from-108ms-to-17ms/
 https://leetcode.com/problems/largest-palindromic-number/solutions/3549726/java-using-priorityqueues/
+https://leetcode.com/problems/find-the-score-of-all-prefixes-of-an-array/solutions/3420024/javapython-3-1-pass-codes/
+https://leetcode.com/problems/split-a-string-into-the-max-number-of-unique-substrings/solutions/3410460/o2n-backtracking-java-3ms-faster-than-100-pruning/
+https://leetcode.com/problems/detonate-the-maximum-bombs/solutions/3594571/java-bfs-explained/
+https://leetcode.com/problems/lexicographically-smallest-string-after-substring-operation/solutions/3623776/java-greedy/
