@@ -21,6 +21,11 @@ function connect() {
         stompClient.subscribe('/topic/greetings', function (greeting) {
             console.log("Greetings" + greetings.length);
             console.log(JSON.parse(greeting.body));
+            var result = JSON.parse(greeting.body);
+            console.log(result.length);
+            for(var i = 0; i < result.length; i++) {
+                console.log(result[i][0]);
+            }
             //showGreeting(JSON.parse(greeting.body));
         });
     });
@@ -55,5 +60,5 @@ $(function () {
 //    $( "#disconnect" ).click(function() { disconnect(); });
 //    $( "#send" ).click(function() { sendName(); });
       connect();
-      sendName();
+      //sendName();
 });

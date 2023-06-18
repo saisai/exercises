@@ -43,6 +43,13 @@ https://leetcode.com/0x4C0DE/
 https://leetcode.com/solved/
 https://leetcode.com/divakarv03/
 
+https://leetcode.com/flyingpenguin/
+
+https://leetcode.com/idiotleon/
+https://leetcode.com/tlj77/
+https://leetcode.com/jinwu/
+https://github.com/idiotleon/leetcode-solution-java-leon/blob/main/src/main/java/com/idiotleon/leetcode/multithread/lc1242/Solution.java
+
 
 c++
 https://leetcode.com/votrubac/
@@ -53,6 +60,7 @@ https://leetcode.com/Spaulding_/
 https://leetcode.com/rnotappl/
 https://leetcode.com/DBabichev/
 https://leetcode.com/vincent_great/
+https://leetcode.com/Marlen09/
 
 
 github

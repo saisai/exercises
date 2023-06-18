@@ -1,0 +1,4 @@
+https://leetcode.com/problems/minimum-window-substring/solutions/26811/share-my-neat-java-solution/
+https://leetcode.com/problems/word-search/solutions/27658/accepted-very-short-java-solution-no-additional-space/
+https://leetcode.com/problems/longest-palindromic-substring/solutions/2928/very-simple-clean-java-solution/
+https://leetcode.com/problems/regular-expression-matching/solutions/5651/easy-dp-java-solution-with-detailed-explanation/

@@ -1,0 +1,7 @@
+
+To show all of override methods of implement
+
+Ctrl + O
+
+
+https://www.codejava.net/ides/eclipse/25-eclipse-shortcut-keys-for-code-editing

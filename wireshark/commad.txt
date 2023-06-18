@@ -3,3 +3,9 @@ tshark -i 5
 tshark -i 5 -Y tcp && !http && !ssl and tcp && !(http or ssl)
 
 https://www.wireshark.org/docs/dfref/#section_t
+
+
+# Capture only UDP traffic
+    frame.protocols ~ ":udp:data$"
+    
+    https://superuser.com/questions/1004760/capture-only-udp-traffic-that-cannot-be-identified-as-another-protocol

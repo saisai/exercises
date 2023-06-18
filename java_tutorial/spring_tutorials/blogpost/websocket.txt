@@ -20,3 +20,5 @@ https://www.baeldung.com/java-org-json
 https://www.devglan.com/spring-boot/spring-boot-websocket-example
 
 https://github.com/eugenp/tutorials/blob/cd09e52495120bd56243fe90bd4c5285ae2d6a8e/spring-websockets/src/main/java/com/baeldung/websockets/ScheduledPushMessages.java
+
+https://stackoverflow.com/questions/21084279/how-to-create-multiple-json-array

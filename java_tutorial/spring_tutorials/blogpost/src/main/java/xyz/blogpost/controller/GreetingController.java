@@ -1,5 +1,6 @@
 package xyz.blogpost.controller;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
@@ -54,18 +55,48 @@ public class GreetingController {
 //
 //    }
 
+//    @Scheduled(fixedRate = 10000)
+//    @MessageMapping("/hello")
+//    @SendTo("/topic/greetings")
+//    public ArrayList<Greeting> greet() {
+//        String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new java.util.Date());
+//        System.out.println("Hello" + timeStamp);
+//        //this.template.convertAndSend("/topic/greetings"
+//        //new Greeting("Hello, " +  timeStamp ));
+//
+//        ArrayList<Greeting> lst = new ArrayList<>();
+//        lst.add(new Greeting("Hello 1"));
+//        lst.add(new Greeting("Hello 2"));
+//        return lst;
+//    }
+
     @Scheduled(fixedRate = 10000)
     @MessageMapping("/hello")
     @SendTo("/topic/greetings")
-    public ArrayList<Greeting> greet() {
+    public void greet() {
         String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new java.util.Date());
         System.out.println("Hello" + timeStamp);
-        //this.template.convertAndSend("/topic/greetings"
-        //new Greeting("Hello, " +  timeStamp ));
 
-        ArrayList<Greeting> lst = new ArrayList<>();
-        lst.add(new Greeting("Hello 1"));
-        lst.add(new Greeting("Hello 2"));
-        return lst;
+        JSONArray mainJa = new JSONArray();
+
+        JSONArray a = new JSONArray();
+        a.put("a");
+        a.put(100);
+        a.put(120.10);
+        a.put(timeStamp);
+
+        String timeStamp2 = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new java.util.Date());
+        JSONArray b = new JSONArray();
+        b.put("b");
+        b.put(200);
+        b.put(220.10);
+        b.put(timeStamp2);
+
+        mainJa.put(a);
+        mainJa.put(b);
+
+        System.out.println(mainJa.toString());
+        this.template.convertAndSend("/topic/greetings", mainJa.toString());
+
     }
 }
