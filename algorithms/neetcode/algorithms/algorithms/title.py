@@ -6,6 +6,9 @@ import sys
 def getTitle(title):
     return title.title().replace('-', '')
 
+def getTitle2(title):
+    return title.title()
+
 
 
 if __name__ == '__main__':
@@ -14,3 +17,4 @@ if __name__ == '__main__':
         print("Enter correct argument")
 
     print(getTitle(sys.argv[1]))
+    print(getTitle2(sys.argv[1]))

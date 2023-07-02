@@ -10,3 +10,4 @@ https://leetcode.com/problems/split-a-string-into-the-max-number-of-unique-subst
 https://leetcode.com/problems/detonate-the-maximum-bombs/solutions/3594571/java-bfs-explained/
 https://leetcode.com/problems/lexicographically-smallest-string-after-substring-operation/solutions/3623776/java-greedy/
 https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/solutions/28121/java-in-place-o1-on/
+https://leetcode.com/problems/maximum-star-sum-of-a-graph/description/

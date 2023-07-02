@@ -3,3 +3,4 @@ https://leetcode.com/problems/remove-invalid-parentheses/solutions/1551768/java-
 https://leetcode.com/problems/find-a-good-subset-of-the-matrix/solutions/3622298/javapython-3-hashmap-time-om-2-n/
 https://leetcode.com/problems/sliding-window-maximum/solutions/65884/java-o-n-solution-using-deque-with-explanation/
 https://leetcode.com/problems/minimum-window-substring/solutions/26811/share-my-neat-java-solution/
+https://leetcode.com/problems/distinct-echo-substrings/solutions/2467581/clean-java-sliding-window/

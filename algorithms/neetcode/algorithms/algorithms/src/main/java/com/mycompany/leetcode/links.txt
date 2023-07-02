@@ -49,7 +49,18 @@ https://leetcode.com/idiotleon/
 https://leetcode.com/tlj77/
 https://leetcode.com/jinwu/
 https://github.com/idiotleon/leetcode-solution-java-leon/blob/main/src/main/java/com/idiotleon/leetcode/multithread/lc1242/Solution.java
+https://leetcode.com/monkeyGoCrazy/
+https://leetcode.com/FLlGHT/
+https://leetcode.com/ye15/
 
+https://leetcode.com/anarchaworld/
+
+https://leetcode.com/kaanbariskocabas/
+https://leetcode.com/U99Omega/
+https://leetcode.com/Nayanava/
+https://leetcode.com/iamvineettiwari012/
+
+https://leetcode.com/hobiter/
 
 c++
 https://leetcode.com/votrubac/
@@ -61,10 +72,22 @@ https://leetcode.com/rnotappl/
 https://leetcode.com/DBabichev/
 https://leetcode.com/vincent_great/
 https://leetcode.com/Marlen09/
+https://leetcode.com/davyjing/
+https://leetcode.com/wtain/
+https://github.com/wtain/LeetCodePython/tree/master/DataStructures
+https://leetcode.com/Silvia42/
+https://leetcode.com/huikinglam02/
+https://leetcode.com/nate17/
+
+
+websites
+https://flykiller.github.io/about/
 
 
 github
 https://github.com/oyekanmiayo/data-structures-all-langs
+https://github.com/wtain/LeetCodePython
+https://github.com/FLlGHT/algorithms/blob/master/j-algorithms/src/main/java/backtracking/NonDecreasingSubsequences.java
 
 https://github.com/doocs/leetcode/blob/main//solution/0300-0399/0399.Evaluate%20Division/README_EN.md
 https://github.com/Seanforfun/Algorithm-and-Leetcode/blob/master/leetcode/399.%20Evaluate%20Division.md
@@ -74,3 +97,5 @@ https://github.com/awangdev/leet-code/blob/master/Java/399.%20Evaluate%20Divisio
 https://github.com/LiXuanqi/leetcode-solutions/tree/master/java
 https://github.com/maiquynhtruong/Leetcode/blob/master/evaluate-division.java
 https://github.com/cherryljr/LeetCode/tree/master
+
+

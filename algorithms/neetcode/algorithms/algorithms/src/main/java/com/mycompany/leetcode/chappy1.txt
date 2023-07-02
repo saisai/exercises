@@ -1,1 +1,2 @@
 https://leetcode.com/problems/minimum-window-substring/solutions/3164335/solution/
+https://leetcode.com/problems/distinct-echo-substrings/solutions/3604220/solution/
