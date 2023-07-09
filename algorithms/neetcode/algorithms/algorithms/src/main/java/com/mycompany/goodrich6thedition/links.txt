@@ -1,2 +1,16 @@
 https://github.com/gdouzwt/data-structures-and-algorithms-in-java/tree/master/ch03
+https://github.com/jjmacagnan/Data-Structures-and-Algorithms/blob/master/src/chapter_6/exercises/creativity/C617_StackTransfer.java
 
+
+
+https://github.com/Aariv/DataStructuresandAlgorithmsinJava-6thedition/blob/master/src/com/dsalgo/chapter6/stack/StackLinkedListDemo.java
+https://github.com/rogeriogentil/data-structures-and-algorithms/tree/master/src/main/java/rogeriogentil/data/structures/chapter07
+
+https://github.com/jjmacagnan/Data-Structures-and-Algorithms/tree/master/src/chapter_7/code/array_list
+
+https://github.com/Vishal023/Data-Structure-and-Algorithms
+
+https://github.com/xuelvming/DataStructuresandAlgorithmsinJava6thEditionInternationalStudent/tree/master/src/main/java/dsaj/primer
+
+https://github.com/bethrobson/Head-First-Design-Patterns/tree/master/src/headfirst/designpatterns/command/diner
+https://github.com/olibyte/dataStructuresAndAlgorithms
