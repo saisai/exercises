@@ -24,6 +24,11 @@ public abstract class AbstractTree<E> implements Tree<E>{
         return size()  == 0;
     }
 
+    @Override
+    public boolean isEmpty() {
+        return size() == 0;
+    }
+
     public int depth(Position<E> p) {
         if(isRoot(p))
             return 0;
