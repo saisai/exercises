@@ -1,0 +1,17 @@
+D:\jdks\bin\java.exe "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.2\lib\idea_rt.jar=33615:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.2\bin" -Dfile.encoding=UTF-8 -classpath D:\exercises\algorithms\neetcode\algorithms\algorithms\target\classes com.mycompany.leetcode.medium.MaximumStarSumOfAGraph.MaximumStarSumOfAGraph0x4C0DE
+
+
+https://leetcode.com/problems/network-delay-time/solutions/3449952/solution/
+https://leetcode.com/problems/network-delay-time/solutions/2036743/python-short-dijkstra-solution-explained/
+https://leetcode.com/problems/two-sum/solutions/3464581/java-solution-using-hashmap/
+https://mosquitto.org/documentation/authentication-methods/
+http://www.steves-internet-guide.com/mqtt-username-password-example/
+https://snapcraft.io/install/mosquitto/arch
+
+https://stackoverflow.com/questions/45357771/stop-and-remove-all-docker-containers
+
+https://mkyong.com/spring-boot/spring-boot-ssl-https-examples/
+https://github.com/mkyong/spring-boot
+https://leetcode.com/problems/climbing-stairs/solutions/3205775/0ms-java-faster/
+https://leetcode.com/problems/search-suggestions-system/solutions/3587870/solution/
+https://www.baeldung.com/java-list-of-lists

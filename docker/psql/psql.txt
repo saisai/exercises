@@ -1,0 +1,21 @@
+docker pull postgres:11.20-alpine3.17
+
+
+docker run --name postgres-11 -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 -d postgres:11.20-alpine3.17
+
+docker exec -it postgres-11 psql -U postgres -W
+
+docker exec -it f3c019b9fa06 psql -U postgres -W
+docker exec -it <container-name-or-id> bash
+
+docker run -e POSTGRES_USER=docker -e POSTGRES_PASSWORD=docker -e POSTGRES_DB=docker library/postgres
+
+
+
+https://hub.docker.com/_/postgres
+https://stackoverflow.com/questions/37099564/docker-how-can-run-the-psql-command-in-the-postgres-container
+https://gist.github.com/mitchwongho/11266726
+# https://stackoverflow.com/questions/43308319/how-can-i-run-bash-in-a-new-container-of-a-docker-image
+# https://stackoverflow.com/questions/47756280/docker-exec-command-without-the-container-id
+
+

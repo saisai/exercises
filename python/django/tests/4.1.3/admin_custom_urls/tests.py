@@ -7,6 +7,8 @@ from django.urls import reverse
 
 from .models import Action, Car, Person
 
+print("hello")
+
 
 def show_dir_obj(obj):
     for o in [f for f in dir(obj) if not f.startswith('_')]:

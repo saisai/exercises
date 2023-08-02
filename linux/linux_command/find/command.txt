@@ -1,0 +1,13 @@
+https://unix.stackexchange.com/questions/154818/how-to-integrate-mv-command-after-find-command
+
+
+find path_A -name '*AAA*' -exec mv -t path_B {} +
+
+
+
+# Find folder
+find . -type d -name "folder name"
+
+# Find file
+find . -type f -name "file name"
+

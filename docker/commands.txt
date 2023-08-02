@@ -1,0 +1,24 @@
+# List images
+	docker ps -a
+
+# Remove container
+	docker rm containtername
+	
+docker stop $(docker images -q)
+docker rmi $(docker images -q)
+
+for i in $(docker ps -a | grep -v "CONTAINER ID" | awk '{print $1}'); do echo $i; docker stop $i; docker rm $i; done
+
+
+
+docker logs f2360aa3774f
+
+
+docker network ls
+
+docker network inspect
+
+docker container list -a
+
+
+# https://earthly.dev/blog/docker-networking/

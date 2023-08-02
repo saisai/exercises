@@ -49,3 +49,13 @@ https://stackoverflow.com/questions/17071871/how-do-i-select-rows-from-a-datafra
 https://stackoverflow.com/questions/16476924/how-to-iterate-over-rows-in-a-dataframe-in-pandas
 
 https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.keys.html
+
+
+
+https://stackoverflow.com/questions/43348194/pandas-select-rows-if-id-appear-several-time
+
+https://stackoverflow.com/questions/52195887/counting-unique-pairs-of-numbers-into-a-python-dictionary
+https://stackoverflow.com/questions/27298178/concatenate-strings-from-several-rows-using-pandas-groupby
+
+
+https://github.com/KeithGalli/Pandas-Data-Science-Tasks/blob/master/SalesAnalysis/SalesAnalysis.ipynb

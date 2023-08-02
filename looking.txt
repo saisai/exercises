@@ -1,8 +1,0 @@
-https://django-guardian.readthedocs.io/en/stable/develop/index.html
-https://pypi.org/project/django-compressor/
-https://pypi.org/project/django-celery-beat/
-https://github.com/czue/celery-progress
-https://www.django-rest-framework.org/
-https://django-filter.readthedocs.io/en/stable/guide/rest_framework.html
-
-https://github.com/carltongibson/django-filter/tree/master/tests

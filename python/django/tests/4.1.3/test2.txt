@@ -1,8 +1,0 @@
-Testing against Django installed in 'D:/tmp/github/django-4.1/django-4.1.3/django' with up to 8 processes
-Found 5 test(s).
-System check identified no issues (0 silenced).
-/admin/admin_custom_urls/action/add/change/
-/admin/admin_custom_urls/action/path_2Fto_2Fhtml_2Fdocument.html/change/
-0
-1
-/admin/admin_custom_urls/person/1/history/

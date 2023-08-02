@@ -1,4 +1,0 @@
-dumpcap -i 5 -w D:\tmp\wireshark\sampleone.pcapng -b filesize:500000 -b files:20
-
-(ip.src == 192.168.0.100) or (ip.dst == 192.168.0.103)
-(ip.addr == 192.168.0.100) && (ip.addr == 192.168.0.103)

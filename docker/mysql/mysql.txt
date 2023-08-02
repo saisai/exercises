@@ -1,0 +1,11 @@
+docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
+docker run --name mysql-8.0.34 -e MYSQL_ROOT_PASSWORD=my-secret-pw  -p 3306:3306 -d mysql:8.0.34
+
+
+docker exec -it mysql-8.0.34 mysql -uroot -p
+https://hub.docker.com/r/mysql/mysql-server/
+
+
+public key retrieval is not allowed
+allowPublicKeyRetrieval=true
+https://stackoverflow.com/questions/50379839/connection-java-mysql-public-key-retrieval-is-not-allowed

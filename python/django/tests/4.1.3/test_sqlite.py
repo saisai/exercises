@@ -13,15 +13,7 @@
 # file for each of the backends you test against.
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dbtest', 
-        'USER': 'postgres', 
-        'PASSWORD': 'postgres',
-        'HOST': '127.0.0.1', 
-        'PORT': '5432',
-    },
-    "sqlite3": {
+    "default": {
         "ENGINE": "django.db.backends.sqlite3",
     },
     "other": {

@@ -3,3 +3,31 @@ https://stackoverflow.com/questions/8306654/finding-all-possible-permutations-of
 
 https://leetcode.com/DBabichev/
 
+
+
+https://github.com/bardiaHSZD/Algorithms_DataStructure
+
+https://en.wikipedia.org/wiki/Dynamic_programming
+
+
+
+https://bradfieldcs.com/algos/graphs/word-ladder/
+https://igraph.org/python/tutorial/0.9.8/tutorial.html
+https://python.swaroopch.com/data_structures.html
+https://www.techiedelight.com/graph-implementation-python/
+https://www.edx.org/course/advanced-algorithmics-and-graph-theory-with-python
+http://xpzhang.me/
+https://github.com/zxplsec?after=Y3Vyc29yOnYyOpK5MjAxOC0wNi0xNVQyMDoyMjoyMiswNzowMM4J8ZQG&tab=repositories
+https://github.com/ZVsion/algorithms/blob/master/algorithms/graph/satisfiability.py
+https://github.com/keon/algorithms
+https://github.com/orgs/RunestoneInteractive/repositories
+https://stackoverflow.com/questions/16981921/relative-imports-in-python-3
+https://github.com/keon/algorithms/tree/master/algorithms/graph
+
+https://runestone.academy/runestone/books/published/pythonds/BasicDS/ImplementingaQueueinPython.html
+
+https://github.com/bnmnetp/pythonds
+
+https://jovian.ai/learn/data-structures-and-algorithms-in-python/lesson/lesson-4-recursion-and-dynamic-programming
+https://jovian.ai/eagleanurag/python-graph-algorithms
+https://towardsdatascience.com/introduction-to-graph-algorithm-breadth-first-search-algorithm-in-python-8644b6d31880

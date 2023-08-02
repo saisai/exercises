@@ -1,0 +1,8 @@
+https://stackoverflow.com/questions/39493490/provide-static-ip-to-docker-containers-via-docker-compose
+
+https://www.freecodecamp.org/news/what-is-docker-compose-how-to-use-it/
+
+https://gist.github.com/natcl/3d881d00a56c8a961e6dab8ba51a5a37
+
+docker-compose up
+docker-compose up -d

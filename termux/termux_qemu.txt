@@ -1,0 +1,52 @@
+https://github.com/eapolinariov/alpine-linux-on-termux
+https://dl-cdn.alpinelinux.org/alpine/v3.18/releases/x86_64/
+
+
+apk add sudo
+NEWUSER='alpine'
+adduser -g "${NEWUSER}" $NEWUSER
+echo "$NEWUSER ALL=(ALL) ALL" > /etc/sudoers.d/$NEWUSER && chmod 0440 /etc/sudoers.d/$NEWUSER
+
+https://wiki.alpinelinux.org/wiki/Setting_up_a_new_user
+
+
+https://wiki.alpinelinux.org/wiki/Configure_Networking
+
+https://bell-sw.com/blog/how-to-deal-with-alpine-dns-issues/
+
+https://cylab.be/blog/221/a-light-nat-router-and-dhcp-server-with-alpine-linux
+
+udhcpc eth0
+
+inet 192.168.0.12/24 brd 192.168.0.255 scope global dynamic enp0s3
+inet 192.168.0.12/24 brd 192.168.0.255 scope global dynamic eth0
+
+ifconfig eth0 192.168.0.12 netmask 255.255.255.0 
+
+https://gist.github.com/extremecoders-re/e8fd8a67a515fee0c873dcafc81d811c
+https://wiki.alpinelinux.org/wiki/QEMU
+https://github.com/eapolinariov/alpine-linux-on-termux
+
+https://gist.github.com/vsergeev/2391575
+https://techoverflow.net/2021/05/03/how-to-check-enable-dhcp-in-alpine-linux-installer/
+
+
+
+https://techoverflow.net/2021/05/03/how-to-check-enable-dhcp-in-alpine-linux-installer/
+
+https://opensource.com/article/18/10/introduction-tcpdump
+
+https://www.tecmint.com/12-tcpdump-commands-a-network-sniffer-tool/
+
+https://danielmiessler.com/p/tcpdump/
+
+
+alpine postgres
+https://luppeng.wordpress.com/2020/02/28/install-and-start-postgresql-on-alpine-linux/
+
+https://superuser.com/questions/1538560/no-network-after-changing-static-ip-address-on-alpine-linux-on-raspberry-pi
+https://linuxhint.com/create-static-ip-alpine-linux/
+https://www.cyberciti.biz/faq/how-to-configure-static-ip-address-on-alpine-linux/
+https://wiki.alpinelinux.org/wiki/Configure_Networking
+https://superuser.com/questions/667631/network-is-unreachable-when-attempting-to-ping-google-but-internal-addresses
+https://serverfault.com/questions/437598/what-can-cause-rtnetlink-answers-no-such-process-when-adding-a-route

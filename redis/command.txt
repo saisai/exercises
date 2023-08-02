@@ -1,0 +1,2 @@
+redis-cli 
+redis-cli -h XXX.XXX.XXX.XXX -p YYYY

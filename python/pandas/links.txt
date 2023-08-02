@@ -8,3 +8,5 @@ https://scikit-learn.org/stable/install.html
 https://github.com/DuanBoomer/the-ancient-secrets-of-computer-vision-homeowork
 
 https://pandas.pydata.org/docs/user_guide/dsintro.html
+
+https://pandas.pydata.org/docs/getting_started/intro_tutorials/10_text_data.html

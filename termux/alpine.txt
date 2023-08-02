@@ -1,0 +1,19 @@
+https://wiki.alpinelinux.org/wiki/Installation
+
+https://wiki.alpinelinux.org/wiki/Bridge
+
+https://wiki.alpinelinux.org/wiki/Repositories
+
+https://wiki.alpinelinux.org/wiki/Wi-Fi
+
+https://wiki.alpinelinux.org/wiki/Alpine_setup_scripts#setup-alpine
+
+https://qemu-discuss.nongnu.narkive.com/rNgxmrbk/missing-bridge-conf
+
+https://wiki.alpinelinux.org/wiki/Bridge
+
+
+ifconfig eth0 up
+udhcpc eth0
+
+https://techoverflow.net/2021/05/03/how-to-check-enable-dhcp-in-alpine-linux-installer/

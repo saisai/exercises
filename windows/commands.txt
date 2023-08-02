@@ -21,3 +21,7 @@ https://stackoverflow.com/questions/24219627/how-to-update-system-path-variable-
 https://www.windows-commandline.com/set-path-command-line/
 http://www.dowdandassociates.com/blog/content/howto-set-an-environment-variable-in-windows-command-line-and-registry/
 https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/
+
+
+https://www.windows-commandline.com/taskkill-kill-process/
+taskkill /IM executablename

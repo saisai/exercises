@@ -1,5 +1,0 @@
-https://unix.stackexchange.com/questions/154818/how-to-integrate-mv-command-after-find-command
-
-
-find path_A -name '*AAA*' -exec mv -t path_B {} +
-

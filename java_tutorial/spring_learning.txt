@@ -1,3 +1,8 @@
-https://github.com/ZHENFENG13/My-Blog
-https://github.com/ramostear/Spring-Boot-Service-Component/tree/master/src/main/java/com/ramostear/application
-https://github.com/SimpleProgramming/spring-security-basic.git
+https://github.com/amigoscode/spring-data-jpa-course
+
+https://github.com/ElviraMjeshtri/fullStackApplication/tree/main
+
+https://en.wikipedia.org/wiki/Pandoc
+https://pandoc.org/demos.html
+
+https://github.com/amigoscode/group-project-device-management

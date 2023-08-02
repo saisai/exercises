@@ -1,0 +1,10 @@
+# https://docs.docker.com/network/
+# https://stackoverflow.com/questions/50379839/connection-java-mysql-public-key-retrieval-is-not-allowed
+
+# https://github.com/cfranklin11/docker-django-react
+# https://www.honeybadger.io/blog/docker-django-react/
+# https://github.com/jbenavidez/react-django-docker/tree/main/frontend/client
+
+# https://github.com/jbenavidez/Django-React-blogs
+# https://github.com/jbenavidez/Django-React-blogs
+# https://github.com/jbenavidez?tab=repositories

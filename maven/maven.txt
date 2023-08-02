@@ -1,0 +1,2 @@
+mvn -Prelease-profile help:effective-pom
+mvn archetype:generate -DgroupId=xyz.hello -DartifactId=blogposts -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
