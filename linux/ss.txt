@@ -1,0 +1,20 @@
+To show all listening TCP connections, use the following:
+ss -tln – This command will show all listening TCP connections on the system, along with the corresponding port number and the process ID that is listening on that port.
+
+To show all established TCP connections, use the following:
+ss -tan – This command will show all established TCP connections on the system, including the local and remote IP addresses, the corresponding port numbers, and the state of the connection.
+
+To show all UDP sockets, use the following:
+ss -uln – This command will show all open UDP sockets on the system, along with the corresponding port number and the process ID that is using that socket.
+
+To show all UNIX sockets, use the following:
+ss -x – This command will show all UNIX sockets on the system, including the type of socket, the inode number, and the process ID that is using that socket.
+
+To show all TCP sockets in the state of TIME-WAIT, use the following:
+ss -tan state time-wait – This command will show all TCP sockets in the state of TIME-WAIT, which is a state that a connection enters after it has been closed. This can be useful for diagnosing connection-related issues.
+
+To show all processes that are using internet sockets, use the following:
+ss -ap – This command will show all processes that are using internet sockets on the system, along with the corresponding socket information and the process ID.
+
+
+# https://haydenjames.io/ss-command-in-linux-with-examples/

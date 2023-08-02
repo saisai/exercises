@@ -281,3 +281,9 @@ https://java2blog.com/awk-print-1/
 https://github.com/RameshMF/spring-core-tutorial
 
 https://stormpath.com/blog/category/java/page/3
+
+https://github.com/nfstream/nfstream
+https://github.com/zenorocha/clipboard.js
+https://github.com/ocrmypdf/OCRmyPDF
+
+https://drdobbs.com/jvm/creating-and-destroying-java-objects-par/208403883?pgno=2

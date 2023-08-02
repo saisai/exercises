@@ -6,3 +6,7 @@ https://en.wikipedia.org/wiki/Pandoc
 https://pandoc.org/demos.html
 
 https://github.com/amigoscode/group-project-device-management
+
+
+React Frontent
+https://github.com/esnet/oscars/tree/master

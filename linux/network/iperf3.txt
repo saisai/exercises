@@ -1,0 +1,7 @@
+iperf3
+
+
+https://man.archlinux.org/man/iperf3.1
+
+https://github.com/esnet/iperf
+https://haydenjames.io/linux-networking-commands-scripts/
