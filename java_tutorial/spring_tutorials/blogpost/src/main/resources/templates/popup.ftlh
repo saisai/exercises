@@ -9,7 +9,6 @@ $(function(){
         return false;
     });
 
-
     $("button.close").on("click", function(event){
       $('div.popup').hide();
       console.log("mydata length" + mydata.length);
