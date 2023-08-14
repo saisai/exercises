@@ -117,7 +117,7 @@ public class GreetingController {
                 BlogPost.class);
         //List<BlogPost> blogPosts = query.getResultList();
         List<BlogPost> blogPosts = query.setParameter("date1", java.sql.Timestamp.valueOf("2023-08-13 00:00:00"))
-                .setParameter("date2", java.sql.Timestamp.valueOf("2023-08-15 10:30:14.332"))
+                .setParameter("date2", java.sql.Timestamp.valueOf("2023-08-16 10:30:14.332"))
                 .setParameter("lastId", lastId).getResultList();
         return blogPosts;
     }
@@ -127,7 +127,7 @@ public class GreetingController {
     @SendTo("/topic/history")
     public Long history(Long to) {
         System.out.println("History " + to);
-        count = to;
+        this.count = to;
         return to;
     }
 
@@ -136,8 +136,8 @@ public class GreetingController {
     @SendTo("/topic/greetings")
     public void greet()  {
         //Thread.sleep(1000);
-        System.out.println("greeting count " + count);
-        List<BlogPost> result = testDate(count);
+        System.out.println("greeting count " + this.count);
+        List<BlogPost> result = testDate(this.count);
         JSONArray mainJa = new JSONArray();
 
         for(BlogPost obj : result) {

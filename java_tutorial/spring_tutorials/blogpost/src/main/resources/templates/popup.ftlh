@@ -12,11 +12,10 @@ $(function(){
 
     $("button.close").on("click", function(event){
       $('div.popup').hide();
-      switch_pop_up_mtd = true;
-      $('table.my-realtime-table-first tr.first-mtd-tr').remove();
-      $('table.my-realtime-table-last tr.helloMyTest-second').remove();
-      //myNamespace = [];
-      //clearInterval(counter);
+      console.log("mydata length" + mydata.length);
+      mydata = [];
+      console.log("after mydata length" + mydata.length);
+      $('tr.helloMyTest-second').remove();
       disconnect();
      });
 });

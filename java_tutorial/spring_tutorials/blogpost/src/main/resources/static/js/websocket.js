@@ -1,5 +1,21 @@
 var stompClient = null;
 
+
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+
+const dayName = (date, locale) =>
+      date.toLocaleDateString(locale, { weekday: 'long' });
+
+function myDate() {
+  var a = new Date();
+  var r = dayName(a);
+  return r + '  ' + a.getFullYear() + '/' + leftInsertZero(a.getMonth() + 1) + '/' + leftInsertZero(a.getDate());
+}
+
+
 function connect() {
     var socket = new SockJS('/stomp-endpoint');
     var blogpost_id;
@@ -19,9 +35,9 @@ function connect() {
             if(blogpost_id){
                 stompClient.send("/app/history", {}, blogpost_id);
             }
-//            else {
-//                stompClient.send("/app/history", {}, 0);
-//            }
+            else {
+                stompClient.send("/app/history", {}, 0);
+            }
 
             var secondPart = blogpost_id;
 
@@ -45,67 +61,46 @@ function disconnect() {
     console.log("Disconnected");
 }
 
-function checkTime(i) {
-if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-return i;
-}
-
-const dayName = (date, locale) =>
-      date.toLocaleDateString(locale, { weekday: 'long' });
-
-function myDate() {
-      var a = new Date();
-      var r = dayName(a);
-      return r + '  ' + a.getFullYear() + '/' + leftInsertZero(a.getMonth() + 1) + '/' + leftInsertZero(a.getDate());
-}
 
 var mydata = [];
 function filledData(data, score_mtd) {
   mydata = data;
-  var content = "";
+  console.log("fillData lenght " + mydata.length);
   if (data) {
     var content = '';
     if(data.length >= 1) {
-
-      //content += '<tr class="helloMyTest-second" id="helloMyTest">';
       var newTd = ""
-      for (var i = 0; i < data.length; i++) {
-
-            var r = data[i];
-            var myDeleteData = r[0] + ',' + r[1] + ',' + r[2];
-            newTd += '<td class="my-testing-one" style="width: 30px; padding-left: 10px;" id="my_'+ r[0] +'"><div data-mymore="'+myDeleteData+'" class="my-delete" data-id="'+ r[0] +'" onClick="myDelete(this)">Delete</div>'
-                + ' <table>'
-                + '   <tr><td> '
-                + '     <div><img id="'+ r[0] +'" style="width: 150px; height: 150px;"></div>'
-                + '  </td></tr>'
-                + '  <tr><td style="padding-top:10px;">'
-                + '     <table class="first-table">'
-                  + '     <tr><td>ID</td><td>' + r[0] + '</td></tr>'
-                  + '     <tr><td>Date</td><td>' + r[1] + '</td></tr>'
-                  + '     <tr><td>Description</td><td>' + r[2] + '</td></tr>'
-                + '     </table>'
-                + ' </td></tr>'
-                + '</table>'
-                +  '</td>';
-
-                if(i % 5 == 0) {
-                    content += '<tr class="helloMyTest-second" id="helloMyTest">';
-                    content += newTd;
-                    content += '</tr>';
-                    newTd = "";
-                }
+      var fiveRows = 5;
+      for (var i = 0; i < mydata.length; i++) {
+        if (i % fiveRows === 0 && i > 0) {
+            content += '</tr><tr class="helloMyTest-second">';
+          }
+        var r = mydata[i];
+        newTd = '<td class="my-testing-one" style="width: 30px; padding-left: 10px;" id="my_'+ r[0] +'"><div class="my-delete" data-id="'+ r[0] +'" onClick="myDelete(this)">Delete</div>'
+            + ' <table>'
+            + '   <tr><td> '
+            + '     <div><img id="'+ r[0] +'" style="float:left; width: 150px; height: 150px;"></div>'
+            + '  </td></tr>'
+            + '  <tr><td style="padding-top:10px;">'
+            + '     <table class="first-table">'
+              + '     <tr><td>ID</td><td>' + r[0] + '</td></tr>'
+              + '     <tr><td>Date</td><td>' + r[1] + '</td></tr>'
+              + '     <tr><td>Description</td><td>' + r[2] + '</td></tr>'
+            + '     </table>'
+            + ' </td></tr>'
+            + '</table>'
+            +  '</td>';
+        content += newTd;
       }
-
+      content = '<tr class="helloMyTest-second">' + content + '</tr>';
+      $('table.myrealtime-second tbody').after(content);
     }
 
-    $('table.myrealtime-second tbody').after(content);
   }
 }
 
 function myDelete(e){
     var dataId = parseInt(e.getAttribute("data-id"));
-    var myMoreData = e.getAttribute("data-mymore");
-    var removeElement = myMoreData.split(',');
     var newArr = mydata.filter(function(itm){
       return itm[0] !== dataId;
     });
