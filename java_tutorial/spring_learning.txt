@@ -1,3 +1,22 @@
+https://github.com/RameshMF/all-spring-and-spring-boot-annotations
+https://github.com/RameshMF/library-management-system
+
+
+https://github.com/bobocode-projects/spring-framework-tutorial
+
+
+
+https://github.com/bobocode-projects/spring-boot-tutorial/tree/master
+https://github.com/spring-guides/gs-spring-boot
+
+
+https://github.com/pictolearn/docker-tutorial
+
+
+https://www.learn-it-with-examples.com/development/java/spring-framework/spring-aop-example.html
+
+https://github.com/bobocode-projects/java-fundamentals-exercises/tree/main
+
 https://github.com/amigoscode/spring-data-jpa-course
 
 https://github.com/ElviraMjeshtri/fullStackApplication/tree/main
@@ -10,3 +29,16 @@ https://github.com/amigoscode/group-project-device-management
 
 React Frontent
 https://github.com/esnet/oscars/tree/master
+
+
+https://github.com/Java-Techie-jt/springboot-best-practices
+https://github.com/Java-Techie-jt/annotations-cheatsheet
+
+
+https://github.com/Frooodle/Stirling-PDF/blob/main/LocalRunGuide.md
+
+https://github.com/orgs/linuxserver/repositories
+https://github.com/awesome-selfhosted/awesome-selfhosted
+https://github.com/walkxcode/dashboard-icons
+
+https://github.com/spring-guides/tut-react-and-spring-data-rest

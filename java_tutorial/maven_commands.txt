@@ -1,0 +1,32 @@
+mvn package
+
+
+mvn spring-boot:run
+
+
+mvn clean install 
+is the command to do just that.
+
+You are calling the mvn executable, which means you need Maven installed on your machine. (see How do you install Maven?)
+
+You are using the clean command, which will delete all previously compiled Java .class files and resources (like .properties) in your project. Your build will start from a clean slate.
+
+Install will then compile, test & package your Java project and even install/copy your built .jar/.war file into your local Maven repository. (see A look at the Maven build lifecycle: phases)
+
+
++ stocks-broker-app (parent)
+    + stocks-data-module
+    + stocks-rest-module (depends on stock-data)
+    + stocks-ui-module (depends on stock-data)
+	
+
+cd ..  // so you are in the parent project
+mvn -pl stocks-ui-module -am clean install  // or another appropriate goal
+
+-pl lets you specify the submodules to build
+
+-am stands for also make, which will build dependent modules as well
+
+mvn -U clean install
+
+https://www.marcobehler.com/guides/mvn-clean-install-a-short-guide-to-maven

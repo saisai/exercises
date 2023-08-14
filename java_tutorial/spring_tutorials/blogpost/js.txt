@@ -1,0 +1,9 @@
+https://stackoverflow.com/questions/20030162/getting-data-attribute-for-onclick-event-for-an-html-element
+https://www.w3schools.com/jsref/event_onclick.asp
+https://www.freecodecamp.org/news/html-button-onclick-javascript-click-event-tutorial/
+https://www.w3schools.com/cssref/tryit.php?filename=trycss3_overflow-y
+https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_dom_remove
+
+https://love2dev.com/blog/javascript-remove-from-array/
+https://stackoverflow.com/questions/7837456/how-to-compare-arrays-in-javascript
+https://stackoverflow.com/questions/19957348/remove-all-elements-contained-in-another-array

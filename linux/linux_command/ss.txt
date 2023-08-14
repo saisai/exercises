@@ -1,0 +1,4 @@
+ss -tpln | grep 8080
+
+ss -antpl | grep prometheus
+ss -antpl | grep 9090

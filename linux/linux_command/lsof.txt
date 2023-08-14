@@ -1,0 +1,3 @@
+lsof -p process id
+
+https://phoenixnap.com/kb/lsof-command

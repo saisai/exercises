@@ -13,16 +13,31 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.util.HtmlUtils;
+import xyz.blogpost.model.BlogPost;
 import xyz.blogpost.pojo.Greeting;
 import xyz.blogpost.pojo.HelloMessage;
+import xyz.blogpost.repository.BlogPostRepository;
 
+import javax.persistence.EntityManager;
+import javax.persistence.TemporalType;
+import javax.persistence.TypedQuery;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @EnableScheduling
 @Controller
 public class GreetingController {
+
+    @Autowired
+    BlogPostRepository blogPostRepository;
+
+    @Autowired
+    EntityManager entityManager;
 
     @Autowired
     SimpMessagingTemplate template;
@@ -31,6 +46,12 @@ public class GreetingController {
     public ModelAndView index() {
         System.out.println("websocket");
         return new ModelAndView("websocket");
+    }
+
+    @GetMapping(value="/popup")
+    public ModelAndView popup() {
+        System.out.println("websocket");
+        return new ModelAndView("popup");
     }
 
 
@@ -70,33 +91,96 @@ public class GreetingController {
 //        return lst;
 //    }
 
+    public List<BlogPost> testDate(Long lastId) {
+        // https://www.bezkoder.com/jpa-entitymanager-spring-boot/
+        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+        Date date = new Date();
+
+        LocalDateTime todayDate = LocalDateTime.now();
+        LocalDateTime tomorrowDate = todayDate.plusDays(1);
+
+        Date startDate = Date.from(todayDate.atZone(ZoneId.systemDefault()).toInstant());
+        Date endDate = Date.from(tomorrowDate.atZone(ZoneId.systemDefault()).toInstant());
+
+        Date aa = new Date();
+        Date bb = new Date(aa.getTime() + (1000 * 60 * 60 * 24));
+
+
+        String aaa = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new java.util.Date());
+        String bbb = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(bb);
+
+        SimpleDateFormat formatters =  new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
+
+        //TypedQuery<BlogPost> query = entityManager.createQuery("SELECT t FROM BlogPost t", BlogPost.class);
+        TypedQuery<BlogPost> query = entityManager.createQuery("SELECT t FROM BlogPost t where t.createdAt between :date1 and :date2 and t.id > :lastId order by id desc",
+                BlogPost.class);
+        //List<BlogPost> blogPosts = query.getResultList();
+        List<BlogPost> blogPosts = query.setParameter("date1", java.sql.Timestamp.valueOf("2023-08-13 00:00:00"))
+                .setParameter("date2", java.sql.Timestamp.valueOf("2023-08-15 10:30:14.332"))
+                .setParameter("lastId", lastId).getResultList();
+        return blogPosts;
+    }
+
+    private Long count = 0L;
+    @MessageMapping("/history")
+    @SendTo("/topic/history")
+    public Long history(Long to) {
+        System.out.println("History " + to);
+        count = to;
+        return to;
+    }
+
     @Scheduled(fixedRate = 10000)
     @MessageMapping("/hello")
     @SendTo("/topic/greetings")
-    public void greet() {
-        String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new java.util.Date());
-        System.out.println("Hello" + timeStamp);
-
+    public void greet()  {
+        //Thread.sleep(1000);
+        System.out.println("greeting count " + count);
+        List<BlogPost> result = testDate(count);
         JSONArray mainJa = new JSONArray();
 
-        JSONArray a = new JSONArray();
-        a.put("a");
-        a.put(100);
-        a.put(120.10);
-        a.put(timeStamp);
+        for(BlogPost obj : result) {
+            JSONArray a = new JSONArray();
+            a.put(obj.getId());
+            a.put(obj.getCreatedAt());
+            a.put(obj.getLink());
 
-        String timeStamp2 = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new java.util.Date());
-        JSONArray b = new JSONArray();
-        b.put("b");
-        b.put(200);
-        b.put(220.10);
-        b.put(timeStamp2);
-
-        mainJa.put(a);
-        mainJa.put(b);
-
-        System.out.println(mainJa.toString());
+            mainJa.put(a);
+        }
+        //System.out.println(mainJa.toString());
         this.template.convertAndSend("/topic/greetings", mainJa.toString());
 
     }
+
+//    @Scheduled(fixedRate = 10000)
+//    @MessageMapping("/hello")
+//    @SendTo("/topic/greetings")
+//    public void greet() {
+//        testDate();
+//        String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new java.util.Date());
+//        System.out.println("Hello" + timeStamp);
+//
+//        JSONArray mainJa = new JSONArray();
+//
+//        JSONArray a = new JSONArray();
+//        a.put("a");
+//        a.put(100);
+//        a.put(120.10);
+//        a.put(timeStamp);
+//
+//        String timeStamp2 = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new java.util.Date());
+//        JSONArray b = new JSONArray();
+//        b.put("b");
+//        b.put(200);
+//        b.put(220.10);
+//        b.put(timeStamp2);
+//
+//        mainJa.put(a);
+//        mainJa.put(b);
+//
+//        System.out.println(mainJa.toString());
+//        this.template.convertAndSend("/topic/greetings", mainJa.toString());
+//
+//    }
 }

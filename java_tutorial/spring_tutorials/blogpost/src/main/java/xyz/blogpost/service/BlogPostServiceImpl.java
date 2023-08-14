@@ -11,7 +11,9 @@ import xyz.blogpost.repository.BlogPostRepository;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -65,6 +67,13 @@ public class BlogPostServiceImpl implements BlogPostService{
         Page<BlogPost> postPage = blogPostRepository.findAll(request);
         return new Paged<>(postPage, Paging.of(postPage.getTotalPages(), pageNumber, size));
     }
+
+
+//    public List<BlogPost> findByCreatedAtBetween(Date localDateTime, Date localDateTime2){
+//        return blogPostRepository.findAllByCreatedAtBetween(localDateTime, localDateTime2);
+//    }
+
+
 
 
 }

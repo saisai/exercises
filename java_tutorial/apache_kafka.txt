@@ -1,0 +1,78 @@
+https://www.atlantic.net/dedicated-server-hosting/how-to-install-apache-kafka-on-arch-linux/
+https://downloads.apache.org/kafka/3.5.1/
+
+wget -c https://downloads.apache.org/kafka/3.5.1/kafka_2.12-3.5.1.tgz
+
+tar -xzf kafka.tgz
+
+sudo mkdir /opt/kafka
+useradd -r -d /opt/kafka -s /usr/sbin/nologin kafka
+sudo chown -R kafka:kafka /opt/kafka
+sudo -u kafka mkdir -p /opt/kafka/logs
+
+
+sudo vim /opt/kafka/config/server.properties
+
+log.dirs=/opt/kafka/logs
+
+sudo vim /etc/systemd/system/zookeeper.service
+
+[Unit]
+Requires=network.target remote-fs.target
+After=network.target remote-fs.target
+
+[Service]
+Type=simple
+User=kafka
+ExecStart=/opt/kafka/bin/zookeeper-server-start.sh /opt/kafka/config/zookeeper.properties
+ExecStop=/opt/kafka/bin/zookeeper-server-stop.sh
+Restart=on-abnormal
+
+[Install]
+WantedBy=multi-user.target
+
+
+sudo vim /etc/systemd/system/kafka.service
+
+[Unit]
+Requires=zookeeper.service
+After=zookeeper.service
+
+[Service]
+Type=simple
+User=kafka
+ExecStart=/bin/sh -c '/opt/kafka/bin/kafka-server-start.sh /opt/kafka/config/server.properties > /opt/kafka/logs/start-kafka.log 2>&1'
+ExecStop=/opt/kafka/bin/kafka-server-stop.sh
+Restart=on-abnormal
+
+[Install]
+WantedBy=multi-user.target
+
+systemctl daemon-reload
+
+systemctl enable zookeeper kafka
+systemctl start zookeeper kafka
+systemctl status zookeeper kafka
+
+To verify Kafka, create a topic named MyTopic using the following command.
+
+sudo -u kafka /opt/kafka/bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic MyTopic
+
+sudo -u kafka /opt/kafka/bin/kafka-topics.sh --list --bootstrap-server localhost:9092
+
+
+sudo -u kafka /opt/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic MyTopic
+
+
+
+tshark -i 3 -Y 'tcp.port != 22'
+
+
+tshark -i 3 -f "tcp.port != 22" -b filesize:1024 -a files:10 -w ata.pcap
+
+frame contains "Bye bye"
+
+dns and frame contains "cloudshark"
+
+
+https://www.qacafe.com/resources/search-on-any-frame-in-a-capture/

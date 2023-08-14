@@ -1,0 +1,37 @@
+sudo adduser $USER wireshark
+
+arach linux
+gpasswd -a user group
+
+https://wiki.archlinux.org/title/users_and_groups
+
+tshark -D
+
+tshark -i 1
+
+ss -tn
+
+
+tshark -f "tcp" -c 10
+
+tshark -f "udp"
+
+https://linuxopsys.com/topics/tshark-examples-with-cheat-sheet
+https://tshark.dev/analyze/packet_hunting/packet_hunting/
+
+tshark -i eth0 -Y "ip.addr == 104.17.46.54"
+
+https://adamtheautomator.com/tshark/
+
+sudo tshark -i eth0 -f "tcp port 22" -b filesize:1024 -a files:10 -w ata.pcap
+
+
+tshark -i eth0 -Y "ip.addr == 192.168.2.100" -Y "tcp.port != 22"
+
+
+
+lsof -i TCP -Pn | grep LISTEN
+
+https://serverfault.com/questions/1115419/how-to-trace-nat-traffic-port-forwarding-from-guest-vm-back-to-host
+
+https://www.blackhillsinfosec.com/welcome-to-shark-week/

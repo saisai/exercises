@@ -29,6 +29,24 @@ arrays = {
                        
                         ],
                },                  
+     "Pacific-Atlantic-Water-Flow" : { 
+                "Python": [
+                        {datetime.date(2023,8,3): "https://leetcode.com/problems/number-of-islands/solutions/56340/python-simple-dfs-solution/"},
+                    ],
+                "Java": [
+                        {datetime.date(2023,8,3): "https://leetcode.com/problems/number-of-islands/solutions/56359/very-concise-java-ac-solution/"},
+                       
+                        ],
+               },      
+     "Longest-Consecutive-Sequence" : { 
+                "Python": [
+                        {datetime.date(2023,8,4): "https://leetcode.com/problems/longest-consecutive-sequence/solutions/1254699/python-o-n-time-space-solution-explained/"},
+                    ],
+                "Java": [
+                        {datetime.date(2023,8,4): "https://leetcode.com/problems/longest-consecutive-sequence/solutions/41055/my-really-simple-java-o-n-solution-accepted/"},
+                       
+                        ],
+               },                 
  
     
         
@@ -42,3 +60,7 @@ print(arrays)
 # https://leetcode.com/rodolphe/
 # https://leetcode.com/star1993/
 # https://leetcode.com/hxuanhung/
+# https://leetcode.com/wcyz666/
+# https://leetcode.com/girikuncoro/
+# https://leetcode.com/dchen0215/
+# https://leetcode.com/DBabichev/

@@ -168,5 +168,6 @@
     <a class="py-2 d-none d-md-inline-block" href="/uploadForm">Upload</a>
     <a class="py-2 d-none d-md-inline-block" href="/line">Line</a>
     <a class="py-2 d-none d-md-inline-block" href="/websocket">Web Socket</a>
+    <a class="py-2 d-none d-md-inline-block" id="mypopup" href="/popup">Pop up</a>
   </nav>
 </header>

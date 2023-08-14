@@ -1,0 +1,18 @@
+test-monkey-1983-snp
+
+
+sudo -iu postgres
+
+initdb -D /var/lib/postgres/data
+
+initdb -D /var/lib/postgres/data --locale=C.UTF-8 --encoding=UTF8 --data-checksums
+
+
+# mv /var/lib/postgres/data /var/lib/postgres/olddata
+# mkdir /var/lib/postgres/data
+# chown postgres:postgres /var/lib/postgres/data
+[postgres]$ initdb -D /var/lib/postgres/data --locale=C.UTF-8 --encoding=UTF8 --data-checksums
+[postgres]$ /opt/pgsql-14/bin/pg_ctl -D /var/lib/postgres/olddata/ start
+# cp /usr/lib/postgresql/postgis-3.so /opt/pgsql-14/lib/ # Only if postgis installed
+[postgres]$ pg_dumpall -h /tmp -f /tmp/old_backup.sql
+[postgres]$ /opt/pgsql-14/bin/pg_ctl -D /var/lib/postgres/olddata/ stop

@@ -1,0 +1,7 @@
+https://www.mastertheboss.com/jbossas/jboss-datasource/h2-database-tutorial/
+
+java -jar h2-1.3.160.jar -webAllowOthers -tcpAllowOthers
+
+http://www.h2database.com/html/features.html
+
+https://github.com/h2database/h2database/tree/master/h2/src
