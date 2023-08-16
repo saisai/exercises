@@ -1,18 +1,26 @@
 <#import "/spring.ftl" as spring />
 <#include "header.ftlh">
 <script>
+function uuidv4() {
+  return ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c =>
+    (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
+  );
+}
 $(function(){
-    disconnect();
+    //disconnect();
     $("a#mypopup").on("click", function(){
         $('div.popup').show();
-        connect();
+        var uuid = uuidv4();
+        console.log("uuid " + uuid);
+        connect(uuid);
         return false;
     });
 
     $("button.close").on("click", function(event){
       $('div.popup').hide();
+      console.log("mydata length" + mydata.length);
       mydata = [];
-      $('tr.first-data-tr').remove();
+      console.log("after mydata length" + mydata.length);
       $('tr.helloMyTest-second').remove();
       disconnect();
      });

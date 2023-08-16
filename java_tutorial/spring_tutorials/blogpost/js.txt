@@ -7,3 +7,41 @@ https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_dom_remove
 https://love2dev.com/blog/javascript-remove-from-array/
 https://stackoverflow.com/questions/7837456/how-to-compare-arrays-in-javascript
 https://stackoverflow.com/questions/19957348/remove-all-elements-contained-in-another-array
+
+
+https://stackoverflow.com/questions/17241135/how-to-show-5-additional-rows-in-a-table-each-time-using-jquery
+https://stackoverflow.com/questions/37085346/split-one-table-row-into-multiples-of-5s-column
+https://javascript.info/class#class-expression
+
+https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository
+https://www.atlassian.com/git/tutorials/using-branches/git-checkout
+https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
+
+$ git checkout -b iss53
+Switched to a new branch "iss53"
+
+This is shorthand for:
+
+$ git branch iss53
+$ git checkout iss53
+
+
+https://stackoverflow.com/questions/30055113/git-add-branch-on-one-single-directory
+https://stackoverflow.com/questions/71635927/how-to-delete-a-table-row-in-js-using-a-onclick-event-without-using-jquery
+https://stackoverflow.com/questions/35310865/remove-sub-array-item-in-javascript
+https://www.jetbrains.com/help/idea/finding-and-replacing-text-in-project.html#copy_path
+
+https://grep.app/search?q=this.stompClient.subscribe
+
+https://github.com/jammy928/CoinExchange_CryptoExchange_Java/blob/master/05_Web_Front/src/assets/js/charting_library/datafeed/bitrade.js
+https://github.com/thomasdarimont/screen-casting-app/blob/master/src/main/resources/static/js/app.js
+https://github.com/thomasdarimont/screen-casting-app
+
+https://stackoverflow.com/questions/105034/how-do-i-create-a-guid-uuid
+
+https://stackoverflow.com/questions/42207513/sending-message-to-client-periodically-via-spring-web-socket
+
+https://medium.com/swlh/websockets-with-spring-part-1-http-and-websocket-36c69df1c2ee
+https://stackoverflow.com/questions/3481828/how-do-i-split-a-string-in-java
+https://www.javatpoint.com/java-string-to-long
+https://stackoverflow.com/questions/8763125/get-array-of-objects-keys

@@ -116,8 +116,8 @@ public class GreetingController {
         TypedQuery<BlogPost> query = entityManager.createQuery("SELECT t FROM BlogPost t where t.createdAt between :date1 and :date2 and t.id > :lastId order by id desc",
                 BlogPost.class);
         //List<BlogPost> blogPosts = query.getResultList();
-        List<BlogPost> blogPosts = query.setParameter("date1", java.sql.Timestamp.valueOf("2023-08-15 00:00:00"))
-                .setParameter("date2", java.sql.Timestamp.valueOf("2023-08-17 10:30:14.332"))
+        List<BlogPost> blogPosts = query.setParameter("date1", java.sql.Timestamp.valueOf("2023-08-13 00:00:00"))
+                .setParameter("date2", java.sql.Timestamp.valueOf("2023-08-16 10:30:14.332"))
                 .setParameter("lastId", lastId).getResultList();
         return blogPosts;
     }
@@ -131,7 +131,7 @@ public class GreetingController {
         return to;
     }
 
-    @Scheduled(fixedRate = 1000)
+    @Scheduled(fixedRate = 10000)
     @MessageMapping("/hello")
     @SendTo("/topic/greetings")
     public void greet()  {

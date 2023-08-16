@@ -2,19 +2,25 @@
 <#include "header.ftlh">
 <script>
 $(function(){
-    disconnect();
+
+    screenCaster = new ScreenCaster();
+        //screenCaster.start();
+    //disconnect();
     $("a#mypopup").on("click", function(){
         $('div.popup').show();
-        connect();
+        screenCaster.init();
         return false;
+        //mysocket.connect();
+
     });
 
     $("button.close").on("click", function(event){
       $('div.popup').hide();
-      mydata = [];
-      $('tr.first-data-tr').remove();
+      //console.log("mydata length" + mydata.length);
+      //mydata = [];
+      //console.log("after mydata length" + mydata.length);
       $('tr.helloMyTest-second').remove();
-      disconnect();
+      mysocket.disconnect();
      });
 });
 </script>

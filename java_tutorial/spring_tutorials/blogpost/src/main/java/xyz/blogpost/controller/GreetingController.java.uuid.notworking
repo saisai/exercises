@@ -116,40 +116,78 @@ public class GreetingController {
         TypedQuery<BlogPost> query = entityManager.createQuery("SELECT t FROM BlogPost t where t.createdAt between :date1 and :date2 and t.id > :lastId order by id desc",
                 BlogPost.class);
         //List<BlogPost> blogPosts = query.getResultList();
-        List<BlogPost> blogPosts = query.setParameter("date1", java.sql.Timestamp.valueOf("2023-08-15 00:00:00"))
-                .setParameter("date2", java.sql.Timestamp.valueOf("2023-08-17 10:30:14.332"))
+        List<BlogPost> blogPosts = query.setParameter("date1", java.sql.Timestamp.valueOf("2023-08-14 00:00:00"))
+                .setParameter("date2", java.sql.Timestamp.valueOf("2023-08-16 10:30:14.332"))
                 .setParameter("lastId", lastId).getResultList();
         return blogPosts;
     }
 
-    private Long count = 0L;
+    private String count = "";
     @MessageMapping("/history")
     @SendTo("/topic/history")
-    public Long history(Long to) {
+    public String history(String to) {
         System.out.println("History " + to);
         this.count = to;
         return to;
     }
 
-    @Scheduled(fixedRate = 1000)
-    @MessageMapping("/hello")
-    @SendTo("/topic/greetings")
-    public void greet()  {
-        //Thread.sleep(1000);
+    @Scheduled(fixedRate = 10000)
+//    @MessageMapping("/hello")
+//    @SendTo("/topic/greetings")
+    public void greet() throws InterruptedException {
+//        Thread.sleep(1000);
         System.out.println("greeting count " + this.count);
-        List<BlogPost> result = testDate(this.count);
-        JSONArray mainJa = new JSONArray();
 
-        for(BlogPost obj : result) {
-            JSONArray a = new JSONArray();
-            a.put(obj.getId());
-            a.put(obj.getCreatedAt());
-            a.put(obj.getLink());
 
-            mainJa.put(a);
+        List<BlogPost> result ;
+        if(! this.count.equals("") && this.count.contains("hello")) {
+            String[] UUID = {};
+            UUID = this.count.split(",");
+            result = testDate(Long.parseLong(UUID[2]));
+
+            JSONArray mainJa = new JSONArray();
+
+            for(BlogPost obj : result) {
+                JSONArray a = new JSONArray();
+                a.put(obj.getId());
+                a.put(obj.getCreatedAt());
+                a.put(obj.getLink());
+                mainJa.put(a);
+            }
+            JSONObject mm = new JSONObject();
+            mm.put("key", UUID[1]);
+            mm.put("value", mainJa);
+            mm.put("hello", "Yes");
+            mm.put("blogId", UUID[2]);
+            this.template.convertAndSend("/topic/greetings", mm.toString());
+        } else {
+
+            result = testDate(0L);
+            JSONArray mainJa = new JSONArray();
+            for(BlogPost obj : result) {
+                JSONArray a = new JSONArray();
+                a.put(obj.getId());
+                a.put(obj.getCreatedAt());
+                a.put(obj.getLink());
+                mainJa.put(a);
+            }
+            String[] UUID = {};
+            UUID = this.count.split(",");
+            JSONObject mm = new JSONObject();
+            mm.put("key", UUID[0]);
+            mm.put("value", mainJa);
+            mm.put("hello", "Yes");
+            mm.put("blogId", "");
+
+            this.template.convertAndSend("/topic/greetings", mm.toString());
         }
+
+
+
+
         //System.out.println(mainJa.toString());
-        this.template.convertAndSend("/topic/greetings", mainJa.toString());
+        //this.template.convertAndSend("/topic/greetings", mainJa.toString());
+
 
     }
 
