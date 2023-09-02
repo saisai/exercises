@@ -1,3 +1,4 @@
 lsof -p process id
 
+lsof -i TCP -Pn | grep LISTEN
 https://phoenixnap.com/kb/lsof-command

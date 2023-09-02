@@ -1,4 +1,0 @@
-https://stackoverflow.com/questions/556405/what-do-real-user-and-sys-mean-in-the-output-of-time1
-https://thomas-cokelaer.info/blog/2018/02/meaning-of-real-user-and-sys-time-statistics/
-https://chowdera.com/2022/02/202202260252414582.html
-https://www.configrouter.com/what-do-real-user-and-sys-mean-in-the-output-of-time1-29859/

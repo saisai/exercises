@@ -1,7 +1,4 @@
 
-
-pacman -S firefox wireshark-cli
-
 dest_dir='/tmp'
 cd $dest_dir
 pcap_file="$dest_dir/neverssl.pcapng"
