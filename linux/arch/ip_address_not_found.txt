@@ -1,0 +1,14 @@
+https://www.willhaley.com/blog/static-ip-in-arch-linux/
+https://www.linuxbuzz.com/configure-static-ip-in-arch-linux/
+
+https://ostechnix.com/configure-static-dynamic-ip-address-arch-linux/
+
+ip address add 192.168.1.2/24 broadcast + dev enp3s0 
+ip link set enp3s0 up
+ip route add default via 192.168.1.1 dev enp3s0
+
+https://bbs.archlinux.org/viewtopic.php?id=259739
+
+https://bbs.archlinux.org/viewtopic.php?id=214111
+
+sudo sysctl -a | grep ipv4

@@ -1,0 +1,40 @@
+https://stackoverflow.com/questions/40831889/uwsgi-and-apache2-issue
+
+
+<VirtualHost *:80>
+  ...
+  ProxyPreserveHost On
+  ProxyRequests Off
+  ProxyVia Off
+  ProxyPass / http://127.0.0.1:8081/
+  ProxyPassReverse / http://127.0.0.1:8081/
+</VirtualHost>
+
+
+[uwsgi]
+chdir = path/to/my/project
+http-socket = :8081
+module = wsgi:application
+
+
+The uwsgi command would run with uwsgi --ini uwsgi.ini where uwsgi.ini would contain the following lines
+
+
+https://uwsgi-docs.readthedocs.io/en/latest/WSGIquickstart.html
+
+
+uwsgi --socket 127.0.0.1:3031 --chdir /home/foobar/myproject/ --wsgi-file myproject/wsgi.py --master --processes 4 --threads 2 --stats 127.0.0.1:9191
+
+
+[uwsgi]
+socket = 127.0.0.1:3031
+chdir = /home/foobar/myproject/
+wsgi-file = myproject/wsgi.py
+processes = 4
+threads = 2
+stats = 127.0.0.1:9191
+
+
+https://forum.djangoproject.com/t/in-django-asynchronous-view-multiple-consecutive-requests-will-not-run/8458/7
+
+https://github.com/django/channels/issues/1587

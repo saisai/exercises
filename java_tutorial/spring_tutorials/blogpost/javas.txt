@@ -1,0 +1,4 @@
+https://www.jackrutorial.com/search/label/java%20tutorial
+https://github.com/ThearaDawn/rean-spring-framework/tree/main/0.%20Spring%20Framework%20Tips/%233%20spring-boot-qr-code
+
+docker: Error response from daemon: failed to create endpoint postgres on network bridge: failed to add the host (veth2f324d9) <=> sandbox (veth28f559d) pair interfaces: operation not supported.

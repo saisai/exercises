@@ -87,7 +87,16 @@ table.first-table td {
   <div id="main-content" class="container" style="padding-top: 10px;">
       <div class="row">
           <div class="popup" style="display: none;">
-                <div style="background:#6528e0; height: 65px;"><div style="float:left;"><img style="height:65px; line-height: 65px;"></div><div class="mypopup-banner">Test</div></div>
+           <!--     <div style="background:#6528e0; height: 65px;">  default -->
+                <div style="background:#6528e0; height: 200px;">
+                    <div style="float:left;"><img style="height:65px; line-height: 65px;"></div>
+                    <div class="mypopup-banner">Test</div>
+                    <div id="currentDateTime">Test asdf</div>
+                    <div id="currentDateTimeToGetTime">Test asdf</div>
+                    <div id="currentDateTimeToGetTime2">Test show</div>
+                    <div id="setUpTime">setUpTime</div>
+                    <div id="differentTime">differentTime</div>
+                </div>
                 <div class="inner">
                   <div style="display: block;">
                   <div class="mypopup-header">Test 2</div>

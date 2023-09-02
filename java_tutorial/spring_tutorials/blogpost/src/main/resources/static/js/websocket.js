@@ -1,5 +1,42 @@
 var stompClient = null;
 
+
+function setCurrentDateTime() {
+    document.getElementById("currentDateTime").innerHTML = new Date();
+}
+
+// return Milliseconds
+function getTime() {
+//    var result = document.getElementById("currentDateTime").value;
+//    console.log("hello result " + result);
+//    console.log("html " + $("#currentDateTime").html());
+//    console.log("val " + $("#currentDateTime").val());
+
+    var htmlResult = $("#currentDateTime").html()
+
+    var newDate = new Date(htmlResult);
+    var time = newDate.getTime();
+    console.log("hello " + time);
+    document.getElementById("currentDateTimeToGetTime").innerHTML = time;
+    document.getElementById("currentDateTimeToGetTime2").innerHTML = JSON.stringify(prev_id);
+    return time
+}
+
+// 3,600,000 milliseconds == 1 hour
+// 5 minutes = 300,000 milliseconds
+// 1 minute = 60,000 milliseconds
+// 15 minutes = 900,000 milliseconds
+// 30 minutes = 1,800,000 milliseconds
+// 1 hour in milliseconds javascript
+function getDifferntTime() {
+    var now = new Date();
+    var setUpTime =  parseInt( $("#currentDateTimeToGetTime").html() );
+    document.getElementById("setUpTime").innerHTML = setUpTime
+    var differentTime  = now.getTime() - setUpTime;
+    document.getElementById("differentTime").innerHTML = differentTime;
+    return differentTime;
+}
+
 function leftInsertZero(int_num) {
     return pad(int_num, 2, '0');
 }
@@ -41,7 +78,7 @@ function myDate() {
   return r + '  ' + a.getFullYear() + '/' + leftInsertZero(a.getMonth() + 1) + '/' + leftInsertZero(a.getDate());
 }
 
-var prev_id;
+var prev_id = [0];
 
 function connect() {
     var socket = new SockJS('/stomp-endpoint');
@@ -69,8 +106,19 @@ function connect() {
 
             if(result && result[0])
             {
-                //setTimeout(filledFirst(result[0], result[0][0]), 1000);
-                filledFirst(result[0], result[0][0])
+                filledFirst(result[0], result[0][0]);
+
+                console.log("prev id " + prev_id);
+                console.log("blogpost_id " + blogpost_id);
+
+                if(! prev_id.includes(blogpost_id)) {
+                    setCurrentDateTime();
+                    //getTime();
+                    setTimeout(getTime, 1000);
+                    prev_id = [];
+                    prev_id.push(blogpost_id);
+                }
+                //getTime();
             }
 
             var newResult = []
@@ -84,10 +132,43 @@ function connect() {
 
             startTime();
 
+//            if(blogpost_id) {
+//                //setTimeout(getDifferntTime, 1000);
+//                getDifferntTime();
+//            }
+
         });
     });
 }
 
+// https://stackoverflow.com/questions/7188145/call-a-javascript-function-every-5-seconds-continuously
+// 1 minute = 60,000 milliseconds
+const interval = setInterval(function() {
+   // method to be executed;
+   var diffTime = getDifferntTime();
+   var runAtWhen = 600000;
+   if(diffTime > runAtWhen ) {
+      if(mydata.length > 0) {
+        deleteAll();
+      }
+
+   }
+
+   //if(mydata.length > 0) {
+        deleteAll();
+    //}
+
+   console.log("mydata " + JSON.stringify(mydata));
+
+
+ }, 60000 );
+// clearInterval(interval);
+
+//const interval2 = setInterval(function() {
+//   // method to be executed;
+//
+//   deleteAll();
+// }, 10000);
 function disconnect() {
     if (stompClient !== null) {
         stompClient.send("/app/history", {}, 0);
@@ -166,9 +247,87 @@ function myDelete(e){
     var newArr = mydata.filter(function(itm){
       return itm[0] !== dataId;
     });
+
+    var json = {
+           "blogPostID" : dataId
+          };
+
+    $.ajax({
+           type : "POST",
+           contentType : "application/json",
+           url : "/updateDelete",
+           data : JSON.stringify(json),
+           dataType : 'json',
+           cache : false,
+           timeout : 600000,
+           success : function(data) {
+//            var html = '';
+//            var len = data.length;
+//            html += '<option value="0"></option>';
+//            for (var i = 0; i < len; i++) {
+//             html += '<option value="' + data[i].id + '">'
+//               + data[i].name
+//               + '</option>';
+//            }
+//            html += '</option>';
+//            $('#cityId').html(html);
+           },
+           error : function(e) {
+            console.log("Update dlete " + JSON.stringify(e));
+           }
+          });
+
     $("#my_"+e.getAttribute("data-id")).remove();
     mydata = newArr;
     $(".helloMyTest-second").remove();
     filledData(mydata, 'test');
 }
 
+// https://stackoverflow.com/questions/10632346/how-to-format-a-date-in-mm-dd-yyyy-hhmmss-format-in-javascript
+Number.prototype.padLeft = function(base,chr){
+    var  len = (String(base || 10).length - String(this).length)+1;
+    return len > 0? new Array(len).join(chr || '0')+this : this;
+}
+
+function deleteAll(){
+    var time = parseInt($("#currentDateTimeToGetTime").html());
+    var tmp = new Date(time);
+    var endTime =`${tmp.getFullYear()}-${(tmp.getMonth()+1).padLeft()}-${tmp.getDate().padLeft()} ${tmp.getHours().padLeft()}:${tmp.getMinutes().padLeft()}:${tmp.getSeconds().padLeft()}`
+    var json = {
+           "endTime" : endTime
+          };
+
+    $.ajax({
+           type : "POST",
+           contentType : "application/json",
+           url : "/deleteAll",
+           data : JSON.stringify(json),
+           dataType : 'json',
+           cache : false,
+           timeout : 600000,
+           success : function(data) {
+//            var html = '';
+//            var len = data.length;
+//            html += '<option value="0"></option>';
+//            for (var i = 0; i < len; i++) {
+//             html += '<option value="' + data[i].id + '">'
+//               + data[i].name
+//               + '</option>';
+//            }
+//            html += '</option>';
+//            $('#cityId').html(html);
+           },
+           error : function(e) {
+            console.log("Update dlete " + JSON.stringify(e));
+           }
+          });
+
+    $(".first-data-tr").remove();
+    $(".helloMyTest-second").remove();
+
+    if (stompClient !== null) {
+        stompClient.send("/app/history", {}, 0);
+        console.log("Delete All " + stompClient);
+    }
+
+}

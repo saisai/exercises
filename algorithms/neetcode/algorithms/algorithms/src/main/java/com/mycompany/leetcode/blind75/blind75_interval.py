@@ -21,7 +21,16 @@ arrays = {
                         ],
                },                 
  
-    
+    "Non-Overlapping-Intervals" : { 
+            "Python": [
+                    {datetime.date(2023,8,19): "https://leetcode.com/problems/non-overlapping-intervals/solutions/276056/python-greedy-interval-scheduling/"},
+                ],
+            "Java": [
+                    {datetime.date(2023,8,19): "https://leetcode.com/problems/non-overlapping-intervals/solutions/91713/java-least-is-most/"},
+                   
+                    ],
+           },                 
+ 
         
 }
 
@@ -30,3 +39,5 @@ print(arrays)
 # https://leetcode.com/DBabichev/
 # https://leetcode.com/brubru777/
 # https://leetcode.com/zhanweiting/
+# https://leetcode.com/crickey180/
+# https://leetcode.com/WangQiuc/

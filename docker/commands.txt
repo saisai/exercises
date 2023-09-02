@@ -21,4 +21,15 @@ docker network inspect
 docker container list -a
 
 
+Remove docker images 
+for d in $(docker images | grep merikbest/twitter-spring-reactjs | awk '{print $3}'); do echo $d; docker image rm $d; done
+
+
+List images 
+docker images 
+
+
+
+https://github.com/in28minutes/devops-master-class/tree/master/docker
+
 # https://earthly.dev/blog/docker-networking/

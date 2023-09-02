@@ -1,0 +1,14 @@
+https://github.com/trivago/fastutil-concurrent-wrapper/tree/master/src/main/java/com/trivago/fastutilconcurrentwrapper
+https://github.com/LeonardoZ/java-concurrency-patterns
+https://github.com/callicoder/java-concurrency-examples
+
+https://github.com/mamadaliev/concurrency/tree/main/src
+https://github.com/lealceldeiro/gems
+https://github.com/lovemehta/machine-coding/blob/master/calendar-assist/src/main/java/com/lovemehta/calendar_assist/App.java
+
+https://github.com/last-saiyan/java-concurrency/tree/master/src/main/java/dataStructures
+https://github.com/softwarewithcode/casino
+https://github.com/RezaGholamzad/Java-Concurrency
+https://github.com/roopansh/Programming-Lab/tree/master/Java/src/task1/sockmatching
+https://github.com/giuliobosco/JavaSAMT/tree/master/src/datagram
+https://github.com/dariakhaetskaya/CarFactory/blob/master/src/main/java/ru/nsu/fit/daria/carfactory/MainApp.java

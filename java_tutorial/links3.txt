@@ -1,0 +1,15 @@
+https://github.com/YogenRaii/java-core/tree/master
+https://github.com/TimeAndSpaceIO/SmoothieMap/blob/2.x/src/main/java/io/timeandspace/collect/StatelessEquivalence.java
+https://github.com/anton-liauchuk/java-interview
+https://github.com/callicoder/java-collections-examples/tree/master/java-linkedhashmap-examples/src
+https://github.com/Suryakant-Bharti/Important-Java-Concepts/tree/master/java_coding/1DArrays
+https://github.com/hellojavaio/Java-Generics-and-Collections-2/tree/master/ch02
+https://github.com/nejckorasa/compare-utils
+https://github.com/krupalshah/Reactive-Collections
+https://github.com/Augusto11CB/Java-Studies
+https://github.com/veilair/java-development/blob/main/Java-Programs-Practice/Basic-Java/AlgebraicOperations.java
+https://github.com/Snehomoy100/Java-DSA
+https://github.com/NihatQuliyev/library-management-system/blob/master/src/Main.java
+
+
+https://github.com/orgs/Java-Techie-jt/repositories?type=all

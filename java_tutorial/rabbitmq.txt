@@ -1,0 +1,7 @@
+https://jstobigdata.com/rabbitmq/complete-rabbitmq-tutorial-in-java/
+https://github.com/jstobigdata/code
+
+
+https://github.com/jstobigdata/Java-design-patterns-tutorial
+https://github.com/PacktPublishing/Java-Concurrency-Multithreading-in-Practice
+https://github.com/LeonardoZ/java-concurrency-patterns

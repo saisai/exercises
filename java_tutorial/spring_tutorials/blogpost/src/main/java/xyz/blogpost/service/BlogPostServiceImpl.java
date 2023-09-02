@@ -11,6 +11,8 @@ import xyz.blogpost.repository.BlogPostRepository;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 
+import javax.persistence.criteria.CriteriaBuilder;
+import java.sql.Timestamp;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Date;
@@ -66,6 +68,15 @@ public class BlogPostServiceImpl implements BlogPostService{
         PageRequest request = PageRequest.of(pageNumber - 1, size, sort);
         Page<BlogPost> postPage = blogPostRepository.findAll(request);
         return new Paged<>(postPage, Paging.of(postPage.getTotalPages(), pageNumber, size));
+    }
+
+
+    public void updateDelete(Long id) {
+        blogPostRepository.updateDelete(id);
+    }
+
+    public void deleteAll(Timestamp endTime) {
+        blogPostRepository.deleteAll(endTime);
     }
 
 
