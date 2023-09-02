@@ -251,6 +251,26 @@ https://developer.mozilla.org/en-US/docs/Web/API/FormData/Using_FormData_Objects
 https://stackoverflow.com/questions/18185956/calling-a-function-inside-a-jquery-plugin-from-outside
 
 
+https://www.postgresql.org/docs/8.0/sql-createuser.html
+https://www.a2hosting.com/kb/developer-corner/postgresql/managing-postgresql-databases-and-users-from-the-command-line
+
+https://stackoverflow.com/questions/22483555/postgresql-give-all-permissions-to-a-user-on-a-postgresql-database
+https://tableplus.com/blog/2018/04/postgresql-how-to-grant-access-to-users.html
+https://stackoverflow.com/questions/15520361/permission-denied-for-relation
+https://www.postgresqltutorial.com/postgresql-reset-password/
+
+
+https://stackoverflow.com/questions/14077799/django-filter-by-specified-month-and-year-in-date-range
+https://medium.com/@yedjoe/celery-4-periodic-task-in-django-9f6b5a8c21c7
+https://www.programiz.com/python-programming/datetime/current-datetime
+https://www.programiz.com/python-programming/datetime/current-time
+https://www.windows-commandline.com/delete-files-command-line/
+
+
+https://www.baeldung.com/thread-pool-java-and-guava
+https://github.com/eugenp/tutorials/tree/master/core-java-modules/core-java-concurrency-advanced/src/test/java/com/baeldung/concurrent/accumulator
+
+
 https://www.tutsmake.com/jquery-ajax-form-submit-with-formdata-example/
 
 
