@@ -1,0 +1,6 @@
+pacman -S docker docker-compose
+
+gpasswd -a user docker
+
+
+https://wiki.archlinux.org/title/users_and_groups

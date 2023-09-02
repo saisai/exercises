@@ -1,18 +1,26 @@
 <#import "/spring.ftl" as spring />
 <#include "header.ftlh">
 <script>
+function uuidv4() {
+  return ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c =>
+    (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
+  );
+}
 $(function(){
-    disconnect();
+    //disconnect();
     $("a#mypopup").on("click", function(){
         $('div.popup').show();
-        connect();
+        var uuid = uuidv4();
+        console.log("uuid " + uuid);
+        connect(uuid);
         return false;
     });
 
     $("button.close").on("click", function(event){
       $('div.popup').hide();
+      console.log("mydata length" + mydata.length);
       mydata = [];
-      $('tr.first-data-tr').remove();
+      console.log("after mydata length" + mydata.length);
       $('tr.helloMyTest-second').remove();
       disconnect();
      });
@@ -87,16 +95,7 @@ table.first-table td {
   <div id="main-content" class="container" style="padding-top: 10px;">
       <div class="row">
           <div class="popup" style="display: none;">
-           <!--     <div style="background:#6528e0; height: 65px;">  default -->
-                <div style="background:#6528e0; height: 200px;">
-                    <div style="float:left;"><img style="height:65px; line-height: 65px;"></div>
-                    <div class="mypopup-banner">Test</div>
-                    <div id="currentDateTime">Test asdf</div>
-                    <div id="currentDateTimeToGetTime">Test asdf</div>
-                    <div id="currentDateTimeToGetTime2">Test show</div>
-                    <div id="setUpTime">setUpTime</div>
-                    <div id="differentTime">differentTime</div>
-                </div>
+                <div style="background:#6528e0; height: 65px;"><div style="float:left;"><img style="height:65px; line-height: 65px;"></div><div class="mypopup-banner">Test</div></div>
                 <div class="inner">
                   <div style="display: block;">
                   <div class="mypopup-header">Test 2</div>

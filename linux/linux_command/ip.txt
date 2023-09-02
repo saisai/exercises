@@ -1,0 +1,27 @@
+ip route
+ip link
+ip link show
+ip addr show enp0s31f6
+
+
+Or use the ifconfig command on older systems:
+ifconfig -a
+# filter out results using the grep command #
+ifconfig -a | grep -A 6 eth0
+
+Linux command to remove virtual interfaces or network aliases
+
+ifconfig eth0:1 down
+ifconfig -a
+ifconfig -a | grep -A 6 eth0
+
+
+ip address del 192.168.2.31/24 dev eth0
+
+sudo ip link delete br35978f0
+
+for add in $(ip route | grep linkdown | awk '{print $3}'); do echo $add; sudo ip link delete $add; done
+
+
+# https://stackoverflow.com/questions/34326704/how-do-i-delete-virtual-interface-in-linux
+https://www.cyberciti.biz/faq/linux-command-to-remove-virtual-interfaces-or-network-aliases/

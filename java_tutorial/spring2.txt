@@ -1,0 +1,10 @@
+https://github.com/piomin/sample-spring-cloud-zookeeper/tree/master
+https://piotrminkowski.com/2023/08/04/kubernetes-multicluster-load-balancing-with-skupper/
+https://github.com/PacktPublishing/Mastering-Spring-Cloud/tree/master
+https://github.com/PacktPublishing/Learn-Spring-Boot-in-100-Steps---Beginner-to-Expert
+https://github.com/piomin/sample-spring-kafka-transactions
+https://piotrminkowski.com/2022/10/29/kafka-transactions-with-spring-boot/
+https://github.com/piomin?tab=repositories
+
+
+https://github.com/bh5k/spring6jdbc3

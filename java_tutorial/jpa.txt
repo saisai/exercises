@@ -1,0 +1,6 @@
+https://github.com/callicoder/jpa-hibernate-tutorials/tree/master
+https://github.com/alex-gama/hibernate-guide-tutorials
+https://github.com/hibernate/hibernate-demos/tree/main/hibernate-orm/core/Basic/src/main/java/org/hibernate/brmeyer/demo/entity
+https://github.com/tranjt/hibernate-tutorial/tree/master/src/com/tranjt
+https://github.com/hibernate/hibernate-orm
+https://github.com/marcellis2017/Hibernate-Tutorial/tree/master

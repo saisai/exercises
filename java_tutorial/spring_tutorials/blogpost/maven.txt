@@ -1,0 +1,477 @@
+https://github.com/iBotPeaches/Apktool/blob/master/brut.j.util/src/main/java/brut/util/OS.java
+https://revanced.net/
+https://github.com/orgs/ReVanced/repositories
+https://github.com/ReVanced/jadb/tree/master/src/se/vidstige/jadb
+https://github.com/SuperCarers/weather-service-backend
+
+https://github.com/vorenusCoA/shatapp/tree/main
+https://github.com/Help-M-Ssaem/back-end/blob/develop/src/main/java/com/example/mssaem_backend/MssaemBackendApplication.java
+https://github.com/Turing-ForSeason/forseason-BE/tree/develop/src/main/java/com/turing/forseason/service
+https://github.com/boldizsar/aldi-homework/blob/main/backend/src/main/java/com/chat/api/chatapi/controller/ChatController.java
+https://github.com/MahabirGupta/istio-fleetman/tree/master/istio-fleetman-position-simulator/src/main/java/com/virtualpairprogrammers/simulator/services
+https://github.com/MahabirGupta/JavaFeaturesAndOOP/blob/main/Collections/src/CollectionExamples.java
+https://github.com/MahabirGupta/JavaFeaturesAndOOP/blob/main/Collections/src/CollectionHierarchy.java
+https://stackify.com/oops-concepts-in-java/
+https://www.scientecheasy.com/2020/07/encapsulation-in-java.html/
+https://github.com/stomp-js/stompjs
+https://github.com/2023KoscomTeam4/pie-trading-system/tree/main/Project/Pie-Server/src/main/java/com/hackerton/pieSystem
+
+https://github.com/2023KoscomTeam4/pie-trading-system/blob/main/Project/Pie-Server/src/main/java/com/hackerton/pieSystem/repository/RoomRepository.java
+import com.hackerton.pieSystem.domain.Room;
+import com.hackerton.pieSystem.domain.RoomMember;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
+
+import java.time.LocalDateTime;
+import java.util.List;
+
+
+public interface RoomRepository extends JpaRepository<Room, Long> {
+    Room findByRoomId(String roomId);
+
+    @Query("SELECT r FROM Room r WHERE r.no = :no AND r.price = :price AND r.pricePercent = :pricePercent")
+    List<Room> findRoomByNoAndPriceAndPricePercent(
+            @Param("no") String no,
+            @Param("price") String price,
+            @Param("pricePercent") Integer pricePercent);
+
+    default Room saveWithTimestamp(Room entity) {
+        entity.setCreatedAt(LocalDateTime.now());
+        return save(entity);
+    }
+ 
+
+}
+
+https://github.com/2023KoscomTeam4/pie-trading-system/tree/main
+
+https://www.inmotionhosting.com/support/security/how-to-stop-and-disable-firewalld/
+https://github.com/2023KoscomTeam4/pie-trading-system/blob/main/Project/Pie-Server/deploy.sh
+https://www.inmotionhosting.com/support/security/how-to-stop-and-disable-firewalld/
+
+tcp://localhost/
+
+jdbc:h2:tcp://localhost/~/test  
+jdbc:h2:tcp://192.168.88.145:9092/~/spring-db
+
+jdbc:h2:tcp://192.168.1.4:9092/***
+
+https://stackoverflow.com/questions/73339695/how-to-connect-remotely-via-tcp-to-the-h2-database
+
+
+java -cp h2-2.1.214.jar org.h2.tools.Server -tcpAllowOthers
+
+
+https://www.h2database.com/html/advanced.html
+
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: Unsupported database file version or invalid file header in file "/home/arcolinuxd/spring-db.mv.db" [90048-220]
+ at org.h2.message.DbException.getJdbcSQLException(DbException.java:690)
+ at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+ at org.h2.message.DbException.get(DbException.java:212)
+ at org.h2.mvstore.db.Store.convertMVStoreException(Store.java:158)
+ at org.h2.mvstore.db.Store.<init>(Store.java:142)
+ at org.h2.engine.Database.<init>(Database.java:324)
+ at org.h2.engine.Engine.openSession(Engine.java:92)
+ at org.h2.engine.Engine.openSession(Engine.java:222)
+ at org.h2.engine.Engine.createSession(Engine.java:201)
+ at org.h2.server.TcpServerThread.run(TcpServerThread.java:175)
+ at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.mvstore.MVStoreException: The write format 2 is smaller than the supported format 3 [2.2.220/5]
+ at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+ at org.h2.mvstore.FileStore.getUnsupportedWriteFormatException(FileStore.java:944)
+ at org.h2.mvstore.FileStore.processCommonHeaderAttributes(FileStore.java:547)
+ at org.h2.mvstore.RandomAccessStore.readStoreHeader(RandomAccessStore.java:227)
+ at org.h2.mvstore.FileStore.start(FileStore.java:917)
+ at org.h2.mvstore.MVStore.<init>(MVStore.java:289)
+ at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2036)
+ at org.h2.mvstore.db.Store.<init>(Store.java:133)
+ ... 6 more
+
+Unsupported database file version or invalid file header in file "/home/arcolinuxd/spring-db.mv.db" [90048-199]
+
+https://github.com/h2database/h2database.git
+https://stackoverflow.com/questions/48409005/what-is-the-jdbc-connection-string-for-h2-database
+https://stackoverflow.com/questions/73339695/how-to-connect-remotely-via-tcp-to-the-h2-database
+
+https://github.com/2023KoscomTeam4/pie-trading-system/blob/main/Project/Pie-Server/src/main/java/com/hackerton/pieSystem/service/ChatService.java
+https://github.com/stomp-js/stompjs/network/dependents
+https://github.com/stomp-js/stompjs
+https://cwiki.apache.org/confluence/display/httpd/runningmultipleapacheinstances
+https://github.com/SumoLogic/sumologic-java-http-core
+https://www.sumologic.com/blog/apache-web-server-introduction/
+
+https://stackoverflow.com/questions/28061044/how-to-check-java-version-when-running-gradle
+if(JavaVersion.current() != JavaVersion.VERSION_1_8){
+    throw new GradleException("This build must be run with java 8")
+}
+
+https://github.com/hopefulwalker/learning/tree/main
+https://github.com/DeppWang/youdaonote-pull
+
+https://github.com/bmuschko/todo-spring-boot/blob/master/build.gradle
+https://github.com/bmuschko/todo-spring-boot
+https://stackoverflow.com/questions/49074620/starting-a-gradle-daemon-1-busy-and-6-stopped-daemons-could-not-be-reused-use
+https://github.com/IanDarwin/javasrc/tree/master/main/src/main/java
+https://github.com/IanDarwin/jpademo
+https://github.com/wilkinsona?tab=repositories
+https://github.com/hopefulwalker?tab=repositories
+https://github.com/hopefulwalker/springcloud/tree/master
+https://github.com/oreillymedia/java_cookbook_3e/tree/master/javacooksrc/javacooksrc
+
+
+
+mvn exec:java -Dexec.mainClass=jpa.JpaSimple
+
+
+
+mvn exec:exec -Ptraverse
+
+<profiles>
+  <profile>
+    <id>traverse</id>
+    <activation>
+      <property>
+        <name>traverse</name>
+      </property>
+    </activation>
+    <build>
+      <plugins>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>exec-maven-plugin</artifactId>
+          <configuration>
+            <executable>java</executable>
+            <arguments>
+              <argument>-classpath</argument>
+              <argument>org.dhappy.test.NeoTraverse</argument>
+            </arguments>
+          </configuration>
+        </plugin>
+      </plugins>
+    </build>
+  </profile>
+</profiles>
+
+
+https://github.com/IanDarwin/jpademo/tree/master
+mvn package -DskipTests
+
+
+https://hub.docker.com/_/mysql
+docker exec -it some-mysql bash
+my-secret-pw
+
+https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql
+create database dbex91;
+CREATE USER 'sammy'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON *.* TO 'sammy'@'localhost' WITH GRANT OPTION;
+
+
+CREATE USER 'student'@'172.17.0.1' IDENTIFIED BY 'student';
+
+GRANT ALL PRIVILEGES ON *.* TO 'student'@'172.17.0.1' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+
+mvn exec:java -Dexec.cleanupDaemonThreads=false -Dexec.mainClass=hibernate.ManyToManyHibernate
+
+https://stackoverflow.com/questions/51871635/couldnt-destroy-threadgroup-org-codehaus-mojo-exec-execjavamojoisolatedthreadg
+https://stackoverflow.com/questions/59668487/org-hibernate-tool-schema-spi-commandacceptanceexception-error-executing-ddl
+https://www.mojohaus.org/exec-maven-plugin/usage.html
+
+https://github.com/IanDarwin/jpademo/blob/master/src/main/java/hibernate/RainAddRecording.java
+
+https://github.com/IanDarwin/jpademo/blob/master/src/main/java/domain/array/ATrack.java
+
+https://github.com/hibernate/hibernate-tools/blob/main/maven/README.md
+mvn help:describe -Dplugin=org.hibernate.tool:hibernate-tools-maven        
+mvn org.hibernate.tool:hibernate-tools-maven:help -Ddetail=true -Dgoal=hbm2ddl
+mvn org.hibernate.tool:hibernate-tools-maven:help -Ddetail=true -Dgoal=hbm2java
+mvn org.hibernate.tool:hibernate-tools-maven:help -Ddetail=true -Dgoal=help
+
+
+mvn help:describe -Dplugin=org.hibernate.tool:hibernate-tools-maven  
+
+https://stackoverflow.com/questions/1674524/how-to-display-a-list-of-available-goals
+mvn help:describe -DgroupId=org.apache.maven.plugins \
+                  -DartifactId=maven-war-plugin \
+                  -Ddetail=true
+      
+mvn help:describe -Dplugin=org.apache.maven.plugins:maven-war-plugin\
+                  -Ddetail=true
+
+mvn com.spotify:dockerfile-maven-plugin:help -Ddetail -Dgoal=build
+
+
+mvn help:active-profiles      
+
+mvn help:all-profiles
+
+
+
+mvn help:describe -DgroupId=org.somewhere -DartifactId=some-plugin -Dversion=0.0.0
+
+mvn help:describe -DgroupId=org.springframework.boot -DartifactId=spring-boot-starter-data-jdbc -Dversion=3.1.2
+
+
+<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jdbc -->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-jdbc</artifactId>
+    <version>3.1.2</version>
+</dependency>
+
+
+mvn help:describe -DgroupId=org.mockito -DartifactId=mockito-all -Dversion=2.0.2-beta
+
+ <dependency>
+                        <groupId>org.mockito</groupId>
+                        <artifactId>mockito-all</artifactId>
+                        <version>2.0.2-beta</version>
+                        <scope>test</scope>
+                </dependency>
+    
+https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jdbc/3.1.2  
+
+
+https://spsarolkar.github.io/maven/cheatsheet/2018/09/01/Maven-cheatsheet.html  
+
+mvn help:describe -DgroupId=org.springframework.boot -DartifactId=spring-boot-maven-pluginhttps://github.com/iBotPeaches/Apktool/blob/master/brut.j.util/src/main/java/brut/util/OS.java
+https://revanced.net/
+https://github.com/orgs/ReVanced/repositories
+https://github.com/ReVanced/jadb/tree/master/src/se/vidstige/jadb
+https://github.com/SuperCarers/weather-service-backend
+
+https://github.com/vorenusCoA/shatapp/tree/main
+https://github.com/Help-M-Ssaem/back-end/blob/develop/src/main/java/com/example/mssaem_backend/MssaemBackendApplication.java
+https://github.com/Turing-ForSeason/forseason-BE/tree/develop/src/main/java/com/turing/forseason/service
+https://github.com/boldizsar/aldi-homework/blob/main/backend/src/main/java/com/chat/api/chatapi/controller/ChatController.java
+https://github.com/MahabirGupta/istio-fleetman/tree/master/istio-fleetman-position-simulator/src/main/java/com/virtualpairprogrammers/simulator/services
+https://github.com/MahabirGupta/JavaFeaturesAndOOP/blob/main/Collections/src/CollectionExamples.java
+https://github.com/MahabirGupta/JavaFeaturesAndOOP/blob/main/Collections/src/CollectionHierarchy.java
+https://stackify.com/oops-concepts-in-java/
+https://www.scientecheasy.com/2020/07/encapsulation-in-java.html/
+https://github.com/stomp-js/stompjs
+https://github.com/2023KoscomTeam4/pie-trading-system/tree/main/Project/Pie-Server/src/main/java/com/hackerton/pieSystem
+
+https://github.com/2023KoscomTeam4/pie-trading-system/blob/main/Project/Pie-Server/src/main/java/com/hackerton/pieSystem/repository/RoomRepository.java
+import com.hackerton.pieSystem.domain.Room;
+import com.hackerton.pieSystem.domain.RoomMember;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
+
+import java.time.LocalDateTime;
+import java.util.List;
+
+
+public interface RoomRepository extends JpaRepository<Room, Long> {
+    Room findByRoomId(String roomId);
+
+    @Query("SELECT r FROM Room r WHERE r.no = :no AND r.price = :price AND r.pricePercent = :pricePercent")
+    List<Room> findRoomByNoAndPriceAndPricePercent(
+            @Param("no") String no,
+            @Param("price") String price,
+            @Param("pricePercent") Integer pricePercent);
+
+    default Room saveWithTimestamp(Room entity) {
+        entity.setCreatedAt(LocalDateTime.now());
+        return save(entity);
+    }
+ 
+
+}
+
+https://github.com/2023KoscomTeam4/pie-trading-system/tree/main
+
+https://www.inmotionhosting.com/support/security/how-to-stop-and-disable-firewalld/
+https://github.com/2023KoscomTeam4/pie-trading-system/blob/main/Project/Pie-Server/deploy.sh
+https://www.inmotionhosting.com/support/security/how-to-stop-and-disable-firewalld/
+
+tcp://localhost/
+
+jdbc:h2:tcp://localhost/~/test  
+jdbc:h2:tcp://192.168.88.145:9092/~/spring-db
+
+jdbc:h2:tcp://192.168.1.4:9092/***
+
+https://stackoverflow.com/questions/73339695/how-to-connect-remotely-via-tcp-to-the-h2-database
+
+
+java -cp h2-2.1.214.jar org.h2.tools.Server -tcpAllowOthers
+
+
+https://www.h2database.com/html/advanced.html
+
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: Unsupported database file version or invalid file header in file "/home/arcolinuxd/spring-db.mv.db" [90048-220]
+ at org.h2.message.DbException.getJdbcSQLException(DbException.java:690)
+ at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+ at org.h2.message.DbException.get(DbException.java:212)
+ at org.h2.mvstore.db.Store.convertMVStoreException(Store.java:158)
+ at org.h2.mvstore.db.Store.<init>(Store.java:142)
+ at org.h2.engine.Database.<init>(Database.java:324)
+ at org.h2.engine.Engine.openSession(Engine.java:92)
+ at org.h2.engine.Engine.openSession(Engine.java:222)
+ at org.h2.engine.Engine.createSession(Engine.java:201)
+ at org.h2.server.TcpServerThread.run(TcpServerThread.java:175)
+ at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.mvstore.MVStoreException: The write format 2 is smaller than the supported format 3 [2.2.220/5]
+ at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+ at org.h2.mvstore.FileStore.getUnsupportedWriteFormatException(FileStore.java:944)
+ at org.h2.mvstore.FileStore.processCommonHeaderAttributes(FileStore.java:547)
+ at org.h2.mvstore.RandomAccessStore.readStoreHeader(RandomAccessStore.java:227)
+ at org.h2.mvstore.FileStore.start(FileStore.java:917)
+ at org.h2.mvstore.MVStore.<init>(MVStore.java:289)
+ at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2036)
+ at org.h2.mvstore.db.Store.<init>(Store.java:133)
+ ... 6 more
+
+Unsupported database file version or invalid file header in file "/home/arcolinuxd/spring-db.mv.db" [90048-199]
+
+https://github.com/h2database/h2database.git
+https://stackoverflow.com/questions/48409005/what-is-the-jdbc-connection-string-for-h2-database
+https://stackoverflow.com/questions/73339695/how-to-connect-remotely-via-tcp-to-the-h2-database
+
+https://github.com/2023KoscomTeam4/pie-trading-system/blob/main/Project/Pie-Server/src/main/java/com/hackerton/pieSystem/service/ChatService.java
+https://github.com/stomp-js/stompjs/network/dependents
+https://github.com/stomp-js/stompjs
+https://cwiki.apache.org/confluence/display/httpd/runningmultipleapacheinstances
+https://github.com/SumoLogic/sumologic-java-http-core
+https://www.sumologic.com/blog/apache-web-server-introduction/
+
+https://stackoverflow.com/questions/28061044/how-to-check-java-version-when-running-gradle
+if(JavaVersion.current() != JavaVersion.VERSION_1_8){
+    throw new GradleException("This build must be run with java 8")
+}
+
+https://github.com/hopefulwalker/learning/tree/main
+https://github.com/DeppWang/youdaonote-pull
+
+https://github.com/bmuschko/todo-spring-boot/blob/master/build.gradle
+https://github.com/bmuschko/todo-spring-boot
+https://stackoverflow.com/questions/49074620/starting-a-gradle-daemon-1-busy-and-6-stopped-daemons-could-not-be-reused-use
+https://github.com/IanDarwin/javasrc/tree/master/main/src/main/java
+https://github.com/IanDarwin/jpademo
+https://github.com/wilkinsona?tab=repositories
+https://github.com/hopefulwalker?tab=repositories
+https://github.com/hopefulwalker/springcloud/tree/master
+https://github.com/oreillymedia/java_cookbook_3e/tree/master/javacooksrc/javacooksrc
+
+
+
+mvn exec:java -Dexec.mainClass=jpa.JpaSimple
+
+
+
+mvn exec:exec -Ptraverse
+
+<profiles>
+  <profile>
+    <id>traverse</id>
+    <activation>
+      <property>
+        <name>traverse</name>
+      </property>
+    </activation>
+    <build>
+      <plugins>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>exec-maven-plugin</artifactId>
+          <configuration>
+            <executable>java</executable>
+            <arguments>
+              <argument>-classpath</argument>
+              <argument>org.dhappy.test.NeoTraverse</argument>
+            </arguments>
+          </configuration>
+        </plugin>
+      </plugins>
+    </build>
+  </profile>
+</profiles>
+
+
+https://github.com/IanDarwin/jpademo/tree/master
+mvn package -DskipTests
+
+
+https://hub.docker.com/_/mysql
+docker exec -it some-mysql bash
+my-secret-pw
+
+https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql
+create database dbex91;
+CREATE USER 'sammy'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON *.* TO 'sammy'@'localhost' WITH GRANT OPTION;
+
+
+CREATE USER 'student'@'172.17.0.1' IDENTIFIED BY 'student';
+
+GRANT ALL PRIVILEGES ON *.* TO 'student'@'172.17.0.1' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+
+mvn exec:java -Dexec.cleanupDaemonThreads=false -Dexec.mainClass=hibernate.ManyToManyHibernate
+
+https://stackoverflow.com/questions/51871635/couldnt-destroy-threadgroup-org-codehaus-mojo-exec-execjavamojoisolatedthreadg
+https://stackoverflow.com/questions/59668487/org-hibernate-tool-schema-spi-commandacceptanceexception-error-executing-ddl
+https://www.mojohaus.org/exec-maven-plugin/usage.html
+
+https://github.com/IanDarwin/jpademo/blob/master/src/main/java/hibernate/RainAddRecording.java
+
+https://github.com/IanDarwin/jpademo/blob/master/src/main/java/domain/array/ATrack.java
+
+https://github.com/hibernate/hibernate-tools/blob/main/maven/README.md
+mvn help:describe -Dplugin=org.hibernate.tool:hibernate-tools-maven        
+mvn org.hibernate.tool:hibernate-tools-maven:help -Ddetail=true -Dgoal=hbm2ddl
+mvn org.hibernate.tool:hibernate-tools-maven:help -Ddetail=true -Dgoal=hbm2java
+mvn org.hibernate.tool:hibernate-tools-maven:help -Ddetail=true -Dgoal=help
+
+
+mvn help:describe -Dplugin=org.hibernate.tool:hibernate-tools-maven  
+
+https://stackoverflow.com/questions/1674524/how-to-display-a-list-of-available-goals
+mvn help:describe -DgroupId=org.apache.maven.plugins \
+                  -DartifactId=maven-war-plugin \
+                  -Ddetail=true
+      
+mvn help:describe -Dplugin=org.apache.maven.plugins:maven-war-plugin\
+                  -Ddetail=true
+
+mvn com.spotify:dockerfile-maven-plugin:help -Ddetail -Dgoal=build
+
+
+mvn help:active-profiles      
+
+mvn help:all-profiles
+
+
+
+mvn help:describe -DgroupId=org.somewhere -DartifactId=some-plugin -Dversion=0.0.0
+
+mvn help:describe -DgroupId=org.springframework.boot -DartifactId=spring-boot-starter-data-jdbc -Dversion=3.1.2
+
+
+<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jdbc -->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-jdbc</artifactId>
+    <version>3.1.2</version>
+</dependency>
+
+
+mvn help:describe -DgroupId=org.mockito -DartifactId=mockito-all -Dversion=2.0.2-beta
+
+ <dependency>
+                        <groupId>org.mockito</groupId>
+                        <artifactId>mockito-all</artifactId>
+                        <version>2.0.2-beta</version>
+                        <scope>test</scope>
+                </dependency>
+    
+https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jdbc/3.1.2  
+
+
+https://spsarolkar.github.io/maven/cheatsheet/2018/09/01/Maven-cheatsheet.html  
+
+mvn help:describe -DgroupId=org.springframework.boot -DartifactId=spring-boot-maven-plugin

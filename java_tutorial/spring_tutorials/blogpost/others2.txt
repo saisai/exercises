@@ -1,0 +1,12 @@
+https://www.baeldung.com/jpa-default-column-values
+https://stackoverflow.com/questions/197045/setting-default-values-for-columns-in-jpa
+https://javabydeveloper.com/jpa-hibernate-default-column-values/
+https://www.dariawan.com/tutorials/java/how-convert-java-util-date-to-java-sql-timestamp/
+https://stackoverflow.com/questions/530012/how-to-convert-java-util-date-to-java-sql-date
+https://www.baeldung.com/java-convert-util-date-to-sql
+https://github.com/eugenp/tutorials/tree/master/core-java-modules/core-java-date-operations-3/src/main/java/com/baeldung/utiltosqldate
+https://stackoverflow.com/questions/14039062/how-to-convert-date-in-to-yyyy-mm-dd-format
+
+Why do I get a "Null value was assigned to a property of primitive type setter of" error message when using HibernateCriteriaBuilder in Grails
+
+https://stackoverflow.com/questions/3154582/why-do-i-get-a-null-value-was-assigned-to-a-property-of-primitive-type-setter-o

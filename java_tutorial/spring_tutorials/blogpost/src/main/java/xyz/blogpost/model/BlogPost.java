@@ -37,6 +37,9 @@ public class BlogPost {
     @Temporal(TemporalType.TIMESTAMP)
     Date updatedAt;
 
+    @Column(name = "delete")
+    private Integer delete = 0;
+
 
     public BlogPost() {
 
@@ -98,6 +101,14 @@ public class BlogPost {
         this.updatedAt = updatedAt;
     }
 
+
+    public void setDelete(Integer delete) {
+        this.delete = delete;
+    }
+
+    public Integer getDelete() {
+        return delete;
+    }
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
