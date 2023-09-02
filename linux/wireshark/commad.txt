@@ -1,0 +1,40 @@
+tshark -D
+tshark -i 5
+tshark -i 5 -Y tcp && !http && !ssl and tcp && !(http or ssl)
+
+
+tshark -D
+
+tshark -i 1
+
+ss -tn
+
+
+tshark -f "tcp" -c 10
+
+tshark -f "udp"
+
+tshark -i eth0 -Y "ip.addr == 104.17.46.54"
+
+sudo tshark -i eth0 -f "tcp port 22" -b filesize:1024 -a files:10 -w ata.pcap
+
+
+tshark -i eth0 -Y "ip.addr == 192.168.2.100" -Y "tcp.port != 22"
+
+
+# Capture only UDP traffic
+    frame.protocols ~ ":udp:data$"
+    
+    	
+udp.port==67 
+ip.addr == X.X.X.X or ip.adr == 192.168.1.199
+
+
+tshark -Y icmp -V -r "Filename" > fileoutput
+
+arp -a
+
+dumpcap -i 5 -w D:\tmp\wireshark\sampleone.pcapng -b filesize:500000 -b files:20
+
+(ip.src == 192.168.0.100) or (ip.dst == 192.168.0.103)
+(ip.addr == 192.168.0.100) && (ip.addr == 192.168.0.103)

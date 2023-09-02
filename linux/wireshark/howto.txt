@@ -1,0 +1,6 @@
+sudo pacman -S wireshark-cli
+
+sudo adduser $USER wireshark
+
+arach linux
+gpasswd -a user group

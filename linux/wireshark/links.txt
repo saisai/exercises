@@ -1,20 +1,17 @@
-tshark -D
-tshark -i 5
-tshark -i 5 -Y tcp && !http && !ssl and tcp && !(http or ssl)
+https://www.comparitech.com/net-admin/tcpdump-capture-wireshark/
+https://wiki.archlinux.org/title/users_and_groups
+https://linuxopsys.com/topics/tshark-examples-with-cheat-sheet
+https://tshark.dev/analyze/packet_hunting/packet_hunting/
+https://adamtheautomator.com/tshark/
+https://serverfault.com/questions/1115419/how-to-trace-nat-traffic-port-forwarding-from-guest-vm-back-to-host
+
+https://www.blackhillsinfosec.com/welcome-to-shark-week/
 
 https://www.wireshark.org/docs/dfref/#section_t
-
-
-# Capture only UDP traffic
-    frame.protocols ~ ":udp:data$"
-    
-    https://superuser.com/questions/1004760/capture-only-udp-traffic-that-cannot-be-identified-as-another-protocol
-	
-udp.port==67 
-
+https://superuser.com/questions/1004760/capture-only-udp-traffic-that-cannot-be-identified-as-another-protocol
 https://www.comparitech.com/net-admin/wireshark-ip-address-unknown-host/
 
-ip.addr == X.X.X.X or ip.adr == 192.168.1.199
+
 
 https://linuxhint.com/filter_by_ip_wireshark/
 https://www.wireshark.org/docs/dfref/#section_i
@@ -25,8 +22,6 @@ https://gitlab.com/wireshark/wireshark/-/wikis/Lua/Examples#a-dissector-tutorial
 https://stackoverflow.com/questions/tagged/wireshark?tab=newest&page=2&pagesize=15
 
 https://stackoverflow.com/questions/74515653/export-dissected-pcap-file-to-text-file-using-command-line
-
-tshark -Y icmp -V -r "Filename" > fileoutput
 
 
 https://www.youtube.com/watch?v=T8yRoh2Wp5A&ab_channel=TheMindGrid
@@ -50,10 +45,3 @@ https://github.com/Sysinternals/Procmon-for-Linux
 https://learn.microsoft.com/en-us/sysinternals/downloads/procmon
 
 https://www.imperva.com/learn/application-security/arp-spoofing/
-
-arp -a
-
-dumpcap -i 5 -w D:\tmp\wireshark\sampleone.pcapng -b filesize:500000 -b files:20
-
-(ip.src == 192.168.0.100) or (ip.dst == 192.168.0.103)
-(ip.addr == 192.168.0.100) && (ip.addr == 192.168.0.103)
