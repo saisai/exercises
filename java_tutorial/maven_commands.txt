@@ -30,3 +30,21 @@ mvn -pl stocks-ui-module -am clean install  // or another appropriate goal
 mvn -U clean install
 
 https://www.marcobehler.com/guides/mvn-clean-install-a-short-guide-to-maven
+
+
+mvn package
+mvn exec:java -D exec.mainClass=edu.princeton.cs.algs4.Vector
+
+mvn exec:java -D exec.mainClass=edu.princeton.cs.algs4.Graph -Dexec.args=txt/tinyG.txt
+mvn exec:java -D exec.mainClass=edu.princeton.cs.algs4.Graph -Dexec.args="1 2"
+
+
+https://stackoverflow.com/questions/10108374/maven-how-to-run-a-java-file-from-command-line-passing-arguments
+
+https://stackoverflow.com/questions/10568275/noclassdeffounderror-on-maven-dependency
+https://stackoverflow.com/questions/18099614/java-lang-noclassdeffounderror-could-not-initialize-class-java-awt-toolkit
+https://www.baeldung.com/executable-jar-with-maven
+https://jenkov.com/tutorials/maven/maven-build-fat-jar.html
+
+
+https://github.com/mojohaus/exec-maven-plugin

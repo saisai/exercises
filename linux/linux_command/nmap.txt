@@ -1,0 +1,17 @@
+nmap 192.168.2.37
+
+
+Scan in verbose mode (-v), enable OS detection, version detection, script scanning, 
+and traceroute (-A), with version detection (-sV) against the target IP (192.168.1.1)
+
+nmap -v -A -sV 192.168.1.1
+
+
+Using TCP mode (–tcp) to probe port 22 (-p 22) using the SYN flag (–flags syn) with a TTL of 2 (–ttl 2) on the remote host (192.168.1.1)
+
+nping --tcp -p 22 --flags syn --ttl 2 192.168.1.1
+
+ncat -v --exec "/bin/bash" --allow 192.168.1.123 -l 4444 --keep-open
+
+
+https://www.kali.org/tools/nmap/

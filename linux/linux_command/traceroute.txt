@@ -1,0 +1,4 @@
+traceroute www.google.com
+
+
+https://docs.netgate.com/pfsense/en/latest/diagnostics/traceroute.html

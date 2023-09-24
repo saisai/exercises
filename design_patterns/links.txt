@@ -1,0 +1,8 @@
+https://refactoring.guru/design-patterns/factory-method/python/example
+https://github.com/orgs/RefactoringGuru/repositories
+https://github.com/RefactoringGuru/design-patterns-python/blob/main/src/Visitor/Conceptual/main.py
+https://github.com/RefactoringGuru/design-patterns-java/tree/main/src/refactoring_guru/visitor/example/visitor
+
+https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork
+
+https://google.github.io/styleguide/javaguide.html

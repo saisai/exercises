@@ -1,0 +1,13 @@
+tcpdump -ni igb1 net 10 or net 192.168 or net 172.16.0.0/12
+
+
+https://docs.netgate.com/pfsense/en/latest/diagnostics/packetcapture/tcpdump.html
+https://freelinuxtutorials.com/quick-tip-use-tcpdump-in-linux-to-capture-network-packets-and-view-in-wireshark/
+
+https://danielmiessler.com/p/tcpdump/
+https://hackertarget.com/tcpdump-examples/
+
+https://github.com/trailofbits/onesixtyone
+https://hackertarget.com/tcpdump-examples/
+https://github.com/orgs/hackertarget/repositories
+https://www.redhat.com/sysadmin/filtering-tcpdump

@@ -1,0 +1,7 @@
+gcc mainserver.c -o mainserver -lpthread
+gcc proxy.c -o proxy -lpthread
+gcc client.c -o client -lpthread
+
+http://amritapnitc.blogspot.com/2015/07/simple-proxy-server-in-c-using-multi.html
+
+https://www.partow.net/programming/tcpproxy/index.html
