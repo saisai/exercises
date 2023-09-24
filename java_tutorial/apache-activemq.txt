@@ -1,0 +1,32 @@
+https://idroot.us/install-apache-activemq-ubuntu-20-04/
+https://th.linux-console.net/?p=1617#gsc.tab=0
+
+wget -c http://archive.apache.org/dist/activemq/5.18.2/apache-activemq-5.18.2-bin.tar.gz
+tar -xvzf apache-activemq-5.18.2-bin.tar.gz
+sudo mv apache-activemq-5.15.8 /opt/activemq
+
+sudo addgroup --quiet --system activemq
+sudo adduser --quiet --system --ingroup activemq --no-create-home --disabled-password activemq
+sudo chown -R activemq:activemq /opt/activemq
+
+
+sudo nano /etc/systemd/system/activemq.service
+[Unit]
+Description=Apache ActiveMQ
+After=network.target
+[Service]
+Type=forking
+User=activemq
+Group=activemq
+
+ExecStart=/opt/activemq/bin/activemq start
+ExecStop=/opt/activemq/bin/activemq stop
+
+[Install]
+WantedBy=multi-user.target
+
+sudo systemctl daemon-reload
+sudo systemctl start activemq
+sudo systemctl enable activemq
+
+http://your-server-ip/8161/admin/

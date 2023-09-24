@@ -1,0 +1,4 @@
+https://www.atlantic.net/dedicated-server-hosting/how-to-install-apache-kafka-on-arch-linux/
+
+
+useradd -r -d /opt/kafka -s /usr/sbin/nologin kafka

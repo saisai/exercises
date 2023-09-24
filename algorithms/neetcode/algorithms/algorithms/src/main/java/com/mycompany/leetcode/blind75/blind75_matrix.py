@@ -29,7 +29,16 @@ arrays = {
                         {datetime.date(2023,8,30): "https://leetcode.com/problems/rotate-image/solutions/18879/ac-java-in-place-solution-with-explanation-easy-to-understand/"},      
                        
                         ],
-               },                            
+               },           
+    "Word-Search" : { 
+                "Python": [
+                        {datetime.date(2023,9,6): "https://leetcode.com/problems/word-search/solutions/27660/python-dfs-solution-with-comments/"},
+                    ],
+                "Java": [
+                        {datetime.date(2023,9,6): "https://leetcode.com/problems/word-search/solutions/27658/accepted-very-short-java-solution-no-additional-space/"},      
+                       
+                        ],
+               },                     
   
  
         
@@ -42,3 +51,5 @@ print(arrays)
 # https://leetcode.com/DBabichev/
 # https://leetcode.com/LuckyIdiot/
 # https://leetcode.com/bw1226/
+# https://leetcode.com/pavel-shlyk/
+# https://leetcode.com/OldCodingFarmer/

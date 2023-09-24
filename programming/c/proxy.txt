@@ -1,0 +1,8 @@
+https://github.com/freefood89/proxy
+
+https://github.com/freefood89/software-engineering-bootcamp/tree/master/01D%20-%20Refactor%20using%20a%20Context%20Manager
+https://stackoverflow.com/questions/21125269/proxy-server-in-c-multiple
+https://www.binarytides.com/server-client-example-c-sockets-linux/
+https://www.binarytides.com/python-packet-sniffer-code-linux/
+https://razibdeb.blogspot.com/2020/07/simple-bsd-socket-server-client-example.html
+https://stackoverflow.com/questions/34902385/client-connect-server-via-http-proxy-serverwindows-c-c
