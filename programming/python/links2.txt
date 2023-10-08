@@ -1,0 +1,10 @@
+https://github.com/hartwork/django-berlin
+https://github.com/locustio/locust
+https://github.com/pychess/pychess
+https://github.com/sebageek/servefile
+https://github.com/EFForg/https-everywhere
+https://github.com/MIT-LCP/lcp-website/tree/main
+https://blog.hartwork.org/
+https://datatables.net/manual/tech-notes/7
+
+https://github.com/Pierian-Data/Complete-Python-3-Bootcamp

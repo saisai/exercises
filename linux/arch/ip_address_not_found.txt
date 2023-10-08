@@ -12,3 +12,5 @@ https://bbs.archlinux.org/viewtopic.php?id=259739
 https://bbs.archlinux.org/viewtopic.php?id=214111
 
 sudo sysctl -a | grep ipv4
+
+https://github.com/gregkh/usbutils

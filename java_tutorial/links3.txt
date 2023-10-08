@@ -110,7 +110,7 @@ https://github.com/yurishkuro?page=2&tab=repositories
 https://github.com/PacktPublishing/Advanced-Deep-Learning-with-Keras/tree/master/chapter12-segmentation
 https://github.com/PacktPublishing/Java-Coding-Problems
 https://github.com/AnghelLeonard/Java-Data-Structures/tree/master/binarysearchtree/BinarySearchTree
-https://github.com/AnghelLeonard/Hibernate-SpringBoot/tree/master
+
 https://github.com/PacktPublishing/Apache-Maven-Cookbook/tree/master
 
 https://github.com/janbodnar?page=2&tab=repositories

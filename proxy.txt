@@ -1,0 +1,11 @@
+https://eli.thegreenplace.net/2022/go-and-proxy-servers-part-1-http-proxies/
+https://medium.com/swlh/proxy-server-in-golang-43e2365d9cbc
+
+https://dev.to/b0r/implement-reverse-proxy-in-gogolang-2cp4
+https://mauricio.github.io/golang-proxies/#/3
+https://refactoring.guru/design-patterns/proxy/go/example
+https://www.abilityrush.com/how-to-create-a-proxy-in-golang/
+https://itnext.io/proxying-http-and-grpc-requests-in-go-a3201219a37d
+https://hackernoon.com/writing-a-reverse-proxy-in-just-one-line-with-go-c1edfa78c84b
+https://www.sobyte.net/post/2021-09/https-proxy-in-golang-in-less-than-100-lines-of-code/
+https://www.libhunt.com/l/go/topic/proxy-server
