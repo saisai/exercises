@@ -84,7 +84,33 @@ arrays = {
                                                     ]},
                        
                         ],
-               },                     
+               },   
+  "Longest-Palindromic-Substring" : { 
+                "Python": [
+                        {datetime.date(2023,8,25): "https://leetcode.com/problems/longest-palindromic-substring/solutions/2954/python-easy-to-understand-solution-with-comments-from-middle-to-two-ends/"},
+                    ],
+                "Java": [
+                        {datetime.date(2023,9, 25): ["https://leetcode.com/problems/longest-palindromic-substring/solutions/2928/very-simple-clean-java-solution/",
+                                                    ]},
+                "Javascript": [
+                        {datetime.date(2023,9, 25): ["https://leetcode.com/problems/longest-palindromic-substring/solutions/2926/8-line-javascript-solution/",
+                                                    ]},
+                       
+                        ],
+               },        
+  "Palindromic-Substrings" : { 
+                "Python": [
+                        {datetime.date(2023,8,26): "https://leetcode.com/problems/palindromic-substrings/solutions/392119/solution-in-python-3-beats-94-six-lines-with-detaiiled-explanation/"},
+                    ],
+                "Java": [
+                        {datetime.date(2023,9, 26): ["https://leetcode.com/problems/palindromic-substrings/solutions/105689/java-solution-8-lines-extendpalindrome/",
+                                                    ]},
+                "Javascript": [
+                        {datetime.date(2023,9, 26): ["https://leetcode.com/problems/palindromic-substrings/solutions/311492/super-easy-understand-javascript-solution-with-explanation-beat-95/",
+                                                    ]},
+                       
+                        ],
+               },                  
 }
 
 print(arrays)
@@ -100,3 +126,9 @@ print(arrays)
 # https://leetcode.com/phoenix13steve/
 # https://leetcode.com/sakshamkaushiik/
 # https://leetcode.com/i-love-typescript/
+# https://leetcode.com/jinwu/
+# https://leetcode.com/linfongi/
+# https://leetcode.com/OldCodingFarmer/
+# https://leetcode.com/shawngao/
+# https://leetcode.com/garyguan0713/
+# https://leetcode.com/junaidmansuri/

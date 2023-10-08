@@ -1,0 +1,5 @@
+https://www.scaler.com/topics/javascript/import-js-file-in-js/
+https://stackoverflow.com/questions/950087/how-do-i-include-a-javascript-file-in-another-javascript-file
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import
+https://stackoverflow.com/questions/58211880/uncaught-syntaxerror-cannot-use-import-statement-outside-a-module-when-import
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
