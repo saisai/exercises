@@ -1,0 +1,7 @@
+https://reactrouter.com/en/main/start/tutorial
+
+
+npm create vite@latest tutorial -- --template react
+cd tutorial
+  npm install
+  npm run dev

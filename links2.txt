@@ -1,0 +1,93 @@
+https://github.com/VincentWei/MiniGUI#virtual-window
+https://launchpad.net/ubuntu/+cdmirrors
+https://morioh.com/a/fe929cf0304e/how-to-use-django-annotate-count-and-q-objects-for-beginners
+
+https://github.com/pycurl/pycurl
+https://github.com/bagder/everything-curl/tree/master/http
+https://github.com/libcpr/cpr/tree/master/test
+https://docs.libcpr.org/
+https://github.com/curl/curl/blob/master/tests/conftest.py
+https://everything.curl.dev/libcurl-http/requests
+https://curl.se/libcurl/c/example.html
+https://gist.github.com/alghanmi/c5d7b761b2c9ab199157
+
+https://zhuanlan.zhihu.com/p/574991423
+https://www.toutiao.com/article/7153135743584551438/?wid=1694237440872
+https://github.com/vladmihalcea/spring-account-transfer/blob/main/src/main/resources/application.properties
+https://github.com/gavlyukovskiy/spring-boot-data-source-decorator
+https://www.springcloud.io/post/2021-12/log-sql-spring-boot/#gsc.tab=0
+https://github.com/zalando/logbook/issues
+https://github.com/spring-academy-legacy
+https://github.com/jdbc-observations/datasource-proxy
+https://github.com/gavlyukovskiy/spring-boot-data-source-decorator
+http://jdbc-observations.github.io/datasource-proxy/docs/current/user-guide/#query-logging-listener
+https://github.com/polarfish/spring-native-demo
+https://github.com/polarfish/advent-of-code-2022/tree/main/src/main/java
+
+https://github.com/waylau/books-collection
+https://github.com/attacomsian/code-examples
+https://attacomsian.com/blog/javascript-map-update-element
+https://github.com/topics/spring-boot-tutorial
+
+
+D:\programs\jdks\17\bin\java.exe -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:11531,suspend=y,server=n 
+-javaagent:C:\Users\hello\AppData\Local\JetBrains\IdeaIC2022.3\captureAgent\debugger-agent.jar -Dfile.encoding=UTF-8 
+-classpath "D:\algorithms\algorithms\target\classes;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.2\lib\idea_rt.jar" 
+com.example.leetcode.LongestPalindromicSubstringJinwu
+
+gpg --search-keys 04C367C218ADD4FF
+
+gpg -vvv --debug-all --recv-keys --keyserver=pool.sks-keyservers.net 04C367C218ADD4FF
+
+
+ source oe-init-build-env build-qemux86
+
+### Shell environment set up for builds. ###
+
+You can now run 'bitbake <target>'
+
+Common targets are:
+    core-image-minimal
+    core-image-full-cmdline
+    core-image-sato
+    core-image-weston
+    meta-toolchain
+    meta-ide-support
+
+You can also run generated qemu images with a command like 'runqemu qemux86-64'.
+
+Other commonly useful commands are:
+ - 'devtool' and 'recipetool' handle common recipe tasks
+ - 'bitbake-layers' handles common layer tasks
+ - 'oe-pkgdata-util' handles common target package tasks
+
+
+sudo pacman -S pkgfile
+pkgfile --verbose --binaries rpcgen
+
+extra/rpcsvc-proto 1.4.4-1      /usr/bin/rpcgen
+sudo pacman -S rpcsvc-proto
+
+
+pkgfile --verbose --binaries hostname
+core/inetutils 2.4-2    /usr/bin/hostname
+
+
+https://bbs.archlinux.org/viewtopic.php?id=236552
+
+
+https://docs.yoctoproject.org/3.2.3/brief-yoctoprojectqs/brief-yoctoprojectqs.html
+
+git clone git://git.yoctoproject.org/poky
+cd poky
+git fetch --tags
+git tag
+git checkout tags/yocto-3.2.3 -b my-yocto-3.2.3
+
+https://bbs.archlinux.org/viewtopic.php?id=240225
+
+https://git.yoctoproject.org/poky/?h=dunfell
+
+
+https://git.yoctoproject.org/poky/?h=dunfell
+https://docs.yoctoproject.org/3.2.3/brief-yoctoprojectqs/brief-yoctoprojectqs.html
