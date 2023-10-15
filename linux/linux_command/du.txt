@@ -1,0 +1,3 @@
+for d in $(ls -d */); do echo $d; du -sh $d; done
+
+https://www.cyberciti.biz/faq/linux-list-just-directories-or-directory-names/

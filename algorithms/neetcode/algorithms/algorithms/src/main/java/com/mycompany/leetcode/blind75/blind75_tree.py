@@ -142,11 +142,56 @@ arrays = {
                        
                         ],
                 "Javascript": [
-                        {datetime.date(2023, 10, 7): ["https://leetcode.com/problems/validate-binary-search-tree/solutions/974147/python-js-java-go-c-o-n-by-dfs-and-rule-w-hint/",
+                        {datetime.date(2023, 10, 8): ["https://leetcode.com/problems/validate-binary-search-tree/solutions/974147/python-js-java-go-c-o-n-by-dfs-and-rule-w-hint/",
                                                     ]},
                        
                         ],                        
-               },                          
+               },              
+"Lowest-Common-Ancestor-Of-A-Binary-Search-Tree" : { 
+                "Python": [
+                        {datetime.date(2023,9,27): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2023,10, 9): ["https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/solutions/1347857/c-java-python-iterate-in-bst-picture-explain-time-o-h-space-o-1/",
+                                                    ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023, 10, 9): ["https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/solutions/541362/javascript-iterative-recursive/",
+                                                    ]},
+                       
+                        ],                        
+               },                
+"Implement-Trie-Prefix-Tree" : { 
+                "Python": [
+                        {datetime.date(2023,9,27): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2023,10, 10): ["https://leetcode.com/problems/implement-trie-prefix-tree/solutions/3180933/solution/",
+                                                    ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023, 10, 10): ["https://leetcode.com/problems/implement-trie-prefix-tree/solutions/399178/clean-javascript-solution/",
+                                                    ]},
+                       
+                        ],                        
+               },             
+"Word-Search-Ii" : { 
+                "Python": [
+                        {datetime.date(2023,9,27): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2023,10, 11): ["https://leetcode.com/problems/word-search-ii/solutions/59780/java-15ms-easiest-solution-100-00/",
+                                                    ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023, 10, 10): ["https://leetcode.com/problems/word-search-ii/solutions/138279/clean-javascript-solution/",
+                                                    ]},
+                       
+                        ],                        
+               },                     
          
        
 }
@@ -172,3 +217,9 @@ print(arrays)
 # https://leetcode.com/issac3/
 # https://leetcode.com/brianchiang_tw/
 # https://leetcode.com/angelvivienne/
+# https://leetcode.com/hiepit/
+# https://leetcode.com/hon9g/
+# https://leetcode.com/deleted_user/
+# https://leetcode.com/Hongbo-Miao/
+# https://leetcode.com/yavinci/
+# https://leetcode.com/Hongbo-Miao/

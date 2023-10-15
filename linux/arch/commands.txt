@@ -1,0 +1,35 @@
+https://wiki.archlinux.org/title/pacman
+https://wiki.archlinux.org/title/system_maintenance
+
+
+https://linuxhandbook.com/clear-systemd-journal-logs/
+
+https://unix.stackexchange.com/questions/130786/can-i-remove-files-in-var-log-journal-and-var-cache-abrt-di-usr#:~:text=journal%20logs,up%203.8G%20on%20disk.
+
+journal logs
+Yes you can delete everything inside of /var/log/journal/* but do not delete the directory itself. You can also query journalctl to find out how much disk space it's consuming:
+
+$ journalctl --disk-usage
+Journals take up 3.8G on disk.
+You can control the size of this directory using this parameter in your /etc/systemd/journald.conf:
+
+SystemMaxUse=50M
+You can force a log rotation:
+
+$ sudo systemctl kill --kill-who=main --signal=SIGUSR2 systemd-journald.service
+NOTE: You might need to restart the logging service to force a log rotation, if the above signaling method does not do it. You can restart the service like so:
+
+$ sudo systemctl restart systemd-journald.service
+abrt logs
+These files too under /var/cache/abrt-di/* can be deleted as well. The size of the log files here is controlled under:
+
+$ grep -i size /etc/abrt/abrt.conf 
+# Max size for crash storage [MiB] or 0 for unlimited
+MaxCrashReportsSize = 1000
+You can control the max size of /var/cache/abrt-di by changing the following in file, /etc/abrt/plugins/CCpp.conf:
+
+DebugInfoCacheMB = 2000
+NOTE: If not defined DebugInfoCacheMB defaults to 4000 (4GB).
+
+
+https://serverfault.com/questions/119299/my-var-log-btmp-file-is-huge-what-should-i-do
