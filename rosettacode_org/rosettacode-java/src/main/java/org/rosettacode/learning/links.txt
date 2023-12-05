@@ -1,0 +1,2 @@
+https://rosettacode.org/wiki/Category:Solutions_by_Programming_Task
+https://rosettacode.org/wiki/Colorful_numbers#Java

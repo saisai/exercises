@@ -4,3 +4,7 @@ https://www.taniarascia.com/es6-syntax-and-feature-overview/
 https://daveceddia.com/react-redux-immutability-guide/
 https://daveceddia.com/javascript-references/
 https://redux.js.org/tutorials/essentials/part-1-overview-concepts
+
+https://github.com/berkansivri/React-Tic-Tac-Toe
+
+https://github.com/rahulvarma5297/Attendence-Tracking-System/tree/main/client/src/components/Dashboard

@@ -1,0 +1,29 @@
+https://vuepress.vuejs.org/guide/getting-started.html#manual-installation
+node version  v12.22.12
+
+
+vuepress version v1.x.
+
+mkdir vuepress-starter && cd vuepress-starter
+yarn init
+yarn add -D vuepress
+mkdir docs && echo '# Hello VuePress' > docs/README.md
+{
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  }
+}
+
+yarn docs:dev 
+yarn docs:build
+
+
+https://stackoverflow.com/questions/7023052/configure-flask-dev-server-to-be-visible-across-the-network
+https://flask.palletsprojects.com/en/3.0.x/quickstart/
+
+https://github.com/nvm-sh/nvm#verify-installation
+
+https://vuepress.vuejs.org/guide/deploy.html#github-pages
+https://v2.vuepress.vuejs.org/guide/deployment.html
+https://vuepress.vuejs.org/guide/getting-started.html#manual-installation

@@ -56,8 +56,34 @@ arrays = {
                        
                         ],                        
                },                   
-               
-
+    "Remove-Nth-Node-From-End-Of-List" : { 
+                "Python": [
+                        {datetime.date(2023,10,16): "https://leetcode.com/problems/remove-nth-node-from-end-of-list/solutions/1164542/js-python-java-c-easy-two-pointer-solution-w-explanation/"},
+                    ],
+                "Java": [
+                        {datetime.date(2023,10, 16): ["https://leetcode.com/problems/remove-nth-node-from-end-of-list/solutions/1164542/js-python-java-c-easy-two-pointer-solution-w-explanation/",                                            ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10, 16): ["https://leetcode.com/problems/remove-nth-node-from-end-of-list/solutions/1164542/js-python-java-c-easy-two-pointer-solution-w-explanation/",
+                        ]},
+                       
+                        ],                        
+               },                 
+    "Reorder-List" : { 
+                "Python": [
+                        {datetime.date(2023,10,17): "https://leetcode.com/problems/reorder-list/solutions/801883/python-3-steps-to-success-explained/"},
+                    ],
+                "Java": [
+                        {datetime.date(2023,10, 17): ["https://leetcode.com/problems/reorder-list/solutions/44992/java-solution-with-3-steps/",]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10, 16): ["https://leetcode.com/problems/reorder-list/solutions/345596/simple-js-solution/",
+                        ]},
+                       
+                        ],                        
+               },          
           
          
        
@@ -75,3 +101,7 @@ print(arrays)
 # https://leetcode.com/reeclapple/
 # https://leetcode.com/control_the_narrative/
 # https://leetcode.com/batman_005/
+# https://leetcode.com/sgallivan/
+# https://leetcode.com/wanqing/
+# https://leetcode.com/berkansivri/
+# https://leetcode.com/DBabichev/

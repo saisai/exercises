@@ -1,0 +1,5 @@
+https://rosettacode.org/wiki/Deepcopy#Java
+https://rosettacode.org/wiki/Damm_algorithm#Java
+https://rosettacode.org/wiki/Digital_root#Java
+https://rosettacode.org/wiki/Doomsday_rule#Java
+https://rosettacode.org/wiki/Display_a_linear_combination#Java

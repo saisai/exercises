@@ -1,0 +1,188 @@
+https://github.com/bravobit/jPastebin
+https://pastebin.com/tools#pastebincl
+https://github.com/six519/wproxy/tree/main
+https://github.com/six519/Java-Notepad/blob/master/Notepad.java
+https://github.com/orgs/SmartBear/repositories?q=&type=all&language=python&sort=
+https://github.com/atlassian/dc-app-performance-toolkit
+https://stackoverflow.com/questions/67096086/getting-html-page-using-get-http-request-and-sockets-in-c
+get /page.html http/1.1
+
+GET /raw/7y7MWssc HTTP/1.1
+
+telnet 192.168.88.114 8888
+
+openssl s_client -connect pastebin.com:443
+
+GET /raw/7y7MWssc HTTP/1.1 Host: pastebin.com
+
+GET /index.html HTTP/1.1 Host: www.somesite
+
+https://stackoverflow.com/questions/67096086/getting-html-page-using-get-http-request-and-sockets-in-c
+
+
+https://bitbucket.org/phjounin/tftpd64/downloads/
+https://pjo2.github.io/tftpd64/
+busybox tftp -l redis.txt -p 192.168.88.114
+
+https://github.com/PJO2/uweb
+https://github.com/PJO2/udpgen/blob/master/udpgen2.c
+
+https://github.com/kr105/tftpd64/tree/main
+https://github.com/kr105/bk_87225
+
+https://github.com/eclipse/paho.mqtt.embedded-c
+
+https://superuser.com/questions/791909/copy-file-from-network-device-to-local-computer-via-tftp
+https://wiki.archlinux.org/title/BusyBox
+https://github.com/PJO2?tab=repositories
+https://stackoverflow.com/questions/67096086/getting-html-page-using-get-http-request-and-sockets-in-c
+https://www.bearfruit.org/thoughts/telnet-for-testing-ssl-https-websites/
+
+https://github.com/vasvir/tcrevenge
+https://vasvir.wordpress.com/2015/03/08/reverse-engineering-trendchip-firmware-zte-h108ns-part-i/
+
+
+https://github.com/mozilla-services/syncserver
+https://github.com/mozilla-services/syncstorage-rs#system-requirements
+https://vasvir.wordpress.com/2021/03/30/firefox-sync-server-and-apache-as-a-proxy/
+
+
+https://hackmd.io/@jenson0909/HkWgf4tco
+https://github.com/MicrosoftDocs/windows-powershell-docs
+
+https://github.com/kr105/webtransport-playground
+https://github.com/S2E/qemu
+https://github.com/csersoft/embedded_prebuilt
+https://github.com/kr105/fulltimeforce_takehome
+
+https://github.com/ycm-core/ycmd.git
+https://github.com/ycm-core/YouCompleteMe.git
+
+https://github.com/kevin-wayne/algs4.git
+https://github.com/AnghelLeonard/Hibernate-SpringBoot.git
+https://github.com/PacktPublishing/Java-Coding-Problems.git
+https://github.com/AnghelLeonard/Java-Data-Structures.git
+https://github.com/quartz-scheduler/quartz.git
+https://github.com/hgarza/Servlets-JSP.git
+https://github.com/PacktPublishing/Spring-Boot-3.0-Cookbook.git
+https://github.com/shuveb/zerohttpd.git
+
+https://github.com/SuperFastPython/ConcurrentFileIOInPython.git
+https://aur.archlinux.org/myodbc.git
+https://aur.archlinux.org/mysql80.git
+https://github.com/mkleehammer/pyodbc.git
+https://github.com/anapeksha/python-proxy-server.git
+https://github.com/afghanistanyn/github-proxy-server.git
+https://github.com/dpkp/kafka-python.git
+kafka_2.12-3.5.1.tgz
+https://github.com/python-discord/public-stats.git
+https://github.com/anapeksha/python-proxy-server.git
+
+spring 
+https://github.com/deepanshululla/flight-reservation.git
+https://github.com/IanDarwin/jpademo.git
+mvnref-book-examples-1.0-SNAPSHOT  mvnref-examples.zip
+https://github.com/Frooodle/Stirling-PDF.git
+https://github.com/spring-guides/tut-metrics-and-tracing.git
+https://github.com/bmuschko/todo-spring-boot.git
+https://github.com/purshink/ReactJS-Spring-Boot-Full-Stack-App.git
+https://github.com/spring-guides/tut-react-and-spring-data-rest.git
+https://github.com/2023KoscomTeam4/pie-trading-system.git
+https://github.com/eugenp/learn-spring.git
+https://github.com/spring-guides/gs-multi-module.git
+https://github.com/spring-guides/gs-accessing-data-mysql.git
+https://github.com/darbyluv2code/spring-boot-3-spring-6-hibernate-for-beginners.git
+https://github.com/spring-guides/gs-batch-processing.git
+
+https://github.com/iluwatar/java-design-patterns.git
+https://github.com/makotogo/odotCore.git
+https://github.com/hardikSinghBehl/rate-limiting-api-spring-boot.git
+https://github.com/hardikSinghBehl/redis-caching-java-spring-boot.git
+https://github.com/jphaugla/redisPromiseTime.git
+https://github.com/piomin/sample-api-versioning.git
+https://github.com/piomin/sample-spring-microservices-advanced.git
+https://github.com/eliflores/shooting-stars
+https://github.com/ajcatambay/spring-boot-active-mq-demo.git
+https://github.com/makotogo/SpringBootDemo.git
+https://github.com/jphaugla/spring-boot-redis-cache.git
+https://github.com/fishpro/spring-boot-study.git
+https://github.com/xuxueli/xxl-job.git
+https://github.com/lspil/youtubechannel.git
+https://aur.archlinux.org/zulu-15-bin.git
+
+
+
+https://github.com/mfarooq4005/django.git
+https://github.com/henosg53/graphene-django-.git
+https://github.com/codebasics/py.git
+https://github.com/qwj/python-proxy.git
+
+https://github.com/mher/flower.git
+https://github.com/mitmproxy/mitmproxy.git
+https://github.com/codebasics/py.git
+
+
+ for d in $(ls -d */); do echo $d; cd $d; git remote -v | grep -v fetch; cd ../; done
+ for d in $(ls -d */); do cd $d; git remote -v | grep -v fetch | awk '{ printf $2 }'; echo ""; cd ../; done
+
+
+https://stackoverflow.com/questions/15772355/how-to-send-an-http-request-using-telnet
+telnet stackoverflow.com 80
+
+GET /questions HTTP/1.0
+Host: stackoverflow.com
+
+double enter
+
+
+nc stackoverflow.com 443
+
+https://www.shellhacks.com/telnet-send-get-head-http-request/
+https://www.shellhacks.com/dig-without-cache/
+dig shellhacks.com +short +trace
+
+https://netbeez.net/blog/telnet-to-test-connectivity-to-tcp/
+
+https://www.pluralsight.com/resources/blog/cloud/tcp-connection-testing-with-telnet
+
+telnet www.example.com 80
+
+HEAD / HTTP/1.1
+Host: www.example.com
+
+https://git.busybox.net/busybox/
+
+https://medium.com/@hnasr/how-vpns-really-work-a5da843d0eb3
+https://marcospereirajr.com.br/using-nginx-as-api-gateway-7bebb3614e48
+https://github.com/marcospereirampj/django-postgres-gunicorn-docker/tree/master/django_app
+https://linuxcommandlibrary.com/man/busybox
+
+https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks/tree/master/firmware_mod
+https://github.com/AdamRisberg/react-image-magnifiers
+https://github.com/nietaki/real-time-transcription-from-audio-file
+https://github.com/TimeToogo/tracing-cloudwatch
+https://www.gnu.org/software/inetutils/manual/html_node/tftpd-invocation.html
+https://www.ibm.com/docs/en/zos/2.4.0?topic=guide-setting-up-inetd-configuration-file
+https://www.qnx.com/developers/docs/6.5.0SP1.update/com.qnx.doc.neutrino_utilities/i/inetd.conf.html
+
+busybox udpsvd -E localhost 69 tftpd /home/tftpd -u tftp -c
+
+https://busybox.busybox.narkive.com/PXrvD3ta/0005874-tftpd-fails-to-start-with-error-stdin-is-not-a-socket-socket-operation-on-non-socket
+
+sudo busybox udpsvd -E localhost 69 tftpd /home/arcolinuxd/tmp -u tftp -c
+
+
+
+server tftpd 
+sudo busybox udpsvd -E 0.0.0.0 69 tftpd /home/arcolinuxd/tmp -u arcolinuxd -c
+sudo busybox udpsvd -E 0.0.0.0 69 tftpd /home/arcolinuxd/tmp -c
+
+client 
+busybox tftp -l test.js -p 192.168.1.166
+
+https://gist.github.com/bsodhi/a24e06e6806b685fb4d633c40638e77b
+https://opensource.com/article/19/4/interprocess-communication-linux-networking
+https://gist.github.com/bsodhi/9725cf269aa55d9b6d6f3c31e5bd8cd3
+https://gist.github.com/r0xsh/7d5321fdcb730b385af7cc34de5cc410
+https://gist.github.com/bsodhi/7a7bcbc9626a4fbbc5357786c622d886
+https://github.com/Mad-Scientist-Monkey/sockets-ccpp-rpi/tree/master/source
