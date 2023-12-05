@@ -1,0 +1,2 @@
+https://github.com/google/gson/blob/main/gson/src/test/java/com/google/gson/GsonBuilderTest.java
+https://www.tutorialspoint.com/gson/gson_inner_classes.htm

@@ -1,0 +1,27 @@
+https://wiki.alpinelinux.org/wiki/Setting_up_a_new_user
+
+apk add sudo
+NEWUSER='yourUserName'
+adduser -g "${NEWUSER}" $NEWUSER
+echo "$NEWUSER ALL=(ALL) ALL" > /etc/sudoers.d/$NEWUSER && chmod 0440 /etc/sudoers.d/$NEWUSER
+
+
+static ip address 
+https://linuxhint.com/create-static-ip-alpine-linux/
+
+cat /etc/resolv.conf
+#nameserver 192.168.2.1
+nameserver 8.8.8.8
+
+
+cat /etc/network/interfaces
+auto lo
+iface lo inet loopback
+
+#auto eth0
+#iface eth0 inet dhcp
+#
+auto eth0
+iface eth0 inet static
+        address 192.168.2.50/24
+        gateway 192.168.2.1

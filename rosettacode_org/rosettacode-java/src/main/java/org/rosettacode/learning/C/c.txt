@@ -1,0 +1,4 @@
+https://rosettacode.org/wiki/Convert_seconds_to_compound_duration
+https://rosettacode.org/wiki/Cantor_set#Java
+https://rosettacode.org/wiki/Chinese_zodiac#Java
+https://rosettacode.org/wiki/Cut_a_rectangle#Java
