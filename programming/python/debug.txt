@@ -1,5 +1,0 @@
-python -m sysconfig
-
-pip debug --verbose
-
-https://github.com/PyO3/maturin/issues/676
