@@ -1,5 +1,0 @@
-https://stackoverflow.com/questions/42092263/combine-multiple-csv-files-into-a-single-xls-workbook-python-3
-
-https://github.com/hackertarget/nmap-csv-xlsx/blob/master/csv-to-xlsx.py
-
-https://stackoverflow.com/questions/5967500/how-to-correctly-sort-a-string-with-a-number-inside

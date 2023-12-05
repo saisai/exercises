@@ -1,0 +1,101 @@
+https://www.django-cms.org/en/get-started-django-cms/
+https://github.com/wagtail/wagtail
+https://github.com/stephenmcd/mezzanine/blob/master/mezzanine/urls.py
+
+https://github.com/aropan/clist
+https://clist.by/
+
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Models
+https://creately.com/blog/diagrams/class-diagram-relationships/
+https://en.wikipedia.org/wiki/Class_diagram
+https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-class-diagram-tutorial/
+https://en.wikipedia.org/wiki/Class_diagram
+https://stackoverflow.com/questions/8103875/django-define-a-name-for-reverse-foreignkey
+https://sodocumentation.net/django/topic/2379/many-to-many-relationships
+
+
+
+https://docs.djangoproject.com/en/2.2/topics/db/models/
+https://docs.djangoproject.com/en/2.2/topics/db/examples/many_to_many/
+
+https://docs.djangoproject.com/en/2.2/ref/models/fields/
+https://docs.djangoproject.com/en/2.2/ref/models/indexes/
+
+https://docs.djangoproject.com/en/2.2/ref/models/options/
+
+
+Error 503 unable to get local issuer certificate
+
+unable to get local issuer certificate
+Guru Mediation:
+
+Details: cache-sin18022-SIN 1607161708 2489347198
+
+Varnish cache server
+
+
+https://stackoverflow.com/questions/13089944/jquery-get-selected-option-value-not-the-text-but-the-attribute-value
+
+Error 503 unable to get local issuer certificate
+
+unable to get local issuer certificate
+Guru Mediation:
+
+Details: cache-sin18022-SIN 1607161708 2489347198
+
+Varnish cache server
+
+
+https://stackoverflow.com/questions/20794035/postgresql-warning-console-code-page-437-differs-from-windows-code-page-125
+
+http://blog.dscpl.com.au/2012/10/obligations-for-calling-close-on.html
+
+https://github.com/django/django/blob/8c3e0eb1c16abbcded3503b4ea3473b353520f61/django/http/response.py#L252
+
+
+
+
+def my_callback(sender, **kwargs):
+    print("Request finished!", sender, dir(sender))
+    #print("Request finished!", sender, dir(sender.request_class.GET))
+    print("Request finished!", sender, sender.get_response())
+
+
+from django.core.signals import request_finished
+
+request_finished.connect(my_callback)
+
+
+
+https://django-advanced-training.readthedocs.io/en/latest/features/signals/
+
+
+
+
+def log_request(sender, environ, **kwargs):
+    method = environ['REQUEST_METHOD']
+    host = environ['HTTP_HOST']
+    path = environ['PATH_INFO']
+    query = environ['QUERY_STRING']
+    query = '?' + query if query else ''
+    print('New Request -> {method} {host}{path}{query}'.format(
+        method=method,
+        host=host,
+        path=path,
+        query=query,
+    ))
+
+
+from django.core.signals import request_started
+
+request_started.connect(log_request)
+
+
+https://realpython.com/customize-django-admin-python/
+
+
+https://www.polidea.com/blog/whats-new-in-python-39-a-summary-of-new-features/
+
+https://deepsource.io/blog/new-python-web-frameworks/
+
+https://github.com/covid-19-au/covid-19-au.github.io/tree/prod/src

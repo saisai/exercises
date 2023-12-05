@@ -5,3 +5,9 @@ https://yangshuntay.com/blog/importance-of-communicating-effectively-as-engineer
 https://github.com/yangshun/yangshuntay.com/tree/master/src
 https://www.techinterviewhandbook.org/algorithms/array/
 
+
+https://github.com/kdn251/interviews
+https://github.com/doocs/leetcode/tree/main/solution
+https://github.com/halfrost/LeetCode-Go/tree/master
+https://github.com/haoel/leetcode/tree/master/algorithms/java/src
+https://grep.app/search?current=2&q=isBadVersion

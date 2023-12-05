@@ -1,4 +1,0 @@
-not correctly solution
-
-
-https://github.com/jakehoare/leetcode/blob/master/python_1_to_1000/051_N-Queens.py

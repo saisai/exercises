@@ -25,3 +25,20 @@ auto eth0
 iface eth0 inet static
         address 192.168.2.50/24
         gateway 192.168.2.1
+
+
+# alpine add service
+
+sudo rc-update add docker
+
+sudo service docker status
+sudo service docker start
+
+# add user to group
+# https://wiki.alpinelinux.org/wiki/Setting_up_a_new_user
+adduser alpine docker
+
+
+
+https://www.cyberciti.biz/faq/how-to-enable-and-start-services-on-alpine-linux/
+https://wiki.alpinelinux.org/wiki/Setting_up_a_new_user
