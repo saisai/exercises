@@ -1,4 +1,0 @@
-https://www.java67.com/2021/09/what-is-diamond-operator-in-java-how.html
-https://stackoverflow.com/questions/4166966/what-is-the-point-of-the-diamond-operator-in-java
-https://docs.oracle.com/javase/tutorial/java/generics/genTypeInference.html
-https://www.geeksforgeeks.org/diamond-operator-for-anonymous-inner-class-with-examples-in-java/
