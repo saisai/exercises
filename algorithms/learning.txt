@@ -1,1 +1,12 @@
 https://github.com/donnemartin/interactive-coding-challenges
+
+https://github.com/WuLC/LeetCode/tree/master/Algorithm
+https://github.com/corpsepiges/leetcode/tree/master
+https://github.com/keineahnung2345/linux-commands
+https://github.com/WatsonWangZh/AlgorithmPractice/tree/master
+https://github.com/varunu28/LeetCode-Java-Solutions/blob/master/Medium/Clone%20Graph.java
+https://tutorialhorizon.com/algorithms/graph-implementation-adjacency-list-better-set-2/
+
+https://tutorialhorizon.com/algorithms/difficulty-level/Hard/
+
+https://github.com/PengFTang/Data-Structures-in-Java/tree/master

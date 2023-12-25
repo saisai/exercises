@@ -1,0 +1,5 @@
+java -jar target/spring-petclinic-3.2.0-SNAPSHOT.jar --spring.profiles.active=postgres
+
+# https://stackoverflow.com/questions/40060989/how-to-use-spring-boot-profiles
+
+https://github.com/ivtoskov/LogAnalyticsService

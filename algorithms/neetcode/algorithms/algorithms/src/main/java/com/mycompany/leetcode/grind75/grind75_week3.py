@@ -96,6 +96,66 @@ arrays = {
                         {datetime.date(2023,10,29): ""},
                        
                         ],                         
+               },         
+    "Binary-Tree-Level-Order-Traversal" : { 
+                "Python": [
+                        {datetime.date(2023,12,6): "https://leetcode.com/problems/binary-tree-level-order-traversal/solutions/197348/python-bfs-queue-102/"},
+                    ],
+                "Java": [
+                        {datetime.date(2023,12,6): ["https://leetcode.com/problems/binary-tree-level-order-traversal/solutions/33450/java-solution-with-a-queue-used/",
+                            "https://leetcode.com/problems/binary-tree-level-order-traversal/solutions/33445/java-solution-using-dfs/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],                         
+               },                  
+    "Clone-Graph" : { 
+                "Python": [
+                        {datetime.date(2023,12,6): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2023,12,7): ["https://leetcode.com/problems/clone-graph/solutions/1793436/java-simple-code-with-heavy-comments/",
+                            
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],                         
+               },             
+    "Clone-Graph" : { 
+                "Python": [
+                        {datetime.date(2023,12,6): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2023,12,8): ["https://leetcode.com/problems/evaluate-reverse-polish-notation/solutions/47430/java-accepted-code-stack-implementation/",
+                            
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],                         
                },                   
                 
 }
@@ -105,6 +165,11 @@ print(arrays)
 # https://leetcode.com/shawngao/
 # https://leetcode.com/cbmbbz/
 # https://leetcode.com/ankit041288/
+# https://leetcode.com/SOY/
+# https://leetcode.com/gfei2/
+# https://leetcode.com/yuzhoujr/
+# https://leetcode.com/akshatsankhyan/
+# https://leetcode.com/pvaldes/
 
 grind75
 https://www.techinterviewhandbook.org/grind75

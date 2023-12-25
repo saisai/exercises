@@ -42,3 +42,7 @@ adduser alpine docker
 
 https://www.cyberciti.biz/faq/how-to-enable-and-start-services-on-alpine-linux/
 https://wiki.alpinelinux.org/wiki/Setting_up_a_new_user
+
+https://github.com/jeanblanchard/docker-alpine-glibc/blob/main/Dockerfile
+https://github.com/gliderlabs/docker-alpine/issues/24
+https://stackoverflow.com/questions/52777220/errors-when-building-glibc-on-alpine-linux

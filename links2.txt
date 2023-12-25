@@ -91,3 +91,20 @@ https://git.yoctoproject.org/poky/?h=dunfell
 
 https://git.yoctoproject.org/poky/?h=dunfell
 https://docs.yoctoproject.org/3.2.3/brief-yoctoprojectqs/brief-yoctoprojectqs.html
+
+https://github.com/judasn/Linux-Tutorial
+
+https://github.com/haixyyz/halo/tree/master/halo-collection
+https://xujin.org/blog/sba-nacos/
+https://github.com/yangshun/tech-interview-handbook/tree/main/algorithms
+
+https://github.com/trekhleb/javascript-algorithms
+https://github.com/datastructures-js/priority-queue/blob/master/src/priorityQueue.js
+https://hygraph.com/blog/routing-in-react
+https://github.com/olawanlejoel/cocktails-graphcms-react/tree/main/src/Pages
+Execute: "C:\Program Files\Wireshark\vc_redist.x64.exe" /install /quiet /norestart
+
+https://github.com/comfyanonymous/ComfyUI
+
+
+
