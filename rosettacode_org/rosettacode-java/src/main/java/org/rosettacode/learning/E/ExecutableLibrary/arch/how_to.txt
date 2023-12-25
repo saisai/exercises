@@ -1,0 +1,12 @@
+https://rosettacode.org/wiki/Executable_library#C
+
+Building the lib: gcc -Wall -W -fPIC -shared -o libhail.so hailstone.c -lc -Wl,-e,hail_main
+
+Building the test.c code: gcc -Wall -L. -lhail test.c -o hailtest
+Running the lib:
+% ./libhail.so
+27 has 112 numbers in sequence:
+27 82 41 124 62 31 94 47 142 71 214 107 322 161 484 242 121 364 182 91 274....
+Running the program:
+% LD_LIBRARY_PATH=. ./hailtest
+Longest sequence at 77031, length 351

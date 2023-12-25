@@ -1,7 +1,7 @@
 docker pull postgres:11.20-alpine3.17
 
 
-docker run --name postgres-11 -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 -d postgres:11.20-alpine3.17
+docker run --name postgres-11 -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres:11.20-alpine3.17
 
 docker exec -it postgres-11 psql -U postgres -W
 

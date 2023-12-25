@@ -117,6 +117,46 @@ arrays = {
                        
                         ],                         
                },                  
+    "Clone-Graph" : { 
+                "Python": [
+                        {datetime.date(2023,12,6): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2023,12,7): ["https://leetcode.com/problems/clone-graph/solutions/1793436/java-simple-code-with-heavy-comments/",
+                            
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],                         
+               },             
+    "Clone-Graph" : { 
+                "Python": [
+                        {datetime.date(2023,12,6): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2023,12,8): ["https://leetcode.com/problems/evaluate-reverse-polish-notation/solutions/47430/java-accepted-code-stack-implementation/",
+                            
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],                         
+               },                   
                 
 }
 
@@ -128,6 +168,9 @@ print(arrays)
 # https://leetcode.com/SOY/
 # https://leetcode.com/gfei2/
 # https://leetcode.com/yuzhoujr/
+# https://leetcode.com/akshatsankhyan/
+# https://leetcode.com/pvaldes/
+
 grind75
 https://www.techinterviewhandbook.org/grind75
 

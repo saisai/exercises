@@ -152,3 +152,10 @@ https://github.com/bezkoder/jpa-one-to-one-unidirectional/blob/master/pom.xml
 https://www.codejava.net/frameworks/spring-boot/spring-boot-auto-restart-and-live-reload-in-intellij-idea
 
 
+https://www.w3schools.com/java/java_hashmap.asp
+https://www.baeldung.com/java-map-key-from-value
+https://www.baeldung.com/java-hashmap-inside-list
+https://stackoverflow.com/questions/1669885/what-happens-when-a-duplicate-key-is-put-into-a-hashmap
+https://www.baeldung.com/java-multi-dimensional-arraylist
+https://stackoverflow.com/questions/4401850/how-to-create-a-multidimensional-arraylist-in-java
+
