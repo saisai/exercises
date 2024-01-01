@@ -1,0 +1,33 @@
+https://stackoverflow.com/questions/42135114/how-does-spring-jpa-hibernate-ddl-auto-property-exactly-work-in-spring
+
+For the record, the spring.jpa.hibernate.ddl-auto property is Spring Data JPA specific and is their way to specify a value that will eventually be passed to Hibernate under the property it knows, hibernate.hbm2ddl.auto.
+
+The values create, create-drop, validate, and update basically influence how the schema tool management will manipulate the database schema at startup.
+
+For example, the update operation will query the JDBC driver's API to get the database metadata and then Hibernate compares the object model it creates based on reading your annotated classes or HBM XML mappings and will attempt to adjust the schema on-the-fly.
+
+
+
+https://www.baeldung.com/spring-data-jpa-query-by-date
+https://stackoverflow.com/questions/9409342/handle-datetime-in-jpa2
+
+
+https://www.codejava.net/frameworks/spring-boot/connect-to-postgresql-database-examples
+https://studygyaan.com/spring-boot/how-to-connect-postgresql-database-in-spring-boot-project
+https://www.javatpoint.com/spring-boot-hello-world-example
+https://spring.io/quickstart/
+https://stackoverflow.com/questions/18813615/how-to-avoid-the-circular-view-path-exception-with-spring-mvc-test
+https://stackoverflow.com/questions/38032635/pass-multiple-parameters-to-rest-api-spring
+https://stackoverflow.com/questions/68020544/two-getmapping-with-same-url-but-different-parameters
+
+https://stackoverflow.com/questions/9409342/handle-datetime-in-jpa2
+
+https://springframework.guru/spring-boot-with-lombok-part-1/
+
+https://start.spring.io/
+
+
+https://github.com/Glabay/ShitList/tree/master/http-restful/src/main/java/xyz/glabaystudios/shitlist/utils
+
+
+https://start.spring.io/#!type=maven-project&language=java&platformVersion=3.2.1&packaging=jar&jvmVersion=17&groupId=club.snp&artifactId=jobsapply&name=jobsapply&description=Demo%20project%20for%20Spring%20Boot&packageName=club.snp.jobsapply&dependencies=devtools,web,data-jpa,postgresql,websocket,mail,data-redis-reactive

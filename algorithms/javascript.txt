@@ -1,1 +1,3 @@
 https://github.com/jeantimex/javascript-problems-and-solutions/tree/master/src
+https://github.com/GeorgeChryso/Data-Structures-and-Algo-Problems
+https://github.com/GeorgeChryso/Algorithms/tree/master/Graphs
