@@ -2,4 +2,3 @@ java -jar target/spring-petclinic-3.2.0-SNAPSHOT.jar --spring.profiles.active=po
 
 # https://stackoverflow.com/questions/40060989/how-to-use-spring-boot-profiles
 
-https://github.com/ivtoskov/LogAnalyticsService
