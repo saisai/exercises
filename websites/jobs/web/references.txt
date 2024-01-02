@@ -1,0 +1,39 @@
+
+https://create-react-app.dev/
+npx create-react-app my-app
+https://github.com/facebook/create-react-app
+
+https://mui.com/material-ui/
+npm install @mui/material @emotion/react @emotion/styled
+npm install @fontsource/roboto @mui/icons-material
+npm install @mui/x-data-grid
+
+use this theme
+
+https://mui.com/material-ui/getting-started/templates/
+https://mui.com/material-ui/getting-started/templates/pricing/#
+https://github.com/mui/material-ui/blob/v5.15.2/docs/data/material/getting-started/templates/pricing/Pricing.js
+
+https://stackoverflow.com/questions/69708504/module-not-found-cant-resolve-mui-icons-material-filedownload
+
+https://mui.com/x/react-data-grid/getting-started/#installation
+
+
+{`${params.link}`}
+
+https://www.freecodecamp.org/news/how-to-integrate-material-ui-data-grid-in-react-using-data-from-a-rest-api/
+https://github.com/desoga10/data-grid
+
+https://dev.to/darkmavis1980/fetching-data-with-react-hooks-and-axios-114h
+https://www.freecodecamp.org/news/how-to-use-axios-with-react/
+
+https://mui.com/material-ui/react-grid/
+https://mui.com/x/react-data-grid/
+https://mui.com/x/react-data-grid/column-visibility/
+https://mui.com/x/react-data-grid/style/#styling-rows
+
+https://mui.com/x/react-data-grid/column-definition/
+https://mui.com/x/react-data-grid/column-definition/#rendering-cells
+
+https://www.freecodecamp.org/news/how-to-integrate-material-ui-data-grid-in-react-using-data-from-a-rest-api/
+https://github.com/desoga10/data-grid/blob/main/src/component/DataTable.js

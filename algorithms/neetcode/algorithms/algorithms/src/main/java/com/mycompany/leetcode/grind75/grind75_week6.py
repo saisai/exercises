@@ -96,7 +96,26 @@ arrays = {
                         {datetime.date(2023,10,29): ""},
                        
                         ],                         
-               },                   
+               },              
+    "Binary-Tree-Right-Side-View" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,1,2): ["https://leetcode.com/problems/binary-tree-right-side-view/solutions/56012/my-simple-accepted-solution-java/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],                         
+               },                     
                  
 }
 
@@ -107,7 +126,7 @@ print(arrays)
 # https://leetcode.com/lestrois/
 # https://leetcode.com/Jingshi/
 # https://leetcode.com/issac3/
-
+# https://leetcode.com/zwangbo/
 
 # https://leetcode.com/WangQiuc/
 # https://github.com/WangQiuc/leetcode/tree/master
