@@ -30,4 +30,12 @@ https://start.spring.io/
 https://github.com/Glabay/ShitList/tree/master/http-restful/src/main/java/xyz/glabaystudios/shitlist/utils
 
 
-https://start.spring.io/#!type=maven-project&language=java&platformVersion=3.2.1&packaging=jar&jvmVersion=17&groupId=club.snp&artifactId=jobsapply&name=jobsapply&description=Demo%20project%20for%20Spring%20Boot&packageName=club.snp.jobsapply&dependencies=devtools,web,data-jpa,postgresql,websocket,mail,data-redis-reactive
+https://start.spring.io/#!type=maven-project&language=java&platformVersion=3.2.1&packaging=jar&jvmVersion=17&groupId=club.snp&
+artifactId=jobsapply&name=jobsapply&description=Demo%20project%20for%20Spring%20Boot&packageName=club.snp.jobsapply&dependencies=devtools,web,
+data-jpa,postgresql,websocket,mail,data-redis-reactive
+
+
+https://stackoverflow.com/questions/21083170/how-to-configure-port-for-a-spring-boot-application
+https://docs.spring.io/spring-boot/docs/2.0.5.RELEASE/reference/html/howto-embedded-web-servers.html
+https://docs.spring.io/spring-boot/docs/1.3.3.RELEASE/reference/html/howto-properties-and-configuration.html
+https://www.baeldung.com/sql-logging-spring-boot
