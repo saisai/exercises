@@ -1,9 +1,10 @@
-import ThJobsDb from './components/th/ThJobsDb';
+
+import Main from './components/th/Main'; 
 
 function App() {
   return (
     <>
-      <ThJobsDb />
+      <Main />
     </>
   );
 }

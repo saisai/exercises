@@ -30,7 +30,7 @@ function getUrl(params) {
   
 const columns = [
     { field: 'id', headerName: 'ID' },
-    { field: 'title', headerName: 'Title', width: 300,
+    { field: 'title', headerName: 'Title', width: 700,
         renderCell: getUrl,
     },
     { field: 'time', headerName: 'Time', width: 600 }
@@ -105,6 +105,14 @@ export default function ThJobsDb() {
                             href="#"
                             sx={{ my: 1, mx: 1.5 }}
                         >
+                            JobThai
+                        </Link>
+                        <Link
+                            variant='button'
+                            color="text.primary"
+                            href="#"
+                            sx={{ my: 1, mx: 1.5 }}
+                        >
                             JobsDb
                         </Link>
                     </nav>
@@ -115,7 +123,7 @@ export default function ThJobsDb() {
             </AppBar>
 
             {/* Hero unit */}
-            <Container disableGutters maxWidth="sm" component="main">
+            <Container  component="main">
                 <div>
                     {loading && <div>Loading</div>}
                     <DataGrid

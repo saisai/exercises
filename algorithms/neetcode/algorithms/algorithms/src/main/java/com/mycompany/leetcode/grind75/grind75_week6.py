@@ -115,7 +115,65 @@ arrays = {
                         {datetime.date(2023,10,29): ""},
                        
                         ],                         
-               },                     
+               },                
+    "Longest-Palindromic-Substring" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,1,3): ["https://leetcode.com/problems/longest-palindromic-substring/solutions/2928/very-simple-clean-java-solution/",
+                            "https://leetcode.com/problems/longest-palindromic-substring/solutions/2921/share-my-java-solution-using-dynamic-programming/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],                         
+               },            
+    "Unique-Paths" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,1,4): ["https://leetcode.com/problems/unique-paths/solutions/22958/math-solution-o-1-space/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],                         
+               },      
+    "Construct-Binary-Tree-From-Preorder-And-Inorder-Traversal" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,1,6): ["https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/solutions/34538/my-accepted-java-solution/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],                         
+               },                 
                  
 }
 
@@ -127,6 +185,10 @@ print(arrays)
 # https://leetcode.com/Jingshi/
 # https://leetcode.com/issac3/
 # https://leetcode.com/zwangbo/
+# https://leetcode.com/jinwu/
+# https://leetcode.com/jeantimex/
+# https://leetcode.com/whitehat/
+# https://leetcode.com/jiaming2/
 
 # https://leetcode.com/WangQiuc/
 # https://github.com/WangQiuc/leetcode/tree/master
