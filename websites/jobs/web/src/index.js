@@ -1,11 +1,46 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
-import { BrowserRouter } from 'react-router-dom';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <BrowserRouter>
-    <App />
-    </BrowserRouter>
+import {
+  createRoutesFromElements,
+  createBrowserRouter,
+  Route,
+  RouterProvider
+} from "react-router-dom";
+
+import Main, {
+  loader as contactLoader,
+} from './components/th/Main';
+import JobThai from './components/th/JobThai';
+import ThJobsDb from './components/th/ThJobsDb';
+
+import ErrorPage from './components/th/error-page';
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route
+      path="/"
+      element={<Main />}
+      errorElement={<ErrorPage />}
+    >
+      <Route path="/*" element={<ErrorPage />} />
+      <Route index element={<ThJobsDb />} />
+      <Route
+          path="jobsdb"
+          element={<ThJobsDb />}       
+          loader={contactLoader}    
+        />
+      <Route
+          path="jobthai"
+          element={<JobThai />}       
+          loader={contactLoader}   
+        />
+    </Route>   
+  )
+);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>
 );

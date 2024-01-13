@@ -6,3 +6,7 @@
  https://medium.com/@dtkatz/3-ways-to-fix-the-cors-error-and-how-access-control-allow-origin-works-d97d55946d9
  
  https://stackoverflow.com/questions/49049312/cors-error-when-connecting-local-react-frontend-to-local-spring-boot-middleware
+
+ https://stackoverflow.com/questions/70976866/cannot-destructure-property-as-undefined
+ https://discourse.hibernate.org/t/error-in-native-query-where-column-is-mapped-twice/6781/4
+

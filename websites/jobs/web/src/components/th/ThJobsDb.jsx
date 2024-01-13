@@ -1,10 +1,11 @@
 import * as React from 'react';
 import Container from '@mui/material/Container';
-import { DataGrid } from '@mui/x-data-grid';
+
 
 import axios from 'axios';
+import { useLoaderData } from "react-router-dom";
 
-import { columns, URL } from './utils';
+import { columns, URL, ShowDataGrid } from './utils';
 
 
 export default function ThJobsDb() {
@@ -24,24 +25,27 @@ export default function ThJobsDb() {
         }
 
         fetchData();
+        
     }, []);
+
+    // get data from searching query
+    const { contacts } = useLoaderData() || {};   
 
     return (
         <>
-        <Container  component="main">
-            <div>
-                {loading && <div>Loading</div>}
-                <DataGrid
-                    rows={data}
-                    columns={columns}                
-                    initialState={{
-                    ...data.initialState,
-                    pagination: { paginationModel: { pageSize: 25 } },
-                }}
-                pageSizeOptions={[25, 50, 75, 100]}
-                />                
+        <Container component="main">
+            <div>         
+
+                { contacts && contacts.data.length ? (
+                    <ShowDataGrid data={contacts.data} columns={columns} />
+                    ) : (            
+                        <ShowDataGrid data={data} columns={columns} />
+                    )
+                }
             </div>
         </Container>
-        </>            
+        </>        
     );
 }
+
+

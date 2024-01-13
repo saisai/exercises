@@ -1,9 +1,9 @@
 import * as React from 'react';
 import Container from '@mui/material/Container';
-import { DataGrid } from '@mui/x-data-grid';
 
 import axios from 'axios';
-import { columns, URL } from './utils';
+import { useLoaderData } from "react-router-dom";
+import { columns, URL, ShowDataGrid } from './utils';
   
 export default function JobThai() {
 
@@ -25,20 +25,22 @@ export default function JobThai() {
         fetchData();
     }, []);
 
+
+    // get data from searching query
+    const { contacts } = useLoaderData() || {};   
+    
     return (
+        
         <>
         <Container component="main">
-            <div>
-                {loading && <div>Loading</div>}
-                <DataGrid
-                rows={data}
-                columns={columns}                
-                initialState={{
-                ...data.initialState,
-                pagination: { paginationModel: { pageSize: 25 } },
-                }}
-                pageSizeOptions={[25, 50, 75, 100]}
-                />      
+            <div> 
+                        
+                { contacts && contacts.data.length ? (
+                    <ShowDataGrid data={contacts.data} columns={columns} />
+                    ) : (            
+                        <ShowDataGrid data={data} columns={columns} />
+                    )
+                }
             </div>
         </Container>
         </>    
