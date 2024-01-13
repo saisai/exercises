@@ -1,0 +1,12 @@
+https://www.codejava.net/frameworks/spring-boot/spring-data-jpa-filter-search-examples
+
+https://docs.spring.io/spring-boot/docs/current/reference/html/howto.html
+https://github.com/RameshMF/spring-boot-tutorial/blob/master/springboot-jpa-one-to-one-example/src/main/java/net/guides/springboot/jpa/repository/InstructorRepository.java
+https://github.com/RameshMF/spring-boot-tutorial-course
+https://github.com/devopshydclub/vprofile-project/blob/vp-rem/src/main/java/com/visualpathit/account/controller/UserController.java
+
+
+https://medium.com/@AlexanderObregon/optimizing-queries-with-query-annotation-in-spring-data-jpa-fe213c8a60a
+https://www.appsdeveloperblog.com/how-to-use-like-expression-in-jpa-sql-query/
+https://stackoverflow.com/questions/25362540/like-query-in-spring-jparepository
+https://docs.spring.io/spring-data/jpa/reference/

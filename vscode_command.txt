@@ -1,0 +1,9 @@
+https://stackoverflow.com/questions/46539714/select-all-occurrences-of-selected-word-in-vscode
+
+Select All Occurrences of Find Match editor.action.selectHighlights.
+
+Ctrl+Shift+L
+
+Cmd+Shift+L or Cmd+Ctrl+G on Mac
+
+https://www.reddit.com/r/vscode/comments/asck55/delete_multiple_copies_of_code_which_are_already/

@@ -1,0 +1,9 @@
+https://github.com/amaan-10/job-portal/blob/my-new-branch/client/src/pages/MyJob.js
+https://github.com/remix-run/react-router/network/dependents
+https://stackoverflow.com/questions/76753324/how-to-use-a-path-with-queryparams-in-react-router
+https://www.robinwieruch.de/react-router-search-params/
+https://www.w3schools.com/react/react_router.asp
+https://stackoverflow.com/questions/66265608/react-router-v6-get-path-pattern-for-current-route
+https://reactrouter.com/en/main/components/routes
+
+https://stackoverflow.com/questions/70644492/how-to-hide-a-component-in-all-nested-routes-with-react-router-dom-v6

@@ -37,3 +37,16 @@ https://mui.com/x/react-data-grid/column-definition/#rendering-cells
 
 https://www.freecodecamp.org/news/how-to-integrate-material-ui-data-grid-in-react-using-data-from-a-rest-api/
 https://github.com/desoga10/data-grid/blob/main/src/component/DataTable.js
+
+
+https://stackoverflow.com/questions/63095465/react-hook-is-called-in-function-onsubmit-which-is-neither-a-react-function-co
+https://blog.logrocket.com/understanding-common-frustrations-react-hooks/comment-page-1/
+https://stackoverflow.com/questions/69845347/how-do-a-request-get-with-axios-passing-params
+https://blog.logrocket.com/understanding-axios-get-requests/
+https://reactrouter.com/en/main/hooks/use-search-params
+https://cgarethc.medium.com/using-react-router-searchparams-to-manage-filter-state-for-a-list-e515e8e50166
+https://medium.com/@bobjunior542/how-to-use-usesearchparams-in-react-router-6-for-url-search-parameters-c35b5d1ac01c
+https://dev.to/mar1anna/create-a-search-bar-with-react-and-material-ui-4he
+
+
+https://www.digitalocean.com/community/tutorials/react-axios-react
