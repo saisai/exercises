@@ -10,3 +10,17 @@ https://medium.com/@AlexanderObregon/optimizing-queries-with-query-annotation-in
 https://www.appsdeveloperblog.com/how-to-use-like-expression-in-jpa-sql-query/
 https://stackoverflow.com/questions/25362540/like-query-in-spring-jparepository
 https://docs.spring.io/spring-data/jpa/reference/
+
+https://github.com/bezkoder/spring-boot-angular-16-crud-example/blob/master/spring-boot-server/src/main/java/com/bezkoder/spring/jpa/h2/controller/TutorialController.java
+https://github.com/bezkoder/spring-boot-angular-16-crud-example/blob/master/spring-boot-server/src/main/java/com/bezkoder/spring/jpa/h2/model/Tutorial.java
+https://github.com/bezkoder/spring-boot-react-mysql/blob/master/spring-boot-server/src/main/java/com/bezkoder/spring/datajpa/model/Tutorial.java
+
+https://stackoverflow.com/questions/51415439/how-can-i-add-raw-data-body-to-an-axios-request
+https://blog.logrocket.com/how-to-make-http-requests-like-a-pro-with-axios/
+
+https://stackoverflow.com/questions/49954812/how-can-you-make-a-created-at-column-generate-the-creation-date-time-automatical
+
+https://docs.spring.io/spring-data/jpa/reference/repositories/definition.html
+https://www.baeldung.com/hibernate-creationtimestamp-updatetimestamp
+
+https://github.com/bezkoder/spring-boot-react-mysql/tree/master/spring-boot-server/src/main/java/com/bezkoder/spring/datajpa

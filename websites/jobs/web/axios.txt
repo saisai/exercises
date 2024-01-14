@@ -1,0 +1,7 @@
+https://rapidapi.com/guides/delete-requests-axios
+https://stackoverflow.com/questions/46820682/how-do-i-reload-a-page-with-react-router
+https://reactrouter.com/en/main/hooks/use-navigate
+https://paperbun.org/react-reload-a-page-on-the-route-change/
+
+https://github.com/bezkoder/spring-boot-react-mysql/blob/master/react-client/src/services/tutorial.service.js
+https://github.com/bezkoder/spring-boot-react-mysql/tree/master/react-client/src

@@ -77,7 +77,26 @@ arrays = {
                         {datetime.date(2023,10,29): ""},
                        
                         ],                         
-               },                
+               },           
+    "Minimum-Height-Trees" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,1,14): ["https://leetcode.com/problems/minimum-height-trees/solutions/76055/share-some-thoughts/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],                         
+               },                     
        
                  
 }
@@ -89,3 +108,5 @@ print(arrays)
 # https://leetcode.com/lirensun/
 # https://leetcode.com/hi-malik/
 # https://leetcode.com/pavel-shlyk/
+# https://leetcode.com/dietpepsi/
+

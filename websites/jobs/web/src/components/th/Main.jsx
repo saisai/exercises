@@ -8,18 +8,19 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import GlobalStyles from '@mui/material/GlobalStyles';
-import Container from '@mui/material/Container';
+
 
 import axios from 'axios';
 import { Link as RLink, Outlet  } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
 
 
-import { footers, 
-    URL as MyURL,
+import { URL as MyURL,
  } from './utils';
 
  import Footer from './Footer';
 import Search from './Search';
+import ThJobsDb from './ThJobsDb';
 
 
 export async function loader({ request }) {
@@ -33,7 +34,11 @@ export async function loader({ request }) {
     } else if(request.url.indexOf("jobsdb") > -1) {
         let uu = `${MyURL}jobsdbsearch/?keyword=${q}`;
         contacts = await axios.get(uu);        
-    }        
+    } else if(request.url.indexOf("?q") > -1) {
+        let uu = `${MyURL}jobsdbsearch/?keyword=${q}`;
+        contacts = await axios.get(uu);       
+        console.log(JSON.stringify(contacts)) ;
+    }       
 
     return { contacts };
 }
@@ -42,6 +47,11 @@ export async function loader({ request }) {
 const defaultTheme = createTheme();
 
 export default function Main() {
+
+    // get data from searching query
+    const { contacts } = useLoaderData() || {};   
+    console.log("asdf");
+    console.log(JSON.stringify(contacts));
     
     return (
         <ThemeProvider theme={defaultTheme}>
@@ -58,18 +68,27 @@ export default function Main() {
                         Company name
                     </Typography>                    
                     <nav>
+                        <Link
+                            variant='button'
+                            color="text.primary"
+                            href="#"
+                            sx={{ my: 1, mx: 1.5 }}
+                            component={RLink}
+                            to="/apply"
+                        >
+                            Apply
+                        </Link>  
                     
-                            <Link
-                                variant='button'
-                                color="text.primary"
-                                href="#"
-                                sx={{ my: 1, mx: 1.5 }}
-                                component={RLink}
-                                to="/jobthai"
-                            >
-                                JobThai
-                            </Link>
-                
+                        <Link
+                            variant='button'
+                            color="text.primary"
+                            href="#"
+                            sx={{ my: 1, mx: 1.5 }}
+                            component={RLink}
+                            to="/jobthai"
+                        >
+                            JobThai
+                        </Link>                
                         <Link
                             variant='button'
                             color="text.primary"
@@ -92,7 +111,13 @@ export default function Main() {
             
             {/* Hero unit */}
             <div>
-                <Outlet />
+                {contacts && contacts.data ? (
+                    <ThJobsDb contacts={ contacts } />
+                ) :
+                 (
+                    <Outlet />
+                 )}              
+                
             </div>
             {/* End hero unit */}
 

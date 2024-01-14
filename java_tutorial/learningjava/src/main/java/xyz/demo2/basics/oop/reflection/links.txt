@@ -8,4 +8,4 @@ https://www.demo2s.com/g/java/how-to-use-reflection-to-get-information-about-cla
 https://www.demo2s.com/g/java/how-to-use-reflection-to-get-information-about-constructors-at-runtime-in-java.html
 
 continued on
-10.reflection on fields
+20.reflection to create objects
