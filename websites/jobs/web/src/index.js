@@ -15,12 +15,14 @@ import JobThai from './components/th/JobThai';
 import ThJobsDb from './components/th/ThJobsDb';
 
 import ErrorPage from './components/th/error-page';
+import Apply from './components/th/apply';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route
       path="/"
       element={<Main />}
+      loader={contactLoader}
       errorElement={<ErrorPage />}
     >
       <Route path="/*" element={<ErrorPage />} />
@@ -33,6 +35,11 @@ const router = createBrowserRouter(
       <Route
           path="jobthai"
           element={<JobThai />}       
+          loader={contactLoader}   
+        />
+      <Route
+          path="apply"
+          element={<Apply />}       
           loader={contactLoader}   
         />
     </Route>   

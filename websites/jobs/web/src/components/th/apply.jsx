@@ -3,9 +3,9 @@ import Container from '@mui/material/Container';
 
 import axios from 'axios';
 import { useLoaderData } from "react-router-dom";
-import { URL, ShowDataGrid } from './utils';
+import { URL, ShowDataGrid, ShowApply } from './utils';
   
-export default function JobThai() {
+export default function Apply() {
 
     const [loading, setLoading] = React.useState(true);
     const [data, setData] = React.useState([])
@@ -14,7 +14,7 @@ export default function JobThai() {
         const fetchData = async () =>{
         setLoading(true);
         try {
-            const {data: response} = await axios.get(`${URL}jobthai`);
+            const {data: response} = await axios.get(`${URL}apply`);
             setData(response);
         } catch (error) {
             console.error(error.message);
@@ -35,10 +35,10 @@ export default function JobThai() {
         <Container component="main">
             <div> 
                         
-                { contacts && contacts.data.length ? (
-                    <ShowDataGrid data={contacts.data} />
+                { contacts && contacts.data ? (
+                    <ShowApply data={contacts.data} />
                     ) : (            
-                        <ShowDataGrid data={data}  />
+                        <ShowApply data={data}  />
                     )
                 }
             </div>

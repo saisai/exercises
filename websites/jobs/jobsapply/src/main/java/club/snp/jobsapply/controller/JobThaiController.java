@@ -5,7 +5,6 @@ import club.snp.jobsapply.repository.JobThaiRepository;
 import club.snp.jobsapply.service.JobThaiService;
 import io.lettuce.core.dynamic.annotation.Param;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

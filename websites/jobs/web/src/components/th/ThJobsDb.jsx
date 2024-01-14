@@ -5,10 +5,10 @@ import Container from '@mui/material/Container';
 import axios from 'axios';
 import { useLoaderData } from "react-router-dom";
 
-import { columns, URL, ShowDataGrid } from './utils';
+import { URL, ShowDataGrid } from './utils';
 
 
-export default function ThJobsDb() {
+export default function ThJobsDb({ contacts }) {
     const [loading, setLoading] = React.useState(true);
     const [data, setData] = React.useState([])
 
@@ -28,23 +28,51 @@ export default function ThJobsDb() {
         
     }, []);
 
-    // get data from searching query
-    const { contacts } = useLoaderData() || {};   
+    
+
+    // get data from searching query 
+    const { contactssearch } = useLoaderData() || {};   
+    console.log("THJOB");
+    console.log(JSON.stringify(contacts));    
 
     return (
         <>
-        <Container component="main">
-            <div>         
+        { contacts && contacts.data.length ? (
+            <Container component="main">
+                <ShowDataGrid data={contacts.data}  />
+            </Container>
+        ) : 
+            (
 
-                { contacts && contacts.data.length ? (
-                    <ShowDataGrid data={contacts.data} columns={columns} />
-                    ) : (            
-                        <ShowDataGrid data={data} columns={columns} />
-                    )
-                }
-            </div>
-        </Container>
-        </>        
+                <Container component="main">
+                    <div>         
+
+                        { contactssearch && contactssearch.data.length ? (
+                            <ShowDataGrid data={contactssearch.data} />
+                            ) : (            
+                                <ShowDataGrid data={data} />
+                            )
+                        }
+                    </div>
+                </Container>
+
+            )
+        }
+        </>
+
+        // <>
+        // <Container component="main">
+        //     <div>         
+
+        //         { contacts && contacts.data.length ? (
+        //             <ShowDataGrid data={contacts.data} columns={columns} />
+        //             ) : (            
+        //                 <ShowDataGrid data={data} columns={columns} />
+        //             )
+        //         }
+        //     </div>
+        // </Container>
+        // </>        
     );
 }
 
