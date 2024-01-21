@@ -7,5 +7,3 @@ https://www.demo2s.com/g/java/how-to-list-the-names-of-loaded-modules-by-java-cl
 https://www.demo2s.com/g/java/how-to-use-reflection-to-get-information-about-classes-at-runtime-in-java.html
 https://www.demo2s.com/g/java/how-to-use-reflection-to-get-information-about-constructors-at-runtime-in-java.html
 
-continued on
-20.reflection to create objects

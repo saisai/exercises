@@ -24,3 +24,5 @@ https://docs.spring.io/spring-data/jpa/reference/repositories/definition.html
 https://www.baeldung.com/hibernate-creationtimestamp-updatetimestamp
 
 https://github.com/bezkoder/spring-boot-react-mysql/tree/master/spring-boot-server/src/main/java/com/bezkoder/spring/datajpa
+
+https://bushansirgur.in/spring-data-jpa-finder-query-methods-by-multiple-field-names-with-examples/

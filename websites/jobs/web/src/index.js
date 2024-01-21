@@ -16,6 +16,8 @@ import ThJobsDb from './components/th/ThJobsDb';
 
 import ErrorPage from './components/th/error-page';
 import Apply from './components/th/apply';
+import { ShowModal } from './components/th/utils';
+import EditApply from './components/th/edit-apply';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -40,8 +42,13 @@ const router = createBrowserRouter(
       <Route
           path="apply"
           element={<Apply />}       
-          loader={contactLoader}   
-        />
+          loader={contactLoader}             
+        >
+          <Route 
+            path="img/:id"
+            element={<EditApply />}
+          />
+        </Route> 
     </Route>   
   )
 );

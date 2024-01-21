@@ -1,10 +1,7 @@
 package club.snp.jobsapply.service;
 
-import club.snp.jobsapply.entity.JobThai;
 import club.snp.jobsapply.entity.ThJobsDb;
-import club.snp.jobsapply.repository.JobThaiRepository;
 import club.snp.jobsapply.repository.JobsDbRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

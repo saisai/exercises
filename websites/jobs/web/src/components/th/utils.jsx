@@ -1,10 +1,25 @@
 import * as React from "react";
 import { DataGrid } from '@mui/x-data-grid';
 import { Button, Stack } from "@mui/material";
+import Modal from '@mui/joy/Modal';
+import ModalClose from '@mui/joy/ModalClose';
+import ModalDialog from '@mui/joy/ModalDialog';
+import DialogTitle from '@mui/joy/DialogTitle';
+import DialogContent from '@mui/joy/DialogContent';
 
 import axios from "axios";
-import { useLocation, useNavigate, useParams } from "react-router-dom";
+import { useLocation, 
+  useNavigate, useParams, Link,
+  redirect,
+  NavLink,
+ } from "react-router-dom";
+
+import { Dialog } from "@reach/dialog";
+import "@reach/dialog/styles.css";
+
 import ApplyService from "../../services/apply.service";
+
+
 
 export function getUrl(params) {
     return (
@@ -12,7 +27,7 @@ export function getUrl(params) {
     );    
   }
 
-export const URL = "http://127.0.0.1:8888/";
+// export const URL = "http://127.0.0.1:8888/";
 
 export const footers = [
     {
@@ -115,6 +130,7 @@ export function ShowApply({data}) {
   const navigate = useNavigate();
 
   const [clickedRow, setClickedRow] = React.useState();
+  const [layout, setLayout] = React.useState(undefined);
   const onButtonClick = (e, row) => {
     e.stopPropagation();
     setClickedRow(row);
@@ -156,8 +172,16 @@ export function ShowApply({data}) {
   
 
   const onEditClick = (e, row) => {
-    e.stopPropagation();
+
+    let url_edit = `{img/row.id}`;
+    redirect(url_edit);
+     //e.stopPropagation();
+    //setLayout('center');
     alert(JSON.stringify(row));
+    // key={params.row.id}
+    // component={Link}
+    // to={`img/${params.row.id}`}
+    
   };
 
   const columns = [
@@ -186,11 +210,11 @@ export function ShowApply({data}) {
           >
             Apply
           </Button>
-          <Button
+          <Button 
             onClick={(e) => onEditClick(e, params.row)}
             variant="contained"
-            color="warning"
-          >
+            color="warning"           
+            >
             Edit
           </Button>
           
@@ -222,5 +246,60 @@ export function ShowApply({data}) {
             pageSizeOptions={[25, 50, 75, 100]}
             />     
       </>
+  );
+}
+// open={!!layout} onClose={() => setLayout(undefined)}
+//{layout}
+
+export function ShowModal() {
+  return (
+    <>
+    <Dialog
+      aria-labelledby="label"
+     
+    >
+      <div
+        style={{
+          display: "grid",
+          justifyContent: "center",
+          padding: "8px 8px",
+        }}
+      >
+        <h1 id="label" style={{ margin: 0 }}>
+          "title"
+        </h1>
+        <img
+          style={{
+            margin: "16px 0",
+            borderRadius: "8px",
+            width: "100%",
+            height: "auto",
+          }}
+          width={400}
+          height={400}
+          src=""
+          alt=""
+        />
+        <button
+          style={{ display: "block" }}
+          
+        >
+          Close
+        </button>
+      </div>
+    </Dialog>
+      {/* <Modal open={true} >
+          <ModalDialog >
+            <ModalClose />
+            <DialogTitle>Modal Dialog</DialogTitle>
+            <DialogContent>
+              <div>
+                This is a <code></code> modal dialog. Press <code>esc</code> to
+                close it.
+              </div>
+            </DialogContent>
+          </ModalDialog>
+        </Modal> */}
+    </>
   );
 }

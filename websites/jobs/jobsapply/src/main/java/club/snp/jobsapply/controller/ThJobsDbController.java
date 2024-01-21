@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-
+@CrossOrigin(origins = "http://localhost:5173")
 @RestController
 public class ThJobsDbController {
 
@@ -21,14 +21,12 @@ public class ThJobsDbController {
     }
 
     @GetMapping(value="/jobsdb")
-    @CrossOrigin(origins = "http://localhost:3000")
     public List getJobsDb() {
         List<ThJobsDb> lstThJobsDb = jobsDBService.getAll();
         return lstThJobsDb;
     }
 
     @GetMapping(value="/jobsdbsearch/")
-    @CrossOrigin(origins = "http://localhost:3000")
     public List searchJobsDB(@Param("keyword") String keyword){
         return jobsDBService.listAll(keyword);
     }

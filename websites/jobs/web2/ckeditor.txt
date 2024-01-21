@@ -1,0 +1,7 @@
+https://codesandbox.io/examples/package/@ckeditor/ckeditor5-react
+https://codesandbox.io/p/sandbox/grammarly-example-editor-sdk-react-ckeditor-gq1lo6?file=%2Fsrc%2FEditors.js%3A5%2C1-5%2C22
+https://github.com/ckeditor/ckeditor5-react/network/dependents
+https://github.com/mhhabib/Personal-Blog/blob/master/frontend/src/pages/Home.js
+https://github.com/MarcPartensky/coursera-clone/tree/marc/Front-end/src/Pages
+https://github.com/lsaremi/maktab99_project_elham_saremi/tree/master/src/components/Widget
+https://github.com/ckeditor/ckeditor5-react/blob/master/demo-react-18/src/EditorDemo.tsx
