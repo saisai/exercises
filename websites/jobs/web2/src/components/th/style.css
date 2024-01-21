@@ -1,0 +1,15 @@
+input,
+textarea,
+[contenteditable] {
+  font: inherit;
+  line-height: 1.5;
+  width: 100%;
+  padding: 8px 12px;
+  overflow: auto;
+}
+
+[contenteditable] {
+    height: 20rem;
+    border: 1px solid;
+    resize: both;
+  }

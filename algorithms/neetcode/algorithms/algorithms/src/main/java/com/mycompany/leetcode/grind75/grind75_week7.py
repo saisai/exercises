@@ -96,7 +96,45 @@ arrays = {
                         {datetime.date(2023,10,29): ""},
                        
                         ],                         
-               },                     
+               },       
+    "Task-Scheduler" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,1,15): ["https://leetcode.com/problems/task-scheduler/solutions/104500/java-o-n-time-o-1-space-1-pass-no-sorting-solution-with-detailed-explanation/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],                         
+               },     
+    "Lru-Cache" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,1,16): ["https://leetcode.com/problems/lru-cache/solutions/45939/laziest-implementation-java-s-linkedhashmap-takes-care-of-everything/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],                         
+               },                  
        
                  
 }
@@ -109,4 +147,6 @@ print(arrays)
 # https://leetcode.com/hi-malik/
 # https://leetcode.com/pavel-shlyk/
 # https://leetcode.com/dietpepsi/
+# https://leetcode.com/g27as/
+# https://leetcode.com/sky-xu/
 

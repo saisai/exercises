@@ -41,3 +41,9 @@ https://docs.spring.io/spring-boot/docs/1.3.3.RELEASE/reference/html/howto-prope
 https://www.baeldung.com/sql-logging-spring-boot
 
 
+https://stackoverflow.com/questions/73464131/jpa-how-to-findby-two-columns-while-both-of-them-have-the-same-name
+https://stackoverflow.com/questions/70397871/jpa-returning-empty-set-when-should-be-empty-optional
+https://stackoverflow.com/questions/18385361/return-json-for-responseentitystring
+https://medium.com/codestorm/custom-json-response-with-responseentity-in-spring-boot-b09e87ab1f0a
+https://gist.github.com/asepscareer/eb988eb977da60a07a9771f3b4645044#file-usercontroller-java
+https://github.com/asepscareer/demo-vps-rumahweb/blob/master/src/main/java/com/example/demovpsrumahweb/tasks/Scheduler.java

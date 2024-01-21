@@ -7,3 +7,7 @@ https://stackoverflow.com/questions/66265608/react-router-v6-get-path-pattern-fo
 https://reactrouter.com/en/main/components/routes
 
 https://stackoverflow.com/questions/70644492/how-to-hide-a-component-in-all-nested-routes-with-react-router-dom-v6
+
+
+https://mui.com/material-ui/getting-started/templates/
+https://github.com/mui/material-ui/tree/v5.15.4/docs/data/material/getting-started/templates/sign-in-side

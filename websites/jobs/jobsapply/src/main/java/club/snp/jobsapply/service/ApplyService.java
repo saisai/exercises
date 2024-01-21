@@ -5,6 +5,7 @@ import club.snp.jobsapply.repository.ApplyRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class ApplyService {
@@ -23,6 +24,16 @@ public class ApplyService {
     }
     public void deleteById(long id) {
         applyRepository.deleteById(id);
+    }
+
+    public Optional<Apply> findById(long id) {
+        Optional<Apply> applyData = applyRepository.findById(id);
+        return applyData;
+    }
+
+    public Optional<Apply> findByTitleAndLink(String title, String link) {
+        Optional<Apply> applyData = applyRepository.findByTitleAndLink(title, link);
+        return applyData;
     }
 
 
