@@ -6,6 +6,7 @@ import axios from 'axios';
 import { useLoaderData } from "react-router-dom";
 
 import { URL, ShowDataGrid } from './utils';
+import Search from './Search';
 
 
 export default function ThJobsDb({ contacts }) {
@@ -37,6 +38,7 @@ export default function ThJobsDb({ contacts }) {
 
     return (
         <>
+        <Search />
         { contacts && contacts.data.length ? (
             <Container component="main">
                 <ShowDataGrid data={contacts.data}  />

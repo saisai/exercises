@@ -1,0 +1,35 @@
+References
+https://github.com/asepscareer/spring-boot-jwt/tree/main/src/main/java/code/storm
+https://github.com/bezkoder/spring-boot-login-example/blob/master/src/main/java/com/bezkoder/spring/login/security/jwt/JwtUtils.java
+
+
+
+https://github.com/asepscareer/spring-boot-jwt/blob/main/src/main/java/code/storm/models/User.java
+
+
+https://github.com/bezkoder?page=2&tab=repositories
+
+https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt/0.12.3
+https://jwt-asep-5fcb7418385e.herokuapp.com/swagger-ui/index.html
+https://github.com/asepscareer/spring-boot-jwt/blob/main/pom.xml
+https://github.com/jwtk/jjwt
+https://stackoverflow.com/questions/54347979/json-web-token-issuer-validation-not-working
+
+https://docs.spring.io/spring-security/reference/servlet/authorization/authorize-http-requests.html
+
+jwt error
+io.jsonwebtoken.security.WeakKeyException: The signing key's size is 384 bits which is not secure enough for the HS512 algorithm.
+https://stackoverflow.com/questions/75272106/the-signing-keys-size-is-48-bits-which-is-not-secure-enough-for-the-hs256-algor
+https://github.com/jwtk/jjwt/issues/694
+https://datatracker.ietf.org/doc/html/rfc7518#section-3.2
+
+
+path [] threw exception [Request processing failed: io.jsonwebtoken.security.WeakKeyException:
+The signing key's size is 384 bits which is not secure enough for the HS512 algorithm.  The JWT JWA Specification (RFC 7518,
+ Section 3.2) states that keys used with HS512 MUST have a size >= 512 bits (the key size must be greater than or
+ equal to the hash output size).  Consider using the io.jsonwebtoken.security.Keys class's 'secretKeyFor(SignatureAlgorithm.HS512)'
+  method to create a key guaranteed to be secure enough for HS512.
+See https://tools.ietf.org/html/rfc7518#section-3.2 for more information.] with root cause
+
+import secrects
+secrects.token_hex(64)

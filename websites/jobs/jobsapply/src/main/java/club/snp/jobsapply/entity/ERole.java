@@ -1,0 +1,7 @@
+package club.snp.jobsapply.entity;
+
+public enum  ERole {
+    ROLE_USER,
+    ROLE_MODERATOR,
+    ROLE_ADMIN
+}

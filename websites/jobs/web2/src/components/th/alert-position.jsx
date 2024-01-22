@@ -6,7 +6,7 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 
-export default function AlertDialog({open, handleClose, data}) {    
+export default function AlertDialogPosition({open, handleClose, data}) {    
   return (
     <React.Fragment>
       <Dialog
@@ -19,7 +19,7 @@ export default function AlertDialog({open, handleClose, data}) {
         </DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
-            The position, <b>{data.title}</b>, you selected already exits in 
+            The position, <b>{data.title}</b>, you have added already exits in 
             the system.   
           </DialogContentText>
         </DialogContent>

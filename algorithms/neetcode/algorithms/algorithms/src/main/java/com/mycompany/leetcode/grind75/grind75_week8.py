@@ -77,7 +77,26 @@ arrays = {
                         {datetime.date(2023,10,29): ""},
                        
                         ],                         
-               },                   
+               },     
+    "Trapping-Rain-Water" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,1,22): ["https://leetcode.com/problems/find-median-from-data-stream/solutions/74047/java-python-two-heap-solution-o-log-n-add-o-1-find/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],                         
+               },                
                   
 }
 
@@ -89,5 +108,6 @@ print(arrays)
 # https://leetcode.com/gavinlinasd/
 # https://leetcode.com/annieqt/
 # https://leetcode.com/AndresValdes/
+# https://leetcode.com/dietpepsi/
 
 # https://leetcode.com/discuss/interview-experience/326363/Facebook-or-E4-Android-or-California-Offer

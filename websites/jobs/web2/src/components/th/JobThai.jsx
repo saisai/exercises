@@ -4,6 +4,7 @@ import Container from '@mui/material/Container';
 import axios from 'axios';
 import { useLoaderData } from "react-router-dom";
 import { URL, ShowDataGrid } from './utils';
+import Search from './Search';
   
 export default function JobThai() {
 
@@ -32,6 +33,7 @@ export default function JobThai() {
     return (
         
         <>
+        <Search />
         <Container component="main">
             <div> 
                         

@@ -21,6 +21,7 @@ import Apply from './components/th/apply';
 import EditApply from './components/th/edit-apply';
 import SignInSide from './components/th/SignInSide';
 import SignUp from './components/th/SignUp';
+import Position from './components/th/position';
 
 
 const router = createBrowserRouter(
@@ -44,6 +45,12 @@ const router = createBrowserRouter(
             element={<JobThai />}       
             loader={contactLoader}   
           />
+        <Route
+            path="position"
+            element={<Position />}       
+            loader={contactLoader}   
+          />
+          
         <Route
             path="apply"
             element={<Apply />}       

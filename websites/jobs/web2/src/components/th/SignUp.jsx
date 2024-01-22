@@ -13,6 +13,8 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
+import AuthService from "../../services/auth.service";
+
 function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
@@ -31,13 +33,24 @@ function Copyright(props) {
 const defaultTheme = createTheme();
 
 export default function SignUp() {
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     console.log({
+      username: data.get('username'),
       email: data.get('email'),
       password: data.get('password'),
     });
+
+    AuthService.create(data )
+    .then(response => {
+      console.log(response.data);      
+    })
+    .catch(e => {
+      console.log(e);
+    });  
+    
   };
 
   return (
@@ -79,6 +92,16 @@ export default function SignUp() {
                   label="Last Name"
                   name="lastName"
                   autoComplete="family-name"
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <TextField
+                  required
+                  fullWidth
+                  id="username"
+                  label="User name"
+                  name="username"
+                  autoComplete="username"
                 />
               </Grid>
               <Grid item xs={12}>
