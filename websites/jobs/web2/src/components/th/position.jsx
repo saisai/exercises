@@ -24,8 +24,11 @@ import ApplyService from "../../services/apply.service";
 
 import "./style.css";
 import Search from './Search';
+import positionService from '../../services/position.service';
+import AlertDialog from './alert';
+import AlertDialogPosition from './alert-position';
   
-export default function Apply() {
+export default function Position() {
     const [loading, setLoading] = React.useState(true);
     const [data, setData] = React.useState([])
 
@@ -44,10 +47,28 @@ export default function Apply() {
         fetchData();
     }, []);
 
+
+    const [open, setOpen] = React.useState(false);
+    
+  
+    const handleOpen = () => {
+      setOpen(true);
+    };
+  
+    const handleClose = () => {
+      setOpen(false);
+    };
+
     // get data from searching query
     const { contacts } = useLoaderData() || {};       
     return (        
         <>
+        <Button variant="contained" onClick={handleOpen}>Add</Button>
+        <BasicModal
+          open={open}
+          onOpen={handleOpen}
+          onClose={handleClose}         
+        />
         <Search />
         <Container component="main">
             <div>                         
@@ -76,9 +97,15 @@ const style = {
     p: 4
 };
   
-function BasicModal({ onOpen, onClose, open, row }) {
+function BasicModal({ onOpen, onClose, open }) {
 
     const [desc, setDesc] = React.useState();   
+    const [alert, setAlert] = React.useState(false);
+    const [dataAlert, setDataAlert] = React.useState();
+
+    const handleClose = () => {
+      setAlert(false);
+    };
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -89,10 +116,16 @@ function BasicModal({ onOpen, onClose, open, row }) {
         });
 
         data.append('description', desc );
-        ApplyService.update(row.id, data )
+        positionService.create(data )
         .then(response => {
           console.log(response.data);
-          window.location.reload();
+          if(response.data.message) {
+            setAlert(true);
+            setDataAlert({title: data.get('title')});
+          }
+          else {
+            window.location.reload();
+          }          
 
         })
         .catch(e => {
@@ -109,7 +142,7 @@ function BasicModal({ onOpen, onClose, open, row }) {
         >        
           <Box sx={style}  noValidate>   
             <Typography component="h5" variant="h6">
-              { row.title }
+              {"Add Position" }
             </Typography>
             <Box  sx={{ mt: 1 }}>
             <Form method="post" onSubmit={handleSubmit}>
@@ -117,17 +150,15 @@ function BasicModal({ onOpen, onClose, open, row }) {
                 margin="normal"
                 required
                 fullWidth
-                id="email"
-                label="Email Address"
-                name="email"
-                autoComplete="email"
-                autoFocus
-                value={row.email}
+                id="title"
+                label="Title"
+                name="title"
+                autoComplete="title"
+                autoFocus                
               />        
               <CKEditor
                     name="desc"
-                    editor={ ClassicEditor }                    
-                    data={row.description}
+                    editor={ ClassicEditor } 
                     onReady={ editor => {
                         // You can store the "editor" and use when it is needed.
                         console.log( 'Editor is ready to use!', editor );
@@ -174,6 +205,7 @@ function BasicModal({ onOpen, onClose, open, row }) {
           </Box>
           
         </Modal>
+        {alert ? <AlertDialogPosition open={alert} handleClose={handleClose} data={dataAlert}></AlertDialogPosition> : <></> }
       </div>
     );
   }
@@ -246,19 +278,7 @@ function BasicModal({ onOpen, onClose, open, row }) {
     
   
     const onEditClick = (e, row) => {
-      e.stopPropagation();
-      // const navigate = useNavigate();
-      // navigate("/path/to/push");
-      // let url_edit = `img/${row.id}`;
-      // alert(url_edit);
-      // return redirect(url_edit);
-       //e.stopPropagation();
-      //setLayout('center');
-      // alert(JSON.stringify(row));
-      // key={params.row.id}
-      // component={Link}
-      // to={`img/${params.row.id}`}
-      
+      e.stopPropagation();     
     };
   
     const columns = [
@@ -285,8 +305,6 @@ function BasicModal({ onOpen, onClose, open, row }) {
         description: "Actions column.",
         sortable: false,
         width: 200,      
-        // renderCell: OpenModalButton
-  
         renderCell: (params) => {        
           return (
             <>

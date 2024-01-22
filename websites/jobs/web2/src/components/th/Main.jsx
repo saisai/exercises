@@ -84,6 +84,16 @@ export default function Main() {
                             href="#"
                             sx={{ my: 1, mx: 1.5 }}
                             component={RLink}
+                            to="/position"
+                        >
+                            Position
+                        </Link>  
+                        <Link
+                            variant='button'
+                            color="text.primary"
+                            href="#"
+                            sx={{ my: 1, mx: 1.5 }}
+                            component={RLink}
                             to="/apply"
                         >
                             Apply
@@ -117,10 +127,10 @@ export default function Main() {
                 </Toolbar>
             </AppBar>
 
-            <Search />
+            
             
             {/* Hero unit */}
-            <div sx={{ zIndex: 1300}}>
+            <div>
                 {contacts && contacts.data ? (
                     <ThJobsDb contacts={ contacts } />
                 ) :
