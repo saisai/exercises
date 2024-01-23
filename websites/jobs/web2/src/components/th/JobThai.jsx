@@ -7,10 +7,8 @@ import { URL, ShowDataGrid } from './utils';
 import Search from './Search';
   
 export default function JobThai() {
-
     const [loading, setLoading] = React.useState(true);
     const [data, setData] = React.useState([])
-
     React.useEffect(() => {
         const fetchData = async () =>{
         setLoading(true);
@@ -26,17 +24,14 @@ export default function JobThai() {
         fetchData();
     }, []);
 
-
     // get data from searching query
     const { contacts } = useLoaderData() || {};   
     
-    return (
-        
+    return (        
         <>
         <Search />
         <Container component="main">
-            <div> 
-                        
+            <div>                         
                 { contacts && contacts.data.length ? (
                     <ShowDataGrid data={contacts.data} />
                     ) : (            

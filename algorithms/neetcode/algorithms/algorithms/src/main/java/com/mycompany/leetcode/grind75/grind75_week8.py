@@ -96,7 +96,27 @@ arrays = {
                         {datetime.date(2023,10,29): ""},
                        
                         ],                         
+               },       
+    "Word-Ladder" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,1,23): ["https://leetcode.com/problems/word-ladder/solutions/1764371/a-very-highly-detailed-explanation/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],                         
                },                
+                                 
                   
 }
 
@@ -109,5 +129,6 @@ print(arrays)
 # https://leetcode.com/annieqt/
 # https://leetcode.com/AndresValdes/
 # https://leetcode.com/dietpepsi/
+# https://leetcode.com/hi-malik/
 
 # https://leetcode.com/discuss/interview-experience/326363/Facebook-or-E4-Android-or-California-Offer
