@@ -9,17 +9,15 @@ import Grid from '@mui/material/Grid';
 import { DataGrid } from '@mui/x-data-grid';
 import { Button, Stack } from '@mui/material';
 
-
 import { CKEditor } from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
-
 
 import axios from 'axios';
 import { useLoaderData,
     Form,
 } from "react-router-dom";
 
-import { URL, ShowDataGrid, getUrl } from './utils';
+import { URL, getUrl, style } from './utils';
 import ApplyService from "../../services/apply.service";
 
 import "./style.css";
@@ -63,19 +61,6 @@ export default function Apply() {
     );
 }
 
-const style = {
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    width: 800,
-    height: 600,
-    bgcolor: "background.paper",
-    border: "1px solid #000",
-    boxShadow: 24,
-    p: 4
-};
-  
 function BasicModal({ onOpen, onClose, open, row }) {
 
     const [desc, setDesc] = React.useState();   
@@ -245,22 +230,6 @@ function BasicModal({ onOpen, onClose, open, row }) {
     };  
     
   
-    const onEditClick = (e, row) => {
-      e.stopPropagation();
-      // const navigate = useNavigate();
-      // navigate("/path/to/push");
-      // let url_edit = `img/${row.id}`;
-      // alert(url_edit);
-      // return redirect(url_edit);
-       //e.stopPropagation();
-      //setLayout('center');
-      // alert(JSON.stringify(row));
-      // key={params.row.id}
-      // component={Link}
-      // to={`img/${params.row.id}`}
-      
-    };
-  
     const columns = [
       { field: 'id', headerName: 'ID' },
       { field: 'title',
@@ -284,9 +253,7 @@ function BasicModal({ onOpen, onClose, open, row }) {
         headerName: "Actions",
         description: "Actions column.",
         sortable: false,
-        width: 200,      
-        // renderCell: OpenModalButton
-  
+        width: 200,   
         renderCell: (params) => {        
           return (
             <>

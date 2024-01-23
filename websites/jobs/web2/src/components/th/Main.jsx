@@ -18,8 +18,7 @@ import { useLoaderData } from "react-router-dom";
 import { URL as MyURL,
  } from './utils';
 
- import Footer from './Footer';
-import Search from './Search';
+import Footer from './Footer';
 import ThJobsDb from './ThJobsDb';
 
 
@@ -84,6 +83,16 @@ export default function Main() {
                             href="#"
                             sx={{ my: 1, mx: 1.5 }}
                             component={RLink}
+                            to="/file"
+                        >
+                            File
+                        </Link>  
+                        <Link
+                            variant='button'
+                            color="text.primary"
+                            href="#"
+                            sx={{ my: 1, mx: 1.5 }}
+                            component={RLink}
                             to="/position"
                         >
                             Position
@@ -97,8 +106,7 @@ export default function Main() {
                             to="/apply"
                         >
                             Apply
-                        </Link>  
-                    
+                        </Link>                      
                         <Link
                             variant='button'
                             color="text.primary"
@@ -119,15 +127,12 @@ export default function Main() {
                         >
                             JobsDb
                         </Link>
-
                     </nav>
                     <Button href="/login" variant="outlined" sx={{ my: 1, mx: 1.5 }}>
                         Login
                     </Button>
                 </Toolbar>
-            </AppBar>
-
-            
+            </AppBar>            
             
             {/* Hero unit */}
             <div>
@@ -136,16 +141,12 @@ export default function Main() {
                 ) :
                  (
                     <Outlet />
-                 )}              
-                
+                 )}               
             </div>
             {/* End hero unit */}
-
-
             {/* Footer */}
             <Footer />            
             {/* End footer */}
-
         </ThemeProvider>
     );
 }

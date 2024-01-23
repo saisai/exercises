@@ -6,8 +6,7 @@ import TextField from "@mui/material/TextField";
 import Box from "@mui/material/Box";
 
 export default function Search() {
-    return (
-        
+    return (        
         <Container component="main" >
             <Box
             display="flex"
@@ -16,19 +15,18 @@ export default function Search() {
             >
             <form  id="search-form" role="search">
                 <TextField
-                        id="search-bar"
-                        className="text"                
-                        label="Enter the position to be searched..."
-                        variant="outlined"
-                        placeholder="Search..."
-                        size="small"
-                        name="q"     
-                        style = {{ width: "500px"}}           
+                    id="search-bar"
+                    className="text"                
+                    label="Enter the position to be searched..."
+                    variant="outlined"
+                    placeholder="Search..."
+                    size="small"
+                    name="q"     
+                    style = {{ width: "500px"}}           
                     />
                     <IconButton type="submit" aria-label="search">
                         <SearchIcon style={{ fill: "blue" }} />
-                    </IconButton>
-                
+                    </IconButton>                
                 
                 {/* <input
                 id="q"
@@ -48,9 +46,7 @@ export default function Search() {
                 ></div> */}
             </form>
             </Box>
-            </Container>
-          
+            </Container>          
     );
-
 }         
     
