@@ -10,6 +10,7 @@ import lombok.Setter;
 @Table(name = "th_jobthai")
 public class JobThai {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private String title;
     private String link;

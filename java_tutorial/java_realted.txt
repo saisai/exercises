@@ -1,0 +1,3 @@
+Collection<? extends E> c java
+
+https://stackoverflow.com/questions/33554839/what-exactly-does-this-mean-collection-extends-e-c

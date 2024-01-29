@@ -17,8 +17,10 @@
     "@fontsource/roboto": "^5.0.8",
     "@mui/icons-material": "^5.15.2",
     "@mui/material": "^5.15.2",
+    "@mui/styles": "^5.15.6",
     "@mui/x-data-grid": "^6.18.6",
     "axios": "^1.6.3",
+    "material-ui-popup-state": "^5.0.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.1"
