@@ -20,7 +20,8 @@ import { URL as MyURL,
 
 import Footer from './Footer';
 import ThJobsDb from './ThJobsDb';
-
+import MenuPopupState from './menu-popup';
+import CascadingHoverMenus from './material-ui-popup-state';
 
 export async function loader({ request }) {
     const url = new URL(request.url);
@@ -66,67 +67,10 @@ export default function Main() {
                     <Typography variant="h6" color="inherit" noWrap sx={{ flexGrow: 1 }}>
                         Company name
                     </Typography>                    
-                    <nav>
-                        <Link
-                            variant='button'
-                            color="text.primary"
-                            href="#"
-                            sx={{ my: 1, mx: 1.5 }}
-                            component={RLink}
-                            to="/applytest"
-                        >
-                            Apply Test
-                        </Link>  
-                        <Link
-                            variant='button'
-                            color="text.primary"
-                            href="#"
-                            sx={{ my: 1, mx: 1.5 }}
-                            component={RLink}
-                            to="/file"
-                        >
-                            File
-                        </Link>  
-                        <Link
-                            variant='button'
-                            color="text.primary"
-                            href="#"
-                            sx={{ my: 1, mx: 1.5 }}
-                            component={RLink}
-                            to="/position"
-                        >
-                            Position
-                        </Link>  
-                        <Link
-                            variant='button'
-                            color="text.primary"
-                            href="#"
-                            sx={{ my: 1, mx: 1.5 }}
-                            component={RLink}
-                            to="/apply"
-                        >
-                            Apply
-                        </Link>                      
-                        <Link
-                            variant='button'
-                            color="text.primary"
-                            href="#"
-                            sx={{ my: 1, mx: 1.5 }}
-                            component={RLink}
-                            to="/jobthai"
-                        >
-                            JobThai
-                        </Link>                
-                        <Link
-                            variant='button'
-                            color="text.primary"
-                            href="#"
-                            sx={{ my: 1, mx: 1.5 }}
-                            component={RLink}
-                            to="/jobsdb"
-                        >
-                            JobsDb
-                        </Link>
+                    <nav>                        
+                        {/* <MenuPopupState />     */}
+                        
+                        <CascadingHoverMenus />                
                     </nav>
                     <Button href="/login" variant="outlined" sx={{ my: 1, mx: 1.5 }}>
                         Login

@@ -115,7 +115,84 @@ arrays = {
                         {datetime.date(2023,10,29): ""},
                        
                         ],                         
+               },    
+    "Basic-Calculator" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,1,24): ["https://leetcode.com/problems/basic-calculator/solutions/62361/iterative-java-solution-with-stack/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],                         
+               },        
+    "Maximum-Profit-In-Job-Scheduling" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,1,25): ["https://leetcode.com/problems/maximum-profit-in-job-scheduling/solutions/409009/java-c-python-dp-solution/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],                         
+               },       
+    "Merge-K-Sorted-Lists" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,1,26): ["https://leetcode.com/problems/merge-k-sorted-lists/solutions/10528/a-java-solution-based-on-priority-queue/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],                         
                },                
+                                
+    "Largest-Rectangle-In-Histogram" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,1,27): ["https://leetcode.com/problems/largest-rectangle-in-histogram/solutions/29018/ac-clean-java-solution-using-stack/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],                         
+               },                                       
                                  
                   
 }
@@ -130,5 +207,9 @@ print(arrays)
 # https://leetcode.com/AndresValdes/
 # https://leetcode.com/dietpepsi/
 # https://leetcode.com/hi-malik/
+# https://leetcode.com/southpenguin/
+# https://leetcode.com/lee215/
+# https://leetcode.com/reeclapple/
+# https://leetcode.com/jeantimex/
 
 # https://leetcode.com/discuss/interview-experience/326363/Facebook-or-E4-Android-or-California-Offer

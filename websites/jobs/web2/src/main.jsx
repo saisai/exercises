@@ -22,6 +22,7 @@ import EditApply from './components/th/edit-apply';
 import SignInSide from './components/th/SignInSide';
 import SignUp from './components/th/SignUp';
 import Position from './components/th/position';
+import File from './components/th/file/add';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -47,6 +48,11 @@ const router = createBrowserRouter(
         <Route
             path="position"
             element={<Position />}       
+            loader={contactLoader}   
+          />
+        <Route
+            path="file"
+            element={<File />}       
             loader={contactLoader}   
           />
           
