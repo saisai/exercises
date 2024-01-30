@@ -39,7 +39,26 @@ arrays = {
                         {datetime.date(2023,10,29): ""},
                        
                         ],                         
-               },                
+               },    
+    "Remove-Duplicates-From-Sorted-Array" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,1,27): ["https://leetcode.com/problems/remove-duplicates-from-sorted-array/solutions/3676877/best-method-100-c-java-python-beginner-friendly/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],                         
+               },                 
                                             
                   
 }
@@ -48,5 +67,6 @@ arrays = {
 print(arrays)
 
 # https://leetcode.com/jiuwanli/
+# https://leetcode.com/rahulvarma5297/
 # https://leetcode.com/rahulvarma5297/
 
