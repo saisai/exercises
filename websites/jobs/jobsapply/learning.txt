@@ -1,0 +1,11 @@
+https://github.com/kaustubh187/Spring-boot-jwt-auth/tree/main
+https://github.com/purshink/ReactJS-Spring-Boot-Full-Stack-App/tree/main
+https://github.com/ivangfr/https-springboot-react/tree/master
+https://github.com/alvinsenjaya/to-do-list-spring-boot-react/tree/master
+
+https://github.com/RameshMF/fullstack-react-and-springboot/blob/main/employee-management-system/department-management/ems-backend/src/main/java/net/javaguides/ems/dto/DepartmentDto.java
+
+https://github.com/keumtae-kim/spring-boot-react-blog/blob/master/blog-backend/src/main/java/me/ktkim/blog/model/dto/PostDto.java
+
+https://github.com/amigoscode/spring-boot-react-fullstack/issues
+https://github.com/phantasmicmeans/spring-boot-restful-api-example/blob/master/src/main/java/com/sw/project/repository/ProblemRepository.java

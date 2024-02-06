@@ -56,7 +56,7 @@ function NoRowsOverlay() {
 
 
 export default function ThJobsDb({ contacts }) {
-    // const [loading, setLoading] = React.useState(true);
+    const [loading, setLoading] = React.useState(true);
     const [data, setData] = React.useState([])
     const [search, setSearch] = React.useState(false);
 
@@ -64,37 +64,31 @@ export default function ThJobsDb({ contacts }) {
     const query = new URLSearchParams(location.search).get("q");
     console.log("location.search.length " + location.search.length);
     if(location.search.length > 2) {
-      
+        
         React.useEffect(() => {
             const fetchData = async () =>{
-            // setLoading(true);
-            console.log("set searach " + search);
-            setSearch(search);
+            setLoading(true);
+            setSearch(true);
             try {
                 let uu = `${MyURL}jobsdbsearch/?keyword=${query}`;
                 console.log("uur " + uu);
                 const {data: response} = await axios.get(uu);
                 setData(response);
-                console.log('search result ' + response.length);
             } catch (error) {
                 console.error(error.message);
             }
-            // setLoading(false);
+            setLoading(false);
             }    
-            // fetchData();    
-            setTimeout(() => {
-                fetchData();            
-            }, 1000);            
-        }, [!search]);
+            fetchData();                
+        }, []);
         
     } 
-    else{
+    else if(location.search.length == 0){
         console.log("no search");        
         React.useEffect(() => {
             const fetchData2 = async () =>{
-            // setLoading(true);
-            console.log("set searach 2" + search);
-            setSearch(search);               
+            setLoading(true);
+            setSearch(false);               
             try {
                 let uu = `${MyURL}jobsdb`;
                 console.log("no search uu " + uu);
@@ -105,35 +99,37 @@ export default function ThJobsDb({ contacts }) {
             } catch (error) {
                 console.error(error.message);
             }
-            // setLoading(false);
+            setLoading(false);
             }
             setTimeout(() => {
                 fetchData2();            
-            }, 1000);
-        }, [search]);      
-    }
+            }, 1);
+        }, []);
+        console.log("data " + data);
 
+    }
 
     return (
         <>
         <Search />
         <Container component="main">
-            <div>                
-            search {'' + search }
-            {
-                    
-                data.length ?  (
-                    <ShowDataGrid data={data}  />        
-                ) : (
-                    <div style={{ height: 400, width: '100%' }}>
-                        <DataGrid               
-                            columns={columns}                  
-                            rows={data}           
-                            components={{ NoRowsOverlay }}                           
-                        />
-                    </div>
-                )
-            }                    
+            <div style={{ height: '100%', width: '100%' }}>
+                {
+                    search ? ( data.length ? 
+                            (<ShowDataGrid data={data}  />)
+                            : (
+                                <div style={{ height: 400, width: '100%' }}>
+                                    <DataGrid               
+                                        columns={columns}                  
+                                        rows={data}         
+                                                               
+                                    />
+                                </div>
+                            ) 
+                         )
+                     : 
+                        (<ShowDataGrid data={data}  />)                    
+                }                
             </div>
         </Container>
         </>     

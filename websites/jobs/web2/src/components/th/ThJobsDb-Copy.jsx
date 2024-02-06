@@ -1,19 +1,23 @@
 import * as React from 'react';
 import Container from '@mui/material/Container';
 
+
 import axios from 'axios';
 import { useLoaderData } from "react-router-dom";
+
 import { URL, ShowDataGrid } from './utils';
 import Search from './Search';
-  
-export default function JobThai() {
+
+
+export default function ThJobsDb({ contacts }) {
     const [loading, setLoading] = React.useState(true);
     const [data, setData] = React.useState([])
+
     React.useEffect(() => {
         const fetchData = async () =>{
         setLoading(true);
         try {
-            const {data: response} = await axios.get(`${URL}jobthai`);
+            const {data: response} = await axios.get(`${URL}jobsdb`);
             setData(response);
         } catch (error) {
             console.error(error.message);
@@ -22,13 +26,14 @@ export default function JobThai() {
         }
 
         fetchData();
+        
     }, []);
 
-    // get data from searching query
-    const { contacts } = useLoaderData() || {};   
-    console.log("Jobthai");
-    
-    return (        
+
+    // get data from searching query 
+    const { contactssearch } = useLoaderData() || {};  
+
+    return (
         <>
         <Search />
         <Container component="main">
@@ -41,6 +46,6 @@ export default function JobThai() {
                 }
             </div>
         </Container>
-        </>    
+        </>     
     );
 }

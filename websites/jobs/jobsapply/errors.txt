@@ -1,0 +1,5 @@
+
+No serializer found for class org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor and no properties discovered to
+create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS
+
+https://stackoverflow.com/questions/52656517/no-serializer-found-for-class-org-hibernate-proxy-pojo-bytebuddy-bytebuddyinterc

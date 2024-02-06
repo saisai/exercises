@@ -1,0 +1,14 @@
+https://medium.com/geekculture/create-a-simple-search-component-in-react-js-using-react-hooks-710c1dfe8b58
+
+search 
+    https://www.telerik.com/blogs/how-to-implement-standard-search-using-react
+    https://medium.com/@vmaineng/filtering-results-in-react-using-a-search-bar-327c92c93d94
+    https://stackoverflow.com/questions/70807907/react-search-filter-through-a-data-set
+
+https://stackoverflow.com/questions/66783261/display-no-rows-message-after-applying-filter-in-mui-datagrid
+https://codesandbox.io/p/sandbox/66783261-not-able-to-display-no-rows-message-after-applying-filter-in-react-material-ui-uduhv
+https://github.com/mui/mui-x/issues/4309
+https://dev.to/collegewap/fix-rendered-fewer-hooks-than-expected-in-react-3757
+https://prathapreddy-mudium.medium.com/react-js-react-dom-development-js-16317-5000c75a64e7
+https://stackoverflow.com/questions/38337262/cannot-render-boolean-value-in-jsx
+https://stackoverflow.com/questions/38337262/cannot-render-boolean-value-in-jsx

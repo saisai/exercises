@@ -23,6 +23,10 @@ public class Apply {
     private String time;
     @Column(name = "email")
     private String email;
+
+    @Column(name="apply_times")
+    private Integer applyTimes;
+
     private String description;
 //    @Column(name="created_date", nullable = false, updatable = false)
 //    @Temporal(TemporalType.TIMESTAMP)
