@@ -195,7 +195,7 @@ const CascadingHoverMenus = () => {
         href="#"
         sx={{ my: 1, mx: 1.5 }}
         component={RLink}
-        to="/jobsdb"
+        to="/jobsdb/"
     >
         JobsDb
     </Link>

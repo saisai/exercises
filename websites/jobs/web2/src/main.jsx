@@ -1,7 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-// import App from './App.jsx'
-// import './index.css'
 import { StyledEngineProvider } from "@mui/material/styles";
 import {
   createRoutesFromElements,
@@ -30,15 +28,15 @@ const router = createBrowserRouter(
       <Route
         path="/"
         element={<Main />}
-        loader={contactLoader}
+        // loader={contactLoader}
         errorElement={<ErrorPage />}
       >
         <Route path="/*" element={<ErrorPage />} />
-        <Route index element={<ThJobsDb />} />      
+        {/* <Route index element={<ThJobsDb />} />       */}
         <Route
-            path="jobsdb"
+            path="jobsdb/"
             element={<ThJobsDb />}       
-            loader={contactLoader}    
+            // loader={contactLoader}    
           />
         <Route
             path="jobthai"
@@ -48,18 +46,18 @@ const router = createBrowserRouter(
         <Route
             path="position"
             element={<Position />}       
-            loader={contactLoader}   
+            // loader={contactLoader}   
           />
         <Route
             path="file"
             element={<File />}       
-            loader={contactLoader}   
+            // loader={contactLoader}   
           />
           
         <Route
             path="apply"
             element={<Apply />}       
-            loader={contactLoader}             
+            // loader={contactLoader}             
           >
             <Route 
               path="img/:id"

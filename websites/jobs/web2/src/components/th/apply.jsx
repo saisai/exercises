@@ -36,6 +36,7 @@ export default function Apply() {
         } catch (error) {
             console.error(error.message);
         }
+        // console.log(data);
         setLoading(false);
         }
 
@@ -234,9 +235,12 @@ function BasicModal({ onOpen, onClose, open, row }) {
       { field: 'id', headerName: 'ID' },
       { field: 'title',
          headerName: 'Title', 
-         width: 650,
+         width: 500,
          renderCell: getUrl,
       },
+      { field: 'applyTimes',
+       headerName: 'Apply Times',
+       width: 100 },
       { field: 'time',
        headerName: 'Time',
        width: 100 },    

@@ -3,12 +3,9 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
-
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import Link from '@mui/material/Link';
 import GlobalStyles from '@mui/material/GlobalStyles';
-
 
 import axios from 'axios';
 import { Link as RLink, Outlet  } from "react-router-dom";
@@ -19,13 +16,14 @@ import { URL as MyURL,
  } from './utils';
 
 import Footer from './Footer';
-import ThJobsDb from './ThJobsDb';
+// import ThJobsDb from './ThJobsDb';
 import MenuPopupState from './menu-popup';
 import CascadingHoverMenus from './material-ui-popup-state';
 
 export async function loader({ request }) {
     const url = new URL(request.url);
     const q = url.searchParams.get("q");
+
     let contacts = {};
     if(request.url.indexOf("jobthai") > -1)
     {
@@ -33,7 +31,9 @@ export async function loader({ request }) {
         contacts = await axios.get(uu);        
     } else if(request.url.indexOf("jobsdb") > -1) {
         let uu = `${MyURL}jobsdbsearch/?keyword=${q}`;
+        console.log("cc " + uu);
         contacts = await axios.get(uu);        
+        console.log("asdf" + JSON.contacts);
     } else if(request.url.indexOf("?q") > -1) {
         let uu = `${MyURL}jobsdbsearch/?keyword=${q}`;
         contacts = await axios.get(uu);       
@@ -49,9 +49,7 @@ const defaultTheme = createTheme();
 export default function Main() {
 
     // get data from searching query
-    const { contacts } = useLoaderData() || {};   
-    //console.log("asdf");
-    //console.log(JSON.stringify(contacts));
+    // const { contacts } = useLoaderData() || {};   
     
     return (
         <ThemeProvider theme={defaultTheme}>
@@ -80,12 +78,13 @@ export default function Main() {
             
             {/* Hero unit */}
             <div>
-                {contacts && contacts.data ? (
+                <Outlet />
+                {/* {contacts && contacts.data ? (
                     <ThJobsDb contacts={ contacts } />
                 ) :
                  (
                     <Outlet />
-                 )}               
+                 )}                */}
             </div>
             {/* End hero unit */}
             {/* Footer */}
