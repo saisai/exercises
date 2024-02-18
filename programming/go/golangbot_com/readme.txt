@@ -1,2 +1,0 @@
-https://golangbot.com/pointers/
-

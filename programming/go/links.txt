@@ -20,3 +20,25 @@ https://github.com/SimonWaldherr/golang-examples
 https://github.com/inancgumus/learngo
 https://golangbot.com/learn-golang-series/
 
+
+packages
+	https://github.com/go-delve/delve/blob/master/Documentation/cli/README.md
+
+
+learning
+	https://pkg.go.dev/std
+	https://zetcode.com/all/#go
+	https://www.golangprograms.com/go-language/interface.html
+	https://www.sohamkamani.com/blog/golang
+	https://github.com/SimonWaldherr/golang-examples
+	https://golangbyexample.com/golang-comprehensive-tutorial/
+	https://golangbot.com/pointers/
+	https://github.com/golang-book/bootcamp-examples/tree/master/week1
+	https://github.com/alexandregama/golang-tutorials/tree/master/go-language-for-beginners-tutorial-in-16-parts
+	https://github.com/callicoder/golang-tutorials
+	
+	
+others
+	https://blog.fefe.de/
+
+	
