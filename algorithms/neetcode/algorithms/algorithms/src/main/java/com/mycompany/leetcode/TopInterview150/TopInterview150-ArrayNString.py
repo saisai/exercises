@@ -191,6 +191,178 @@ arrays = {
                         {datetime.date(2023,10,29): ""},
                        
                         ],                         
+               },   
+    "H-index" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,2,7): ["https://leetcode.com/problems/h-index/solutions/70768/java-bucket-sort-o-n-solution-with-detail-explanation/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],                         
+               },                  
+    "Insert-Delete-Getrandom-O1" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,2,8): ["https://leetcode.com/problems/insert-delete-getrandom-o1/description",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],                         
+               },    
+    "Product-Of-Array-Except-Self" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,2,10): ["https://leetcode.com/problems/product-of-array-except-self/solutions/1342916/3-minute-read-mimicking-an-interview/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],                         
+               },       
+    "Gas-Station" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,2,13): ["https://leetcode.com/problems/gas-station/solutions/1706142/java-c-python-an-explanation-that-ever-exists-till-now/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],                         
+                "go": [
+                        {datetime.date(2023,2, 13): "https://leetcode.com/problems/gas-station/solutions/3011223/golang-o-n/"},
+                       
+                        ],  
+               },         
+    "Candy" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,2,14): ["https://leetcode.com/problems/candy/solutions/4037646/99-20-greedy-two-one-pass/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],                         
+                "go": [
+                        {datetime.date(2023,2, 13): ""},
+                       
+                        ],  
+               },              
+    "Trapping-Rain-Water" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,2,15): ["https://leetcode.com/problems/trapping-rain-water/solutions/153992/java-o-n-time-and-o-1-space-with-explanations/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],                         
+                "go": [
+                        {datetime.date(2023,2, 13): ""},
+                       
+                        ],  
+               },     
+    "Roman-To-Integer" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,2,17): ["https://leetcode.com/problems/roman-to-integer/solutions/3651672/best-method-c-java-python-beginner-friendly/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],                         
+                "go": [
+                        {datetime.date(2023,2, 13): ""},
+                       
+                        ],  
+               },        
+    "Integer-To-Roman" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,2,17): ["https://leetcode.com/problems/integer-to-roman/solutions/6274/simple-solution/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],                         
+                "go": [
+                        {datetime.date(2023,2, 13): ""},
+                       
+                        ],  
                },                
                                             
                   
@@ -209,6 +381,14 @@ print(arrays)
 # https://leetcode.com/chipbk10/
 # https://leetcode.com/hllowrld/
 # https://leetcode.com/Cheng_Zhang/
+# https://leetcode.com/yfcheng/
+# https://leetcode.com/dead_lock/
+# https://leetcode.com/hi-malik/
+# https://leetcode.com/yfw13/
+# https://leetcode.com/vanAmsen/
+# https://leetcode.com/AndresValdes/
+# https://leetcode.com/rahulvarma5297/
+# https://leetcode.com/fabrizio3/
 
 # https://www.cs.utexas.edu/~moore/best-ideas/mjrty/
 

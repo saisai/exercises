@@ -1,0 +1,26 @@
+CREATE TABLE products  (
+    product_id  MEDIUMINT NOT NULL AUTO_INCREMENT,
+    low_fats  ENUM('Y', 'N'),
+    recyclable   ENUM('Y', 'N'),
+	PRIMARY KEY (product_id)
+);
+
+CREATE TABLE products  (
+    product_id  MEDIUMINT NOT NULL ,
+    low_fats  ENUM('Y', 'N'),
+    recyclable   ENUM('Y', 'N')	
+);
+
+INSERT INTO products (product_id, low_fats, recyclable) VALUES
+	(0, 'Y', 'N'), (1, 'Y', 'Y'),
+	(2, 'N', 'Y'), (3, 'Y', 'Y'),
+	(4, 'N', 'N');
+	
+SELECT product_id FROM products WHERE low_fats = 'Y' AND recyclable = 'Y'
+
+https://leetcode.com/problems/recyclable-and-low-fat-products/description/?envType=study-plan-v2&envId=top-sql-50
+
+https://leetcode.com/studyplan/top-sql-50/
+
+https://dev.mysql.com/doc/refman/8.0/en/example-auto-increment.html
+https://dev.mysql.com/doc/refman/8.0/en/enum.html

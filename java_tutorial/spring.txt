@@ -97,4 +97,5 @@ https://github.com/spring-guides/tut-react-and-spring-data-rest
 https://github.com/jmnarloch/rxjava-spring-boot-starter
 
 
+https://github.com/brunocleite/spring-boot-exception-handling
 
