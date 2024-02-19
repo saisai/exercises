@@ -363,7 +363,30 @@ arrays = {
                         {datetime.date(2023,2, 13): ""},
                        
                         ],  
-               },                
+               },     
+    "Length-Of-Last-Word" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,2,19): ["https://leetcode.com/problems/length-of-last-word/solutions/370636/java-0ms-100-100-single-reverse-loop-with-explanation/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],                         
+                "go": [
+                        {datetime.date(2023,2, 13): ""},
+                       
+                        ],  
+               },                    
                                             
                   
 }
@@ -389,6 +412,6 @@ print(arrays)
 # https://leetcode.com/AndresValdes/
 # https://leetcode.com/rahulvarma5297/
 # https://leetcode.com/fabrizio3/
-
+# https://leetcode.com/Tochyao/
 # https://www.cs.utexas.edu/~moore/best-ideas/mjrty/
 

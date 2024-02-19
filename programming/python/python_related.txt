@@ -1,1 +1,4 @@
 https://github.com/geekcomputers/Python/blob/master/Web%20Socket.py
+
+https://github.com/akx/django-managerie
+https://zeromq.org/get-started/?language=python#
