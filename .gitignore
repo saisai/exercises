@@ -6,3 +6,4 @@ node_modules/
 .exe
 *.sqlite3
 webpack-stats.json
+.pyc

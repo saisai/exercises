@@ -1,1 +1,0 @@
-python runtests-4-1-3.py --settings=test_sqlite annotations

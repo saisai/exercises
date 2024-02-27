@@ -7,6 +7,7 @@ import {
     DataGrid,
     GridToolbarContainer,
     GridToolbarFilterButton,
+    GridToolbar 
   } from '@mui/x-data-grid';
 import axios from 'axios';
 import { Link, useLocation, useParams } from "react-router-dom";
@@ -55,6 +56,14 @@ function NoRowsOverlay() {
   ];
 
 
+  const NewToolbar = () => {
+    return (
+      <GridToolbarContainer>
+        <Button>Test</Button>,         
+      </GridToolbarContainer>     
+    );
+  };
+
 export default function JobThai({ contacts }) {
     // const [loading, setLoading] = React.useState(true);
     const [data, setData] = React.useState([])
@@ -62,7 +71,10 @@ export default function JobThai({ contacts }) {
 
     const location = useLocation();
     const query = new URLSearchParams(location.search).get("q");
-    console.log("location.search.length " + location.search.length);
+    
+
+
+
     if(location.search.length > 2) {
       
         React.useEffect(() => {
@@ -113,7 +125,7 @@ export default function JobThai({ contacts }) {
         }, [search]);      
     }
 
-
+    // components={{ NoRowsOverlay }}   
     return (
         <>
         <Search />
@@ -128,8 +140,11 @@ export default function JobThai({ contacts }) {
                     <div style={{ height: 400, width: '100%' }}>
                         <DataGrid               
                             columns={columns}                  
-                            rows={data}           
-                            components={{ NoRowsOverlay }}                           
+                            rows={data}  
+                            slots={{
+                              toolbar: NewToolbar,
+                            }}         
+                                                
                         />
                     </div>
                 )

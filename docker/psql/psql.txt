@@ -11,6 +11,8 @@ docker exec -it <container-name-or-id> bash
 docker run -e POSTGRES_USER=docker -e POSTGRES_PASSWORD=docker -e POSTGRES_DB=docker library/postgres
 
 
+docker pull postgres:12.18-bullseye
+docker run --name postgres-12 -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres:12.18-bullseye
 
 https://hub.docker.com/_/postgres
 https://stackoverflow.com/questions/37099564/docker-how-can-run-the-psql-command-in-the-postgres-container

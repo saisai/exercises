@@ -6,3 +6,9 @@ https://github.com/RefactoringGuru/design-patterns-java/tree/main/src/refactorin
 https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork
 
 https://google.github.io/styleguide/javaguide.html
+
+https://sourcemaking.com/design_patterns/object_pool
+https://medium.com/@amirm.lavasani/design-patterns-in-python-a-series-f502b7804ae5
+https://python-patterns.guide/gang-of-four/iterator/#iterating-with-the-for-loop
+https://github.com/brandon-rhodes/python-patterns
+https://refactoring.guru/design-patterns/catalog

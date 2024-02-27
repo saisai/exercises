@@ -2,3 +2,6 @@ https://github.com/uber-go/guide/tree/master
 https://github.com/quii/learn-go-with-tests
 
 https://github.com/kashifkhan0771/Golang/tree/master/stacks
+
+https://go.dev/doc/tutorial/
+https://www.datacamp.com/tutorial/a-complete-guide-to-socket-programming-in-python

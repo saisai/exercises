@@ -86,6 +86,23 @@ function CascadingMenu({ popupState, ...props }) {
   )
 }
 
+function CascadingMenu2({ popupState, ...props }) {
+  const { rootPopupState } = React.useContext(CascadingContext)
+  const context = React.useMemo(
+    () => ({
+      rootPopupState: rootPopupState || popupState,
+      parentPopupState: popupState,
+    }),
+    [rootPopupState, popupState]
+  )
+
+  return (
+    <CascadingContext.Provider value={context}>
+      <HoverMenu {...props} {...bindMenu(popupState)} />
+    </CascadingContext.Provider>
+  )
+}
+
 const CascadingHoverMenus = () => {
   const popupState = usePopupState({
     popupId: 'demoMenu',

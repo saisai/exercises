@@ -65,3 +65,13 @@ https://github.com/grantjenks/python-wordsegment/tree/master/wordsegment
 https://github.com/carlospolop?tab=repositories
 https://github.com/carlospolop/PEASS-ng
 https://github.com/PinkDraconian
+
+https://stackoverflow.com/questions/2654113/how-to-get-the-callers-method-name-in-the-called-method
+
+https://gist.github.com/glinton/f5232c82fe6bf245199d9f2c64f863e1
+https://gist.github.com/hyper0x/8f724925c344f896b63c
+https://gist.github.com/abhishekkr/3beebbc1db54b3b54914
+https://gist.github.com/legendtkl/c2483c73a3fdb01d36ed8f37d93d3b5c
+
+Python tcp port forward
+https://gist.github.com/WangYihang/e7d36b744557e4673d2157499f6c6b5e
