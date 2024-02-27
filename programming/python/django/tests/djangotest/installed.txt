@@ -1,0 +1,7 @@
+pip install django psycopg[binary] --break-system-packages
+
+
+
+https://www.psycopg.org/install/
+https://stackpython.medium.com/how-to-start-django-project-with-a-database-postgresql-aaa1d74659d8
+

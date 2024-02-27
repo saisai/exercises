@@ -1,0 +1,3 @@
+https://mesonbuild.com/Tutorial.html
+https://stackoverflow.com/questions/69424536/command-linux-xsltproc-not-found-in-a-script
+https://github.com/iputils/iputils/blob/master/clockdiff.c

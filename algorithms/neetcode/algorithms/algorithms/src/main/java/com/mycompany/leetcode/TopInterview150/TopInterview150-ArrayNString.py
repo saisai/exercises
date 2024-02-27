@@ -386,7 +386,122 @@ arrays = {
                         {datetime.date(2023,2, 13): ""},
                        
                         ],  
-               },                    
+               },             
+    "Longest-Common-Prefix" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,2,20): ["https://leetcode.com/problems/longest-common-prefix/solutions/3273176/python3-c-java-19-ms-beats-99-91/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],                         
+                "go": [
+                        {datetime.date(2023,2, 22): "https://leetcode.com/problems/longest-common-prefix/solutions/1517792/simple-go-solution/"},
+                       
+                        ],  
+               },                
+      "Reverse-Words-In-A-String" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,2,21): ["https://leetcode.com/problems/reverse-words-in-a-string/solutions/47720/clean-java-two-pointers-solution-no-trim-no-split-no-stringbuilder/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],                         
+                "go": [
+                        {datetime.date(2023,2, 13): ""},
+                       
+                        ],  
+               },          
+      "Zigzag-Conversion" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,2,22): ["https://leetcode.com/problems/zigzag-conversion/solutions/3403/easy-to-understand-java-solution/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],                         
+                "go": [
+                        {datetime.date(2023,2, 13): ""},
+                       
+                        ],  
+               },                
+      "Find-The-Index-Of-The-First-Occurrence-In-A-String" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,2,23): ["https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/solutions/12807/elegant-java-solution/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],                         
+                "go": [
+                        {datetime.date(2023,2, 13): ""},
+                       
+                        ],  
+               },   
+      "Text-Justification" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,2,24): ["https://leetcode.com/problems/text-justification/solutions/24902/java-easy-to-understand-broken-into-several-functions/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],                         
+                "go": [
+                        {datetime.date(2023,2, 13): ""},
+                       
+                        ],  
+               },  
                                             
                   
 }
@@ -414,4 +529,14 @@ print(arrays)
 # https://leetcode.com/fabrizio3/
 # https://leetcode.com/Tochyao/
 # https://www.cs.utexas.edu/~moore/best-ideas/mjrty/
+# https://leetcode.com/abdullayevakbar0101/
+# https://leetcode.com/jeantimex/
+# https://leetcode.com/dylan_yu/        
+# https://leetcode.com/cteea/
+# https://leetcode.com/jeantimex/
+# https://leetcode.com/KidOptimo/
+
+# https://github.com/DylanYu/leetcode/tree/master/src/solution
+# https://github.com/DylanYu/CAMan
+# 
 

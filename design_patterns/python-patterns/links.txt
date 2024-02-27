@@ -1,0 +1,2 @@
+
+https://github.com/faif/python-patterns/blob/master/patterns/behavioral/catalog.py

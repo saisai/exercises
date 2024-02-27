@@ -1,0 +1,20 @@
+pacman -S python python-pip python-setuptools
+pacman -S go git zip unzip
+pacman -S docker docker-compose
+
+curl -sLf https://spacevim.org/install.sh | bash
+# https://spacevim.org/quick-start-guide/#linux-and-macos
+
+
+
+useradd -m -G additional_groups -s login_shell username
+useradd -m -G wheel arch
+passwd arch 
+
+
+https://wiki.archlinux.org/title/users_and_groups
+https://linuxhint.com/add_users_arch_linux/
+
+https://unix.stackexchange.com/questions/314985/combining-tail-journalctl
+
+systemctl -u sshd.service -f 

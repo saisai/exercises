@@ -1,0 +1,4 @@
+https://unix.stackexchange.com/questions/31763/bring-down-and-delete-bridge-interface-thats-up
+Bring down and delete bridge interface that's up
+# ip link set br100 down
+# brctl delbr br100

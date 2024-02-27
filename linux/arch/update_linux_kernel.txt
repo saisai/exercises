@@ -4,6 +4,12 @@ mount -v /dev/sda2 /mnt
 mount -v /dev/sda1 /mnt/boot
 
 arch-chroot /mnt
+pacman -S python python-pip python-setuptools
+pacman -S go git zip unzip
+pacman -S docker docker-compose
+
+curl -sLf https://spacevim.org/install.sh | bash
+# https://spacevim.org/quick-start-guide/#linux-and-macos
 
 
 cd /boot
