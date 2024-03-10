@@ -11,3 +11,6 @@ find . -type d -name "folder name"
 # Find file
 find . -type f -name "file name"
 
+
+# Find file size zero and delete all 
+ find . -type f -name "*.txt" -size 0 -exec rm -rfv {} \;

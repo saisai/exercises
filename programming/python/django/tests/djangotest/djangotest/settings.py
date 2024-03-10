@@ -40,6 +40,17 @@ INSTALLED_APPS = [
     
     'admin_filters',
     'basic',
+    'expressions',
+    'custom_methods',
+    'datatypes',
+    'db_typecasts',
+    'backends',
+    'from_db_value',
+    'datetimes',
+    'delete',
+    'custom_pk',
+    'many_to_many',
+    'many_to_one',
 ]
 
 MIDDLEWARE = [
@@ -121,7 +132,7 @@ TIME_ZONE = 'Asia/Bangkok'
 
 USE_I18N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)

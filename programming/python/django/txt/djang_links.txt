@@ -77,4 +77,191 @@ https://www.layuicdn.com/jie/2020-05-13/66577.html
 https://www.obeythetestinggoat.com/book/appendix_rest_api.html
 https://stackoverflow.com/questions/38758962/how-to-append-extra-data-to-the-existing-serializer-in-django
 
+# https://stackoverflow.com/questions/40717982/django-manage-py-runserver-log-to-file-instead-of-console/40718082
+
+
+
+# https://stackoverflow.com/questions/3324009/how-to-obtain-all-values-of-a-multi-valued-key-from-djangos-request-get-querydi
+
+https://stackoverflow.com/questions/18846174/django-detect-database-backend
+
+https://docs.djangoproject.com/en/3.2/ref/exceptions/
+https://stackoverflow.com/questions/53329830/python-django-how-do-i-determine-the-class-to-specify-in-an-except-statement
+https://stackoverflow.com/questions/11243559/create-empty-queryset-by-default-in-django-form-fields
+https://stackoverflow.com/questions/30153645/oracle-00932-00000-inconsistent-datatypes-expected-s-got-s
+https://www.py4u.net/discuss/1505195
+https://www.generacodice.com/en/articolo/322250/how-to-truncate-all-user-tables
+https://stackoverflow.com/questions/1696738/how-to-truncate-all-user-tables
+https://community.oracle.com/tech/developers/discussion/2200835/truncate-all-tables-in-database
+https://stackoverflow.com/questions/18680321/creating-a-new-database-and-new-connection-in-oracle-sql-developer
+https://docs.oracle.com/database/121/SQLRF/statements_5005.htm#SQLRF01204
+https://blogs.oracle.com/sql/post/how-to-create-users-grant-them-privileges-and-remove-them-in-oracle-database
+https://stackoverflow.com/questions/22386976/create-a-user-with-all-privileges-in-oracle
+https://chartio.com/resources/tutorials/how-to-create-a-user-and-grant-permissions-in-oracle/
+https://www.webforefront.com/django/accessurlparamstemplates.html
+https://lucyeun95.medium.com/how-to-set-get-a-list-type-query-param-in-django-rest-framework-831f30476111
+
+https://github.com/grantjenks/django-modelqueue
+https://github.com/grantjenks/django-dblog/tree/main/dblog
+
+https://docs.djangoproject.com/en/3.2/topics/http/urls/
+https://github.com/drubio/beginningdjango
+https://www.webforefront.com/django/
+
+
+
+https://www.py4u.net/discuss/783203
+
+from django.db.models import Aggregate, CharField
+
+
+class GroupConcat(Aggregate):
+    function = 'GROUP_CONCAT'
+    template = '%(function)s(%(distinct)s%(expressions)s%(ordering)s%(separator)s)'
+
+    def __init__(self, expression, distinct=False, ordering=None, separator=',', **extra):
+        super(GroupConcat, self).__init__(
+            expression,
+            distinct='DISTINCT ' if distinct else '',
+            ordering=' ORDER BY %s' % ordering if ordering is not None else '',
+            separator=' SEPARATOR "%s"' % separator,
+            output_field=CharField(),
+            **extra
+        )
+		
+LogModel.objects.values('level', 'info').annotate(
+    count=Count(1), time=GroupConcat('time', ordering='time DESC', separator=' | ')
+).order_by('-time', '-count')
+
+https://www.py4u.net/discuss/783203
+http://www.treejs.cn/v3/main.php#_zTreeInfo
+https://github.com/zTree/JsTraining/tree/master/nodeJs/src/testReadFile
+http://www.treejs.cn/v3/demo.php#_104
+
+#Get all fields of Model
+
+map(lambda field:field.name, ModelName._meta.get_fields())
+
+https://stackoverflow.com/questions/3106295/django-get-list-of-model-fields
+
+
+# Delete Model 
+
+obj = ModelName.objects.all()
+
+while obj.count() > 9:
+	obj.first().delete()
+
+while obj.count() > 9:
+	obj.last().delete()
+	
+while obj.count() > 9:
+	mid = obj.count() // 2
+	obj[mid].delete()
+	
+# django get all related of models	
+[
+	f for f in ModelName._meta.get_fields()
+	if (f.one_to_many or f.one_to_one)
+	   and f.auto_created and not f.concrete
+]
+	
+# https://stackoverflow.com/questions/2233883/get-all-related-django-model-objects
+
+django test 
+
+https://mkdev.me/en/posts/how-to-cover-django-application-with-unit-tests
+https://github.com/philipkiely/django_taskmaster_tested/tree/master/taskmanager/todo
+https://realpython.com/testing-in-django-part-1-best-practices-and-examples/
+https://learndjango.com/tutorials/django-testing-tutorial
+https://www.section.io/engineering-education/django-unit-testing/
+https://replit.com/@qawuor/djangotests#
+https://mkdev.me/en/posts/how-to-cover-django-application-with-unit-tests
+
+https://www.digitalocean.com/community/tutorials/how-to-add-unit-testing-to-your-django-project
+https://django-testing-docs.readthedocs.io/en/latest/serialization.html
+https://github.com/ericholscher/django-testing-docs
+https://books.agiliq.com/projects/django-orm-cookbook/en/latest/keepdb.html
+https://github.com/lewisemm/converter
+https://medium.com/the-andela-way/test-driven-development-with-django-ccb179171dcd
+
+
+
+
+pip install psycopg2-binary 
+
+https://www.postgresql.org/docs/9.0/errcodes-appendix.html
+https://confluence.atlassian.com/jirakb/error-connecting-to-database-fatal-no-pg_hba-conf-entry-for-host-x-x-x-x-user-jiradbuser-database-jiradb-ssl-off-950801726.html
+https://stackoverflow.com/questions/10693978/psycopg2-reporting-pg-hba-conf-error
+
+https://serverfault.com/questions/704810/postgresql-error-with-pg-hba-conf
+2
+
+You obviously do not have connection profile for user "user1" against database "ttio" on the machine. The only remote access that your pg_hba.conf currently specifies is for any user to the database with the same name as the user from address 127.0.0.200.
+
+You need an entry like:
+
+host ttio user1 <ip_address> <netmask>
+The <ip_address> <netmask> combination is specific to your network configuration and refers to the IP address of the client.
+
+
+https://dba.stackexchange.com/questions/83984/connect-to-postgresql-server-fatal-no-pg-hba-conf-entry-for-host
+https://www.netiq.com/documentation/identity-manager-47/setup_windows/data/connecting-to-a-remote-postgresql-database.html
+
+https://github.com/pmamone1/belnuweb_produccion/blob/main/belnuweb/settings.py
+https://github.com/nicolasberteuris/lacarretafiambres2/tree/main/lacarreta/settings
+
+https://hakibenita.com/fast-load-data-python-postgresql
+
+
+have a look
+
+https://gitlab.com/mailman/hyperkitty/-/tree/master/hyperkitty
+
+https://lists.fedorahosted.org/archives/
+
+https://docs.mailman3.org/projects/hyperkitty/en/latest/news.html
+
+
+
+
+
+
+winpty python manage.py createsuperuser
+winpty python manage.py startapp polls
+
+
+
+winpty python manage.py makemigrations polls
+python manage.py sqlmigrate polls 0001
+python manage.py migrate
+winpty python manage.py shell
+
+
+to run test 
+
+python manage.py test polls
+
+python -c "import django; print(django.__path__)"
+
+
+
+
+https://stackoverflow.com/questions/4111244/get-a-list-of-all-installed-applications-in-django-and-their-attributes/4112290	
+
+https://stackoverflow.com/questions/4111244/get-a-list-of-all-installed-applications-in-django-and-their-attributes
+
+https://stackoverflow.com/questions/13309203/how-can-i-get-all-sequences-bound-with-a-table-in-postgresql
+https://stackoverflow.com/questions/11905868/check-if-sequence-exists-in-postgres-plpgsql
+https://www.postgresqltutorial.com/postgresql-sequences/
+https://askubuntu.com/questions/1108015/anydesk-stuck-on-the-client-computer-ubuntu-18-04#:~:text=When%20your%20anydesk%20stuck%20on,to%20anydesk%20again%20as%20usual.
+https://stackoverflow.com/questions/37057643/postgresql-starting-a-sequence-at-maxthe-column1
+https://stackoverflow.com/questions/9091781/why-are-sequences-not-updated-when-copy-is-performed-in-postgresql
+https://www.postgresql.org/docs/10/sql-altersequence.html
+https://stackoverflow.com/questions/109325/postgresql-describe-table
+https://github.com/getsentry/sentry/issues/5232
+https://stackoverflow.com/questions/11089850/integrityerror-duplicate-key-value-violates-unique-constraint-django-postgres
+https://rome.tools/
+https://dba.stackexchange.com/questions/193568/how-to-fix-all-duplicate-key-value-violates-unique-constraint
+https://dba.stackexchange.com/questions/232085/why-am-i-getting-error-duplicate-key-value-violates-unique-constraint-movies-p
 

@@ -9,26 +9,16 @@ del log.log
 call something.bat
 python manage.py runserver 0.0.0.0:9999 >> log.log 2>&1
 
-# https://stackoverflow.com/questions/40717982/django-manage-py-runserver-log-to-file-instead-of-console/40718082
+"""
+Move a file in the safest way possible::
 
 
+"""
+    >>> from django.core.files.move import file_move_safe
+    >>> file_move_safe("/tmp/old_file", "/tmp/new_file")
+	
+from django.core.management import *
 
-# https://stackoverflow.com/questions/3324009/how-to-obtain-all-values-of-a-multi-valued-key-from-djangos-request-get-querydi
-
-https://stackoverflow.com/questions/18846174/django-detect-database-backend
-
-https://docs.djangoproject.com/en/3.2/ref/exceptions/
-https://stackoverflow.com/questions/53329830/python-django-how-do-i-determine-the-class-to-specify-in-an-except-statement
-https://stackoverflow.com/questions/11243559/create-empty-queryset-by-default-in-django-form-fields
-https://stackoverflow.com/questions/30153645/oracle-00932-00000-inconsistent-datatypes-expected-s-got-s
-https://www.py4u.net/discuss/1505195
-https://www.generacodice.com/en/articolo/322250/how-to-truncate-all-user-tables
-https://stackoverflow.com/questions/1696738/how-to-truncate-all-user-tables
-https://community.oracle.com/tech/developers/discussion/2200835/truncate-all-tables-in-database
-https://stackoverflow.com/questions/18680321/creating-a-new-database-and-new-connection-in-oracle-sql-developer
-https://docs.oracle.com/database/121/SQLRF/statements_5005.htm#SQLRF01204
-https://blogs.oracle.com/sql/post/how-to-create-users-grant-them-privileges-and-remove-them-in-oracle-database
-https://stackoverflow.com/questions/22386976/create-a-user-with-all-privileges-in-oracle
-https://chartio.com/resources/tutorials/how-to-create-a-user-and-grant-permissions-in-oracle/
-https://www.webforefront.com/django/accessurlparamstemplates.html
-https://lucyeun95.medium.com/how-to-set-get-a-list-type-query-param-in-django-rest-framework-831f30476111
+call_command('shell')
+call_command('migrate')
+get_commands() # get all commands from django like migrate, shell related apps
