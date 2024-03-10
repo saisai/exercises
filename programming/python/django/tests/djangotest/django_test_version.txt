@@ -1,3 +1,6 @@
 https://github.com/django/django/tree/stable/5.0.x/tests 
 
 django-admin --version == 5.0.2
+
+https://code.djangoproject.com/ticket/2536
+

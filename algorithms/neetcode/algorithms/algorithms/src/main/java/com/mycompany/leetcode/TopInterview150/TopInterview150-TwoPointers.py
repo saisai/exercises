@@ -71,6 +71,75 @@ arrays = {
                        
                         ],                          
                }, 
+     "Substring-With-Concatenation-Of-All-Words" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,2,28): ["https://leetcode.com/problems/substring-with-concatenation-of-all-words/solutions/13658/easy-two-map-solution-c-java/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],      
+                "go": [
+                        {datetime.date(2024,2,27): ""},
+                       
+                        ],                          
+               },
+     "Container-With-Most-Water" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,2,29): ["https://leetcode.com/problems/container-with-most-water/solutions/3701708/best-method-c-java-python-beginner-friendly/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],      
+                "go": [
+                        {datetime.date(2024,2,27): ""},
+                       
+                        ],                          
+               },
+     "Three-Sum" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,3,1): ["https://leetcode.com/problems/3sum/solutions/143636/java-with-set/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],      
+                "go": [
+                        {datetime.date(2024,2,27): ""},
+                       
+                        ],                          
+               },
                       
                   
 }
@@ -84,3 +153,6 @@ print(arrays)
 # https://leetcode.com/vanAmsen/
 # https://leetcode.com/ciote/
 # https://leetcode.com/GiovanniGiorgio/
+# https://leetcode.com/jianchao-li/
+# https://leetcode.com/rahulvarma5297/
+# https://leetcode.com/ankit041288/

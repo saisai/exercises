@@ -2,3 +2,6 @@ https://github.com/mmcgrana/gobyexample
 https://www.javatpoint.com/go-tutorial
 https://golangbot.com/write-files/
 
+https://github.com/inancgumus/learngo
+
+https://google.github.io/styleguide/go/decisions.html

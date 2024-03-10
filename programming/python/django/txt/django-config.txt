@@ -1,3 +1,0 @@
-https://github.com/pmamone1/belnuweb_produccion/blob/main/belnuweb/settings.py
-https://github.com/nicolasberteuris/lacarretafiambres2/tree/main/lacarreta/settings
-
