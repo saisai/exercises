@@ -7,7 +7,7 @@ arrays = {
                         {datetime.date(2023,12,9): ""},
                     ],
                 "Java": [
-                        {datetime.date(2024,3,7): ["https://leetcode.com/problems/valid-sudoku/solutions/15450/shared-my-concise-java-code/",
+                        {datetime.date(2024,3,12): ["https://leetcode.com/problems/ransom-note/solutions/1671552/1ms-100-easy-explanation-java-solution/",
                             
                         ]},
                        
@@ -22,61 +22,15 @@ arrays = {
                         ],      
                 "go": [
                         {datetime.date(2024,2,25): ""},
-                       
-                        ],                          
-               },    
-    "Spiral-Matrix" : { 
-                "Python": [
-                        {datetime.date(2023,12,9): ""},
-                    ],
-                "Java": [
-                        {datetime.date(2024,3,8): ["https://leetcode.com/problems/spiral-matrix/solutions/20599/super-simple-and-easy-to-understand-solution/",
-                            
-                        ]},
-                       
-                        ],
-                "Javascript": [
-                        {datetime.date(2023,10,30): ""},
-                       
-                        ],                    
-                "c++": [
-                        {datetime.date(2023,10,29): ""},
-                       
-                        ],      
-                "go": [
-                        {datetime.date(2024,2,25): ""},
-                       
-                        ],                          
-               },               
-    "Rotate-Image" : { 
-                "Python": [
-                        {datetime.date(2023,12,9): ""},
-                    ],
-                "Java": [
-                        {datetime.date(2024,3,9): ["https://leetcode.com/problems/rotate-image/solutions/18879/ac-java-in-place-solution-with-explanation-easy-to-understand/",
-                            
-                        ]},
-                       
-                        ],
-                "Javascript": [
-                        {datetime.date(2023,10,30): ""},
-                       
-                        ],                    
-                "c++": [
-                        {datetime.date(2023,10,29): ""},
-                       
-                        ],      
-                "go": [
-                        {datetime.date(2024,3,9): "https://leetcode.com/problems/rotate-image/solutions/2506228/golang-easy-to-understand-faster-than-100/"},
                        
                         ],                          
                },   
-    "Set-Matrix-Zeroes" : { 
+    "Isomorphic-Strings" : { 
                 "Python": [
                         {datetime.date(2023,12,9): ""},
                     ],
                 "Java": [
-                        {datetime.date(2024,3,9): ["https://leetcode.com/problems/set-matrix-zeroes/solutions/26008/my-ac-java-o-1-solution-easy-to-read/",
+                        {datetime.date(2024,3,12): ["https://leetcode.com/problems/isomorphic-strings/solutions/3171737/well-explained-simple-java-runtime-1-ms-beats-94-7/",
                             
                         ]},
                        
@@ -90,16 +44,16 @@ arrays = {
                        
                         ],      
                 "go": [
-                        {datetime.date(2024,3,9): "https://leetcode.com/problems/rotate-image/solutions/2506228/golang-easy-to-understand-faster-than-100/"},
+                        {datetime.date(2024,2,25): ""},
                        
                         ],                          
-               },     
-    "Game-Of-Life" : { 
+               },                 
+    "Word-Pattern" : { 
                 "Python": [
                         {datetime.date(2023,12,9): ""},
                     ],
                 "Java": [
-                        {datetime.date(2024,3,11): ["https://leetcode.com/problems/game-of-life/solutions/73223/easiest-java-solution-with-explanation/",
+                        {datetime.date(2024,3,14): ["https://leetcode.com/problems/word-pattern/solutions/73402/8-lines-simple-java/",
                             
                         ]},
                        
@@ -113,19 +67,88 @@ arrays = {
                        
                         ],      
                 "go": [
-                        {datetime.date(2024,3,9): ""},
+                        {datetime.date(2024,2,25): ""},
                        
                         ],                          
-               },                    
+               },                         
+     "Valid-Anagram" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,3,14): ["https://leetcode.com/problems/valid-anagram/solutions/3687854/3-method-s-c-java-python-beginner-friendly/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],      
+                "go": [
+                        {datetime.date(2024,2,25): ""},
+                       
+                        ],                          
+               },             
+     "Group-Anagrams" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,3,14): ["https://leetcode.com/problems/group-anagrams/solutions/3687735/beats-100-c-java-python-beginner-friendly/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],      
+                "go": [
+                        {datetime.date(2024,2,25): ""},
+                       
+                        ],                          
+               }, 
+     "Two-Sum" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,3,17): ["https://leetcode.com/problems/two-sum/solutions/3619262/3-method-s-c-java-python-beginner-friendly/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],      
+                "go": [
+                        {datetime.date(2024,2,25): ""},
+                       
+                        ],                          
+               },
                   
 }
 
 
 print(arrays)
 
-# https://leetcode.com/Lorraine921/
-# https://leetcode.com/qwl5004/
-# https://leetcode.com/LuckyIdiot/
-# https://leetcode.com/pixalquarks/
-# https://leetcode.com/lz2343/
-# https://leetcode.com/yavinci/
+
+# https://leetcode.com/binayshaw7777/
+# https://leetcode.com/sourabh-jadhav/
+# https://leetcode.com/StefanPochmann/
+# https://leetcode.com/rahulvarma5297/
+# https://leetcode.com/rahulvarma5297/
