@@ -1,0 +1,10 @@
+npm create vite@latest
+
+
+https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export
+https://javascript.info/import-export
+https://vitejs.dev/guide/
+
+
+to be continued
+https://react.dev/learn/tutorial-tic-tac-toe

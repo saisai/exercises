@@ -1,5 +1,0 @@
-https://github.com/languagetool-org
-https://languagetool.org/
-
-https://github.com/wso2/product-apim/tree/master
-https://github.com/wso2/maven-tools

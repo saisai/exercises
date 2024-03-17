@@ -5,3 +5,31 @@ https://stackoverflow.com/questions/13906623/using-pickle-dump-typeerror-must-be
 
 http://rosettacode.org/wiki/Category:Programming_Tasks
 
+
+Superpermutation_minimisation
+
+http://www.njohnston.ca/2013/04/the-minimal-superpermutation-problem/
+https://www.youtube.com/watch?v=wJGE4aEWc28&ab_channel=Numberphile
+https://www.youtube.com/watch?v=OZzIvl1tbPo&ab_channel=Stand-upMaths
+https://www.youtube.com/watch?v=_tpNuulTeSQ&ab_channel=Stand-upMaths
+
+http://rosettacode.org/wiki/Ternary_logic#Python
+http://rosettacode.org/wiki/Boolean_values
+http://rosettacode.org/wiki/Logical_operations
+http://rosettacode.org/wiki/Truth_table#Python
+http://rosettacode.org/wiki/Tonelli-Shanks_algorithm#Python
+http://rosettacode.org/wiki/Trigonometric_functions#Python
+http://rosettacode.org/wiki/Tree_from_nesting_levels#Python
+http://rosettacode.org/wiki/2048#Python:_Original.2C_with_output
+http://rosettacode.org/wiki/100_prisoners#Procedural
+http://rosettacode.org/wiki/Imaginary_base_numbers#Python
+http://rosettacode.org/wiki/Averages/Arithmetic_mean#Python
+http://rosettacode.org/wiki/Weird_numbers#Functional_2
+http://rosettacode.org/wiki/I_before_E_except_after_C#Python:_Stretch_Goal
+http://rosettacode.org/wiki/Merge_and_aggregate_datasets#Python:_Using_pandas_library
+http://rosettacode.org/wiki/Determine_if_a_string_is_numeric#Python:_Simple_int.2Ffloat
+http://rosettacode.org/wiki/Number_reversal_game#Python
+
+http://rosettacode.org/wiki/Partition_an_integer_x_into_n_primes#Python
+
+http://rosettacode.org/wiki/Substring/Top_and_tail#Python
