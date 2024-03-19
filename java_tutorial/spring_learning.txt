@@ -2,3 +2,11 @@ https://github.com/ivtoskov/LogAnalyticsService
 
 https://github.com/ivtoskov/QueuingSystem/tree/master
 https://github.com/ivtoskov/LeetCodeSolutions
+
+https://github.com/in28minutes/full-stack-with-react-and-spring-boot
+https://github.com/wdkeyser02/SpringBootOAuth2
+https://github.com/CodeMythGit/ApacheKafkaTutorial/tree/main/SpringBootApacheKafka/src
+https://github.com/CodeMythGit/SpringBootTutorial	
+
+https://github.com/JavatechWorld/Oauth2.0CustomRegisterLogin/tree/main/src/main/java/com/oauth/implementation
+https://github.com/NanmiCoder/MediaCrawler
