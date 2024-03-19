@@ -1,0 +1,15 @@
+https://www.chartjs.org/docs/latest/samples/line/styling.html
+https://www.geeksforgeeks.org/create-a-chart-from-json-data-using-fetch-get-request-fetch-api-in-javascript/
+https://stackoverflow.com/questions/45018338/javascript-fetch-api-how-to-save-output-to-variable-as-an-object-not-the-prom
+
+https://www.freecodecamp.org/news/javascript-promises-async-await-and-promise-methods/
+https://www.freecodecamp.org/news/javascript-promises-async-await-and-promise-methods/
+
+https://dev.to/ramonak/javascript-how-to-access-the-return-value-of-a-promise-object-1bck
+https://javascript.info/promise-basics
+
+
+https://www.javascripture.com/Promise
+
+https://www.traversymedia.com/#section-1575400154555
+https://dmitripavlutin.com/javascript-fetch-async-await/

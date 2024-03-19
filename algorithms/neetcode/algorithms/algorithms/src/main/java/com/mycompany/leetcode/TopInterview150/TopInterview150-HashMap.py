@@ -140,6 +140,52 @@ arrays = {
                        
                         ],                          
                },
+     "Happy-Number" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,3,18): ["https://leetcode.com/problems/happy-number/solutions/3767573/easy-java-solution-two-pointers-floyd-s-tortoise-and-hare-detailed-explanation/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],      
+                "go": [
+                        {datetime.date(2024,2,25): ""},
+                       
+                        ],                          
+               },
+     "Contains-Duplicate-II" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,3,19): ["https://leetcode.com/problems/contains-duplicate-ii/solutions/61372/simple-java-solution/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],      
+                "go": [
+                        {datetime.date(2024,2,25): ""},
+                       
+                        ],                          
+               },
                   
 }
 
@@ -152,3 +198,5 @@ print(arrays)
 # https://leetcode.com/StefanPochmann/
 # https://leetcode.com/rahulvarma5297/
 # https://leetcode.com/rahulvarma5297/
+# https://leetcode.com/202151174/
+# https://leetcode.com/southpenguin/
