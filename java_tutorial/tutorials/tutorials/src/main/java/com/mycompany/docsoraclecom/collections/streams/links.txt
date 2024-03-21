@@ -1,1 +1,0 @@
-https://github.com/eugenp/tutorials/tree/master/core-java-modules/core-java-streams-2/src/main

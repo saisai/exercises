@@ -186,7 +186,30 @@ arrays = {
                        
                         ],                          
                },
-                  
+     "Longest-Consecutive-Sequence" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,3,20): ["https://leetcode.com/problems/longest-consecutive-sequence/solutions/41055/my-really-simple-java-o-n-solution-accepted/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],      
+                "go": [
+                        {datetime.date(2024,2,25): ""},
+                       
+                        ],                          
+               },
+               
 }
 
 
@@ -200,3 +223,5 @@ print(arrays)
 # https://leetcode.com/rahulvarma5297/
 # https://leetcode.com/202151174/
 # https://leetcode.com/southpenguin/
+# https://leetcode.com/dchen0215/
+# 

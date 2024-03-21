@@ -1,0 +1,8 @@
+1
+URL zipUrl = ZipFile.class.getClassLoader().getResource("zipTest/test1.txt");
+File zipFile = new File(zipUrl.toURI());
+
+2.
+ClassLoader classloader = Thread.currentThread().getContextClassLoader();
+InputStream is = classloader.getResourceAsStream("unzipTest/compressed.zip");
+https://stackoverflow.com/questions/49664126/how-to-get-a-bufferredreader-from-a-zip-file-in-resource-directory
