@@ -1,9 +1,0 @@
-https://www.demo2s.com/g/java/java.object-oriented.reflection.html
-https://www.demo2s.com/g/java/what-is-reflection-in-java.html
-https://www.demo2s.com/g/java/what-a-class-loader-is-and-about-the-built-in-class-loaders-in-java.html
-https://www.demo2s.com/g/java/how-to-use-getclass-method-from-object-to-get-java-class.html
-https://www.demo2s.com/g/java/how-to-use-typename-class-to-load-java-class.html
-https://www.demo2s.com/g/java/how-to-list-the-names-of-loaded-modules-by-java-class-loader.html
-https://www.demo2s.com/g/java/how-to-use-reflection-to-get-information-about-classes-at-runtime-in-java.html
-https://www.demo2s.com/g/java/how-to-use-reflection-to-get-information-about-constructors-at-runtime-in-java.html
-

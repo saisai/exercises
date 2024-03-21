@@ -1,5 +1,0 @@
-finished
-    https://www.demo2s.com/g/java/java.array.html
-    https://www.demo2s.com/g/java/how-to-sort-byte-array-in-java-with-example.html
-    https://www.demo2s.com/g/java/how-to-use-java-8-arrays-parallel-sort-with-example.html
-    https://www.demo2s.com/g/java/how-to-sort-float-array-in-java-with-example.html

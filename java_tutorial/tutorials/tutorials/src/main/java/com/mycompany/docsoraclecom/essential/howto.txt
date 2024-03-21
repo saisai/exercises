@@ -1,5 +1,0 @@
-https://docs.oracle.com/javase/tutorial/essential/io/charstreams.html
-
-https://tharakamd-12.medium.com/4-ways-to-implement-a-synchronized-counter-in-java-5540452fb4f7
-
-https://howtodoinjava.com/java/io/read-file-from-resources-folder/
