@@ -1,0 +1,10 @@
+https://github.com/alanjds/drf-nested-routers/tree/master/tests
+
+
+https://github.com/dbrgn/drf-dynamic-fields
+
+https://github.com/dbrgn/drf-dynamic-fields/blob/master/tests/test_mixins.py
+
+python runtests.py tests.test_fields
+
+https://github.com/carltongibson/django-filter/blob/main/tests/test_filtering.p

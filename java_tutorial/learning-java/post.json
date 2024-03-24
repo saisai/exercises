@@ -1,0 +1,18 @@
+{
+  "id" : 100,
+  "title" : "Jackson JSON API Guide",
+  "description" : "Post about Jackson JSON API",
+  "content" : "HTML content here",
+  "postedAt" : 1711166921350,
+  "lastUpdatedAt" : 1711166921350,
+  "tags" : [ {
+    "id" : 1,
+    "name" : "Java"
+  }, {
+    "id" : 3,
+    "name" : "JSON"
+  }, {
+    "id" : 2,
+    "name" : "Jackson"
+  } ]
+}
