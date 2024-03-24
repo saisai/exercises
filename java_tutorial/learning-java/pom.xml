@@ -17,6 +17,10 @@
         <module>core-java-io</module>
         <module>core-java-datetime-string</module>
         <module>json-modules</module>
+        <module>stream-in-java</module>
+        <module>learn-jackson</module>
+        <module>hibernate-tutorial</module>
+        <module>java-date-time</module>
     </modules>
 
     <dependencies>

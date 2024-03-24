@@ -1,3 +1,0 @@
-python runtests.py tests.test_fields
-
-https://github.com/carltongibson/django-filter/blob/main/tests/test_filtering.p

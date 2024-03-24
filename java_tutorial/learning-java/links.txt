@@ -1,0 +1,12 @@
+https://github.com/alamnr/java-8-to-21-features
+https://www.youtube.com/watch?v=pGroX3gmeP8&ab_channel=Devoxx
+https://dev.java/learn/date-time/
+
+https://www.digitalocean.com/community/tutorials/java-8-date-localdate-localdatetime-instant
+
+https://www.digitalocean.com/community/tutorials/core-java-tutorial
+
+https://github.com/WebJournal/journaldev
+
+https://www.vogella.com/tutorials/JavaDateTimeAPI/article.html
+https://jenkov.com/tutorials/java-date-time/index.html

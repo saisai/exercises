@@ -20,12 +20,19 @@ TEST_APPS = [
     'many_to_one',
     'many_to_one_null',
     'modeladmin',
+    'm2m_multiple',
+    'm2m_through',
 
     'null_queries',
 
+    'one_to_one',
+
+    'signals',
+
+
     'transaction_hooks',
 
-
+    'update',
     'update_only_fields',
-
+    
         ]

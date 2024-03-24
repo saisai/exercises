@@ -1,0 +1,1 @@
+https://www.javaguides.net/2019/08/hibernate-5-one-to-many-mapping-annotation-example.html

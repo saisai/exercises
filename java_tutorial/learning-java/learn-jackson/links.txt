@@ -1,0 +1,5 @@
+https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-controller/ann-methods/jackson.html
+https://www.baeldung.com/category/json/jackson
+https://www.baeldung.com/jackson
+
+https://medium.com/javarevisited/20-essential-java-libraries-and-apis-every-programmer-should-learn-5ccd41812fc7
