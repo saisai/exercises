@@ -7,7 +7,7 @@ arrays = {
                         {datetime.date(2023,12,9): ""},
                     ],
                 "Java": [
-                        {datetime.date(2024,3,24): ["https://leetcode.com/problems/valid-parentheses/solutions/9178/short-java-solution/",
+                        {datetime.date(2024,5,15): ["https://leetcode.com/problems/binary-tree-right-side-view/solutions/56012/my-simple-accepted-solution-java/",
                             
                         ]},
                        
@@ -24,82 +24,13 @@ arrays = {
                         {datetime.date(2024,2,25): ""},
                        
                         ],                          
-               },       
-    "Simplify-Path" : { 
+               },
+    "Average-Of-Levels-In-Binary-Tree" : { 
                 "Python": [
                         {datetime.date(2023,12,9): ""},
                     ],
                 "Java": [
-                        {datetime.date(2024,3,25): ["https://leetcode.com/problems/simplify-path/solutions/1847526/best-explanation-ever-possible-not-a-clickbait/",
-                            
-                        ]},
-                       
-                        ],
-                "Javascript": [
-                        {datetime.date(2023,10,30): ""},
-                       
-                        ],                    
-                "c++": [
-                        {datetime.date(2023,10,29): ""},
-                       
-                        ],      
-                "go": [
-                        {datetime.date(2024,2,25): ""},
-                       
-                        ],                          
-               },                          
-     "Min-Stack" : { 
-                "Python": [
-                        {datetime.date(2023,12,9): ""},
-                    ],
-                "Java": [
-                        {datetime.date(2024,3,26): ["https://leetcode.com/problems/min-stack/solutions/49010/clean-6ms-java-solution/",
-                            
-                        ]},
-                       
-                        ],
-                "Javascript": [
-                        {datetime.date(2023,10,30): ""},
-                       
-                        ],                    
-                "c++": [
-                        {datetime.date(2023,10,29): ""},
-                       
-                        ],      
-                "go": [
-                        {datetime.date(2024,2,25): ""},
-                       
-                        ],                          
-               },  
-     "Min-Stack" : { 
-                "Python": [
-                        {datetime.date(2023,12,9): ""},
-                    ],
-                "Java": [
-                        {datetime.date(2024,3,27): ["https://leetcode.com/problems/evaluate-reverse-polish-notation/solutions/47430/java-accepted-code-stack-implementation/",
-                            
-                        ]},
-                       
-                        ],
-                "Javascript": [
-                        {datetime.date(2023,10,30): ""},
-                       
-                        ],                    
-                "c++": [
-                        {datetime.date(2023,10,29): ""},
-                       
-                        ],      
-                "go": [
-                        {datetime.date(2024,2,25): ""},
-                       
-                        ],                          
-               },    
-     "Basic-Calculator" : { 
-                "Python": [
-                        {datetime.date(2023,12,9): ""},
-                    ],
-                "Java": [
-                        {datetime.date(2024,3,28): ["https://leetcode.com/problems/basic-calculator/solutions/62361/iterative-java-solution-with-stack/",
+                        {datetime.date(2024,5,20): ["https://leetcode.com/problems/binary-tree-right-side-view/solutions/56012/my-simple-accepted-solution-java/",
                             
                         ]},
                        
@@ -117,12 +48,57 @@ arrays = {
                        
                         ],                          
                },                
+    "Binary-Tree-Level-Order-Traversal" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,5,27): ["https://leetcode.com/problems/binary-tree-level-order-traversal/solutions/33450/java-solution-with-a-queue-used/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],      
+                "go": [
+                        {datetime.date(2024,2,25): ""},
+                       
+                        ],                          
+               },          
+    "Binary-Tree-Zigzag-Level-Order-Traversal" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,5,28): ["https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/solutions/33815/my-accepted-java-solution/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],      
+                "go": [
+                        {datetime.date(2024,2,25): ""},
+                       
+                        ],                          
+               },               
+                  
 }
 
 
-print(arrays)
-
-# https://leetcode.com/phoenix13steve/
-# https://leetcode.com/hi-malik/
-# https://leetcode.com/ivtoskov/
-# https://leetcode.com/pvaldes/
+# https://leetcode.com/u/zwangbo/
+# https://leetcode.com/u/earlme/
+# https://leetcode.com/u/SOY/
+# https://leetcode.com/u/awaylu/

@@ -21,6 +21,10 @@
         <module>learn-jackson</module>
         <module>hibernate-tutorial</module>
         <module>java-date-time</module>
+        <module>java-recursion</module>
+        <module>java-string</module>
+        <module>core-java-collections-generic</module>
+        <module>java-concurrency</module>
     </modules>
 
     <dependencies>
