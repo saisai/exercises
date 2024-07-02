@@ -10,3 +10,28 @@ https://github.com/WebJournal/journaldev
 
 https://www.vogella.com/tutorials/JavaDateTimeAPI/article.html
 https://jenkov.com/tutorials/java-date-time/index.html
+
+https://github.com/WebJournal/journaldev/tree/master/CoreJavaProjects/CoreJavaExamples/src
+
+https://www.w3schools.com/java/java_linkedlist.asp
+
+https://github.com/douglascraigschmidt/LiveLessons/tree/master/Java8
+
+https://github.com/sherxon/AlgoDS/tree/master/src/ds/graph
+
+
+https://github.com/williamfiset/Algorithms/
+
+mvn archetype:generate -DgroupId=com.algods -DartifactId=algods -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+
+
+https://stackoverflow.com/questions/4965335/how-to-print-binary-tree-diagram-in-java
+https://www.ondrovo.com/
+
+
+http://staff.ustc.edu.cn/~csli/graduate/algorithms/book6/chap23.htm
+https://github.com/mogwailabs/jarjarbigs
+https://github.com/shishan100/Java-Interview-Advanced
+https://github.com/CL0610/Java-concurrency/tree/master/05.%E5%BD%BB%E5%BA%95%E7%90%86%E8%A7%A3volatile
+https://github.com/thesohelshaikh?tab=repositories
+https://github.com/kallaway/100-days-of-code

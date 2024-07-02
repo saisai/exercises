@@ -1,0 +1,3 @@
+https://www.digitalocean.com/community/tutorials/java-create-new-file
+https://www.digitalocean.com/community/tutorials/java-file-separator-separatorchar-pathseparator-pathseparatorchar
+https://www.digitalocean.com/community/tutorials/java-get-file-size

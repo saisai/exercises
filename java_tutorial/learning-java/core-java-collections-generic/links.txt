@@ -1,0 +1,10 @@
+autoboxing and auto unboxing
+
+https://medium.com/@basecs101/do-you-know-autoboxing-and-unboxing-in-java-latest-updated-2023-5544bcb42c1b
+https://docs.oracle.com/javase/tutorial/java/data/autoboxing.html
+
+https://www.digitalocean.com/community/tutorials/java-generics-example-method-class-interface
+https://docs.oracle.com/javase/tutorial/java/generics/bounded.html
+
+https://www.digitalocean.com/community/tutorials/java-list
+https://www.digitalocean.com/community/tutorials/core-java-tutorial

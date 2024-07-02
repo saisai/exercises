@@ -1,0 +1,9 @@
+https://www.digitalocean.com/community/tutorials/core-java-tutorial
+https://www.baeldung.com/java-string-to-stream
+
+
+finished:
+    - https://www.digitalocean.com/community/tutorials/string-programs-in-java
+
+TBC:
+    - https://www.digitalocean.com/community/tutorials/string-vs-stringbuffer-vs-stringbuilder
