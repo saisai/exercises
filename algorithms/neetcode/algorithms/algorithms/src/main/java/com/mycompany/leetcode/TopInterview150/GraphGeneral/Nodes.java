@@ -3,18 +3,18 @@ package com.mycompany.leetcode.TopInterview150.GraphGeneral;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Node {
+public class Nodes {
     public int val;
-    public List<Node> neighbors;
-    public Node() {
+    public List<Nodes> neighbors;
+    public Nodes() {
         val = 0;
-        neighbors = new ArrayList<Node>();
+        neighbors = new ArrayList<Nodes>();
     }
-    public Node(int _val) {
+    public Nodes(int _val) {
         val = _val;
-        neighbors = new ArrayList<Node>();
+        neighbors = new ArrayList<Nodes>();
     }
-    public Node(int _val, ArrayList<Node> _neighbors) {
+    public Nodes(int _val, ArrayList<Nodes> _neighbors) {
         val = _val;
         neighbors = _neighbors;
     }

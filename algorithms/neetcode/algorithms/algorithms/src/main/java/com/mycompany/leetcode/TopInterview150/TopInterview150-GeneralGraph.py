@@ -48,7 +48,29 @@ arrays = {
                        
                         ],                          
                },       
-                                             
+     "Clone-Graph" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,7,3): ["https://leetcode.com/problems/clone-graph/description",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],      
+                "go": [
+                        {datetime.date(2024,2,25): ""},
+                       
+                        ],                          
+               },                                              
                   
 }
 
@@ -56,5 +78,6 @@ arrays = {
 # https://leetcode.com/u/wcyz666/
 # https://github.com/wcyz666/myleetcode
 # https://leetcode.com/u/jinwu/
+# https://github.com/doocs/leetcode/tree/main
 
 

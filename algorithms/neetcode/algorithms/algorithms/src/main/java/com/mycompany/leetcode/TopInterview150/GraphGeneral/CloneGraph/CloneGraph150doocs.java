@@ -5,7 +5,7 @@ import com.mycompany.leetcode.TopInterview150.GraphGeneral.Nodes;
 import java.util.HashMap;
 import java.util.Map;
 
-public class CloneGraph150mohamede1945 {
+public class CloneGraph150doocs {
     private Map<Nodes, Nodes> visited = new HashMap<>();
 
     public Nodes cloneGraph(Nodes node) {
@@ -42,7 +42,7 @@ public class CloneGraph150mohamede1945 {
         node4.neighbors.add(node1);
         node4.neighbors.add(node3);
 
-        CloneGraph150mohamede1945 obj = new CloneGraph150mohamede1945();
+        CloneGraph150doocs obj = new CloneGraph150doocs();
         Nodes result = obj.cloneGraph(node1);
         printGraph(result, new HashMap<>());
 
@@ -61,3 +61,5 @@ public class CloneGraph150mohamede1945 {
     }
 
 }
+
+// https://github.com/doocs/leetcode/blob/main/solution/0100-0199/0133.Clone%20Graph/README_EN.md
