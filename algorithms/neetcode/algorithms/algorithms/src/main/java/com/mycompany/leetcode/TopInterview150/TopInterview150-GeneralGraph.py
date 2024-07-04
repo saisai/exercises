@@ -70,7 +70,30 @@ arrays = {
                         {datetime.date(2024,2,25): ""},
                        
                         ],                          
-               },                                              
+               },      
+     "Evaluate-Division" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,7,4): ["https://leetcode.com/problems/evaluate-division/solutions/171649/1ms-dfs-with-explanations/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],      
+                "go": [
+                        {datetime.date(2024,2,25): ""},
+                       
+                        ],                          
+               },                
                   
 }
 
@@ -79,5 +102,6 @@ arrays = {
 # https://github.com/wcyz666/myleetcode
 # https://leetcode.com/u/jinwu/
 # https://github.com/doocs/leetcode/tree/main
+# https://leetcode.com/u/GraceMeng/
 
 
