@@ -7,3 +7,5 @@ https://mkyong.com/maven/how-to-create-a-java-project-with-maven/
 
 https://github.com/iafan/goplayspace/tree/master/bin
 https://github.com/Frodosnow/todo-react
+
+https://rosettacode.org/wiki/Category:Programming_Tasks?pagefrom=Compiler%2Fcode+generator#mw-pages
