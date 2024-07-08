@@ -1,2 +1,4 @@
 https://github.com/knockcat/Leetcode
 https://leetcode.com/problems/merge-two-sorted-lists/solutions/1826666/c-easy-to-understand-2-approaches-recursive-iterative/
+
+https://github.com/luckykumardev/Master-DSA-Course/blob/master/class_05/printReverse_LL.java

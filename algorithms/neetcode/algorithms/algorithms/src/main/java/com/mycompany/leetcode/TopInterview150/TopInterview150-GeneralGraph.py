@@ -116,7 +116,30 @@ arrays = {
                         {datetime.date(2024,2,25): ""},
                        
                         ],                          
-               },                 
+               }, 
+       "Course-Schedule-II" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,7,6): ["https://leetcode.com/problems/course-schedule-ii/solutions/59317/two-ac-solution-in-java-using-bfs-and-dfs-with-explanation/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],      
+                "go": [
+                        {datetime.date(2024,2,25): ""},
+                       
+                        ],                          
+               },                
 }
 
 
@@ -126,4 +149,5 @@ arrays = {
 # https://github.com/doocs/leetcode/tree/main
 # https://leetcode.com/u/GraceMeng/
 # https://leetcode.com/u/syftalent/
+# https://leetcode.com/u/lx223/
 
