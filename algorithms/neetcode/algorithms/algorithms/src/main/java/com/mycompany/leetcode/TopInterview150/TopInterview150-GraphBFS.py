@@ -25,7 +25,29 @@ arrays = {
                        
                         ],                          
                },       
-                          
+    "Minimum-Genetic-Mutation" : { 
+                "Python": [
+                        {datetime.date(2023,12,9): ""},
+                    ],
+                "Java": [
+                        {datetime.date(2024,7,*): ["https://leetcode.com/problems/minimum-genetic-mutation/solutions/91484/java-solution-using-bfs/",
+                            
+                        ]},
+                       
+                        ],
+                "Javascript": [
+                        {datetime.date(2023,10,30): ""},
+                       
+                        ],                    
+                "c++": [
+                        {datetime.date(2023,10,29): ""},
+                       
+                        ],      
+                "go": [
+                        {datetime.date(2024,2,25): ""},
+                       
+                        ],                          
+               },                          
                   
 }
 
@@ -33,4 +55,4 @@ arrays = {
 print(arrays)
 
 # https://leetcode.com/u/singhabhinash/
-
+# https://leetcode.com/u/xietao0221/
