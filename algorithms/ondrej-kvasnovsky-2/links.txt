@@ -1,0 +1,17 @@
+
+https://ondrej-kvasnovsky-2.gitbook.io/algorithms/sorting/insertion-sort
+https://coursera.cs.princeton.edu/algs4/assignments/percolation/specification.php
+https://algs4.cs.princeton.edu/home/
+https://algs4.cs.princeton.edu/10fundamentals/
+https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/resources/lecture-videos/
+https://github.com/ondrej-kvasnovsky/design-patterns-handbook/tree/master/clean-code-patterns
+
+https://www.geeksforgeeks.org/how-to-create-a-maven-project-in-intellij-idea/
+https://www.jetbrains.com/guide/java/tutorials/working-with-maven/creating-a-project/
+
+
+https://github.com/ondrej-kvasnovsky/walkers
+https://www.youtube.com/@AlgorithmswithAttitude/playlists
+https://github.com/CodingTrain/AStar
+https://github.com/mourner/tinyqueue/blob/main/index.js
+https://stackoverflow.com/questions/409784/whats-the-simplest-way-to-print-a-java-array
