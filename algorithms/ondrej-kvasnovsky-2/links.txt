@@ -15,3 +15,7 @@ https://www.youtube.com/@AlgorithmswithAttitude/playlists
 https://github.com/CodingTrain/AStar
 https://github.com/mourner/tinyqueue/blob/main/index.js
 https://stackoverflow.com/questions/409784/whats-the-simplest-way-to-print-a-java-array
+
+https://www.codeproject.com/Articles/1158559/B-Tree-Another-Implementation-By-Java
+https://opendatastructures.org/
+https://github.com/patmorin/ods/tree/master/python/ods
